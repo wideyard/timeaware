@@ -1,0 +1,92 @@
+{
+  "gpt-4o-mini": {
+    "correct": 3,
+    "total": 4,
+    "details": [
+      {
+        "question_id": "duration_001",
+        "correct": "B",
+        "predicted": "B",
+        "is_correct": true
+      },
+      {
+        "question_id": "duration_002",
+        "correct": "C",
+        "predicted": "B",
+        "is_correct": false
+      },
+      {
+        "question_id": "fictional_001",
+        "correct": "B",
+        "predicted": "B",
+        "is_correct": true
+      },
+      {
+        "question_id": "fictional_002",
+        "correct": "C",
+        "predicted": "C",
+        "is_correct": true
+      }
+    ]
+  },
+  "doubao-seed-1-8": {
+    "correct": 3,
+    "total": 4,
+    "details": [
+      {
+        "question_id": "duration_001",
+        "correct": "B",
+        "predicted": "B",
+        "is_correct": true
+      },
+      {
+        "question_id": "duration_002",
+        "correct": "C",
+        "predicted": "B",
+        "is_correct": false
+      },
+      {
+        "question_id": "fictional_001",
+        "correct": "B",
+        "predicted": "B",
+        "is_correct": true
+      },
+      {
+        "question_id": "fictional_002",
+        "correct": "C",
+        "predicted": "C",
+        "is_correct": true
+      }
+    ]
+  },
+  "doubao-seed-2-0-pro": {
+    "correct": 2,
+    "total": 4,
+    "details": [
+      {
+        "question_id": "duration_001",
+        "correct": "B",
+        "predicted": "B",
+        "is_correct": true
+      },
+      {
+        "question_id": "duration_002",
+        "correct": "C",
+        "predicted": "B",
+        "is_correct": false
+      },
+      {
+        "question_id": "fictional_001",
+        "correct": "B",
+        "predicted": "A",
+        "is_correct": false
+      },
+      {
+        "question_id": "fictional_002",
+        "correct": "C",
+        "predicted": "C",
+        "is_correct": true
+      }
+    ]
+  }
+}

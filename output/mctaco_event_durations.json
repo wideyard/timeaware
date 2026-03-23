@@ -1,0 +1,5551 @@
+[
+  {
+    "sentence": "Islam later emerged as the majority religion during the centuries of Ottoman rule, though a significant Christian minority remained.",
+    "question": "How long has a significant Christian minority remained?",
+    "event": "a significant Christian minority remained",
+    "min_duration": "hundreds of years",
+    "max_duration": "1000 years",
+    "min_seconds": 3153600000,
+    "max_seconds": 31536000000.0,
+    "all_durations": [
+      "hundreds of years",
+      "1000 years"
+    ],
+    "all_seconds": [
+      3153600000,
+      31536000000.0
+    ]
+  },
+  {
+    "sentence": "It's hail crackled across the comm, and Tara spun to retake her seat at the helm.",
+    "question": "How long was the storm?",
+    "event": "the storm",
+    "min_duration": "an hour",
+    "max_duration": "the storm lasted through the day",
+    "min_seconds": 3600,
+    "max_seconds": 43200,
+    "all_durations": [
+      "an hour",
+      "a hour",
+      "2 hours",
+      "the storm lasted through the morning",
+      "the storm lasted through the early morning",
+      "6 hours",
+      "the storm lasted through the day"
+    ],
+    "all_seconds": [
+      3600,
+      3600,
+      7200.0,
+      14400,
+      14400,
+      21600.0,
+      43200
+    ]
+  },
+  {
+    "sentence": "Max and Joey would often run through fields in a game of chase.",
+    "question": "How long would they run through the fields?",
+    "event": "would they run through the fields",
+    "min_duration": "30 minutes",
+    "max_duration": "30 minutes",
+    "min_seconds": 1800.0,
+    "max_seconds": 1800.0,
+    "all_durations": [
+      "30 minutes"
+    ],
+    "all_seconds": [
+      1800.0
+    ]
+  },
+  {
+    "sentence": "Carl Laemmle, head of Universal Studios, gave Einstein a tour of his studio and introduced him to Chaplin.",
+    "question": "How long did the tour last?",
+    "event": "the tour last",
+    "min_duration": "45 minutes",
+    "max_duration": "1 hour",
+    "min_seconds": 2700.0,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "45 minutes",
+      "1 hour"
+    ],
+    "all_seconds": [
+      2700.0,
+      3600.0
+    ]
+  },
+  {
+    "sentence": "He layed down on the chair and pawed at her as she ran in a circle under it.",
+    "question": "How long did he paw at her?",
+    "event": "he paw at her",
+    "min_duration": "7 seconds",
+    "max_duration": "0.5 minute",
+    "min_seconds": 7.0,
+    "max_seconds": 300.0,
+    "all_durations": [
+      "7 seconds",
+      "30 seconds",
+      "1 minute",
+      "2 minutes",
+      "0.2 minute",
+      "0.5 minute"
+    ],
+    "all_seconds": [
+      7.0,
+      30.0,
+      60.0,
+      120.0,
+      120.0,
+      300.0
+    ]
+  },
+  {
+    "sentence": "About 30% of Ratners's profit already is derived from the U.S.",
+    "question": "How long did it take to make profit?",
+    "event": "it take to make profit",
+    "min_duration": "3 months",
+    "max_duration": "3 months",
+    "min_seconds": 7776000.0,
+    "max_seconds": 7776000.0,
+    "all_durations": [
+      "3 months"
+    ],
+    "all_seconds": [
+      7776000.0
+    ]
+  },
+  {
+    "sentence": "The 300-millimeter silicon wafers -- about the size of a standard pizza -- are shuttled around the facility in enclosed plastic pods, which ride on overhead tracks.",
+    "question": "For how long do the wafers ride on tracks?",
+    "event": "For how long do the wafers ride on tracks",
+    "min_duration": "5 hours",
+    "max_duration": "5 hours",
+    "min_seconds": 18000.0,
+    "max_seconds": 18000.0,
+    "all_durations": [
+      "5 hours"
+    ],
+    "all_seconds": [
+      18000.0
+    ]
+  },
+  {
+    "sentence": "Lennon accuses his father of leaving him again , and then leaves , after telling his father that he wo n't live with him anymore .",
+    "question": "How long does this conversation between Lennon and his father take?",
+    "event": "does this conversation between Lennon and his father take",
+    "min_duration": "10 minutes",
+    "max_duration": "10 minutes",
+    "min_seconds": 600.0,
+    "max_seconds": 600.0,
+    "all_durations": [
+      "10 minutes"
+    ],
+    "all_seconds": [
+      600.0
+    ]
+  },
+  {
+    "sentence": "The Mummy 's Shroud is set in 1920 and tells the story of a team of archaeologists who come across the lost tomb of the boy Pharaoh Kah-To-Bey .",
+    "question": "How long did it take the team to uncover the lost tomb?",
+    "event": "it take the team to uncover the lost tomb",
+    "min_duration": "2 months",
+    "max_duration": "10 weeks",
+    "min_seconds": 5184000.0,
+    "max_seconds": 6048000.0,
+    "all_durations": [
+      "2 months",
+      "10 weeks"
+    ],
+    "all_seconds": [
+      5184000.0,
+      6048000.0
+    ]
+  },
+  {
+    "sentence": "But he told us that he could not drum up much interest in or money for such a purpose from Washington, partly, he thought, because these countries had dictatorial governments.",
+    "question": "How long did he try to get money from those countries?",
+    "event": "he try to get money from those countries",
+    "min_duration": "3 week",
+    "max_duration": "three months",
+    "min_seconds": 1814400.0,
+    "max_seconds": 7776000,
+    "all_durations": [
+      "3 week",
+      "1 month",
+      "three months"
+    ],
+    "all_seconds": [
+      1814400.0,
+      2592000.0,
+      7776000
+    ]
+  },
+  {
+    "sentence": "Bailey received the award for his three years of volunteer work at Indiana Pro Bono Commission.",
+    "question": "How long was Bailey's award ceremony?",
+    "event": "Bailey's award ceremony",
+    "min_duration": "an hour",
+    "max_duration": "1 hour",
+    "min_seconds": 3600,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "an hour",
+      "1 hour"
+    ],
+    "all_seconds": [
+      3600,
+      3600.0
+    ]
+  },
+  {
+    "sentence": "In 1930, the poet Muhammad Iqbal proposed a separate Muslim homeland in the northwest of India.",
+    "question": "How long did Muhammad Iqbal consider his proposal?",
+    "event": "Muhammad Iqbal consider his proposal",
+    "min_duration": "one week",
+    "max_duration": "1 month",
+    "min_seconds": 604800,
+    "max_seconds": 2592000.0,
+    "all_durations": [
+      "one week",
+      "1 week",
+      "a week",
+      "a month",
+      "one month",
+      "1 month"
+    ],
+    "all_seconds": [
+      604800,
+      604800.0,
+      604800,
+      2592000,
+      2592000,
+      2592000.0
+    ]
+  },
+  {
+    "sentence": "There was even a tiny room in the back of one of the closets.",
+    "question": "After buying the house, how long did it take the owners to notice the room?",
+    "event": "it take the owners to notice the room",
+    "min_duration": "1 week",
+    "max_duration": "1 week",
+    "min_seconds": 604800.0,
+    "max_seconds": 604800.0,
+    "all_durations": [
+      "1 week"
+    ],
+    "all_seconds": [
+      604800.0
+    ]
+  },
+  {
+    "sentence": "At least some FAA officials in Boston Center and the New England Region knew that a hijacker on board American 11 had said \"we have some planes.\"",
+    "question": "How long did they know the plane had been hijacked?",
+    "event": "they know the plane had been hijacked",
+    "min_duration": "10 minutes",
+    "max_duration": "one day",
+    "min_seconds": 600.0,
+    "max_seconds": 86400,
+    "all_durations": [
+      "10 minutes",
+      "1 hour",
+      "1 day",
+      "a day",
+      "one day"
+    ],
+    "all_seconds": [
+      600.0,
+      3600.0,
+      86400.0,
+      86400,
+      86400
+    ]
+  },
+  {
+    "sentence": "Several tenants blame other neighbors as perpetrators of the rift, however.",
+    "question": "How long has there been a rift between neighbors?",
+    "event": "there been a rift between neighbors",
+    "min_duration": "one week",
+    "max_duration": "one year",
+    "min_seconds": 604800,
+    "max_seconds": 31536000,
+    "all_durations": [
+      "one week",
+      "6 months",
+      "one year"
+    ],
+    "all_seconds": [
+      604800,
+      15552000.0,
+      31536000
+    ]
+  },
+  {
+    "sentence": "Some government officials were concerned that terrorists would take advantage of such breakdowns.",
+    "question": "How long were the  government officials concerned with terrorists?",
+    "event": "were the  government officials concerned with terrorists",
+    "min_duration": "a year",
+    "max_duration": "a year",
+    "min_seconds": 31536000,
+    "max_seconds": 31536000,
+    "all_durations": [
+      "a year"
+    ],
+    "all_seconds": [
+      31536000
+    ]
+  },
+  {
+    "sentence": "Pushkin gradually became committed to social reform and emerged as a spokesman for literary radicals.",
+    "question": "How long did it take for Pushkin to commit to social reform?",
+    "event": "it take for Pushkin to commit to social reform",
+    "min_duration": "10 months",
+    "max_duration": "10 months",
+    "min_seconds": 25920000.0,
+    "max_seconds": 25920000.0,
+    "all_durations": [
+      "10 months"
+    ],
+    "all_seconds": [
+      25920000.0
+    ]
+  },
+  {
+    "sentence": "The target remained in Indianapolis Center's airspace for another six minutes, then crossed into the western portion of Washington Center's airspace at 9:10.",
+    "question": "How long did it take for them to detect the target?",
+    "event": "it take for them to detect the target",
+    "min_duration": "ten minutes",
+    "max_duration": "10 minutes",
+    "min_seconds": 600,
+    "max_seconds": 600.0,
+    "all_durations": [
+      "ten minutes",
+      "10 minutes"
+    ],
+    "all_seconds": [
+      600,
+      600.0
+    ]
+  },
+  {
+    "sentence": "He was asked to lend his support by writing a letter, with Szilard, to President Roosevelt, recommending the U.S. pay attention and engage in its own nuclear weapons research.",
+    "question": "How long did it take him to write the letter?",
+    "event": "it take him to write the letter",
+    "min_duration": "15 minutes",
+    "max_duration": "30 minutes",
+    "min_seconds": 900.0,
+    "max_seconds": 1800.0,
+    "all_durations": [
+      "15 minutes",
+      "30 minutes"
+    ],
+    "all_seconds": [
+      900.0,
+      1800.0
+    ]
+  },
+  {
+    "sentence": "I clapped her shoulder to show I was not laughing at her.",
+    "question": "How long did they laugh?",
+    "event": "they laugh",
+    "min_duration": "2 minutes",
+    "max_duration": "2 minutes",
+    "min_seconds": 120.0,
+    "max_seconds": 120.0,
+    "all_durations": [
+      "2 minutes"
+    ],
+    "all_seconds": [
+      120.0
+    ]
+  },
+  {
+    "sentence": "This approach has been echoed by Lev Landau and Evgeny Lifshitz, and others, and has become standard.",
+    "question": "How long did it take to become standard?",
+    "event": "it take to become standard",
+    "min_duration": "2 years",
+    "max_duration": "2 years",
+    "min_seconds": 63072000.0,
+    "max_seconds": 63072000.0,
+    "all_durations": [
+      "2 years"
+    ],
+    "all_seconds": [
+      63072000.0
+    ]
+  },
+  {
+    "sentence": "Not that he devised flint and steel, matches, or any other way of creating fire.",
+    "question": "How long does it take him to build a fire?",
+    "event": "does it take him to build a fire",
+    "min_duration": "five minutes",
+    "max_duration": "35 minutes",
+    "min_seconds": 300,
+    "max_seconds": 2100.0,
+    "all_durations": [
+      "five minutes",
+      "7 minutes",
+      "35 minutes"
+    ],
+    "all_seconds": [
+      300,
+      420.0,
+      2100.0
+    ]
+  },
+  {
+    "sentence": "Cathy Wallace did not always know what she wanted to be when she grew up.",
+    "question": "How long did it take Cathy Wallace to grow up?",
+    "event": "it take Cathy Wallace to grow up",
+    "min_duration": "18 years",
+    "max_duration": "18 years",
+    "min_seconds": 567648000.0,
+    "max_seconds": 567648000.0,
+    "all_durations": [
+      "18 years"
+    ],
+    "all_seconds": [
+      567648000.0
+    ]
+  },
+  {
+    "sentence": "When she went to a courthouse to file a complaint against her landlord, she found the process so confusing that she gave up and went home.",
+    "question": "How long was she at the courthouse?",
+    "event": "she at the courthouse",
+    "min_duration": "3 hours",
+    "max_duration": "1.5 hours",
+    "min_seconds": 10800.0,
+    "max_seconds": 18000.0,
+    "all_durations": [
+      "3 hours",
+      "4 hours",
+      "1.5 hours"
+    ],
+    "all_seconds": [
+      10800.0,
+      14400.0,
+      18000.0
+    ]
+  },
+  {
+    "sentence": "Partial lunar eclipses occur at least twice a year, but total lunar eclipses are less common.",
+    "question": "How long does an eclipse last for?",
+    "event": "does an eclipse last for",
+    "min_duration": "10 minutes",
+    "max_duration": "30 minute",
+    "min_seconds": 600.0,
+    "max_seconds": 1800.0,
+    "all_durations": [
+      "10 minutes",
+      "at least 30 minutes",
+      "30 minutes",
+      "30 minute"
+    ],
+    "all_seconds": [
+      600.0,
+      1800.0,
+      1800.0,
+      1800.0
+    ]
+  },
+  {
+    "sentence": "Search \"Emiliano Malaquez\" and you'll find he's a master of the \"captured moment\" school of sculpture.",
+    "question": "How long does it take to make a \"captured moment\" sculpture?",
+    "event": "does it take to make a \"captured moment\" sculpture",
+    "min_duration": "2 weeks",
+    "max_duration": "2 weeks",
+    "min_seconds": 1209600.0,
+    "max_seconds": 1209600.0,
+    "all_durations": [
+      "2 weeks"
+    ],
+    "all_seconds": [
+      1209600.0
+    ]
+  },
+  {
+    "sentence": "He would splash and play until he was ready to go back home, where he would sleep for hours, having worn himself out playing.",
+    "question": "How long would he splash and play for?",
+    "event": "would he splash and play for",
+    "min_duration": "1 hour",
+    "max_duration": "for an hour",
+    "min_seconds": 3600.0,
+    "max_seconds": 3600,
+    "all_durations": [
+      "1 hour",
+      "for an hour"
+    ],
+    "all_seconds": [
+      3600.0,
+      3600
+    ]
+  },
+  {
+    "sentence": "One result was two NSC-led interagency trips to Persian Gulf states in 1999 and 2000.",
+    "question": "How long did the trips last?",
+    "event": "the trips last",
+    "min_duration": "1 week",
+    "max_duration": "one week each",
+    "min_seconds": 604800.0,
+    "max_seconds": 604800,
+    "all_durations": [
+      "1 week",
+      "one week each"
+    ],
+    "all_seconds": [
+      604800.0,
+      604800
+    ]
+  },
+  {
+    "sentence": "Usually when they play the game, Billy answers the telephone in a loud voice, and Sally answers the telephone in a quiet voice.",
+    "question": "How long does the game last?",
+    "event": "does the game last",
+    "min_duration": "30 minutes",
+    "max_duration": "1 hour",
+    "min_seconds": 1800.0,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "30 minutes",
+      "1 hour"
+    ],
+    "all_seconds": [
+      1800.0,
+      3600.0
+    ]
+  },
+  {
+    "sentence": "One day, as Mary was picking the blueberries, she turned around to find that Max was not there.",
+    "question": "How long did Mary spend picking blueberries?",
+    "event": "Mary spend picking blueberries",
+    "min_duration": "about half an hour",
+    "max_duration": "one hour",
+    "min_seconds": 3600,
+    "max_seconds": 3600,
+    "all_durations": [
+      "about half an hour",
+      "1 hours",
+      "one hour"
+    ],
+    "all_seconds": [
+      3600,
+      3600.0,
+      3600
+    ]
+  },
+  {
+    "sentence": "Among the responses the Swiss trader got was one from the Soviet national shipping company, which hadn't been invited to submit a bid.",
+    "question": "How long did the bidding last?",
+    "event": "the bidding last",
+    "min_duration": "two days",
+    "max_duration": "the bidding lasted three days",
+    "min_seconds": 172800,
+    "max_seconds": 259200,
+    "all_durations": [
+      "two days",
+      "the bidding lasted two days",
+      "the bids lasted two days",
+      "the bidding lasted three days"
+    ],
+    "all_seconds": [
+      172800,
+      172800,
+      172800,
+      259200
+    ]
+  },
+  {
+    "sentence": "The bear looked up at the girl and it was almost as if he was smiling at her.",
+    "question": "How long did the bear smile at the girl?",
+    "event": "the bear smile at the girl",
+    "min_duration": "5 seconds",
+    "max_duration": "15 seconds",
+    "min_seconds": 5.0,
+    "max_seconds": 15.0,
+    "all_durations": [
+      "5 seconds",
+      "15 seconds"
+    ],
+    "all_seconds": [
+      5.0,
+      15.0
+    ]
+  },
+  {
+    "sentence": "Over 200 Arawak sites have been identified, and it is said that when the Spanish arrived in Jamaica there were approximately 100,000 Arawak living on the island.",
+    "question": "How long did it take for the Spanish to reach Jamaica?",
+    "event": "it take for the Spanish to reach Jamaica",
+    "min_duration": "2 months",
+    "max_duration": "6 months",
+    "min_seconds": 5184000.0,
+    "max_seconds": 15552000.0,
+    "all_durations": [
+      "2 months",
+      "6 months"
+    ],
+    "all_seconds": [
+      5184000.0,
+      15552000.0
+    ]
+  },
+  {
+    "sentence": "Sometimes Joey gets a little dried out so Marsha's mom told her to soak him in water every few days.",
+    "question": "How long does Joey need to soak in water?",
+    "event": "does Joey need to soak in water",
+    "min_duration": "10-15 minutes",
+    "max_duration": "30 minutes",
+    "min_seconds": 900.0,
+    "max_seconds": 1800.0,
+    "all_durations": [
+      "10-15 minutes",
+      "15 minutes",
+      "30 minutes"
+    ],
+    "all_seconds": [
+      900.0,
+      900.0,
+      1800.0
+    ]
+  },
+  {
+    "sentence": "He also had very short legs, but really big paws.",
+    "question": "How long did it take him to grow his big paws?",
+    "event": "it take him to grow his big paws",
+    "min_duration": "7 months",
+    "max_duration": "2 years",
+    "min_seconds": 18144000.0,
+    "max_seconds": 63072000.0,
+    "all_durations": [
+      "7 months",
+      "21 months",
+      "2 years"
+    ],
+    "all_seconds": [
+      18144000.0,
+      54432000.0,
+      63072000.0
+    ]
+  },
+  {
+    "sentence": "A. DeConcini Federal Courthouse, 405 W. Congress St. Deconcini was one of the organization's early board members.",
+    "question": "How long did it take to form the organization's board?",
+    "event": "it take to form the organization's board",
+    "min_duration": "6 weeks",
+    "max_duration": "6 weeks",
+    "min_seconds": 3628800.0,
+    "max_seconds": 3628800.0,
+    "all_durations": [
+      "6 weeks"
+    ],
+    "all_seconds": [
+      3628800.0
+    ]
+  },
+  {
+    "sentence": "The music , in a garage punk vein , plays an important role in the film .",
+    "question": "How long does the music play in the film?",
+    "event": "does the music play in the film",
+    "min_duration": "5 minutes",
+    "max_duration": "20 minutes",
+    "min_seconds": 300.0,
+    "max_seconds": 1200.0,
+    "all_durations": [
+      "5 minutes",
+      "five minutes",
+      "20 minutes"
+    ],
+    "all_seconds": [
+      300.0,
+      300,
+      1200.0
+    ]
+  },
+  {
+    "sentence": "They also argued that Hall's litigious style hampered their ability to garner funds from Congress.",
+    "question": "How long was Hall in office?",
+    "event": "Hall in office",
+    "min_duration": "four years",
+    "max_duration": "4 years",
+    "min_seconds": 126144000,
+    "max_seconds": 126144000.0,
+    "all_durations": [
+      "four years",
+      "4 years"
+    ],
+    "all_seconds": [
+      126144000,
+      126144000.0
+    ]
+  },
+  {
+    "sentence": "She explained that Frank 's father was an alcoholic and that his mother worked as a toll booth operator .",
+    "question": "How long has Frank's father been an alcoholic?",
+    "event": "Frank's father been an alcoholic",
+    "min_duration": "5 years",
+    "max_duration": "15 years",
+    "min_seconds": 157680000.0,
+    "max_seconds": 473040000.0,
+    "all_durations": [
+      "5 years",
+      "15 years"
+    ],
+    "all_seconds": [
+      157680000.0,
+      473040000.0
+    ]
+  },
+  {
+    "sentence": "He succeeds James A. Taylor, who stepped down as chairman, president and chief executive in March for health reasons.",
+    "question": "How long does it take for the successor to officially take James A. Taylor's position?",
+    "event": "does it take for the successor to officially take James A. Taylor's position",
+    "min_duration": "it will take 2 weeks",
+    "max_duration": "about one month",
+    "min_seconds": 1209600.0,
+    "max_seconds": 2592000,
+    "all_durations": [
+      "it will take 2 weeks",
+      "about one month"
+    ],
+    "all_seconds": [
+      1209600.0,
+      2592000
+    ]
+  },
+  {
+    "sentence": "Lucrezia is an honorable woman and does not at first agree to meet with the stranger .",
+    "question": "How long does it take for her to meet with the stranger?",
+    "event": "does it take for her to meet with the stranger",
+    "min_duration": "2 weeks",
+    "max_duration": "2 weeks",
+    "min_seconds": 1209600.0,
+    "max_seconds": 1209600.0,
+    "all_durations": [
+      "2 weeks"
+    ],
+    "all_seconds": [
+      1209600.0
+    ]
+  },
+  {
+    "sentence": "Then they laid down on some towels and enjoyed the sun.",
+    "question": "How long did they enjoy under the sun?",
+    "event": "they enjoy under the sun",
+    "min_duration": "for an hour",
+    "max_duration": "they enjoyed 2 hours under the sun",
+    "min_seconds": 3600,
+    "max_seconds": 7200.0,
+    "all_durations": [
+      "for an hour",
+      "they enjoyed being under the sun for 2 hours",
+      "they enjoyed 2 hours under the sun"
+    ],
+    "all_seconds": [
+      3600,
+      7200.0,
+      7200.0
+    ]
+  },
+  {
+    "sentence": "Pompey, Julius Caesar and Augustus all visited the tomb in Alexandria, where Augustus, allegedly, accidentally knocked the nose off.",
+    "question": "How long did it take to visit the tomb?",
+    "event": "it take to visit the tomb",
+    "min_duration": "about five days",
+    "max_duration": "3 week",
+    "min_seconds": 432000,
+    "max_seconds": 1814400.0,
+    "all_durations": [
+      "about five days",
+      "1 week",
+      "3 week"
+    ],
+    "all_seconds": [
+      432000,
+      604800.0,
+      1814400.0
+    ]
+  },
+  {
+    "sentence": "John finds a letter addressed to him , with the word `` Breathe '' written on it .",
+    "question": "How long it take John to read the word \"breathe\"?",
+    "event": "it take John to read the word \"breathe\"",
+    "min_duration": "one second",
+    "max_duration": "2 seconds",
+    "min_seconds": 1,
+    "max_seconds": 2.0,
+    "all_durations": [
+      "one second",
+      "2 seconds"
+    ],
+    "all_seconds": [
+      1,
+      2.0
+    ]
+  },
+  {
+    "sentence": "Farragut convinces the ad men to make the motorcycle journey on the pretext of looking for a location to shoot a commercial .",
+    "question": "How long is the motorcycle journey?",
+    "event": "is the motorcycle journey",
+    "min_duration": "3 days",
+    "max_duration": "2 week",
+    "min_seconds": 259200.0,
+    "max_seconds": 1209600.0,
+    "all_durations": [
+      "3 days",
+      "9 days",
+      "2 week"
+    ],
+    "all_seconds": [
+      259200.0,
+      777600.0,
+      1209600.0
+    ]
+  },
+  {
+    "sentence": "He them imprisons the royal family in his prison .",
+    "question": "How long was the Royal family imprisoned?",
+    "event": "the Royal family imprisoned",
+    "min_duration": "10 weeks",
+    "max_duration": "10 weeks",
+    "min_seconds": 6048000.0,
+    "max_seconds": 6048000.0,
+    "all_durations": [
+      "10 weeks"
+    ],
+    "all_seconds": [
+      6048000.0
+    ]
+  },
+  {
+    "sentence": "They are able to study the DNA of the organism that no longer lives on Earth.",
+    "question": "How long did it take to study the DNA?",
+    "event": "it take to study the DNA",
+    "min_duration": "three years",
+    "max_duration": "three years",
+    "min_seconds": 94608000,
+    "max_seconds": 94608000,
+    "all_durations": [
+      "three years"
+    ],
+    "all_seconds": [
+      94608000
+    ]
+  },
+  {
+    "sentence": "But President Clinton insisted on including Pakistan in the itinerary for his trip to South Asia.",
+    "question": "How long was President Clinton's trip?",
+    "event": "President Clinton's trip",
+    "min_duration": "one week",
+    "max_duration": "a week",
+    "min_seconds": 604800,
+    "max_seconds": 604800,
+    "all_durations": [
+      "one week",
+      "a week"
+    ],
+    "all_seconds": [
+      604800,
+      604800
+    ]
+  },
+  {
+    "sentence": "On Fridays, Billy answers in a loud voice and Sally in a quiet voice.",
+    "question": "How long does it take for them to answer?",
+    "event": "does it take for them to answer",
+    "min_duration": "10 seconds",
+    "max_duration": "90 seconds",
+    "min_seconds": 10.0,
+    "max_seconds": 90.0,
+    "all_durations": [
+      "10 seconds",
+      "30 seconds",
+      "45 seconds",
+      "1 minute",
+      "90 seconds"
+    ],
+    "all_seconds": [
+      10.0,
+      30.0,
+      45.0,
+      60.0,
+      90.0
+    ]
+  },
+  {
+    "sentence": "If I cannot carry my groceries or my laundry, how can I live?",
+    "question": "How long did it take to do the laundry?",
+    "event": "it take to do the laundry",
+    "min_duration": "1 hour and 15 minutes",
+    "max_duration": "2 hours",
+    "min_seconds": 3600.0,
+    "max_seconds": 7200.0,
+    "all_durations": [
+      "1 hour and 15 minutes",
+      "2 hours"
+    ],
+    "all_seconds": [
+      3600.0,
+      7200.0
+    ]
+  },
+  {
+    "sentence": "Her mommy took her to the dog pound so that she could choose one that she wanted.",
+    "question": "How long did it take for them to reach the dog pound?",
+    "event": "it take for them to reach the dog pound",
+    "min_duration": "10 minutes",
+    "max_duration": "it took them 30 minutes",
+    "min_seconds": 600.0,
+    "max_seconds": 1800.0,
+    "all_durations": [
+      "10 minutes",
+      "it took them 10 minutes",
+      "20 minutes",
+      "30 minutes",
+      "it took them 30 minutes"
+    ],
+    "all_seconds": [
+      600.0,
+      600.0,
+      1200.0,
+      1800.0,
+      1800.0
+    ]
+  },
+  {
+    "sentence": "The award was named after the chief justice of the Indiana Supreme Court to honor his statewide vision on justice.",
+    "question": "How long was the chief justice in standing?",
+    "event": "the chief justice in standing",
+    "min_duration": "5 years",
+    "max_duration": "3.33 years",
+    "min_seconds": 157680000.0,
+    "max_seconds": 1040688000.0,
+    "all_durations": [
+      "5 years",
+      "10 years",
+      "11.11 years",
+      "15 years",
+      "3.33 years"
+    ],
+    "all_seconds": [
+      157680000.0,
+      315360000.0,
+      346896000.0,
+      473040000.0,
+      1040688000.0
+    ]
+  },
+  {
+    "sentence": "Mzoudi studied in Dortmund, Bochum, and Muenster before moving to Hamburg in 1995.",
+    "question": "How many years did Mzoudi spend studying ?",
+    "event": "Mzoudi spend studying",
+    "min_duration": "mzoudi studies for 4 years abroad internationally",
+    "max_duration": "mzoudi studies for 12 years abroad internationally",
+    "min_seconds": 126144000.0,
+    "max_seconds": 378432000.0,
+    "all_durations": [
+      "mzoudi studies for 4 years abroad internationally",
+      "ten years",
+      "mzoudi studies for 12 years abroad internationally"
+    ],
+    "all_seconds": [
+      126144000.0,
+      315360000,
+      378432000.0
+    ]
+  },
+  {
+    "sentence": "After dinner, he went to look for Max one last time before he had to take a bath and go to bed.",
+    "question": "How much time did he spend having dinner?",
+    "event": "How much time did he spend having dinner",
+    "min_duration": "10 minutes",
+    "max_duration": "half an hour",
+    "min_seconds": 600.0,
+    "max_seconds": 3600,
+    "all_durations": [
+      "10 minutes",
+      "15 minutes",
+      "20 minutes",
+      "30 minutes",
+      "half an hour"
+    ],
+    "all_seconds": [
+      600.0,
+      900.0,
+      1200.0,
+      1800.0,
+      3600
+    ]
+  },
+  {
+    "sentence": "He then starred in a TV show Which was a failure both critically and commercially .",
+    "question": "How long did he act in the TV show?",
+    "event": "he act in the TV show",
+    "min_duration": "he acted for 1 year",
+    "max_duration": "he acted for 1 year",
+    "min_seconds": 31536000.0,
+    "max_seconds": 31536000.0,
+    "all_durations": [
+      "he acted for 1 year"
+    ],
+    "all_seconds": [
+      31536000.0
+    ]
+  },
+  {
+    "sentence": "The legal system marketplace just doesn't serve low-income people too well, except in fee-generat-ing type cases, Brewer said.",
+    "question": "How long was Brewer talking?",
+    "event": "Brewer talking",
+    "min_duration": "15 minutes",
+    "max_duration": "1 hour",
+    "min_seconds": 900.0,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "15 minutes",
+      "1 hour"
+    ],
+    "all_seconds": [
+      900.0,
+      3600.0
+    ]
+  },
+  {
+    "sentence": "These specific animals might be more likely to visit only flowers of the same species.",
+    "question": "How long do they spend at each flower?",
+    "event": "do they spend at each flower",
+    "min_duration": "about 30 seconds",
+    "max_duration": "about 30 seconds",
+    "min_seconds": 30.0,
+    "max_seconds": 30.0,
+    "all_durations": [
+      "about 30 seconds"
+    ],
+    "all_seconds": [
+      30.0
+    ]
+  },
+  {
+    "sentence": "Mohamed Atta was born on September 1, 1968, in Kafr el Sheikh, Egypt, to a middle-class family headed by his father, an attorney.",
+    "question": "How many years did Atta live with his parents?",
+    "event": "Atta live with his parents",
+    "min_duration": "18 years",
+    "max_duration": "18 years",
+    "min_seconds": 567648000.0,
+    "max_seconds": 567648000.0,
+    "all_durations": [
+      "18 years"
+    ],
+    "all_seconds": [
+      567648000.0
+    ]
+  },
+  {
+    "sentence": "When I was in college, I thought I wanted to be a doctor, she said.",
+    "question": "How long was she in college?",
+    "event": "she in college",
+    "min_duration": "4 years",
+    "max_duration": "four years",
+    "min_seconds": 126144000.0,
+    "max_seconds": 126144000,
+    "all_durations": [
+      "4 years",
+      "four years"
+    ],
+    "all_seconds": [
+      126144000.0,
+      126144000
+    ]
+  },
+  {
+    "sentence": "Deborah likes to add some sugar with the lettuce so that Billy and Sally know what it is like to have sweet tastes in their life.",
+    "question": "How long does it take Deborah to wash and prepare the lettuce?",
+    "event": "does it take Deborah to wash and prepare the lettuce",
+    "min_duration": "6 minutes",
+    "max_duration": "ten minutes",
+    "min_seconds": 360.0,
+    "max_seconds": 600,
+    "all_durations": [
+      "6 minutes",
+      "it takes her 10 minutes",
+      "ten minutes"
+    ],
+    "all_seconds": [
+      360.0,
+      600.0,
+      600
+    ]
+  },
+  {
+    "sentence": "Eventually, the shelter received word that the alleged hijacker 5 miles away had been a medevac helicopter.",
+    "question": "How long did it take the shelter to get information?",
+    "event": "it take the shelter to get information",
+    "min_duration": "10 hours",
+    "max_duration": "10 hours",
+    "min_seconds": 36000.0,
+    "max_seconds": 36000.0,
+    "all_durations": [
+      "10 hours"
+    ],
+    "all_seconds": [
+      36000.0
+    ]
+  },
+  {
+    "sentence": "Billy reached down and blew on the hot oatmeal, to cool it down for Tumble to eat.",
+    "question": "For how long did Billy blow on the hot oatmeal?",
+    "event": "Billy blow on the hot oatmeal",
+    "min_duration": "10 seconds",
+    "max_duration": "one minute",
+    "min_seconds": 10.0,
+    "max_seconds": 60,
+    "all_durations": [
+      "10 seconds",
+      "30 seconds",
+      "one minute"
+    ],
+    "all_seconds": [
+      10.0,
+      30.0,
+      60
+    ]
+  },
+  {
+    "sentence": "Ruling that the order was mutually binding, Judge Thornton also cited the men for contempt.",
+    "question": "How long did the hearing last?",
+    "event": "the hearing last",
+    "min_duration": "90 minutes",
+    "max_duration": "8 hours",
+    "min_seconds": 5400.0,
+    "max_seconds": 28800.0,
+    "all_durations": [
+      "90 minutes",
+      "8 hours"
+    ],
+    "all_seconds": [
+      5400.0,
+      28800.0
+    ]
+  },
+  {
+    "sentence": "Other times, they play a game with Quack where they wave at Quack and laugh.",
+    "question": "How long do they play everyday?",
+    "event": "do they play everyday",
+    "min_duration": "1 hour",
+    "max_duration": "two hours a day",
+    "min_seconds": 3600.0,
+    "max_seconds": 7200,
+    "all_durations": [
+      "1 hour",
+      "few minutes to half an hour",
+      "two hours a day"
+    ],
+    "all_seconds": [
+      3600.0,
+      3600,
+      7200
+    ]
+  },
+  {
+    "sentence": "At the same time, the Sudanese regime began to change.",
+    "question": "How long did it take for differences to become apparent?",
+    "event": "it take for differences to become apparent",
+    "min_duration": "six months",
+    "max_duration": "six months",
+    "min_seconds": 15552000,
+    "max_seconds": 15552000,
+    "all_durations": [
+      "six months"
+    ],
+    "all_seconds": [
+      15552000
+    ]
+  },
+  {
+    "sentence": "Growing up on a farm near St. Paul, L. Mark Bailey didn't dream of becoming a judge.",
+    "question": "How many years did it take for Mark to become a judge?",
+    "event": "it take for Mark to become a judge",
+    "min_duration": "7 years",
+    "max_duration": "7 years",
+    "min_seconds": 220752000.0,
+    "max_seconds": 220752000.0,
+    "all_durations": [
+      "7 years"
+    ],
+    "all_seconds": [
+      220752000.0
+    ]
+  },
+  {
+    "sentence": "The dermis also contains hair follicles and two types of glands.",
+    "question": "How long does the dermis take to heal after a minor injury to it?",
+    "event": "does the dermis take to heal after a minor injury to it",
+    "min_duration": "3 days",
+    "max_duration": "3 days",
+    "min_seconds": 259200.0,
+    "max_seconds": 259200.0,
+    "all_durations": [
+      "3 days"
+    ],
+    "all_seconds": [
+      259200.0
+    ]
+  },
+  {
+    "sentence": "In the aftermath of Massaga and Ora, numerous Assakenians fled to the fortress of Aornos.",
+    "question": "How long did it take the Assakenians to get to the fortress?",
+    "event": "it take the Assakenians to get to the fortress",
+    "min_duration": "5 hours",
+    "max_duration": "5 days",
+    "min_seconds": 18000.0,
+    "max_seconds": 432000.0,
+    "all_durations": [
+      "5 hours",
+      "5 days"
+    ],
+    "all_seconds": [
+      18000.0,
+      432000.0
+    ]
+  },
+  {
+    "sentence": "Another way is when an animal or plant is brought to an area where it does not belong.",
+    "question": "How long does it take for a plant to overtake a non-native area?",
+    "event": "does it take for a plant to overtake a non-native area",
+    "min_duration": "1 year",
+    "max_duration": "9 years",
+    "min_seconds": 31536000.0,
+    "max_seconds": 283824000.0,
+    "all_durations": [
+      "1 year",
+      "3 year",
+      "3 years",
+      "1.5 years",
+      "9 years"
+    ],
+    "all_seconds": [
+      31536000.0,
+      94608000.0,
+      94608000.0,
+      157680000.0,
+      283824000.0
+    ]
+  },
+  {
+    "sentence": "Charlie decides to rob the train with the help of imprisoned Don and con-artist Victor Braganza .",
+    "question": "How long does the robbery take?",
+    "event": "does the robbery take",
+    "min_duration": "10 minutes",
+    "max_duration": "20 minutes",
+    "min_seconds": 600.0,
+    "max_seconds": 1200.0,
+    "all_durations": [
+      "10 minutes",
+      "15 minutes",
+      "20 minutes"
+    ],
+    "all_seconds": [
+      600.0,
+      900.0,
+      1200.0
+    ]
+  },
+  {
+    "sentence": "A majority of 65 votes in the 128-member body was required to reject his reinstatement.",
+    "question": "How long did the campaign last?",
+    "event": "the campaign last",
+    "min_duration": "the campaign lasted for 5 days",
+    "max_duration": "6 days",
+    "min_seconds": 432000.0,
+    "max_seconds": 518400.0,
+    "all_durations": [
+      "the campaign lasted for 5 days",
+      "6 days"
+    ],
+    "all_seconds": [
+      432000.0,
+      518400.0
+    ]
+  },
+  {
+    "sentence": "In this case he looks to his girlfriend , Violet .",
+    "question": "How long did it take him to look at Violet?",
+    "event": "it take him to look at Violet",
+    "min_duration": "five seconds",
+    "max_duration": "five seconds",
+    "min_seconds": 5,
+    "max_seconds": 5,
+    "all_durations": [
+      "five seconds"
+    ],
+    "all_seconds": [
+      5
+    ]
+  },
+  {
+    "sentence": "He jumped into the pond and started swimming toward the ducks, chasing around his new playmates.",
+    "question": "How long did he chase the ducks for?",
+    "event": "he chase the ducks for",
+    "min_duration": "3 minutes",
+    "max_duration": "20 minutes",
+    "min_seconds": 180.0,
+    "max_seconds": 1200.0,
+    "all_durations": [
+      "3 minutes",
+      "10 minutes",
+      "20 minutes"
+    ],
+    "all_seconds": [
+      180.0,
+      600.0,
+      1200.0
+    ]
+  },
+  {
+    "sentence": "They also operate a legal arm that assists migrant workers from Texas to Kentucky.",
+    "question": "How long does it take for migrant workers to move from Texas to Kentucky?",
+    "event": "does it take for migrant workers to move from Texas to Kentucky",
+    "min_duration": "1 week",
+    "max_duration": "1 week",
+    "min_seconds": 604800.0,
+    "max_seconds": 604800.0,
+    "all_durations": [
+      "1 week"
+    ],
+    "all_seconds": [
+      604800.0
+    ]
+  },
+  {
+    "sentence": "His son and successor, Caracalla, a great admirer, visited the tomb during his own reign.",
+    "question": "How long did he visit the tomb?",
+    "event": "he visit the tomb",
+    "min_duration": "one hour",
+    "max_duration": "1 hour",
+    "min_seconds": 3600,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "one hour",
+      "1 hour"
+    ],
+    "all_seconds": [
+      3600,
+      3600.0
+    ]
+  },
+  {
+    "sentence": "The two suicide operatives chosen were Hassan al Khamri and Ibrahim al Thawar, also known as Nibras.",
+    "question": "How long did it take to chose the operatives?",
+    "event": "it take to chose the operatives",
+    "min_duration": "3 weeks",
+    "max_duration": "6 months",
+    "min_seconds": 1814400.0,
+    "max_seconds": 15552000.0,
+    "all_durations": [
+      "3 weeks",
+      "3 week",
+      "6 weeks",
+      "9 week",
+      "3 months",
+      "6 months"
+    ],
+    "all_seconds": [
+      1814400.0,
+      1814400.0,
+      3628800.0,
+      5443200.0,
+      7776000.0,
+      15552000.0
+    ]
+  },
+  {
+    "sentence": "Peter wanted to show off his bark, but he was too tired.",
+    "question": "How long did Peter want to bark for?",
+    "event": "Peter want to bark for",
+    "min_duration": "a minute",
+    "max_duration": "peter wanted to bark for 2 minutes",
+    "min_seconds": 60,
+    "max_seconds": 120.0,
+    "all_durations": [
+      "a minute",
+      "90 seconds",
+      "peter wanted to bark for 2 minutes"
+    ],
+    "all_seconds": [
+      60,
+      90.0,
+      120.0
+    ]
+  },
+  {
+    "sentence": "By the beginning of the fourth century the Algarve had a bishop in place, based in Faro.",
+    "question": "How long did the bishop remain in Faro?",
+    "event": "the bishop remain in Faro",
+    "min_duration": "10 years",
+    "max_duration": "10 years",
+    "min_seconds": 315360000.0,
+    "max_seconds": 315360000.0,
+    "all_durations": [
+      "10 years"
+    ],
+    "all_seconds": [
+      315360000.0
+    ]
+  },
+  {
+    "sentence": "Mr. Barco has refused U.S. troops or advisers but has accepted U.S. military aid.",
+    "question": "How long did it take for Mr Barco to accept military aid?",
+    "event": "it take for Mr Barco to accept military aid",
+    "min_duration": "a day",
+    "max_duration": "1 year",
+    "min_seconds": 86400,
+    "max_seconds": 31536000.0,
+    "all_durations": [
+      "a day",
+      "1 week",
+      "1 year"
+    ],
+    "all_seconds": [
+      86400,
+      604800.0,
+      31536000.0
+    ]
+  },
+  {
+    "sentence": "At this early stage in its history Japan was already (for the most part) only nominally ruled by the emperor.",
+    "question": "How long did the Emperor rule Japan?",
+    "event": "the Emperor rule Japan",
+    "min_duration": "10 years",
+    "max_duration": "25 years",
+    "min_seconds": 315360000.0,
+    "max_seconds": 788400000.0,
+    "all_durations": [
+      "10 years",
+      "25 years"
+    ],
+    "all_seconds": [
+      315360000.0,
+      788400000.0
+    ]
+  },
+  {
+    "sentence": "In January 1785, Hamilton attended the second meeting of the New York Manumission Society (NYMS).",
+    "question": "How long did the meeting last?",
+    "event": "the meeting last",
+    "min_duration": "3 hours",
+    "max_duration": "1.5 hours",
+    "min_seconds": 10800.0,
+    "max_seconds": 18000.0,
+    "all_durations": [
+      "3 hours",
+      "1.5 hours"
+    ],
+    "all_seconds": [
+      10800.0,
+      18000.0
+    ]
+  },
+  {
+    "sentence": "Horton has argued from this that he would be comfortable with a multiracial society, and that this distinguished him from his contemporaries.",
+    "question": "For how long has Horton used multiracial society as a personal differentiator?",
+    "event": "Horton used multiracial society as a personal differentiator",
+    "min_duration": "2 years",
+    "max_duration": "10 years",
+    "min_seconds": 63072000.0,
+    "max_seconds": 315360000.0,
+    "all_durations": [
+      "2 years",
+      "2 year",
+      "five years",
+      "6 years",
+      "seven years",
+      "10 years"
+    ],
+    "all_seconds": [
+      63072000.0,
+      63072000.0,
+      157680000,
+      189216000.0,
+      220752000,
+      315360000.0
+    ]
+  },
+  {
+    "sentence": "Durer's father died in 1502, and his mother died in 1513.",
+    "question": "How long was his mother ill?",
+    "event": "his mother ill",
+    "min_duration": "6 months",
+    "max_duration": "six months",
+    "min_seconds": 15552000.0,
+    "max_seconds": 15552000,
+    "all_durations": [
+      "6 months",
+      "six months"
+    ],
+    "all_seconds": [
+      15552000.0,
+      15552000
+    ]
+  },
+  {
+    "sentence": "So from now on, Marsha takes extra special care to make sure Joey is safe and sound at all times.",
+    "question": "How long had Joey been safe and sound?",
+    "event": "had Joey been safe and sound",
+    "min_duration": "during the past ten months",
+    "max_duration": "during the past ten months",
+    "min_seconds": 25920000,
+    "max_seconds": 25920000,
+    "all_durations": [
+      "during the past ten months"
+    ],
+    "all_seconds": [
+      25920000
+    ]
+  },
+  {
+    "sentence": "These small, dark Melanesians are related in type to Australian aborigines and are confined today to the forests of the northern highlands.",
+    "question": "How long have they been confined to the forests?",
+    "event": "they been confined to the forests",
+    "min_duration": "70 years",
+    "max_duration": "70 years",
+    "min_seconds": 2207520000.0,
+    "max_seconds": 2207520000.0,
+    "all_durations": [
+      "70 years"
+    ],
+    "all_seconds": [
+      2207520000.0
+    ]
+  },
+  {
+    "sentence": "However, more recently, it has been suggested that it may date from earlier than Abdalonymus' death.",
+    "question": "How long has it existed?",
+    "event": "it existed",
+    "min_duration": "2,000 years",
+    "max_duration": "thousands of years",
+    "min_seconds": 0.0,
+    "max_seconds": 31536000000,
+    "all_durations": [
+      "2,000 years",
+      "thousands of years"
+    ],
+    "all_seconds": [
+      0.0,
+      31536000000
+    ]
+  },
+  {
+    "sentence": "Setbacks in the 1930s caused by the European postwar slump were only a spur to redouble efforts by diversifying heavy industry into the machine-making, metallurgical, and chemical sectors.",
+    "question": "How long did the postwar slump last?",
+    "event": "the postwar slump last",
+    "min_duration": "5 years",
+    "max_duration": "5 years",
+    "min_seconds": 157680000.0,
+    "max_seconds": 157680000.0,
+    "all_durations": [
+      "5 years"
+    ],
+    "all_seconds": [
+      157680000.0
+    ]
+  },
+  {
+    "sentence": "The CIA now estimates that it cost al Qaeda about $30 million per year to sustain its activities before 9/11 and that this money was raised almost entirely through donations.",
+    "question": "How long did it take al Qaeda to raise $30 million?",
+    "event": "it take al Qaeda to raise $30 million",
+    "min_duration": "2 years",
+    "max_duration": "two years",
+    "min_seconds": 63072000.0,
+    "max_seconds": 63072000,
+    "all_durations": [
+      "2 years",
+      "two years"
+    ],
+    "all_seconds": [
+      63072000.0,
+      63072000
+    ]
+  },
+  {
+    "sentence": "Some of the people who took advantage of her through a questionable loan program were sent to jail.",
+    "question": "How long did they spend in jail?",
+    "event": "they spend in jail",
+    "min_duration": "5 years",
+    "max_duration": "5 years",
+    "min_seconds": 157680000.0,
+    "max_seconds": 157680000.0,
+    "all_durations": [
+      "5 years"
+    ],
+    "all_seconds": [
+      157680000.0
+    ]
+  },
+  {
+    "sentence": "She renews in Ranchipur an acquaintance with a former lover , Tom Ransome , now a dissolute alcoholic .",
+    "question": "For how long was she Tom's lover?",
+    "event": "she Tom's lover",
+    "min_duration": "2 years",
+    "max_duration": "two years",
+    "min_seconds": 63072000.0,
+    "max_seconds": 63072000,
+    "all_durations": [
+      "2 years",
+      "two years"
+    ],
+    "all_seconds": [
+      63072000.0,
+      63072000
+    ]
+  },
+  {
+    "sentence": "Tommy and Suzy (brother and sister) went to the playground one afternoon with their mom and dad, Jan and Dean.",
+    "question": "How long were they at the playground?",
+    "event": "were they at the playground",
+    "min_duration": "1 hour",
+    "max_duration": "1 hour",
+    "min_seconds": 3600.0,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "1 hour"
+    ],
+    "all_seconds": [
+      3600.0
+    ]
+  },
+  {
+    "sentence": "Einstein was displeased with quantum theory and mechanics (the very theory he helped create), despite its acceptance by other physicists, stating that God \"is not playing at dice.\"",
+    "question": "How many years did Einstein work with Physics?",
+    "event": "Einstein work with Physics",
+    "min_duration": "40 year",
+    "max_duration": "40 years",
+    "min_seconds": 1261440000.0,
+    "max_seconds": 1261440000.0,
+    "all_durations": [
+      "40 year",
+      "40 years"
+    ],
+    "all_seconds": [
+      1261440000.0,
+      1261440000.0
+    ]
+  },
+  {
+    "sentence": "The next evening, she arrived with a stack of glistening stopboxes containing sushi, sashimi, oysters in their shells, and Terran vegetables fresh plucked from their hydroponic beds.",
+    "question": "For how long was she gone?",
+    "event": "she gone",
+    "min_duration": "2 days",
+    "max_duration": "2 days",
+    "min_seconds": 172800.0,
+    "max_seconds": 172800.0,
+    "all_durations": [
+      "2 days"
+    ],
+    "all_seconds": [
+      172800.0
+    ]
+  },
+  {
+    "sentence": "Safti admits his love for Edwina to Lord Esketh , who is now sympathetic toward this good man's plight .",
+    "question": "How long has Safti been in love with Edwina?",
+    "event": "Safti been in love with Edwina",
+    "min_duration": "a year",
+    "max_duration": "a year",
+    "min_seconds": 31536000,
+    "max_seconds": 31536000,
+    "all_durations": [
+      "a year"
+    ],
+    "all_seconds": [
+      31536000
+    ]
+  },
+  {
+    "sentence": "He also promises to `` come to '' him .",
+    "question": "How long does it take for him to \"come to\" him?",
+    "event": "does it take for him to \"come to\" him",
+    "min_duration": "2 hours",
+    "max_duration": "2 hours",
+    "min_seconds": 7200.0,
+    "max_seconds": 7200.0,
+    "all_durations": [
+      "2 hours"
+    ],
+    "all_seconds": [
+      7200.0
+    ]
+  },
+  {
+    "sentence": "{ { lang } } centers on a man who roams the street night after night .",
+    "question": "How long does the man roam the street each night?",
+    "event": "does the man roam the street each night",
+    "min_duration": "2 hours",
+    "max_duration": "2 hours",
+    "min_seconds": 7200.0,
+    "max_seconds": 7200.0,
+    "all_durations": [
+      "2 hours"
+    ],
+    "all_seconds": [
+      7200.0
+    ]
+  },
+  {
+    "sentence": "Direct control of the political operations of the entirety of Algeria, however, was not.",
+    "question": "How long was there direct control of the politic operations?",
+    "event": "there direct control of the politic operations",
+    "min_duration": "a year",
+    "max_duration": "ten years",
+    "min_seconds": 31536000,
+    "max_seconds": 315360000,
+    "all_durations": [
+      "a year",
+      "1 year",
+      "ten years"
+    ],
+    "all_seconds": [
+      31536000,
+      31536000.0,
+      315360000
+    ]
+  },
+  {
+    "sentence": "After the second World Trade Center crash, Boston Center managers recognized that both aircraft were transcontinental 767 jetliners that had departed Logan Airport.",
+    "question": "How long did it take Boston Center managers to recognize the jetliners?",
+    "event": "it take Boston Center managers to recognize the jetliners",
+    "min_duration": "5 minutes",
+    "max_duration": "an hour",
+    "min_seconds": 300.0,
+    "max_seconds": 3600,
+    "all_durations": [
+      "5 minutes",
+      "10 minutes",
+      "30 minutes",
+      "an hour"
+    ],
+    "all_seconds": [
+      300.0,
+      600.0,
+      1800.0,
+      3600
+    ]
+  },
+  {
+    "sentence": "It was huge and inefficient, and she should never have spent so many pesos on a toy, but Papa would not let her return it.",
+    "question": "How long did she spend at the store buying the toy?",
+    "event": "she spend at the store buying the toy",
+    "min_duration": "she spent 7.5 minutes at the store buying the toy",
+    "max_duration": "60 minutes",
+    "min_seconds": 300.0,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "she spent 7.5 minutes at the store buying the toy",
+      "6 minutes",
+      "10 minutes",
+      "she spent 15 minutes at the store buying the toy",
+      "15 minutes",
+      "30 minutes",
+      "60 minutes"
+    ],
+    "all_seconds": [
+      300.0,
+      360.0,
+      600.0,
+      900.0,
+      900.0,
+      1800.0,
+      3600.0
+    ]
+  },
+  {
+    "sentence": "Diggler became a prominent model and began appearing in pornographic films , after Which his career took off .",
+    "question": "How long did it take for Diggler to become a model?",
+    "event": "it take for Diggler to become a model",
+    "min_duration": "it took diggler 3 months of work to become a model",
+    "max_duration": "it took diggler 27 months of work to become a model",
+    "min_seconds": 7776000.0,
+    "max_seconds": 69984000.0,
+    "all_durations": [
+      "it took diggler 3 months of work to become a model",
+      "it took diggler 9 months of work to become a model",
+      "two years",
+      "it took diggler 27 months of work to become a model"
+    ],
+    "all_seconds": [
+      7776000.0,
+      23328000.0,
+      63072000,
+      69984000.0
+    ]
+  },
+  {
+    "sentence": "After earning bachelor's and master's degrees in education and a few years teaching, Kilgore enrolled at the UM law school.",
+    "question": "How long did it take to earn a bachelor's degree?",
+    "event": "it take to earn a bachelor's degree",
+    "min_duration": "4 years",
+    "max_duration": "4 years",
+    "min_seconds": 126144000.0,
+    "max_seconds": 126144000.0,
+    "all_durations": [
+      "4 years"
+    ],
+    "all_seconds": [
+      126144000.0
+    ]
+  },
+  {
+    "sentence": "and jumped up and down on the side walk trying to get him to see them.",
+    "question": "How long did he jump on the sidewalk?",
+    "event": "he jump on the sidewalk",
+    "min_duration": "a minute",
+    "max_duration": "a minute",
+    "min_seconds": 60,
+    "max_seconds": 60,
+    "all_durations": [
+      "a minute"
+    ],
+    "all_seconds": [
+      60
+    ]
+  },
+  {
+    "sentence": "Durer rejected Alberti's concept of an objective beauty, proposing a relativist notion of beauty based on variety.",
+    "question": "How long did it take Alberti to form his concept of objective beauty?",
+    "event": "it take Alberti to form his concept of objective beauty",
+    "min_duration": "1 month",
+    "max_duration": "seven weeks",
+    "min_seconds": 2592000.0,
+    "max_seconds": 4233600,
+    "all_durations": [
+      "1 month",
+      "5 weeks",
+      "seven weeks"
+    ],
+    "all_seconds": [
+      2592000.0,
+      3024000.0,
+      4233600
+    ]
+  },
+  {
+    "sentence": "Lgurio informs Callimaco that Nicia and Lucrezia are anxious to have a child .",
+    "question": "How long have they been anxious to have children?",
+    "event": "they been anxious to have children",
+    "min_duration": "two years",
+    "max_duration": "3 years",
+    "min_seconds": 63072000,
+    "max_seconds": 94608000.0,
+    "all_durations": [
+      "two years",
+      "3 years"
+    ],
+    "all_seconds": [
+      63072000,
+      94608000.0
+    ]
+  },
+  {
+    "sentence": "He ran all around the pond, barking at the ducks.",
+    "question": "How long was he barking at the ducks?",
+    "event": "he barking at the ducks",
+    "min_duration": "5 minutes",
+    "max_duration": "15 minutes",
+    "min_seconds": 300.0,
+    "max_seconds": 900.0,
+    "all_durations": [
+      "5 minutes",
+      "15 minutes"
+    ],
+    "all_seconds": [
+      300.0,
+      900.0
+    ]
+  },
+  {
+    "sentence": "Zarco and Teixeira were appointed co-go­vern­ors of Madeira, while Perestrelo was awarded Porto Santo.",
+    "question": "How long were Zarco and Teixeira co-governors?",
+    "event": "were Zarco and Teixeira co-governors",
+    "min_duration": "four years",
+    "max_duration": "4 years",
+    "min_seconds": 126144000,
+    "max_seconds": 126144000.0,
+    "all_durations": [
+      "four years",
+      "4 years"
+    ],
+    "all_seconds": [
+      126144000,
+      126144000.0
+    ]
+  },
+  {
+    "sentence": "The Portuguese Crown, delighted with its first important discovery, immediately embarked on a program of colonization.",
+    "question": "How long did it take the Portuguese to colonize the new territory?",
+    "event": "it take the Portuguese to colonize the new territory",
+    "min_duration": "18 months",
+    "max_duration": "18 months",
+    "min_seconds": 46656000.0,
+    "max_seconds": 46656000.0,
+    "all_durations": [
+      "18 months"
+    ],
+    "all_seconds": [
+      46656000.0
+    ]
+  },
+  {
+    "sentence": "Spontini, one of whose best operas was based on the life of that much mis-married enthusiast for divorce, John Milton, took to wife a member of the Erard family.",
+    "question": "For how long was Milton married?",
+    "event": "Milton married",
+    "min_duration": "5 years",
+    "max_duration": "25 years",
+    "min_seconds": 157680000.0,
+    "max_seconds": 788400000.0,
+    "all_durations": [
+      "5 years",
+      "25 years"
+    ],
+    "all_seconds": [
+      157680000.0,
+      788400000.0
+    ]
+  },
+  {
+    "sentence": "After wiping your feet on the mat you reach out to touch the brass knocker on the door.",
+    "question": "How long did you wipe your feet on the mat?",
+    "event": "you wipe your feet on the mat",
+    "min_duration": "about five seconds",
+    "max_duration": "about ten seconds",
+    "min_seconds": 5,
+    "max_seconds": 10,
+    "all_durations": [
+      "about five seconds",
+      "about ten seconds"
+    ],
+    "all_seconds": [
+      5,
+      10
+    ]
+  },
+  {
+    "sentence": "Even though electronic espionage may cost U.S. firms billions of dollars a year, most aren't yet taking precautions, the experts said.",
+    "question": "How long has electronic espionage been happening?",
+    "event": "electronic espionage been happening",
+    "min_duration": "10 years",
+    "max_duration": "25 years",
+    "min_seconds": 315360000.0,
+    "max_seconds": 788400000.0,
+    "all_durations": [
+      "10 years",
+      "25 years"
+    ],
+    "all_seconds": [
+      315360000.0,
+      788400000.0
+    ]
+  },
+  {
+    "sentence": "She told me that she was heading for a drink and slipped out of the crowd.",
+    "question": "How long was she at the bar?",
+    "event": "she at the bar",
+    "min_duration": "2 hours",
+    "max_duration": "2 hours",
+    "min_seconds": 7200.0,
+    "max_seconds": 7200.0,
+    "all_durations": [
+      "2 hours"
+    ],
+    "all_seconds": [
+      7200.0
+    ]
+  },
+  {
+    "sentence": ", native Archaic Indians began to develop a lasting hunting and gathering culture.",
+    "question": "How long does a typical hunt take?",
+    "event": "does a typical hunt take",
+    "min_duration": "2 hours",
+    "max_duration": "6 hours",
+    "min_seconds": 7200.0,
+    "max_seconds": 21600.0,
+    "all_durations": [
+      "2 hours",
+      "3 hours",
+      "6 hours"
+    ],
+    "all_seconds": [
+      7200.0,
+      10800.0,
+      21600.0
+    ]
+  },
+  {
+    "sentence": "In Malaysia, Powell met with Prime Minister Mahathir Mohamad, who has led the country since 1981.",
+    "question": "How long did Powell take to travel to Malaysia to meet the Prime Minister?",
+    "event": "Powell take to travel to Malaysia to meet the Prime Minister",
+    "min_duration": "4 hours",
+    "max_duration": "4 hours",
+    "min_seconds": 14400.0,
+    "max_seconds": 14400.0,
+    "all_durations": [
+      "4 hours"
+    ],
+    "all_seconds": [
+      14400.0
+    ]
+  },
+  {
+    "sentence": "Tony and Ally like to play other games like hopscotch or jump rope but that day they joined the game of tag.",
+    "question": "How long did the game of tag last?",
+    "event": "the game of tag last",
+    "min_duration": "10 minutes",
+    "max_duration": "30 minute",
+    "min_seconds": 600.0,
+    "max_seconds": 1800.0,
+    "all_durations": [
+      "10 minutes",
+      "15 minutes",
+      "20 minutes",
+      "30 minutes",
+      "30 minute"
+    ],
+    "all_seconds": [
+      600.0,
+      900.0,
+      1200.0,
+      1800.0,
+      1800.0
+    ]
+  },
+  {
+    "sentence": "What if you rode the bus or were driven in a car?",
+    "question": "How long would a bus ride normally take?",
+    "event": "would a bus ride normally take",
+    "min_duration": "you'll be there in about 15 minutes",
+    "max_duration": "1 hour",
+    "min_seconds": 900.0,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "you'll be there in about 15 minutes",
+      "20 minutes",
+      "1 hour"
+    ],
+    "all_seconds": [
+      900.0,
+      1200.0,
+      3600.0
+    ]
+  },
+  {
+    "sentence": "In the end , they drive off , listening to the radio .",
+    "question": "How long was the drive?",
+    "event": "the drive",
+    "min_duration": "2 hours",
+    "max_duration": "6 hours",
+    "min_seconds": 7200.0,
+    "max_seconds": 21600.0,
+    "all_durations": [
+      "2 hours",
+      "6 hours"
+    ],
+    "all_seconds": [
+      7200.0,
+      21600.0
+    ]
+  },
+  {
+    "sentence": "The cute red ball rolled over to the blue ball and said hello.",
+    "question": "How long did it take for the red ball to roll over to the blue ball?",
+    "event": "it take for the red ball to roll over to the blue ball",
+    "min_duration": "2 seconds",
+    "max_duration": "30 seconds",
+    "min_seconds": 2.0,
+    "max_seconds": 30.0,
+    "all_durations": [
+      "2 seconds",
+      "10 seconds",
+      "1.11 seconds",
+      "30 seconds"
+    ],
+    "all_seconds": [
+      2.0,
+      10.0,
+      11.0,
+      30.0
+    ]
+  },
+  {
+    "sentence": "But in between quippy posters and ads for the film, which is a sequel to 2011's blockbuster \"The Muppets\" with Jason Segel, there are ingenious \"selfies\" from the Muppets crew.",
+    "question": "How long did it take to make \"The Muppets\" movie?",
+    "event": "it take to make \"The Muppets\" movie",
+    "min_duration": "1 year",
+    "max_duration": "15 months",
+    "min_seconds": 31536000.0,
+    "max_seconds": 38880000.0,
+    "all_durations": [
+      "1 year",
+      "15 months"
+    ],
+    "all_seconds": [
+      31536000.0,
+      38880000.0
+    ]
+  },
+  {
+    "sentence": "They practiced a slash-and-burn agriculture of yams and millet, a technique that exhausted the soil and imposed a semi-nomadic existence from one jungle clearing to another.",
+    "question": "How long did the group remain in one jungle?",
+    "event": "the group remain in one jungle",
+    "min_duration": "2 months",
+    "max_duration": "2 months",
+    "min_seconds": 5184000.0,
+    "max_seconds": 5184000.0,
+    "all_durations": [
+      "2 months"
+    ],
+    "all_seconds": [
+      5184000.0
+    ]
+  },
+  {
+    "sentence": "At about 9:20, security personnel at FAA headquarters set up a hijacking teleconference with several agencies, including the Defense Department.",
+    "question": "How long did the security personnel take to set up a hijacking teleconference?",
+    "event": "the security personnel take to set up a hijacking teleconference",
+    "min_duration": "an hour",
+    "max_duration": "one hour",
+    "min_seconds": 3600,
+    "max_seconds": 3600,
+    "all_durations": [
+      "an hour",
+      "one hour"
+    ],
+    "all_seconds": [
+      3600,
+      3600
+    ]
+  },
+  {
+    "sentence": "The group are chased by the assassins and Ronnie and Riya are killed .",
+    "question": "How long was the group chased by the assassins ?",
+    "event": "the group chased by the assassins",
+    "min_duration": "15 minutes",
+    "max_duration": "9 hour",
+    "min_seconds": 900.0,
+    "max_seconds": 32400.0,
+    "all_durations": [
+      "15 minutes",
+      "20 minutes",
+      "1 hour",
+      "60 minutes",
+      "9 hour"
+    ],
+    "all_seconds": [
+      900.0,
+      1200.0,
+      3600.0,
+      3600.0,
+      32400.0
+    ]
+  },
+  {
+    "sentence": "Newman also has a $5.4 million long-term compensation package the company awarded him upon his appointment as CEO in March 2010, according to the SEC filing.",
+    "question": "For how long did Newman work for the company?",
+    "event": "Newman work for the company",
+    "min_duration": "eight years",
+    "max_duration": "30 years",
+    "min_seconds": 252288000,
+    "max_seconds": 946080000.0,
+    "all_durations": [
+      "eight years",
+      "nine years",
+      "eleven years",
+      "30 year",
+      "30 years"
+    ],
+    "all_seconds": [
+      252288000,
+      283824000,
+      346896000,
+      946080000.0,
+      946080000.0
+    ]
+  },
+  {
+    "sentence": "It seemed strange to him, but not as strange as it was to see Linda the brown chicken in the living room last spring.",
+    "question": "How long was Linda the brown chicken in the living room for last spring?",
+    "event": "Linda the brown chicken in the living room for last spring",
+    "min_duration": "1 hour",
+    "max_duration": "1 hour",
+    "min_seconds": 3600.0,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "1 hour"
+    ],
+    "all_seconds": [
+      3600.0
+    ]
+  },
+  {
+    "sentence": "Upsetting many of his colleagues and contemporaries in France, the book brought about the final split with Sartre.",
+    "question": "How long will his colleagues be angry?",
+    "event": "will his colleagues be angry",
+    "min_duration": "they will be angry for about a month",
+    "max_duration": "they will be angry for about a month",
+    "min_seconds": 2592000,
+    "max_seconds": 2592000,
+    "all_durations": [
+      "they will be angry for about a month"
+    ],
+    "all_seconds": [
+      2592000
+    ]
+  },
+  {
+    "sentence": "The fossils that are very distinct at certain times of Earths history are called index fossils.",
+    "question": "How long did it take for fossils to be made?",
+    "event": "it take for fossils to be made",
+    "min_duration": "thousands of years",
+    "max_duration": "thousands of years",
+    "min_seconds": 31536000000,
+    "max_seconds": 31536000000,
+    "all_durations": [
+      "thousands of years"
+    ],
+    "all_seconds": [
+      31536000000
+    ]
+  },
+  {
+    "sentence": "Jerry goes out to the pier and casts his favorite bait : cheese .",
+    "question": "How much time did Jerry spend at the pier?",
+    "event": "How much time did Jerry spend at the pier",
+    "min_duration": "about a hour",
+    "max_duration": "3 hour",
+    "min_seconds": 3600,
+    "max_seconds": 10800.0,
+    "all_durations": [
+      "about a hour",
+      "1 hour",
+      "jerry spent almost two hours at the pier",
+      "3 hour"
+    ],
+    "all_seconds": [
+      3600,
+      3600.0,
+      7200,
+      10800.0
+    ]
+  },
+  {
+    "sentence": "After finally sleeping with Lucrezia , Callimaco confesses everything .",
+    "question": "How long had Callimaco pursued Lucrezia?",
+    "event": "had Callimaco pursued Lucrezia",
+    "min_duration": "1 year",
+    "max_duration": "1 year",
+    "min_seconds": 31536000.0,
+    "max_seconds": 31536000.0,
+    "all_durations": [
+      "1 year"
+    ],
+    "all_seconds": [
+      31536000.0
+    ]
+  },
+  {
+    "sentence": "These rangers were too well trained to appear openly curious about their captain's guest.",
+    "question": "How long did it take to train the rangers?",
+    "event": "it take to train the rangers",
+    "min_duration": "6 months",
+    "max_duration": "6 months",
+    "min_seconds": 15552000.0,
+    "max_seconds": 15552000.0,
+    "all_durations": [
+      "6 months"
+    ],
+    "all_seconds": [
+      15552000.0
+    ]
+  },
+  {
+    "sentence": "Roberta Adams skipped the thick how-to guide on child-custody forms and sat down at a computer at the Lamoreaux Justice Center in Orange on Wednesday.",
+    "question": "How long did Roberta sit at the computer?",
+    "event": "Roberta sit at the computer",
+    "min_duration": "2 hours",
+    "max_duration": "about three hours",
+    "min_seconds": 7200.0,
+    "max_seconds": 10800,
+    "all_durations": [
+      "2 hours",
+      "about two hours",
+      "about three hours"
+    ],
+    "all_seconds": [
+      7200.0,
+      7200,
+      10800
+    ]
+  },
+  {
+    "sentence": "Bringing my face close to the shoes, I breathed deeply of air that my parents had trapped while closing up that symbol of their love for me.",
+    "question": "How long did he breathe in the air from the shoes?",
+    "event": "he breathe in the air from the shoes",
+    "min_duration": "1 second",
+    "max_duration": "5 second",
+    "min_seconds": 1.0,
+    "max_seconds": 5.0,
+    "all_durations": [
+      "1 second",
+      "one second",
+      "4 seconds",
+      "4 second",
+      "5 seconds",
+      "5 second"
+    ],
+    "all_seconds": [
+      1.0,
+      1,
+      4.0,
+      4.0,
+      5.0,
+      5.0
+    ]
+  },
+  {
+    "sentence": "After meeting Maharishi Mahesh Yogi , the Beatles quickly return to London , and in a press conference they say they made a mistake when they trusted Maharishi .",
+    "question": "How long did the Beetles meet with Maharishi Mahesh Yogi?",
+    "event": "the Beetles meet with Maharishi Mahesh Yogi",
+    "min_duration": "an hour",
+    "max_duration": "one hour",
+    "min_seconds": 3600,
+    "max_seconds": 3600,
+    "all_durations": [
+      "an hour",
+      "one hour"
+    ],
+    "all_seconds": [
+      3600,
+      3600
+    ]
+  },
+  {
+    "sentence": "Of those found guilty, the majority were ordered to pay court costs, plus a $100 fine.",
+    "question": "How long were they in court?",
+    "event": "were they in court",
+    "min_duration": "2 hour",
+    "max_duration": "2 hours",
+    "min_seconds": 7200.0,
+    "max_seconds": 7200.0,
+    "all_durations": [
+      "2 hour",
+      "2 hours"
+    ],
+    "all_seconds": [
+      7200.0,
+      7200.0
+    ]
+  },
+  {
+    "sentence": "The letterhead on correspondence still bears the Bexar County Legal Aid name, even though the organization is no longer.",
+    "question": "How long was the organization active?",
+    "event": "the organization active",
+    "min_duration": "10 years",
+    "max_duration": "20 years",
+    "min_seconds": 315360000.0,
+    "max_seconds": 630720000.0,
+    "all_durations": [
+      "10 years",
+      "ten years",
+      "20 years"
+    ],
+    "all_seconds": [
+      315360000.0,
+      315360000,
+      630720000.0
+    ]
+  },
+  {
+    "sentence": "Fossils tell an obscure story of man's slow and sporadic development.",
+    "question": "How long does it take a fossil to form?",
+    "event": "does it take a fossil to form",
+    "min_duration": "10,000 years",
+    "max_duration": "10,000 years",
+    "min_seconds": 0.0,
+    "max_seconds": 0.0,
+    "all_durations": [
+      "10,000 years"
+    ],
+    "all_seconds": [
+      0.0
+    ]
+  },
+  {
+    "sentence": "In typography, Durer depicts the geometric construction of the Latin alphabet, relying on Italian precedent.",
+    "question": "How long does it take Durer to finish the geometric construction?",
+    "event": "does it take Durer to finish the geometric construction",
+    "min_duration": "a month",
+    "max_duration": "a month",
+    "min_seconds": 2592000,
+    "max_seconds": 2592000,
+    "all_durations": [
+      "a month"
+    ],
+    "all_seconds": [
+      2592000
+    ]
+  },
+  {
+    "sentence": "In the region around Genoa, he enrolled a thousand men to go on what looked like a desperate enterprise.",
+    "question": "How long did the desperate enterprise take?",
+    "event": "the desperate enterprise take",
+    "min_duration": "over a week",
+    "max_duration": "10 weeks",
+    "min_seconds": 604800,
+    "max_seconds": 6048000.0,
+    "all_durations": [
+      "over a week",
+      "about a month",
+      "one month",
+      "7 weeks",
+      "10 weeks"
+    ],
+    "all_seconds": [
+      604800,
+      2592000,
+      2592000,
+      4233600.0,
+      6048000.0
+    ]
+  },
+  {
+    "sentence": "They packed up the car and drove to the library, ready for a fun morning.",
+    "question": "How long  was the drive?",
+    "event": "was the drive",
+    "min_duration": "10 minutes",
+    "max_duration": "30 minutes",
+    "min_seconds": 600.0,
+    "max_seconds": 1800.0,
+    "all_durations": [
+      "10 minutes",
+      "18 minutes",
+      "30 minutes"
+    ],
+    "all_seconds": [
+      600.0,
+      1080.0,
+      1800.0
+    ]
+  },
+  {
+    "sentence": "He turned, and across the court-room the eyes of the financier and the stenographer met.",
+    "question": "How long did they look at each other?",
+    "event": "they look at each other",
+    "min_duration": "a minute",
+    "max_duration": "one minute",
+    "min_seconds": 60,
+    "max_seconds": 60,
+    "all_durations": [
+      "a minute",
+      "one minute"
+    ],
+    "all_seconds": [
+      60,
+      60
+    ]
+  },
+  {
+    "sentence": "Yes, Self, I am also bothered that this observation ignores half-eaten cheese sandwiches, incomplete insect collections, and locks of infants' hair, forgotten in closets, basements, and warehouses.",
+    "question": "How long was the half eaten cheese sandwich left there?",
+    "event": "the half eaten cheese sandwich left there",
+    "min_duration": "one day",
+    "max_duration": "1 day",
+    "min_seconds": 86400,
+    "max_seconds": 86400.0,
+    "all_durations": [
+      "one day",
+      "about a day",
+      "1 day"
+    ],
+    "all_seconds": [
+      86400,
+      86400,
+      86400.0
+    ]
+  },
+  {
+    "sentence": "She told them that she would help take care of the puppy, if she could have one.",
+    "question": "For how long would she care for the puppy?",
+    "event": "For how long would she care for the puppy",
+    "min_duration": "15 years",
+    "max_duration": "15 years",
+    "min_seconds": 473040000.0,
+    "max_seconds": 473040000.0,
+    "all_durations": [
+      "15 years"
+    ],
+    "all_seconds": [
+      473040000.0
+    ]
+  },
+  {
+    "sentence": "If you walked, you used chemical energy from the food you ate.",
+    "question": "How long did you have energy for?",
+    "event": "you have energy for",
+    "min_duration": "6 hours",
+    "max_duration": "6 hours",
+    "min_seconds": 21600.0,
+    "max_seconds": 21600.0,
+    "all_durations": [
+      "6 hours"
+    ],
+    "all_seconds": [
+      21600.0
+    ]
+  },
+  {
+    "sentence": "You can clearly see the same rock layers on opposite sides of the canyon.",
+    "question": "How long does it take to travel to the far side of the canyon by foot?",
+    "event": "does it take to travel to the far side of the canyon by foot",
+    "min_duration": "six hours",
+    "max_duration": "six hours",
+    "min_seconds": 21600,
+    "max_seconds": 21600,
+    "all_durations": [
+      "six hours"
+    ],
+    "all_seconds": [
+      21600
+    ]
+  },
+  {
+    "sentence": "Then, he pretended he was his father and pretended that he was driving the tractor.",
+    "question": "How long did he pretend he was his father?",
+    "event": "he pretend he was his father",
+    "min_duration": "for about 7.5 minutes",
+    "max_duration": "for about 45 minutes",
+    "min_seconds": 300.0,
+    "max_seconds": 2700.0,
+    "all_durations": [
+      "for about 7.5 minutes",
+      "6 minutes",
+      "for around 15 minutes",
+      "for about 15 minutes",
+      "15 minutes",
+      "20 minutes",
+      "30 minutes",
+      "for about 45 minutes"
+    ],
+    "all_seconds": [
+      300.0,
+      360.0,
+      900.0,
+      900.0,
+      900.0,
+      1200.0,
+      1800.0,
+      2700.0
+    ]
+  },
+  {
+    "sentence": "Billy would put the bowl down and wait for Tumble to come up to the bowl to eat from it.",
+    "question": "How long does it take to eat from the bowl?",
+    "event": "does it take to eat from the bowl",
+    "min_duration": "5 minutes",
+    "max_duration": "3.33 minutes",
+    "min_seconds": 300.0,
+    "max_seconds": 1980.0,
+    "all_durations": [
+      "5 minutes",
+      "it takes seven minutes to eat from the bowl",
+      "it takes seven minutes to eating from the bowl",
+      "3.33 minutes"
+    ],
+    "all_seconds": [
+      300.0,
+      420,
+      420,
+      1980.0
+    ]
+  },
+  {
+    "sentence": "When you dont have a lot of energy, you may sit around and do very little.",
+    "question": "How long do you sit around to regain energy?",
+    "event": "do you sit around to regain energy",
+    "min_duration": "30 minutes",
+    "max_duration": "30 minutes",
+    "min_seconds": 1800.0,
+    "max_seconds": 1800.0,
+    "all_durations": [
+      "30 minutes"
+    ],
+    "all_seconds": [
+      1800.0
+    ]
+  },
+  {
+    "sentence": "When Mary called Max's name he left the squirrel and happily returned to Mary, wagging his tail as he went.",
+    "question": "How long was Max playing with the squirrel?",
+    "event": "Max playing with the squirrel",
+    "min_duration": "27 seconds",
+    "max_duration": "30 minutes",
+    "min_seconds": 27.0,
+    "max_seconds": 1800.0,
+    "all_durations": [
+      "27 seconds",
+      "10 minutes",
+      "30 minutes"
+    ],
+    "all_seconds": [
+      27.0,
+      600.0,
+      1800.0
+    ]
+  },
+  {
+    "sentence": "Because the same amount of matter still exists, we can say that matter is conserved.",
+    "question": "For how long did someone study matter before deriving this conclusion?",
+    "event": "someone study matter before deriving this conclusion",
+    "min_duration": "eight years",
+    "max_duration": "ten years",
+    "min_seconds": 252288000,
+    "max_seconds": 315360000,
+    "all_durations": [
+      "eight years",
+      "ten years"
+    ],
+    "all_seconds": [
+      252288000,
+      315360000
+    ]
+  },
+  {
+    "sentence": "They woke up and the sun was beginning to set.",
+    "question": "How long did they sleep?",
+    "event": "they sleep",
+    "min_duration": "2 hours",
+    "max_duration": "8 hours",
+    "min_seconds": 7200.0,
+    "max_seconds": 28800.0,
+    "all_durations": [
+      "2 hours",
+      "two hours",
+      "3 hours",
+      "6 hours",
+      "8 hours"
+    ],
+    "all_seconds": [
+      7200.0,
+      7200,
+      10800.0,
+      21600.0,
+      28800.0
+    ]
+  },
+  {
+    "sentence": "In a 1945 interview, Camus rejected any ideological associations: \"No, I am not an existentialist.",
+    "question": "How long did the 1945 interview last?",
+    "event": "the 1945 interview last",
+    "min_duration": "about 30 minutes",
+    "max_duration": "1.5 hours",
+    "min_seconds": 1800.0,
+    "max_seconds": 18000.0,
+    "all_durations": [
+      "about 30 minutes",
+      "1.5 hours"
+    ],
+    "all_seconds": [
+      1800.0,
+      18000.0
+    ]
+  },
+  {
+    "sentence": "With this, it became impossible for me to stay upstairs, he said, pointing to the scars on his forearm.",
+    "question": "How long had he lived upstairs?",
+    "event": "had he lived upstairs",
+    "min_duration": "18 days",
+    "max_duration": "1 year",
+    "min_seconds": 1555200.0,
+    "max_seconds": 31536000.0,
+    "all_durations": [
+      "18 days",
+      "2 months",
+      "6 months",
+      "1 year"
+    ],
+    "all_seconds": [
+      1555200.0,
+      5184000.0,
+      15552000.0,
+      31536000.0
+    ]
+  },
+  {
+    "sentence": "We may promise \"justice for all,\" but for those who can't afford a lawyer, that promise is often a lie.",
+    "question": "How long did it take to afford a lawyer?",
+    "event": "it take to afford a lawyer",
+    "min_duration": "6 months",
+    "max_duration": "a year",
+    "min_seconds": 15552000.0,
+    "max_seconds": 31536000,
+    "all_durations": [
+      "6 months",
+      "a year"
+    ],
+    "all_seconds": [
+      15552000.0,
+      31536000
+    ]
+  },
+  {
+    "sentence": "If you build a campfire, you start with a large stack of sticks and logs.",
+    "question": "How long does it take to build a campfire?",
+    "event": "does it take to build a campfire",
+    "min_duration": "6 minutes",
+    "max_duration": "6 minutes",
+    "min_seconds": 360.0,
+    "max_seconds": 360.0,
+    "all_durations": [
+      "6 minutes"
+    ],
+    "all_seconds": [
+      360.0
+    ]
+  },
+  {
+    "sentence": "Meridian National Corp. said it sold 750,000 shares of its common stock to the McAlpine family interests, for $1 million, or $1.35 a share.",
+    "question": "How long did it take for Meridian National Corp. to sell the shares?",
+    "event": "it take for Meridian National Corp. to sell the shares",
+    "min_duration": "30 minute",
+    "max_duration": "a day",
+    "min_seconds": 1800.0,
+    "max_seconds": 86400,
+    "all_durations": [
+      "30 minute",
+      "30 minutes",
+      "one day",
+      "a day"
+    ],
+    "all_seconds": [
+      1800.0,
+      1800.0,
+      86400,
+      86400
+    ]
+  },
+  {
+    "sentence": "Afterwards she felt a lot better and went to sleep.",
+    "question": "How many hours did she sleep?",
+    "event": "she sleep",
+    "min_duration": "8 hours",
+    "max_duration": "8 hours",
+    "min_seconds": 28800.0,
+    "max_seconds": 28800.0,
+    "all_durations": [
+      "8 hours"
+    ],
+    "all_seconds": [
+      28800.0
+    ]
+  },
+  {
+    "sentence": "The official death toll has reached 114 -- including 66 women, 28 children and 20 men, the ministry said.",
+    "question": "How long has it taken for the death toll to reach this number?",
+    "event": "it taken for the death toll to reach this number",
+    "min_duration": "1 day",
+    "max_duration": "0.33 month",
+    "min_seconds": 86400.0,
+    "max_seconds": 85536000.0,
+    "all_durations": [
+      "1 day",
+      "3 day",
+      "5 days",
+      "a week",
+      "0.33 month"
+    ],
+    "all_seconds": [
+      86400.0,
+      259200.0,
+      432000.0,
+      604800,
+      85536000.0
+    ]
+  },
+  {
+    "sentence": "In this way the other major congressional interests can be brought together in the new committee's work.",
+    "question": "How long did it take to form the new committee?",
+    "event": "it take to form the new committee",
+    "min_duration": "it took 2 weeks to form the new committee",
+    "max_duration": "two months",
+    "min_seconds": 1209600.0,
+    "max_seconds": 5184000,
+    "all_durations": [
+      "it took 2 weeks to form the new committee",
+      "it took one month",
+      "it took 6 weeks to form the new committee",
+      "two months"
+    ],
+    "all_seconds": [
+      1209600.0,
+      2592000,
+      3628800.0,
+      5184000
+    ]
+  },
+  {
+    "sentence": "The state has been first to pass major public health initiatives that have spread throughout the country.",
+    "question": "How long did it take the health initiatives to pass?",
+    "event": "it take the health initiatives to pass",
+    "min_duration": "6 months",
+    "max_duration": "6 months",
+    "min_seconds": 15552000.0,
+    "max_seconds": 15552000.0,
+    "all_durations": [
+      "6 months"
+    ],
+    "all_seconds": [
+      15552000.0
+    ]
+  },
+  {
+    "sentence": "Hamilton attacked his political opponents as demanding freedom for themselves and refusing to allow it to blacks.",
+    "question": "How long did Hamilton fight for freedom for blacks?",
+    "event": "Hamilton fight for freedom for blacks",
+    "min_duration": "25 years",
+    "max_duration": "25 years",
+    "min_seconds": 788400000.0,
+    "max_seconds": 788400000.0,
+    "all_durations": [
+      "25 years"
+    ],
+    "all_seconds": [
+      788400000.0
+    ]
+  },
+  {
+    "sentence": "They also liked to go through the small forest behind the house, making a game of hide and seek.",
+    "question": "How long do they usually play hide and seek?",
+    "event": "do they usually play hide and seek",
+    "min_duration": "30 minutes",
+    "max_duration": "1 hour",
+    "min_seconds": 1800.0,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "30 minutes",
+      "one hour",
+      "1 hour"
+    ],
+    "all_seconds": [
+      1800.0,
+      3600,
+      3600.0
+    ]
+  },
+  {
+    "sentence": "It hadn't seemed relevant, somehow, given that I was still reeling over the explosion, the deaths of my crewmates, and the rescue.",
+    "question": "How long did the explosion take?",
+    "event": "the explosion take",
+    "min_duration": "2 seconds",
+    "max_duration": "one minute",
+    "min_seconds": 2.0,
+    "max_seconds": 60,
+    "all_durations": [
+      "2 seconds",
+      "6 seconds",
+      "1 minute",
+      "one minute"
+    ],
+    "all_seconds": [
+      2.0,
+      6.0,
+      60.0,
+      60
+    ]
+  },
+  {
+    "sentence": "Separately, Citadel posted a third-quarter net loss of $2.3 million, or 68 cents a share, versus net income of $5.3 million, or $1.61 a share, a year earlier.",
+    "question": "How many months were in last quarter?",
+    "event": "were in last quarter",
+    "min_duration": "3 months",
+    "max_duration": "3 months",
+    "min_seconds": 7776000.0,
+    "max_seconds": 7776000.0,
+    "all_durations": [
+      "3 months"
+    ],
+    "all_seconds": [
+      7776000.0
+    ]
+  },
+  {
+    "sentence": "Sarah is dating the curator Michael Pierce , a single father who is away from the museum that night .",
+    "question": "How long has Sarah dated Michael?",
+    "event": "Sarah dated Michael",
+    "min_duration": "two weeks",
+    "max_duration": "two years",
+    "min_seconds": 1209600,
+    "max_seconds": 63072000,
+    "all_durations": [
+      "two weeks",
+      "2 months",
+      "20 weeks",
+      "6 months",
+      "two years"
+    ],
+    "all_seconds": [
+      1209600,
+      5184000.0,
+      12096000.0,
+      15552000.0,
+      63072000
+    ]
+  },
+  {
+    "sentence": "This was still the Stone Age, but the people are thought to have made silk from thread produced by the worms they cultivated on the leaves of their mulberry trees.",
+    "question": "How long does it take to make silk?",
+    "event": "does it take to make silk",
+    "min_duration": "4 hours",
+    "max_duration": "4 hours",
+    "min_seconds": 14400.0,
+    "max_seconds": 14400.0,
+    "all_durations": [
+      "4 hours"
+    ],
+    "all_seconds": [
+      14400.0
+    ]
+  },
+  {
+    "sentence": "At Christie's, a folio of 21 prints from Alfred Stieglitz's \"Equivalents\" series sold for $396,000, a single-lot record.",
+    "question": "How long did it take for the prints to sell?",
+    "event": "it take for the prints to sell",
+    "min_duration": "5 minute",
+    "max_duration": "10 days",
+    "min_seconds": 300.0,
+    "max_seconds": 864000.0,
+    "all_durations": [
+      "5 minute",
+      "5 minutes",
+      "10 minutes",
+      "15 minutes",
+      "21 minutes",
+      "25 minutes",
+      "50 minutes",
+      "10 days"
+    ],
+    "all_seconds": [
+      300.0,
+      300.0,
+      600.0,
+      900.0,
+      1260.0,
+      1500.0,
+      3000.0,
+      864000.0
+    ]
+  },
+  {
+    "sentence": "She held a similar post a few years ago in the school's Elder Law Clinic.",
+    "question": "How long did she hold the post?",
+    "event": "she hold the post",
+    "min_duration": "2 years",
+    "max_duration": "6 years",
+    "min_seconds": 63072000.0,
+    "max_seconds": 189216000.0,
+    "all_durations": [
+      "2 years",
+      "two years",
+      "three years",
+      "3 years",
+      "four years",
+      "6 years"
+    ],
+    "all_seconds": [
+      63072000.0,
+      63072000,
+      94608000,
+      94608000.0,
+      126144000,
+      189216000.0
+    ]
+  },
+  {
+    "sentence": "Alexander II's death caused a great setback for the reform movement.",
+    "question": "How long did the effects of Alexanders death last?",
+    "event": "the effects of Alexanders death last",
+    "min_duration": "a year",
+    "max_duration": "5 years",
+    "min_seconds": 31536000,
+    "max_seconds": 157680000.0,
+    "all_durations": [
+      "a year",
+      "5 years"
+    ],
+    "all_seconds": [
+      31536000,
+      157680000.0
+    ]
+  },
+  {
+    "sentence": "Picasso manages to enter the building , but is prevented from killing Nunemarcher by Cross , and escapes after being shot by Kane .",
+    "question": "How long did it take Picasso to enter the building?",
+    "event": "it take Picasso to enter the building",
+    "min_duration": "it took picasso 20 seconds to enter the building",
+    "max_duration": "it took picasso 20 minutes to enter the building",
+    "min_seconds": 20.0,
+    "max_seconds": 1200.0,
+    "all_durations": [
+      "it took picasso 20 seconds to enter the building",
+      "it took picasso three minutes to enter the building",
+      "3 minutes",
+      "10 minutes",
+      "15 minutes",
+      "it takes picasso 20 minutes to enter the building",
+      "it took picasso 20 minutes to enter the building"
+    ],
+    "all_seconds": [
+      20.0,
+      180,
+      180.0,
+      600.0,
+      900.0,
+      1200.0,
+      1200.0
+    ]
+  },
+  {
+    "sentence": "During a blackout , the house is attacked by aliens , who had previously killed Joe and abducted Iris .",
+    "question": "How long does a blackout last?",
+    "event": "does a blackout last",
+    "min_duration": "2 hours",
+    "max_duration": "for three hours",
+    "min_seconds": 7200.0,
+    "max_seconds": 10800,
+    "all_durations": [
+      "2 hours",
+      "for three hours"
+    ],
+    "all_seconds": [
+      7200.0,
+      10800
+    ]
+  },
+  {
+    "sentence": "They first traveled by plane around Europe, where they saw many different people and sights.",
+    "question": "How long was their average plane flight?",
+    "event": "their average plane flight",
+    "min_duration": "5 hours",
+    "max_duration": "6 hours",
+    "min_seconds": 18000.0,
+    "max_seconds": 21600.0,
+    "all_durations": [
+      "5 hours",
+      "6 hours"
+    ],
+    "all_seconds": [
+      18000.0,
+      21600.0
+    ]
+  },
+  {
+    "sentence": "In another major paper from this era, Einstein gave a wave equation for de Broglie waves, which Einstein suggested was the Hamilton-Jacobi equation of mechanics.",
+    "question": "How long did Einstein take to publish his wave equation?",
+    "event": "Einstein take to publish his wave equation",
+    "min_duration": "6 weeks",
+    "max_duration": "10 years",
+    "min_seconds": 3628800.0,
+    "max_seconds": 315360000.0,
+    "all_durations": [
+      "6 weeks",
+      "2 months",
+      "6 months",
+      "18 months",
+      "2 years",
+      "6 years",
+      "10 years"
+    ],
+    "all_seconds": [
+      3628800.0,
+      5184000.0,
+      15552000.0,
+      46656000.0,
+      63072000.0,
+      189216000.0,
+      315360000.0
+    ]
+  },
+  {
+    "sentence": "The two become close friends but do not reveal the secrets .",
+    "question": "How long did it take them to become friends?",
+    "event": "it take them to become friends",
+    "min_duration": "1 week",
+    "max_duration": "2 weeks",
+    "min_seconds": 604800.0,
+    "max_seconds": 1209600.0,
+    "all_durations": [
+      "1 week",
+      "2 weeks"
+    ],
+    "all_seconds": [
+      604800.0,
+      1209600.0
+    ]
+  },
+  {
+    "sentence": "All the puppies at the dog pound need a loving home.",
+    "question": "How long will it take to find them a home?",
+    "event": "will it take to find them a home",
+    "min_duration": "6 days",
+    "max_duration": "6 months",
+    "min_seconds": 518400.0,
+    "max_seconds": 15552000.0,
+    "all_durations": [
+      "6 days",
+      "10 days",
+      "3 weeks",
+      "one month",
+      "2 months",
+      "6 months"
+    ],
+    "all_seconds": [
+      518400.0,
+      864000.0,
+      1814400.0,
+      2592000,
+      5184000.0,
+      15552000.0
+    ]
+  },
+  {
+    "sentence": "For example, you can undo the tarnish on copper pennies by placing them in vinegar.",
+    "question": "How long does undoing the tarnish on coppers take?",
+    "event": "does undoing the tarnish on coppers take",
+    "min_duration": "1 hour",
+    "max_duration": "1 hour",
+    "min_seconds": 3600.0,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "1 hour"
+    ],
+    "all_seconds": [
+      3600.0
+    ]
+  },
+  {
+    "sentence": "In London at mid-afternoon yesterday, Ratners's shares were up 2 pence (1.26 cents), at 260 pence ($1.64).",
+    "question": "How long did Ratners's shares stay up?",
+    "event": "Ratners's shares stay up",
+    "min_duration": "for 9 hours",
+    "max_duration": "2 weeks",
+    "min_seconds": 32400.0,
+    "max_seconds": 1209600.0,
+    "all_durations": [
+      "for 9 hours",
+      "2 weeks"
+    ],
+    "all_seconds": [
+      32400.0,
+      1209600.0
+    ]
+  },
+  {
+    "sentence": "Corporations and museums are among the serious buyers, giving greater market stability, says Robert Persky of the Photograph Collector.",
+    "question": "How long does market stability last?",
+    "event": "does market stability last",
+    "min_duration": "market stability lasts for two months",
+    "max_duration": "market stability lasts for three years",
+    "min_seconds": 5184000,
+    "max_seconds": 94608000,
+    "all_durations": [
+      "market stability lasts for two months",
+      "3.2 months",
+      "market stability lasts for three months",
+      "16 weeks",
+      "8 months",
+      "16 months",
+      "market stability lasts for three years"
+    ],
+    "all_seconds": [
+      5184000,
+      5184000.0,
+      7776000,
+      9676800.0,
+      20736000.0,
+      41472000.0,
+      94608000
+    ]
+  },
+  {
+    "sentence": "More than nine months later, on October 12,2000, al Qaeda operatives in a small boat laden with explosives attacked a U.S. Navy destroyer, the USS Cole.",
+    "question": "How long did the attack on the destroyer take?",
+    "event": "the attack on the destroyer take",
+    "min_duration": "3 minutes",
+    "max_duration": "5 minutes",
+    "min_seconds": 180.0,
+    "max_seconds": 300.0,
+    "all_durations": [
+      "3 minutes",
+      "5 minutes"
+    ],
+    "all_seconds": [
+      180.0,
+      300.0
+    ]
+  },
+  {
+    "sentence": "Wallace lives in Athens, W. Va., with her husband Rob, 37, and her daughters Rachel, 11, and Claire, 5.",
+    "question": "How long has Wallace lived in Athens?",
+    "event": "Wallace lived in Athens",
+    "min_duration": "25 years",
+    "max_duration": "25 years",
+    "min_seconds": 788400000.0,
+    "max_seconds": 788400000.0,
+    "all_durations": [
+      "25 years"
+    ],
+    "all_seconds": [
+      788400000.0
+    ]
+  },
+  {
+    "sentence": "There has been a transition and [the clinic] has helped to fill some void, said Deni Butler, administrator for the Eastern District Superior Court.",
+    "question": "How long did the transition take?",
+    "event": "the transition take",
+    "min_duration": "one month",
+    "max_duration": "1 month",
+    "min_seconds": 2592000,
+    "max_seconds": 2592000.0,
+    "all_durations": [
+      "one month",
+      "1 month"
+    ],
+    "all_seconds": [
+      2592000,
+      2592000.0
+    ]
+  },
+  {
+    "sentence": "Shelly went to every cage and looked each puppy in the eyes and talked to each one.",
+    "question": "How long did Shelly talk to the puppies?",
+    "event": "Shelly talk to the puppies",
+    "min_duration": "5 minutes",
+    "max_duration": "15 minutes",
+    "min_seconds": 300.0,
+    "max_seconds": 900.0,
+    "all_durations": [
+      "5 minutes",
+      "ten minutes",
+      "10 minutes",
+      "15 minutes"
+    ],
+    "all_seconds": [
+      300.0,
+      600,
+      600.0,
+      900.0
+    ]
+  },
+  {
+    "sentence": "Having damaged the enemy's cohesion, Philip ordered his troops to press forward and quickly routed them.",
+    "question": "How long did it take for Philip's troops to damage the enemy's cohesion?",
+    "event": "it take for Philip's troops to damage the enemy's cohesion",
+    "min_duration": "5 hour",
+    "max_duration": "2 day",
+    "min_seconds": 18000.0,
+    "max_seconds": 172800.0,
+    "all_durations": [
+      "5 hour",
+      "6 hours",
+      "10 hours",
+      "15 hours",
+      "2 days",
+      "2 day"
+    ],
+    "all_seconds": [
+      18000.0,
+      21600.0,
+      36000.0,
+      54000.0,
+      172800.0,
+      172800.0
+    ]
+  },
+  {
+    "sentence": "The scout ship re-emerged from the hole - a brilliant speck emerging from a sphere of velvety blackness.",
+    "question": "How long was the scout ship in the hole?",
+    "event": "the scout ship in the hole",
+    "min_duration": "60 minutes",
+    "max_duration": "two hours",
+    "min_seconds": 3600.0,
+    "max_seconds": 7200,
+    "all_durations": [
+      "60 minutes",
+      "two hours"
+    ],
+    "all_seconds": [
+      3600.0,
+      7200
+    ]
+  },
+  {
+    "sentence": "The fort of Massaga was reduced only after days of bloody fighting, in which Alexander was wounded seriously in the ankle.",
+    "question": "How many days did the fighting last?",
+    "event": "the fighting last",
+    "min_duration": "3 days",
+    "max_duration": "10 days",
+    "min_seconds": 259200.0,
+    "max_seconds": 864000.0,
+    "all_durations": [
+      "3 days",
+      "4 days",
+      "9 days",
+      "10 days"
+    ],
+    "all_seconds": [
+      259200.0,
+      345600.0,
+      777600.0,
+      864000.0
+    ]
+  },
+  {
+    "sentence": "The massive ice sheet, called a glacier, caused the features on the land you see today.",
+    "question": "How long did it take the glacier to cause the features on the land?",
+    "event": "it take the glacier to cause the features on the land",
+    "min_duration": "hundreds of years",
+    "max_duration": "5000 years",
+    "min_seconds": 3153600000,
+    "max_seconds": 157680000000.0,
+    "all_durations": [
+      "hundreds of years",
+      "500 years",
+      "1000 years",
+      "thousands of years",
+      "3000 years",
+      "5000 years"
+    ],
+    "all_seconds": [
+      3153600000,
+      15768000000.0,
+      31536000000.0,
+      31536000000,
+      94608000000.0,
+      157680000000.0
+    ]
+  },
+  {
+    "sentence": "He continued playing and writing notes for half an hour, then went upstairs to his study, where he remained for two weeks, with Elsa bringing up his food.",
+    "question": "How long did it take Elsa to prepare his food?",
+    "event": "it take Elsa to prepare his food",
+    "min_duration": "about 40 minutes",
+    "max_duration": "1 hour",
+    "min_seconds": 2400.0,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "about 40 minutes",
+      "1 hour"
+    ],
+    "all_seconds": [
+      2400.0,
+      3600.0
+    ]
+  },
+  {
+    "sentence": "Ana studied very hard to be the best she could be at spelling.",
+    "question": "How long did Ana study everyday, so that she could be the best at spelling?",
+    "event": "Ana study everyday, so that she could be the best at spelling",
+    "min_duration": "for an hour",
+    "max_duration": "90 minutes",
+    "min_seconds": 3600,
+    "max_seconds": 5400.0,
+    "all_durations": [
+      "for an hour",
+      "90 minutes"
+    ],
+    "all_seconds": [
+      3600,
+      5400.0
+    ]
+  },
+  {
+    "sentence": "Remembering the \"we have some planes\" remark, Boston Center guessed that Delta 1989 might also be hijacked.",
+    "question": "How long was the Delta 1989 hijacked?",
+    "event": "the Delta 1989 hijacked",
+    "min_duration": "25 minutes",
+    "max_duration": "2 hours",
+    "min_seconds": 1500.0,
+    "max_seconds": 7200.0,
+    "all_durations": [
+      "25 minutes",
+      "2 hours"
+    ],
+    "all_seconds": [
+      1500.0,
+      7200.0
+    ]
+  },
+  {
+    "sentence": "So how do you know where light will go after it strikes a shiny surface?",
+    "question": "How long does light strike shiny surfaces before reflecting?",
+    "event": "does light strike shiny surfaces before reflecting",
+    "min_duration": "a second",
+    "max_duration": "one second",
+    "min_seconds": 1,
+    "max_seconds": 1,
+    "all_durations": [
+      "a second",
+      "1 second",
+      "one second"
+    ],
+    "all_seconds": [
+      1,
+      1.0,
+      1
+    ]
+  },
+  {
+    "sentence": "Britain seized Gibraltar — in the name of the Hapsburg claimant — and retained it when the war was over.",
+    "question": "How long did the war happen?",
+    "event": "the war happen",
+    "min_duration": "2 years",
+    "max_duration": "6 years",
+    "min_seconds": 63072000.0,
+    "max_seconds": 189216000.0,
+    "all_durations": [
+      "2 years",
+      "6 years"
+    ],
+    "all_seconds": [
+      63072000.0,
+      189216000.0
+    ]
+  },
+  {
+    "sentence": "This time, however, the anonymous artist worked in tandem with the director of Bristol museum in the UK.",
+    "question": "How long did they work in tandem?",
+    "event": "they work in tandem",
+    "min_duration": "5 weeks",
+    "max_duration": "6 weeks",
+    "min_seconds": 3024000.0,
+    "max_seconds": 3628800.0,
+    "all_durations": [
+      "5 weeks",
+      "6 weeks"
+    ],
+    "all_seconds": [
+      3024000.0,
+      3628800.0
+    ]
+  },
+  {
+    "sentence": "It is spending more than $500 million a year on semiconductor research and development.",
+    "question": "How long has the research and development been going on?",
+    "event": "the research and development been going on",
+    "min_duration": "18 months",
+    "max_duration": "27 years",
+    "min_seconds": 46656000.0,
+    "max_seconds": 851472000.0,
+    "all_durations": [
+      "18 months",
+      "3 years",
+      "5  years",
+      "9 years",
+      "11.11 years",
+      "27 years"
+    ],
+    "all_seconds": [
+      46656000.0,
+      94608000.0,
+      157680000.0,
+      283824000.0,
+      346896000.0,
+      851472000.0
+    ]
+  },
+  {
+    "sentence": "The legitimization of gambling led to its increased legalization across the US.",
+    "question": "How long did it take to legitimize gambling?",
+    "event": "it take to legitimize gambling",
+    "min_duration": "10 years",
+    "max_duration": "10 years",
+    "min_seconds": 315360000.0,
+    "max_seconds": 315360000.0,
+    "all_durations": [
+      "10 years"
+    ],
+    "all_seconds": [
+      315360000.0
+    ]
+  },
+  {
+    "sentence": "To this end it succeeded with relatively few blood-soaked episodes in its colonial history.",
+    "question": "How long did it take to succeed?",
+    "event": "it take to succeed",
+    "min_duration": "30 weeks",
+    "max_duration": "hundreds of years",
+    "min_seconds": 18144000.0,
+    "max_seconds": 3153600000,
+    "all_durations": [
+      "30 weeks",
+      "1 years",
+      "3 years",
+      "9 years",
+      "10 years",
+      "30 years",
+      "3.33 years",
+      "90 years",
+      "hundreds of years"
+    ],
+    "all_seconds": [
+      18144000.0,
+      31536000.0,
+      94608000.0,
+      283824000.0,
+      315360000.0,
+      946080000.0,
+      1040688000.0,
+      2838240000.0,
+      3153600000
+    ]
+  },
+  {
+    "sentence": "Meanwhile , after being placed in the Cairo Museum , the mummy of Prem is revived when Hasmid chants the sacred oath on the shroud .",
+    "question": "How long is the chant spoken for?",
+    "event": "is the chant spoken for",
+    "min_duration": "5 minutes",
+    "max_duration": "9 minutes",
+    "min_seconds": 300.0,
+    "max_seconds": 540.0,
+    "all_durations": [
+      "5 minutes",
+      "9 minutes"
+    ],
+    "all_seconds": [
+      300.0,
+      540.0
+    ]
+  },
+  {
+    "sentence": "Dr. Safti is so busy saving lives that he can not personally care for Edwina , who has fallen ill .",
+    "question": "How long has Edwina been ill?",
+    "event": "Edwina been ill",
+    "min_duration": "a day",
+    "max_duration": "a month",
+    "min_seconds": 86400,
+    "max_seconds": 2592000,
+    "all_durations": [
+      "a day",
+      "for a week",
+      "for one week",
+      "a week",
+      "four weeks",
+      "a month"
+    ],
+    "all_seconds": [
+      86400,
+      604800,
+      604800,
+      604800,
+      2419200,
+      2592000
+    ]
+  },
+  {
+    "sentence": "The Serbian, who beat Tsonga in the 2008 Australian Open final, ended the dream run of Australian 18-year-old Bernard Tomic.",
+    "question": "How long did it take for the Serbian to beat Tsonga?",
+    "event": "it take for the Serbian to beat Tsonga",
+    "min_duration": "1 hour",
+    "max_duration": "3 hour",
+    "min_seconds": 3600.0,
+    "max_seconds": 10800.0,
+    "all_durations": [
+      "1 hour",
+      "3 hour"
+    ],
+    "all_seconds": [
+      3600.0,
+      10800.0
+    ]
+  },
+  {
+    "sentence": "Youll buy fewer items in the long run, so youll save money as well as resources.",
+    "question": "How long will it take to save money?",
+    "event": "will it take to save money",
+    "min_duration": "2 months",
+    "max_duration": "2 months",
+    "min_seconds": 5184000.0,
+    "max_seconds": 5184000.0,
+    "all_durations": [
+      "2 months"
+    ],
+    "all_seconds": [
+      5184000.0
+    ]
+  },
+  {
+    "sentence": "All Ana had to do was spell this last word and she would be the winner.",
+    "question": "How long did it take her to spell the word?",
+    "event": "it take her to spell the word",
+    "min_duration": "5 seconds",
+    "max_duration": "30  seconds",
+    "min_seconds": 5.0,
+    "max_seconds": 30.0,
+    "all_durations": [
+      "5 seconds",
+      "20 seconds",
+      "30  seconds"
+    ],
+    "all_seconds": [
+      5.0,
+      20.0,
+      30.0
+    ]
+  },
+  {
+    "sentence": "The NMCC learned about United 93 from the White House.",
+    "question": "How long did it take the NMCC to learn about United 93?",
+    "event": "it take the NMCC to learn about United 93",
+    "min_duration": "an hour",
+    "max_duration": "an hour",
+    "min_seconds": 3600,
+    "max_seconds": 3600,
+    "all_durations": [
+      "an hour"
+    ],
+    "all_seconds": [
+      3600
+    ]
+  },
+  {
+    "sentence": "Our investigation has uncovered no credible evidence that any person in the United States gave the hijackers substantial financial assistance.",
+    "question": "How long did the investigation span?",
+    "event": "the investigation span",
+    "min_duration": "a month",
+    "max_duration": "3 months",
+    "min_seconds": 2592000,
+    "max_seconds": 7776000.0,
+    "all_durations": [
+      "a month",
+      "3 months"
+    ],
+    "all_seconds": [
+      2592000,
+      7776000.0
+    ]
+  },
+  {
+    "sentence": "They like to play hopscotch or jump rope but that day they wanted to play tag.",
+    "question": "How long do they play each day?",
+    "event": "do they play each day",
+    "min_duration": "1 hour",
+    "max_duration": "0.33 hour",
+    "min_seconds": 3600.0,
+    "max_seconds": 118800.0,
+    "all_durations": [
+      "1 hour",
+      "2 hours",
+      "two hours",
+      "0.33 hour"
+    ],
+    "all_seconds": [
+      3600.0,
+      7200.0,
+      7200,
+      118800.0
+    ]
+  },
+  {
+    "sentence": "Einstein discovered Louis de Broglie's work, and supported his ideas, which were received skeptically at first.",
+    "question": "How long did Einstein support Louis' work?",
+    "event": "Einstein support Louis' work",
+    "min_duration": "30 years",
+    "max_duration": "30 years",
+    "min_seconds": 946080000.0,
+    "max_seconds": 946080000.0,
+    "all_durations": [
+      "30 years"
+    ],
+    "all_seconds": [
+      946080000.0
+    ]
+  },
+  {
+    "sentence": "He said that Oliver North of Iran-Contra notoriety thought he had erased his computer but that the information was later retrieved for congressional committees to read.",
+    "question": "How long did it take to retrieve the data from the computer?",
+    "event": "it take to retrieve the data from the computer",
+    "min_duration": "5 hours",
+    "max_duration": "two weeks",
+    "min_seconds": 18000.0,
+    "max_seconds": 1209600,
+    "all_durations": [
+      "5 hours",
+      "5 days",
+      "one week",
+      "two weeks"
+    ],
+    "all_seconds": [
+      18000.0,
+      432000.0,
+      604800,
+      1209600
+    ]
+  },
+  {
+    "sentence": "Schools were scarce between World War I and World War II.",
+    "question": "About how much time passed between World War I and World War II?",
+    "event": "About how much time passed between World War I and World War II",
+    "min_duration": "about 20 years",
+    "max_duration": "21 years",
+    "min_seconds": 630720000.0,
+    "max_seconds": 662256000.0,
+    "all_durations": [
+      "about 20 years",
+      "21 years"
+    ],
+    "all_seconds": [
+      630720000.0,
+      662256000.0
+    ]
+  },
+  {
+    "sentence": "Logs indicate that it began at 9:25 and included the CIA; the FBI; the departments of State, Justice, and Defense; the FAA; and the White House shelter.",
+    "question": "How long did it last?",
+    "event": "it last",
+    "min_duration": "3 minutes",
+    "max_duration": "about three hours",
+    "min_seconds": 180.0,
+    "max_seconds": 10800,
+    "all_durations": [
+      "3 minutes",
+      "9 minutes",
+      "45 minutes",
+      "about two hours",
+      "3 hours",
+      "about three hours"
+    ],
+    "all_seconds": [
+      180.0,
+      540.0,
+      2700.0,
+      7200,
+      10800.0,
+      10800
+    ]
+  },
+  {
+    "sentence": "As winter approaches, some plants respond by their leaves changing color.",
+    "question": "How long will winter last?",
+    "event": "will winter last",
+    "min_duration": "3 months",
+    "max_duration": "three months",
+    "min_seconds": 7776000.0,
+    "max_seconds": 7776000,
+    "all_durations": [
+      "3 months",
+      "three months"
+    ],
+    "all_seconds": [
+      7776000.0,
+      7776000
+    ]
+  },
+  {
+    "sentence": "He jumped on his favorite chair and looked down as Maggie ran under it.",
+    "question": "How long did it take him to jump on the chair.",
+    "event": "it take him to jump on the chair.",
+    "min_duration": "one second",
+    "max_duration": "2 seconds",
+    "min_seconds": 1,
+    "max_seconds": 2.0,
+    "all_durations": [
+      "one second",
+      "2 seconds"
+    ],
+    "all_seconds": [
+      1,
+      2.0
+    ]
+  },
+  {
+    "sentence": "Martinez works two jobs as a physician's assistant and supports his elderly parents and 8-year-old son.",
+    "question": "How long has Martinez been working as a physician's assistant?",
+    "event": "Martinez been working as a physician's assistant",
+    "min_duration": "4 years",
+    "max_duration": "5 years",
+    "min_seconds": 126144000.0,
+    "max_seconds": 157680000.0,
+    "all_durations": [
+      "4 years",
+      "5 years"
+    ],
+    "all_seconds": [
+      126144000.0,
+      157680000.0
+    ]
+  },
+  {
+    "sentence": "The Persian Gulf War destroyed much of the country's medical infrastructure, according to a report by the World Health Organization.",
+    "question": "How long did it take the Persian Gulf War to destroy the country's medical infrastructure?",
+    "event": "it take the Persian Gulf War to destroy the country's medical infrastructure",
+    "min_duration": "18 day",
+    "max_duration": "18 day",
+    "min_seconds": 1555200.0,
+    "max_seconds": 1555200.0,
+    "all_durations": [
+      "18 day"
+    ],
+    "all_seconds": [
+      1555200.0
+    ]
+  },
+  {
+    "sentence": "Finley only realizes with hindsight that his misdeeds far surpass those of Violet .",
+    "question": "How long did it take Finley to realize?",
+    "event": "it take Finley to realize",
+    "min_duration": "1 day",
+    "max_duration": "2 days",
+    "min_seconds": 86400.0,
+    "max_seconds": 172800.0,
+    "all_durations": [
+      "1 day",
+      "2 days"
+    ],
+    "all_seconds": [
+      86400.0,
+      172800.0
+    ]
+  },
+  {
+    "sentence": "Ransome looks after her as well as for young Fern Simon , who has declared her love for him .",
+    "question": "How long has Ransome been with Fern Simon?",
+    "event": "Ransome been with Fern Simon",
+    "min_duration": "one year",
+    "max_duration": "2.5 years",
+    "min_seconds": 31536000,
+    "max_seconds": 157680000.0,
+    "all_durations": [
+      "one year",
+      "5 years",
+      "2.5 years"
+    ],
+    "all_seconds": [
+      31536000,
+      157680000.0,
+      157680000.0
+    ]
+  },
+  {
+    "sentence": "He named the house, which was completed in 1802, the \"Grange\" after his grandfather Alexander's estate in Ayrshire, Scotland.",
+    "question": "How long did it take to complete the house?",
+    "event": "it take to complete the house",
+    "min_duration": "9 months",
+    "max_duration": "9 months",
+    "min_seconds": 23328000.0,
+    "max_seconds": 23328000.0,
+    "all_durations": [
+      "9 months"
+    ],
+    "all_seconds": [
+      23328000.0
+    ]
+  },
+  {
+    "sentence": "The dog accompanied him, frisking about him in friendly fashion.",
+    "question": "How long did the dog accompany him?",
+    "event": "the dog accompany him",
+    "min_duration": "20 minutes",
+    "max_duration": "90 minutes",
+    "min_seconds": 1200.0,
+    "max_seconds": 5400.0,
+    "all_durations": [
+      "20 minutes",
+      "30 minutes",
+      "90 minutes"
+    ],
+    "all_seconds": [
+      1200.0,
+      1800.0,
+      5400.0
+    ]
+  },
+  {
+    "sentence": "There are some exceptions, including pregnancies that resulted from sexual assault, incest or other violations of law.",
+    "question": "How many months did the pregnancies last?",
+    "event": "the pregnancies last",
+    "min_duration": "9 months",
+    "max_duration": "all pregnancies lasted 9 months",
+    "min_seconds": 23328000.0,
+    "max_seconds": 23328000.0,
+    "all_durations": [
+      "9 months",
+      "the pregnancies lasted 9 months",
+      "all pregnancies lasted 9 months"
+    ],
+    "all_seconds": [
+      23328000.0,
+      23328000.0,
+      23328000.0
+    ]
+  },
+  {
+    "sentence": "He'd seen a dog before, every cat has, and he used to live with a black dog named Henry, but he'd never seen a brown one before.",
+    "question": "How long did he live with Henry?",
+    "event": "he live with Henry",
+    "min_duration": "two years",
+    "max_duration": "three years",
+    "min_seconds": 63072000,
+    "max_seconds": 94608000,
+    "all_durations": [
+      "two years",
+      "three years"
+    ],
+    "all_seconds": [
+      63072000,
+      94608000
+    ]
+  },
+  {
+    "sentence": "He accents the illusion of reality --I paraphrase his entry in La Enciclopedia Humanica --by doing life-size scenes in \"The full round,\" never the easier frontal or three-quarters view.",
+    "question": "How long did it take him to develop his unique style?",
+    "event": "it take him to develop his unique style",
+    "min_duration": "it took him two years to develop his unique style",
+    "max_duration": "eleven years",
+    "min_seconds": 63072000,
+    "max_seconds": 346896000,
+    "all_durations": [
+      "it took him two years to develop his unique style",
+      "eleven years"
+    ],
+    "all_seconds": [
+      63072000,
+      346896000
+    ]
+  },
+  {
+    "sentence": "When they meet , John accuses his father of abandoning him , but his father says that `` he left it up to John . ''",
+    "question": "How long do John and his father meet?",
+    "event": "do John and his father meet",
+    "min_duration": "1 hour",
+    "max_duration": "150 minutes",
+    "min_seconds": 3600.0,
+    "max_seconds": 9000.0,
+    "all_durations": [
+      "1 hour",
+      "2 hours",
+      "150 minutes"
+    ],
+    "all_seconds": [
+      3600.0,
+      7200.0,
+      9000.0
+    ]
+  },
+  {
+    "sentence": "The person may walk a half mile in the wrong direction!",
+    "question": "How long will the person spend walking in the wrong direction?",
+    "event": "will the person spend walking in the wrong direction",
+    "min_duration": "10 minutes",
+    "max_duration": "15 minutes",
+    "min_seconds": 600.0,
+    "max_seconds": 900.0,
+    "all_durations": [
+      "10 minutes",
+      "15 minutes"
+    ],
+    "all_seconds": [
+      600.0,
+      900.0
+    ]
+  },
+  {
+    "sentence": "A floodplain is an area where a thick layer of rich soil is left behind as the floodwater recedes.",
+    "question": "How long does it take for floodwater to recede?",
+    "event": "does it take for floodwater to recede",
+    "min_duration": "5 days",
+    "max_duration": "15 days",
+    "min_seconds": 432000.0,
+    "max_seconds": 1296000.0,
+    "all_durations": [
+      "5 days",
+      "a week",
+      "15 days"
+    ],
+    "all_seconds": [
+      432000.0,
+      604800,
+      1296000.0
+    ]
+  },
+  {
+    "sentence": "they were heard saying when the photo was taken -- while Rowlf is clearly a selfie king.",
+    "question": "How long were they taking photos?",
+    "event": "were they taking photos",
+    "min_duration": "10 seconds",
+    "max_duration": "3.33 minutes",
+    "min_seconds": 10.0,
+    "max_seconds": 1980.0,
+    "all_durations": [
+      "10 seconds",
+      "2 minutes",
+      "2 minute",
+      "10 minutes",
+      "3.33 minutes"
+    ],
+    "all_seconds": [
+      10.0,
+      120.0,
+      120.0,
+      600.0,
+      1980.0
+    ]
+  },
+  {
+    "sentence": "Among the travelers were Mohamed Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Maine.",
+    "question": "How long did it take for the travelers to reach Portland?",
+    "event": "it take for the travelers to reach Portland",
+    "min_duration": "2 hours",
+    "max_duration": "it took four hours",
+    "min_seconds": 7200.0,
+    "max_seconds": 14400,
+    "all_durations": [
+      "2 hours",
+      "it took four hours"
+    ],
+    "all_seconds": [
+      7200.0,
+      14400
+    ]
+  },
+  {
+    "sentence": "Their mother told them they could go to the library every Tuesday for their story time.",
+    "question": "How long did story time last?",
+    "event": "story time last",
+    "min_duration": "30 minutes",
+    "max_duration": "1 hour",
+    "min_seconds": 1800.0,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "30 minutes",
+      "one hour",
+      "1 hour"
+    ],
+    "all_seconds": [
+      1800.0,
+      3600,
+      3600.0
+    ]
+  },
+  {
+    "sentence": "Even those with jobs are suffering: 26 percent of California workers earn poverty level wages.",
+    "question": "How long do they stay at their jobs for?",
+    "event": "do they stay at their jobs for",
+    "min_duration": "3 years",
+    "max_duration": "five years",
+    "min_seconds": 94608000.0,
+    "max_seconds": 157680000,
+    "all_durations": [
+      "3 years",
+      "five years"
+    ],
+    "all_seconds": [
+      94608000.0,
+      157680000
+    ]
+  },
+  {
+    "sentence": "Taj Jackson told the magazine: \"My mom made sure that we had a real childhood, with birthday parties, baseball, family outings, all that stuff.\"",
+    "question": "How many years did Taj Jackson play baseball?",
+    "event": "Taj Jackson play baseball",
+    "min_duration": "4 years",
+    "max_duration": "10 years",
+    "min_seconds": 126144000.0,
+    "max_seconds": 315360000.0,
+    "all_durations": [
+      "4 years",
+      "8 years",
+      "10 years"
+    ],
+    "all_seconds": [
+      126144000.0,
+      252288000.0,
+      315360000.0
+    ]
+  },
+  {
+    "sentence": "Even if he did not respond to that part of the interview, he certainly knew about the case at that point.",
+    "question": "How long did in the interview last?",
+    "event": "in the interview last",
+    "min_duration": "30 minutes",
+    "max_duration": "one hour",
+    "min_seconds": 1800.0,
+    "max_seconds": 3600,
+    "all_durations": [
+      "30 minutes",
+      "one hour"
+    ],
+    "all_seconds": [
+      1800.0,
+      3600
+    ]
+  },
+  {
+    "sentence": "Jud replies , `` Christ on His throne , no. .",
+    "question": "How long was Jud in church?",
+    "event": "Jud in church",
+    "min_duration": "for two hours",
+    "max_duration": "2 hours",
+    "min_seconds": 7200,
+    "max_seconds": 7200.0,
+    "all_durations": [
+      "for two hours",
+      "2 hours"
+    ],
+    "all_seconds": [
+      7200,
+      7200.0
+    ]
+  },
+  {
+    "sentence": "Adding to the physical, emotional and financial burden they take on, grandparents face legal problems.",
+    "question": "How long have grandparents been facing legal problems?",
+    "event": "grandparents been facing legal problems",
+    "min_duration": "2 years",
+    "max_duration": "50 years",
+    "min_seconds": 63072000.0,
+    "max_seconds": 1576800000.0,
+    "all_durations": [
+      "2 years",
+      "grandparents have been facing legal issues for five years",
+      "grandparents have been facing legal problems for five years",
+      "50 years"
+    ],
+    "all_seconds": [
+      63072000.0,
+      157680000,
+      157680000,
+      1576800000.0
+    ]
+  },
+  {
+    "sentence": "A statue, by James Earle Fraser, was dedicated on May 17, 1923, on the south terrace of the Treasury Building, in Washington.",
+    "question": "How long did it take to make the statue?",
+    "event": "it take to make the statue",
+    "min_duration": "a month",
+    "max_duration": "1 year",
+    "min_seconds": 2592000,
+    "max_seconds": 31536000.0,
+    "all_durations": [
+      "a month",
+      "about a month",
+      "1 month",
+      "one month",
+      "about a year",
+      "one year",
+      "a year",
+      "1 year"
+    ],
+    "all_seconds": [
+      2592000,
+      2592000,
+      2592000.0,
+      2592000,
+      31536000,
+      31536000,
+      31536000,
+      31536000.0
+    ]
+  },
+  {
+    "sentence": "Columbia University's student group for ROTC cadets and Marine officer candidates is named the Alexander Hamilton Society.",
+    "question": "How many years are students usually in the Alexander Hamilton Society?",
+    "event": "are students usually in the Alexander Hamilton Society",
+    "min_duration": "4 years",
+    "max_duration": "4 years",
+    "min_seconds": 126144000.0,
+    "max_seconds": 126144000.0,
+    "all_durations": [
+      "4 years"
+    ],
+    "all_seconds": [
+      126144000.0
+    ]
+  },
+  {
+    "sentence": "Billy loved to watch as Tumble ate his bowl of oatmeal, because Billy took good care of Tumble, everyday.",
+    "question": "How long did it take for Tumble to eat his oatmeal?",
+    "event": "it take for Tumble to eat his oatmeal",
+    "min_duration": "10 minutes",
+    "max_duration": "15 minutes",
+    "min_seconds": 600.0,
+    "max_seconds": 900.0,
+    "all_durations": [
+      "10 minutes",
+      "about ten minutes",
+      "10 minute",
+      "15 minutes"
+    ],
+    "all_seconds": [
+      600.0,
+      600,
+      600.0,
+      900.0
+    ]
+  },
+  {
+    "sentence": "The award was voted on and presented by the women's caucus of West Virginia University College of Law.",
+    "question": "How long did the award ceremony last?",
+    "event": "the award ceremony last",
+    "min_duration": "one hour",
+    "max_duration": "2 hours",
+    "min_seconds": 3600,
+    "max_seconds": 7200.0,
+    "all_durations": [
+      "one hour",
+      "an hour",
+      "1 hour",
+      "2 hour",
+      "2 hours"
+    ],
+    "all_seconds": [
+      3600,
+      3600,
+      3600.0,
+      7200.0,
+      7200.0
+    ]
+  },
+  {
+    "sentence": "Casino operators had to reassess the nature of their business.",
+    "question": "How long had they been in business?",
+    "event": "had they been in business",
+    "min_duration": "1 year",
+    "max_duration": "15 years",
+    "min_seconds": 31536000.0,
+    "max_seconds": 473040000.0,
+    "all_durations": [
+      "1 year",
+      "5 years",
+      "15 years"
+    ],
+    "all_seconds": [
+      31536000.0,
+      157680000.0,
+      473040000.0
+    ]
+  },
+  {
+    "sentence": "No, of course not… I–  \"Then why,\" Arthur barreled on, \"do you disregard them all and return to this superstitious babble, this morbid, paganistic drivel?",
+    "question": "How long has Arthur been talking?",
+    "event": "Arthur been talking",
+    "min_duration": "10 minutes",
+    "max_duration": "10 minutes",
+    "min_seconds": 600.0,
+    "max_seconds": 600.0,
+    "all_durations": [
+      "10 minutes"
+    ],
+    "all_seconds": [
+      600.0
+    ]
+  },
+  {
+    "sentence": "The Justice Department released a statement on the alert the same day.",
+    "question": "How long did the statement take to be read out-loud?",
+    "event": "the statement take to be read out-loud",
+    "min_duration": "5 minutes",
+    "max_duration": "about 10 minutes",
+    "min_seconds": 300.0,
+    "max_seconds": 600.0,
+    "all_durations": [
+      "5 minutes",
+      "6 minutes",
+      "about 10 minutes"
+    ],
+    "all_seconds": [
+      300.0,
+      360.0,
+      600.0
+    ]
+  },
+  {
+    "sentence": "Boston Center TMU [Traffic Management Unit], we have a problem here.",
+    "question": "How long had the problem been occuring?",
+    "event": "had the problem been occuring",
+    "min_duration": "2 hours",
+    "max_duration": "2 hours",
+    "min_seconds": 7200.0,
+    "max_seconds": 7200.0,
+    "all_durations": [
+      "2 hours"
+    ],
+    "all_seconds": [
+      7200.0
+    ]
+  },
+  {
+    "sentence": "In the nose, mucus and hairs trap any dust or other particles in the air.",
+    "question": "How long does it take to trap dust particles in mucus?",
+    "event": "does it take to trap dust particles in mucus",
+    "min_duration": "5 seconds",
+    "max_duration": "5 seconds",
+    "min_seconds": 5.0,
+    "max_seconds": 5.0,
+    "all_durations": [
+      "5 seconds"
+    ],
+    "all_seconds": [
+      5.0
+    ]
+  },
+  {
+    "sentence": "When our cars burn gasoline in their engines, it is converted into motion and heat.",
+    "question": "For how long is an engine burning gasoline each day.",
+    "event": "For how long is an engine burning gasoline each day.",
+    "min_duration": "three hours",
+    "max_duration": "four hours",
+    "min_seconds": 10800,
+    "max_seconds": 14400,
+    "all_durations": [
+      "three hours",
+      "four hours"
+    ],
+    "all_seconds": [
+      10800,
+      14400
+    ]
+  },
+  {
+    "sentence": "Bin Laden and his aides did not need a very large sum to finance their planned attack on America.",
+    "question": "How long did it take for Bin Laden and his aides to plan the attack?",
+    "event": "it take for Bin Laden and his aides to plan the attack",
+    "min_duration": "6 months",
+    "max_duration": "1.5 years",
+    "min_seconds": 15552000.0,
+    "max_seconds": 157680000.0,
+    "all_durations": [
+      "6 months",
+      "1 year",
+      "1 . 5 years",
+      "1.5 years"
+    ],
+    "all_seconds": [
+      15552000.0,
+      31536000.0,
+      157680000.0,
+      157680000.0
+    ]
+  },
+  {
+    "sentence": "Once we arrive, the castle looked much bigger than we had imagined.",
+    "question": "How long have you imagined the castle",
+    "event": "you imagined the castle",
+    "min_duration": "2 months",
+    "max_duration": "2 months",
+    "min_seconds": 5184000.0,
+    "max_seconds": 5184000.0,
+    "all_durations": [
+      "2 months"
+    ],
+    "all_seconds": [
+      5184000.0
+    ]
+  },
+  {
+    "sentence": "For example, buy local produce at a farmers market, like the one in Figure 2.20.",
+    "question": "How long does it take to get to the farmers market?",
+    "event": "does it take to get to the farmers market",
+    "min_duration": "10 minutes",
+    "max_duration": "60 minutes",
+    "min_seconds": 600.0,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "10 minutes",
+      "20 minutes",
+      "60 minutes"
+    ],
+    "all_seconds": [
+      600.0,
+      1200.0,
+      3600.0
+    ]
+  },
+  {
+    "sentence": "Atta and Omari boarded a 6:00 A.M. flight from Portland to Boston's Logan International Airport.",
+    "question": "How long did the flight take?",
+    "event": "the flight take",
+    "min_duration": "6 hours",
+    "max_duration": "6 hours",
+    "min_seconds": 21600.0,
+    "max_seconds": 21600.0,
+    "all_durations": [
+      "6 hours"
+    ],
+    "all_seconds": [
+      21600.0
+    ]
+  },
+  {
+    "sentence": "Portuguese explorers then embarked upon Macau (now Macao), the Congo, and various other parts of Africa, including the Sudan.",
+    "question": "How long did the Portuguese explore?",
+    "event": "the Portuguese explore",
+    "min_duration": "ten years",
+    "max_duration": "ten years",
+    "min_seconds": 315360000,
+    "max_seconds": 315360000,
+    "all_durations": [
+      "ten years"
+    ],
+    "all_seconds": [
+      315360000
+    ]
+  },
+  {
+    "sentence": "If you have ever heard, \"Eat a good breakfast\", thats why.",
+    "question": "How long does it take to eat breakfast?",
+    "event": "does it take to eat breakfast",
+    "min_duration": "10 minutes",
+    "max_duration": "45 minutes",
+    "min_seconds": 600.0,
+    "max_seconds": 2700.0,
+    "all_durations": [
+      "10 minutes",
+      "15 minutes",
+      "it takes about 20 minutes on average",
+      "45 minutes"
+    ],
+    "all_seconds": [
+      600.0,
+      900.0,
+      1200.0,
+      2700.0
+    ]
+  },
+  {
+    "sentence": "The Shang Dynasty gave rise to the concept of one Chinese nation under one government.",
+    "question": "How long did the Shang Dynasty last?",
+    "event": "the Shang Dynasty last",
+    "min_duration": "500 years",
+    "max_duration": "500 years",
+    "min_seconds": 15768000000.0,
+    "max_seconds": 15768000000.0,
+    "all_durations": [
+      "500 years"
+    ],
+    "all_seconds": [
+      15768000000.0
+    ]
+  },
+  {
+    "sentence": "From Hunter Huss, she moved on to pursue a degree at Pfeiffer University in Misenheimer.",
+    "question": "How long was she at Hunter Huss?",
+    "event": "she at Hunter Huss",
+    "min_duration": "four years",
+    "max_duration": "4 years",
+    "min_seconds": 126144000,
+    "max_seconds": 126144000.0,
+    "all_durations": [
+      "four years",
+      "4 years"
+    ],
+    "all_seconds": [
+      126144000,
+      126144000.0
+    ]
+  },
+  {
+    "sentence": "They then took a boat to Africa and Asia, where they went on a trip through the mountains.",
+    "question": "How long was their trip through the mountains?",
+    "event": "their trip through the mountains",
+    "min_duration": "a week",
+    "max_duration": "three weeks",
+    "min_seconds": 604800,
+    "max_seconds": 1814400,
+    "all_durations": [
+      "a week",
+      "3 weeks",
+      "three weeks"
+    ],
+    "all_seconds": [
+      604800,
+      1814400.0,
+      1814400
+    ]
+  },
+  {
+    "sentence": "She had it for a long time so it is now a dark brown color.",
+    "question": "How long has she had it?",
+    "event": "she had it",
+    "min_duration": "5 years",
+    "max_duration": "ten years",
+    "min_seconds": 157680000.0,
+    "max_seconds": 315360000,
+    "all_durations": [
+      "5 years",
+      "five years",
+      "10 years",
+      "ten years"
+    ],
+    "all_seconds": [
+      157680000.0,
+      157680000,
+      315360000.0,
+      315360000
+    ]
+  },
+  {
+    "sentence": "A thin, washed-out, pretty woman stood up, and clasped her hands in front of her.",
+    "question": "How long were her hands clasped?",
+    "event": "were her hands clasped",
+    "min_duration": "5 seconds",
+    "max_duration": "1 minute",
+    "min_seconds": 5.0,
+    "max_seconds": 60.0,
+    "all_durations": [
+      "5 seconds",
+      "one minute",
+      "1 minute"
+    ],
+    "all_seconds": [
+      5.0,
+      60,
+      60.0
+    ]
+  },
+  {
+    "sentence": "When he's not working for a Washington defense attorney, Lucas recovers stolen property for a 40% cut.",
+    "question": "How long are his shifts as a defense attorney?",
+    "event": "are his shifts as a defense attorney",
+    "min_duration": "8 hours",
+    "max_duration": "10 hours",
+    "min_seconds": 28800.0,
+    "max_seconds": 36000.0,
+    "all_durations": [
+      "8 hours",
+      "9 hours",
+      "10 hours"
+    ],
+    "all_seconds": [
+      28800.0,
+      32400.0,
+      36000.0
+    ]
+  },
+  {
+    "sentence": "He estimated the money will help handle at least another 180 cases next year.",
+    "question": "How long did it take to raise the money?",
+    "event": "it take to raise the money",
+    "min_duration": "6 days",
+    "max_duration": "a year",
+    "min_seconds": 518400.0,
+    "max_seconds": 31536000,
+    "all_durations": [
+      "6 days",
+      "it took three weeks to raise the money",
+      "it took a month to raise the money",
+      "a month",
+      "2 months",
+      "6 months",
+      "a year"
+    ],
+    "all_seconds": [
+      518400.0,
+      1814400,
+      2592000,
+      2592000,
+      5184000.0,
+      15552000.0,
+      31536000
+    ]
+  },
+  {
+    "sentence": "Gonzo treated himself to a massage today to try to work out all of his stuntman kinks.",
+    "question": "How long did the massage take?",
+    "event": "the massage take",
+    "min_duration": "one hour",
+    "max_duration": "0.5 hour",
+    "min_seconds": 3600,
+    "max_seconds": 18000.0,
+    "all_durations": [
+      "one hour",
+      "an hour",
+      "1 hour",
+      "0.5 hour"
+    ],
+    "all_seconds": [
+      3600,
+      3600,
+      3600.0,
+      18000.0
+    ]
+  },
+  {
+    "sentence": "Not only did it create jobs, but it also created Lake Mead, the massive reservoir that today provides water to all of southern Nevada.",
+    "question": "How long did it take to construct Lake Mead?",
+    "event": "it take to construct Lake Mead",
+    "min_duration": "about one year",
+    "max_duration": "5 years",
+    "min_seconds": 31536000,
+    "max_seconds": 157680000.0,
+    "all_durations": [
+      "about one year",
+      "5 years"
+    ],
+    "all_seconds": [
+      31536000,
+      157680000.0
+    ]
+  },
+  {
+    "sentence": "During the fight , Hughes and Holly find out that the diamond on Yonggary's forehead is the device giving the aliens control of Yonggary .",
+    "question": "How long was the fight?",
+    "event": "the fight",
+    "min_duration": "1 hour",
+    "max_duration": "1.5 hours",
+    "min_seconds": 3600.0,
+    "max_seconds": 18000.0,
+    "all_durations": [
+      "1 hour",
+      "3 hours",
+      "1.5 hours"
+    ],
+    "all_seconds": [
+      3600.0,
+      10800.0,
+      18000.0
+    ]
+  },
+  {
+    "sentence": "He has not told his wife that he was fired and is simply serving out his tenure at the agency while looking for a new position .",
+    "question": "How long has he been fired for?",
+    "event": "he been fired for",
+    "min_duration": "about a day",
+    "max_duration": "1 week",
+    "min_seconds": 86400,
+    "max_seconds": 604800.0,
+    "all_durations": [
+      "about a day",
+      "1 week"
+    ],
+    "all_seconds": [
+      86400,
+      604800.0
+    ]
+  },
+  {
+    "sentence": "You can see examples of people with gravitational potential energy in 1.5 Figure below.",
+    "question": "How long will it take to study the example?",
+    "event": "will it take to study the example",
+    "min_duration": "it will take 15 minutes to study the example",
+    "max_duration": "45 minutes",
+    "min_seconds": 900.0,
+    "max_seconds": 2700.0,
+    "all_durations": [
+      "it will take 15 minutes to study the example",
+      "45 minutes"
+    ],
+    "all_seconds": [
+      900.0,
+      2700.0
+    ]
+  },
+  {
+    "sentence": "In school, Atta came across as very intelligent and reasonably pleasant, with an excellent command of the German language.",
+    "question": "How long was Atta in the school?",
+    "event": "Atta in the school",
+    "min_duration": "four years",
+    "max_duration": "4 years",
+    "min_seconds": 126144000,
+    "max_seconds": 126144000.0,
+    "all_durations": [
+      "four years",
+      "4 years"
+    ],
+    "all_seconds": [
+      126144000,
+      126144000.0
+    ]
+  },
+  {
+    "sentence": "Yes, they can, because they are in enclosed space stations or pressurized suits.In both cases, they are surrounded by air molecules.",
+    "question": "How long do the suits remain pressurized?",
+    "event": "do the suits remain pressurized",
+    "min_duration": "two hours",
+    "max_duration": "4 hours",
+    "min_seconds": 7200,
+    "max_seconds": 14400.0,
+    "all_durations": [
+      "two hours",
+      "two hours,",
+      "three hours",
+      "four hours",
+      "4 hours"
+    ],
+    "all_seconds": [
+      7200,
+      7200,
+      10800,
+      14400,
+      14400.0
+    ]
+  },
+  {
+    "sentence": "Danny begins spending less and less time at home with his wife and children .",
+    "question": "How much time was he spending at home?",
+    "event": "How much time was he spending at home",
+    "min_duration": "2 hours a day",
+    "max_duration": "4 hours per day",
+    "min_seconds": 7200.0,
+    "max_seconds": 14400.0,
+    "all_durations": [
+      "2 hours a day",
+      "4 hours per day"
+    ],
+    "all_seconds": [
+      7200.0,
+      14400.0
+    ]
+  },
+  {
+    "sentence": "Like the skateboarder, the higher the ramp, the faster he will be going when he reaches the bottom.",
+    "question": "How long does it take the skateboarder to go down the highest ramp?",
+    "event": "does it take the skateboarder to go down the highest ramp",
+    "min_duration": "3 seconds",
+    "max_duration": "five seconds",
+    "min_seconds": 3.0,
+    "max_seconds": 5,
+    "all_durations": [
+      "3 seconds",
+      "five seconds"
+    ],
+    "all_seconds": [
+      3.0,
+      5
+    ]
+  },
+  {
+    "sentence": "She had gotten out of her last day of school and was free for the summer.",
+    "question": "How long did she go to school?",
+    "event": "she go to school",
+    "min_duration": "nine months of the year",
+    "max_duration": "nine months of the year",
+    "min_seconds": 23328000,
+    "max_seconds": 23328000,
+    "all_durations": [
+      "nine months of the year"
+    ],
+    "all_seconds": [
+      23328000
+    ]
+  },
+  {
+    "sentence": "The factory is highly automated and designed to shift flexibly to produce many different kinds of chips to suit demand.",
+    "question": "How long does the factory spend making chips?",
+    "event": "does the factory spend making chips",
+    "min_duration": "12 hour",
+    "max_duration": "up to 12 hours",
+    "min_seconds": 43200.0,
+    "max_seconds": 43200.0,
+    "all_durations": [
+      "12 hour",
+      "12 hours",
+      "up to 12 hours"
+    ],
+    "all_seconds": [
+      43200.0,
+      43200.0,
+      43200.0
+    ]
+  },
+  {
+    "sentence": "Radio Televizioni Shqiptar (RTSH) is the public radio and TV broadcaster of Albania, founded by King Zog in 1938.",
+    "question": "How long has RTSH been established?",
+    "event": "RTSH been established",
+    "min_duration": "80 years",
+    "max_duration": "80 years",
+    "min_seconds": 2522880000.0,
+    "max_seconds": 2522880000.0,
+    "all_durations": [
+      "80 years"
+    ],
+    "all_seconds": [
+      2522880000.0
+    ]
+  },
+  {
+    "sentence": "The movie then jumps to 1967 , after Brian Epstein has died .",
+    "question": "How long did the movie last?",
+    "event": "the movie last",
+    "min_duration": "2 hours",
+    "max_duration": "1.33 hours",
+    "min_seconds": 7200.0,
+    "max_seconds": 118800.0,
+    "all_durations": [
+      "2 hours",
+      "1.5 hours",
+      "1.33 hours"
+    ],
+    "all_seconds": [
+      7200.0,
+      18000.0,
+      118800.0
+    ]
+  },
+  {
+    "sentence": "She later adopted the stage name Fontaine -- the name of her mother's second husband.",
+    "question": "How long was her mother married to her second husband?",
+    "event": "her mother married to her second husband",
+    "min_duration": "they were married for 10 years",
+    "max_duration": "they were married for 30 years",
+    "min_seconds": 315360000.0,
+    "max_seconds": 946080000.0,
+    "all_durations": [
+      "they were married for 10 years",
+      "20 years",
+      "they were married for 30 years"
+    ],
+    "all_seconds": [
+      315360000.0,
+      630720000.0,
+      946080000.0
+    ]
+  },
+  {
+    "sentence": "One day, Kevin traveled from his home in the United States of America to Erin's house in England.",
+    "question": "How long did the trip take?",
+    "event": "the trip take",
+    "min_duration": "1 day",
+    "max_duration": "1 day",
+    "min_seconds": 86400.0,
+    "max_seconds": 86400.0,
+    "all_durations": [
+      "1 day"
+    ],
+    "all_seconds": [
+      86400.0
+    ]
+  },
+  {
+    "sentence": "They piloted the explosives-laden boat alongside the USS Cole, made friendly gestures to crew members, and detonated the bomb.",
+    "question": "How long did it take to detonate the bomb?",
+    "event": "it take to detonate the bomb",
+    "min_duration": "1 seconds",
+    "max_duration": "30 seconds",
+    "min_seconds": 1.0,
+    "max_seconds": 30.0,
+    "all_durations": [
+      "1 seconds",
+      "3 seconds",
+      "5 seconds",
+      "1.5 seconds",
+      "30 seconds"
+    ],
+    "all_seconds": [
+      1.0,
+      3.0,
+      5.0,
+      5.0,
+      30.0
+    ]
+  },
+  {
+    "sentence": ", followed by other ports at Hyères, Antibes, and Nice.",
+    "question": "How long were you at the ports?",
+    "event": "were you at the ports",
+    "min_duration": "four hours",
+    "max_duration": "four weeks",
+    "min_seconds": 14400,
+    "max_seconds": 2419200,
+    "all_durations": [
+      "four hours",
+      "four weeks"
+    ],
+    "all_seconds": [
+      14400,
+      2419200
+    ]
+  },
+  {
+    "sentence": "Floodplains In very flat regions, flood water may spread out on the surface of the land.",
+    "question": "How long does it take for flood water to spread?",
+    "event": "does it take for flood water to spread",
+    "min_duration": "2 hours",
+    "max_duration": "6 hours",
+    "min_seconds": 7200.0,
+    "max_seconds": 21600.0,
+    "all_durations": [
+      "2 hours",
+      "6 hours"
+    ],
+    "all_seconds": [
+      7200.0,
+      21600.0
+    ]
+  },
+  {
+    "sentence": "A thwarted Mongol invasion in 1274 weakened the Kamakura regime.",
+    "question": "How long did the invasion last?",
+    "event": "the invasion last",
+    "min_duration": "a week",
+    "max_duration": "a year",
+    "min_seconds": 604800,
+    "max_seconds": 31536000,
+    "all_durations": [
+      "a week",
+      "2 weeks",
+      "1 month",
+      "two months",
+      "9 month",
+      "a year"
+    ],
+    "all_seconds": [
+      604800,
+      1209600.0,
+      2592000.0,
+      5184000,
+      23328000.0,
+      31536000
+    ]
+  },
+  {
+    "sentence": "During breakfast one morning, he seemed lost in thought and ignored his food.",
+    "question": "How long was he lost in thoughts?",
+    "event": "he lost in thoughts",
+    "min_duration": "about ten minutes",
+    "max_duration": "all 20 minutes of breakfast",
+    "min_seconds": 600,
+    "max_seconds": 1200.0,
+    "all_durations": [
+      "about ten minutes",
+      "all 20 minutes of breakfast"
+    ],
+    "all_seconds": [
+      600,
+      1200.0
+    ]
+  },
+  {
+    "sentence": "Delighted , Preetam goes in search of her watch and brings it back .",
+    "question": "How long did Preetam take in search of her watch ?",
+    "event": "Preetam take in search of her watch",
+    "min_duration": "30 minutes",
+    "max_duration": "1 hour",
+    "min_seconds": 1800.0,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "30 minutes",
+      "1 hour"
+    ],
+    "all_seconds": [
+      1800.0,
+      3600.0
+    ]
+  },
+  {
+    "sentence": "Every Saturday we would go to the park and play Toodles' favorite game.",
+    "question": "How long is the game",
+    "event": "is the game",
+    "min_duration": "30 minutes",
+    "max_duration": "90 minutes",
+    "min_seconds": 1800.0,
+    "max_seconds": 5400.0,
+    "all_durations": [
+      "30 minutes",
+      "about an hour",
+      "an hour",
+      "90 minutes"
+    ],
+    "all_seconds": [
+      1800.0,
+      3600,
+      3600,
+      5400.0
+    ]
+  },
+  {
+    "sentence": "These fossils showed that this entire area was once at the bottom of a sea.",
+    "question": "For how long was the area at the bottom of the sea?",
+    "event": "the area at the bottom of the sea",
+    "min_duration": "500 years",
+    "max_duration": "2000 years",
+    "min_seconds": 15768000000.0,
+    "max_seconds": 63072000000.0,
+    "all_durations": [
+      "500 years",
+      "2000 years"
+    ],
+    "all_seconds": [
+      15768000000.0,
+      63072000000.0
+    ]
+  },
+  {
+    "sentence": "Unlike the Portuguese, the Dutch decided to do business with the Malays of Johor, who controlled the southern half of the peninsula together with Singapore and the neighboring Riau islands.",
+    "question": "For how long did the Dutch do business with the Malays of Johor?",
+    "event": "the Dutch do business with the Malays of Johor",
+    "min_duration": "ten years",
+    "max_duration": "ten years",
+    "min_seconds": 315360000,
+    "max_seconds": 315360000,
+    "all_durations": [
+      "ten years"
+    ],
+    "all_seconds": [
+      315360000
+    ]
+  },
+  {
+    "sentence": "Einstein's affiliation with the Institute for Advanced Study would last until his death in 1955.",
+    "question": "For how long was Einstein a faculty member at the Institute for Advanced Study?",
+    "event": "Einstein a faculty member at the Institute for Advanced Study",
+    "min_duration": "22 months",
+    "max_duration": "30 years",
+    "min_seconds": 57024000.0,
+    "max_seconds": 946080000.0,
+    "all_durations": [
+      "22 months",
+      "66 months",
+      "10 years",
+      "22 years",
+      "30 years"
+    ],
+    "all_seconds": [
+      57024000.0,
+      171072000.0,
+      315360000.0,
+      693792000.0,
+      946080000.0
+    ]
+  },
+  {
+    "sentence": "However , by the time Schahzenan's army reaches the city , Scheherazade's plan has worked .",
+    "question": "How long will Schahzenan's army take to reach the city?",
+    "event": "will Schahzenan's army take to reach the city",
+    "min_duration": "six days",
+    "max_duration": "it will take them one month",
+    "min_seconds": 518400,
+    "max_seconds": 2592000,
+    "all_durations": [
+      "six days",
+      "it will take them one week",
+      "it will take them one month"
+    ],
+    "all_seconds": [
+      518400,
+      604800,
+      2592000
+    ]
+  },
+  {
+    "sentence": "Later in the month, they traveled to China by train and were allowed to see how different life was over there.",
+    "question": "How long did they stay in China?",
+    "event": "they stay in China",
+    "min_duration": "two weeks",
+    "max_duration": "three weeks",
+    "min_seconds": 1209600,
+    "max_seconds": 1814400,
+    "all_durations": [
+      "two weeks",
+      "two week",
+      "three weeks"
+    ],
+    "all_seconds": [
+      1209600,
+      1209600,
+      1814400
+    ]
+  },
+  {
+    "sentence": "They need only position themselves near a company's satellite dish and wait.",
+    "question": "How long will it take for them to position themselves?",
+    "event": "will it take for them to position themselves",
+    "min_duration": "3 minute",
+    "max_duration": "2 hours",
+    "min_seconds": 180.0,
+    "max_seconds": 7200.0,
+    "all_durations": [
+      "3 minute",
+      "5 minutes",
+      "45 minutes",
+      "1 hour",
+      "2 hours"
+    ],
+    "all_seconds": [
+      180.0,
+      300.0,
+      2700.0,
+      3600.0,
+      7200.0
+    ]
+  },
+  {
+    "sentence": "The previous numismatic record holder was an 1804 U.S. silver dollar, which sold for $4.14 million in 1999.",
+    "question": "How long did the bidding last for the 1804 U.S. silver dollar?",
+    "event": "the bidding last for the 1804 U.S. silver dollar",
+    "min_duration": "seven minutes",
+    "max_duration": "seven minutes",
+    "min_seconds": 420,
+    "max_seconds": 420,
+    "all_durations": [
+      "seven minutes"
+    ],
+    "all_seconds": [
+      420
+    ]
+  },
+  {
+    "sentence": "Technologically and sociologically, it was a phenomenal breakthrough: with fire, communities could live year 'round in one cave, in which cooking and even smelting could be pursued.",
+    "question": "How long did it take to cook meat?",
+    "event": "it take to cook meat",
+    "min_duration": "15 minutes",
+    "max_duration": "under an hour",
+    "min_seconds": 900.0,
+    "max_seconds": 3600,
+    "all_durations": [
+      "15 minutes",
+      "30 minutes",
+      "under an hour"
+    ],
+    "all_seconds": [
+      900.0,
+      1800.0,
+      3600
+    ]
+  },
+  {
+    "sentence": "Despite his quick climb up the legal ladder, Bailey has always found time to help out in causes he feels strongly about.",
+    "question": "How long did it take for Bailey to reach his current position since passing the bar?",
+    "event": "it take for Bailey to reach his current position since passing the bar",
+    "min_duration": "5 years",
+    "max_duration": "5 years",
+    "min_seconds": 157680000.0,
+    "max_seconds": 157680000.0,
+    "all_durations": [
+      "5 years"
+    ],
+    "all_seconds": [
+      157680000.0
+    ]
+  },
+  {
+    "sentence": "Edwina similarly falls into disfavor with the Maharani , who explains that Safti has been raised to lead a pure life and that Edwina is unworthy of him .",
+    "question": "How long had Edwina known Safti?",
+    "event": "had Edwina known Safti",
+    "min_duration": "1 year",
+    "max_duration": "10 years",
+    "min_seconds": 31536000.0,
+    "max_seconds": 315360000.0,
+    "all_durations": [
+      "1 year",
+      "2 years",
+      "two years",
+      "three years",
+      "four years",
+      "6 years",
+      "10 years"
+    ],
+    "all_seconds": [
+      31536000.0,
+      63072000.0,
+      63072000,
+      94608000,
+      126144000,
+      189216000.0,
+      315360000.0
+    ]
+  },
+  {
+    "sentence": "Some are trying to escape eviction or an abusive marriage.",
+    "question": "How long can it take them to escape?",
+    "event": "can it take them to escape",
+    "min_duration": "a month",
+    "max_duration": "a month",
+    "min_seconds": 2592000,
+    "max_seconds": 2592000,
+    "all_durations": [
+      "a month"
+    ],
+    "all_seconds": [
+      2592000
+    ]
+  },
+  {
+    "sentence": "Tumble liked to walk around outside in the garden and dig small holes to sleep in.",
+    "question": "How long did Tumble like to play outside for?",
+    "event": "Tumble like to play outside for",
+    "min_duration": "10 minutes",
+    "max_duration": "50 minutes",
+    "min_seconds": 600.0,
+    "max_seconds": 3000.0,
+    "all_durations": [
+      "10 minutes",
+      "50 minutes"
+    ],
+    "all_seconds": [
+      600.0,
+      3000.0
+    ]
+  },
+  {
+    "sentence": "Ratners's chairman, Gerald Ratner, said the deal remains of \"substantial benefit to Ratners.\"",
+    "question": "How long did the chairman speak?",
+    "event": "the chairman speak",
+    "min_duration": "18 minutes",
+    "max_duration": "1 hour",
+    "min_seconds": 1080.0,
+    "max_seconds": 3600.0,
+    "all_durations": [
+      "18 minutes",
+      "30 minutes",
+      "1 hour"
+    ],
+    "all_seconds": [
+      1080.0,
+      1800.0,
+      3600.0
+    ]
+  },
+  {
+    "sentence": "Nibras and Quso delivered money to Khallad in Bangkok during Khallad's January 2000 trip to Kuala Lumpur and Bangkok.",
+    "question": "How long did it take them to get the money?",
+    "event": "it take them to get the money",
+    "min_duration": "2 days",
+    "max_duration": "two weeks",
+    "min_seconds": 172800.0,
+    "max_seconds": 1209600,
+    "all_durations": [
+      "2 days",
+      "two weeks"
+    ],
+    "all_seconds": [
+      172800.0,
+      1209600
+    ]
+  },
+  {
+    "sentence": "Human operators are there to monitor the systems, catch errors and fine-tune the production process for maximum efficiency.",
+    "question": "How long do human operators monitor the systems?",
+    "event": "do human operators monitor the systems",
+    "min_duration": "8 hours a day",
+    "max_duration": "they monitor the machines for 24 hours",
+    "min_seconds": 28800.0,
+    "max_seconds": 86400.0,
+    "all_durations": [
+      "8 hours a day",
+      "they monitor the systems for 24 hours",
+      "24 hours a day",
+      "they watch the systems for 24 hours",
+      "they monitor the system for 24 hours",
+      "24 hour a day",
+      "they monitor the machines for 24 hours"
+    ],
+    "all_seconds": [
+      28800.0,
+      86400.0,
+      86400.0,
+      86400.0,
+      86400.0,
+      86400.0,
+      86400.0
+    ]
+  },
+  {
+    "sentence": "Mintie, her colleagues say, could have made a lot of money in private practice.",
+    "question": "How long has Mintie been making money?",
+    "event": "Mintie been making money",
+    "min_duration": "10 years",
+    "max_duration": "20 years",
+    "min_seconds": 315360000.0,
+    "max_seconds": 630720000.0,
+    "all_durations": [
+      "10 years",
+      "20 years"
+    ],
+    "all_seconds": [
+      315360000.0,
+      630720000.0
+    ]
+  },
+  {
+    "sentence": "The origin of the funds remains unknown, although we have a general idea of how al Qaeda financed itself during the period leading up to 9/11.",
+    "question": "For how long was al Qaeda financing itself?",
+    "event": "al Qaeda financing itself",
+    "min_duration": "9 years",
+    "max_duration": "15 years",
+    "min_seconds": 283824000.0,
+    "max_seconds": 473040000.0,
+    "all_durations": [
+      "9 years",
+      "ten years",
+      "15 years"
+    ],
+    "all_seconds": [
+      283824000.0,
+      315360000,
+      473040000.0
+    ]
+  },
+  {
+    "sentence": "California was first to require smog checks for clean air, pass anti-tobacco initiatives and bike helmets laws.",
+    "question": "How long did it take for the other states to pass such initiatives?",
+    "event": "it take for the other states to pass such initiatives",
+    "min_duration": "a year later",
+    "max_duration": "two years",
+    "min_seconds": 31536000,
+    "max_seconds": 63072000,
+    "all_durations": [
+      "a year later",
+      "two years"
+    ],
+    "all_seconds": [
+      31536000,
+      63072000
+    ]
+  },
+  {
+    "sentence": "Then the green ball told the orange ball that blue ball was stupid.",
+    "question": "How long was the green ball talking to the orange ball?",
+    "event": "the green ball talking to the orange ball",
+    "min_duration": "15 seconds",
+    "max_duration": "15 seconds",
+    "min_seconds": 15.0,
+    "max_seconds": 15.0,
+    "all_durations": [
+      "15 seconds"
+    ],
+    "all_seconds": [
+      15.0
+    ]
+  },
+  {
+    "sentence": "She added a special growing mix from the garden store to make the soil better.",
+    "question": "How long did it take to add growing mix into the garden?",
+    "event": "it take to add growing mix into the garden",
+    "min_duration": "about 15 minutes",
+    "max_duration": "30 minutes",
+    "min_seconds": 900.0,
+    "max_seconds": 1800.0,
+    "all_durations": [
+      "about 15 minutes",
+      "30 minutes"
+    ],
+    "all_seconds": [
+      900.0,
+      1800.0
+    ]
+  },
+  {
+    "sentence": "Joe's parents are farmers and they have a huge farm with cows, chickens, and ducks.",
+    "question": "How long have Joe's parents been farmers?",
+    "event": "Joe's parents been farmers",
+    "min_duration": "15 years",
+    "max_duration": "20 years",
+    "min_seconds": 473040000.0,
+    "max_seconds": 630720000.0,
+    "all_durations": [
+      "15 years",
+      "20 years"
+    ],
+    "all_seconds": [
+      473040000.0,
+      630720000.0
+    ]
+  },
+  {
+    "sentence": "The lightscreen provided had informed me when and where official meals were taking place, but I hadn't bothered to acknowledge the invitations.",
+    "question": "For how long did the official meals last?",
+    "event": "the official meals last",
+    "min_duration": "two hours",
+    "max_duration": "about two hours",
+    "min_seconds": 7200,
+    "max_seconds": 7200,
+    "all_durations": [
+      "two hours",
+      "about two hours"
+    ],
+    "all_seconds": [
+      7200,
+      7200
+    ]
+  },
+  {
+    "sentence": "For over five years, I've been in court practically every day on these abuse cases, Ms. Walker said, \"and I've never before had a victim threatened with contempt.\"",
+    "question": "How many hours did Walker work yesterday?",
+    "event": "Walker work yesterday",
+    "min_duration": "8 hours",
+    "max_duration": "eight hours",
+    "min_seconds": 28800.0,
+    "max_seconds": 28800,
+    "all_durations": [
+      "8 hours",
+      "eight hours"
+    ],
+    "all_seconds": [
+      28800.0,
+      28800
+    ]
+  },
+  {
+    "sentence": "The core of our strategy is to lead in technology and attack the high-performance segments of the market, said John Kelly, senior vice president in charge of IBM's technology group.",
+    "question": "How long did John Kelly speak?",
+    "event": "John Kelly speak",
+    "min_duration": "john kelly spoke for five minutes",
+    "max_duration": "john kelly spoke for an hour",
+    "min_seconds": 300,
+    "max_seconds": 3600,
+    "all_durations": [
+      "john kelly spoke for five minutes",
+      "9 minutes",
+      "1 hour",
+      "one hour",
+      "john kelly spoke for an hour"
+    ],
+    "all_seconds": [
+      300,
+      540.0,
+      3600.0,
+      3600,
+      3600
+    ]
+  },
+  {
+    "sentence": "Spanish rule dictated Portugal's inadvertent involvement in Spain's ongoing wars.",
+    "question": "How long has Spain been at war?",
+    "event": "Spain been at war",
+    "min_duration": "for 18 months",
+    "max_duration": "10 years",
+    "min_seconds": 46656000.0,
+    "max_seconds": 315360000.0,
+    "all_durations": [
+      "for 18 months",
+      "10 years"
+    ],
+    "all_seconds": [
+      46656000.0,
+      315360000.0
+    ]
+  },
+  {
+    "sentence": "The postwar period began, however, with millions of displaced people homeless and starving.",
+    "question": "How long did the postwar period last?",
+    "event": "the postwar period last",
+    "min_duration": "5 years",
+    "max_duration": "6 years",
+    "min_seconds": 157680000.0,
+    "max_seconds": 189216000.0,
+    "all_durations": [
+      "5 years",
+      "6 years"
+    ],
+    "all_seconds": [
+      157680000.0,
+      189216000.0
+    ]
+  },
+  {
+    "sentence": "The new novel takes place in a morally gray and often violent world.",
+    "question": "How long was it a violent world",
+    "event": "it a violent world",
+    "min_duration": "20 years",
+    "max_duration": "60 years",
+    "min_seconds": 630720000.0,
+    "max_seconds": 1892160000.0,
+    "all_durations": [
+      "20 years",
+      "60 years"
+    ],
+    "all_seconds": [
+      630720000.0,
+      1892160000.0
+    ]
+  },
+  {
+    "sentence": "He loved spending time with him when he was younger, but he had moved last year.",
+    "question": "How long did the move take?",
+    "event": "the move take",
+    "min_duration": "1 days",
+    "max_duration": "2 weeks",
+    "min_seconds": 86400.0,
+    "max_seconds": 1209600.0,
+    "all_durations": [
+      "1 days",
+      "2 days",
+      "3 days",
+      "6 days",
+      "2 weeks"
+    ],
+    "all_seconds": [
+      86400.0,
+      172800.0,
+      259200.0,
+      518400.0,
+      1209600.0
+    ]
+  },
+  {
+    "sentence": "In the fall of 1991, he asked a German family he had met in Cairo to help him continue his education in Germany.",
+    "question": "How long will he want help?",
+    "event": "will he want help",
+    "min_duration": "4 year",
+    "max_duration": "4 years",
+    "min_seconds": 126144000.0,
+    "max_seconds": 126144000.0,
+    "all_durations": [
+      "4 year",
+      "4 years"
+    ],
+    "all_seconds": [
+      126144000.0,
+      126144000.0
+    ]
+  },
+  {
+    "sentence": "Advocating civil disobedience, he led his famous Salt March to the sea, to scoop up salt and circumvent the hated British salt tax.",
+    "question": "How long did the Salt March to the sea last for?",
+    "event": "the Salt March to the sea last for",
+    "min_duration": "10 days",
+    "max_duration": "10 days",
+    "min_seconds": 864000.0,
+    "max_seconds": 864000.0,
+    "all_durations": [
+      "10 days"
+    ],
+    "all_seconds": [
+      864000.0
+    ]
+  },
+  {
+    "sentence": "On London's Stock Exchange, Reuters shares rose five pence to 913 pence ($14.43).",
+    "question": "How long is the stock exchange open",
+    "event": "is the stock exchange open",
+    "min_duration": "it's open for 8 hours a day",
+    "max_duration": "it's open for 8 hours a day",
+    "min_seconds": 28800.0,
+    "max_seconds": 28800.0,
+    "all_durations": [
+      "it's open for 8 hours a day"
+    ],
+    "all_seconds": [
+      28800.0
+    ]
+  },
+  {
+    "sentence": "Concerning the Georgetown Hoya interview where Heston was asked about Rolland, you write: \"There is no indication that [Heston] recognized Kayla Rolland's case.\"",
+    "question": "How long did the interview last?",
+    "event": "the interview last",
+    "min_duration": "the interview lasted thirty-five minutes",
+    "max_duration": "0.5 hour",
+    "min_seconds": 300,
+    "max_seconds": 18000.0,
+    "all_durations": [
+      "the interview lasted thirty-five minutes",
+      "the interviews lasted thirty - five minutes",
+      "30 minutes",
+      "1 hours",
+      "1 hour",
+      "2 hours",
+      "0.5 hour"
+    ],
+    "all_seconds": [
+      300,
+      300,
+      1800.0,
+      3600.0,
+      3600.0,
+      7200.0,
+      18000.0
+    ]
+  }
+]

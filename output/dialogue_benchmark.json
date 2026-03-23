@@ -1,0 +1,2703 @@
+{
+  "template_instances": [
+    {
+      "id": "scheduling_001",
+      "type": "scheduling",
+      "name": "基础会议安排",
+      "description": "用户安排一个会议，包含开始时间和持续时长",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 4,
+        "meeting_hour": 10,
+        "meeting_duration_minutes": 60,
+        "meeting_date": "2026-03-25",
+        "meeting_day_name": "周三",
+        "meeting_day_desc": "这周周三",
+        "meeting_hour_padded": "10",
+        "meeting_duration_desc": "1小时",
+        "meeting_end_time": "周三 11:00",
+        "end_time_only": "11:00"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周三下午10点的跨部门会议，持续1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，我已为您安排了这周周三下午10点的跨部门会议，持续1小时。",
+          "hidden_state": {
+            "meeting_start": "周三 10:00",
+            "meeting_end": "周三 11:00",
+            "conflict_resolved": false
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "周三 10:00",
+        "meeting_end": "周三 11:00",
+        "conflict_resolved": false
+      }
+    },
+    {
+      "id": "scheduling_001",
+      "type": "scheduling",
+      "name": "基础会议安排",
+      "description": "用户安排一个会议，包含开始时间和持续时长",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 7,
+        "meeting_hour": 14,
+        "meeting_duration_minutes": 90,
+        "meeting_date": "2026-03-28",
+        "meeting_day_name": "周六",
+        "meeting_day_desc": "这周周六",
+        "meeting_hour_padded": "14",
+        "meeting_duration_desc": "1个半小时",
+        "meeting_end_time": "周六 15:30",
+        "end_time_only": "15:30"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周六下午14点的跨部门会议，持续1个半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，我已为您安排了这周周六下午14点的跨部门会议，持续1个半小时。",
+          "hidden_state": {
+            "meeting_start": "周六 14:00",
+            "meeting_end": "周六 15:30",
+            "conflict_resolved": false
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "周六 14:00",
+        "meeting_end": "周六 15:30",
+        "conflict_resolved": false
+      }
+    },
+    {
+      "id": "scheduling_002",
+      "type": "scheduling",
+      "name": "会议提前修改",
+      "description": "用户要求将会议提前",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 3,
+        "original_hour": 14,
+        "hours_to_earlier": 3,
+        "meeting_date": "2026-03-24",
+        "meeting_day_name": "周二",
+        "meeting_day_desc": "这周周二",
+        "original_hour_padded": "14",
+        "new_hour": 11,
+        "new_hour_padded": "11",
+        "new_end_time": "周二 12:30"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二下午14点的项目汇报会议，持续一个半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周二 14:00",
+            "meeting_end": "{original_end_time}",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "我想把会议提前3个小时，可以吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整为这周周二下午11点。",
+          "hidden_state": {
+            "meeting_start": "周二 11:00",
+            "meeting_end": "周二 12:30",
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "周二 11:00",
+        "meeting_end": "周二 12:30",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "scheduling_002",
+      "type": "scheduling",
+      "name": "会议提前修改",
+      "description": "用户要求将会议提前",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 5,
+        "original_hour": 15,
+        "hours_to_earlier": 1,
+        "meeting_date": "2026-03-26",
+        "meeting_day_name": "周四",
+        "meeting_day_desc": "这周周四",
+        "original_hour_padded": "15",
+        "new_hour": 14,
+        "new_hour_padded": "14",
+        "new_end_time": "周四 15:30"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周四下午15点的项目汇报会议，持续一个半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周四 15:00",
+            "meeting_end": "{original_end_time}",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "我想把会议提前1个小时，可以吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整为这周周四下午14点。",
+          "hidden_state": {
+            "meeting_start": "周四 14:00",
+            "meeting_end": "周四 15:30",
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "周四 14:00",
+        "meeting_end": "周四 15:30",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "scheduling_003",
+      "type": "scheduling",
+      "name": "会议换天修改",
+      "description": "用户要求将会议改到另一天",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 3,
+        "new_day_offset": -1,
+        "meeting_hour": 15,
+        "meeting_date": "2026-03-24",
+        "meeting_day_name": "周二",
+        "meeting_day_desc": "这周周二",
+        "meeting_hour_padded": "15",
+        "new_day_name": "周一",
+        "new_day_desc": "后天",
+        "new_end_time": "周一 16:00",
+        "original_end_time": "周二 16:00",
+        "end_time_only": "16:00"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二下午15点的团队周会，持续1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周二 15:00",
+            "meeting_end": "周二 16:00",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "那天我有事，改到后天同一时间吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整到周一下午15点。",
+          "hidden_state": {
+            "meeting_start": "周一 15:00",
+            "meeting_end": "周一 16:00",
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "周一 15:00",
+        "meeting_end": "周一 16:00",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "scheduling_003",
+      "type": "scheduling",
+      "name": "会议换天修改",
+      "description": "用户要求将会议改到另一天",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 3,
+        "new_day_offset": -1,
+        "meeting_hour": 10,
+        "meeting_date": "2026-03-24",
+        "meeting_day_name": "周二",
+        "meeting_day_desc": "这周周二",
+        "meeting_hour_padded": "10",
+        "new_day_name": "周一",
+        "new_day_desc": "后天",
+        "new_end_time": "周一 11:00",
+        "original_end_time": "周二 11:00",
+        "end_time_only": "11:00"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二下午10点的团队周会，持续1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周二 10:00",
+            "meeting_end": "周二 11:00",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "那天我有事，改到后天同一时间吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整到周一下午10点。",
+          "hidden_state": {
+            "meeting_start": "周一 10:00",
+            "meeting_end": "周一 11:00",
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "周一 10:00",
+        "meeting_end": "周一 11:00",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "scheduling_004",
+      "type": "scheduling",
+      "name": "会议冲突解决",
+      "description": "用户发现会议时间有冲突，需要调整",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 3,
+        "meeting_hour": 15,
+        "conflict_hour": 16,
+        "meeting_date": "2026-03-24",
+        "meeting_day_name": "周二",
+        "meeting_day_desc": "这周周二",
+        "meeting_hour_padded": "15",
+        "new_hour": 14,
+        "new_hour_padded": "14",
+        "new_end_time": "周二 16",
+        "end_time_only": "16:00"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二下午15点的产品评审会，持续2小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周二 15:00",
+            "meeting_end": "{original_end_time}",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "糟了，我那天下午16点要去见客户，能提前到14点开始吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整为这周周二下午14点，这样在见客户前可以结束。",
+          "hidden_state": {
+            "meeting_start": "周二 14:00",
+            "meeting_end": "周二 16",
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "周二 14:00",
+        "meeting_end": "周二 16",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "scheduling_004",
+      "type": "scheduling",
+      "name": "会议冲突解决",
+      "description": "用户发现会议时间有冲突，需要调整",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 3,
+        "meeting_hour": 14,
+        "conflict_hour": 15,
+        "meeting_date": "2026-03-24",
+        "meeting_day_name": "周二",
+        "meeting_day_desc": "这周周二",
+        "meeting_hour_padded": "14",
+        "new_hour": 13,
+        "new_hour_padded": "13",
+        "new_end_time": "周二 15",
+        "end_time_only": "15:00"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二下午14点的产品评审会，持续2小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周二 14:00",
+            "meeting_end": "{original_end_time}",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "糟了，我那天下午15点要去见客户，能提前到13点开始吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整为这周周二下午13点，这样在见客户前可以结束。",
+          "hidden_state": {
+            "meeting_start": "周二 13:00",
+            "meeting_end": "周二 15",
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "周二 13:00",
+        "meeting_end": "周二 15",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "scheduling_005",
+      "type": "scheduling",
+      "name": "多轮会议修改",
+      "description": "用户多次修改会议时间",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 7,
+        "original_hour": 14,
+        "first_change_hours": 2,
+        "second_change_desc": "前一天同一时刻",
+        "meeting_date": "2026-03-28",
+        "meeting_day_name": "周六",
+        "meeting_day_desc": "这周周六",
+        "original_hour_padded": "14",
+        "first_change_desc": "2个小时",
+        "first_hour": 16,
+        "first_hour_padded": "16",
+        "first_end_time": "周六 17:30",
+        "final_day_name": "周五",
+        "final_hour": 16,
+        "final_hour_padded": "16",
+        "final_end_time": "周五 17:30"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周六下午14点的预算讨论会，持续1个半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周六 14:00",
+            "meeting_end": "{original_end_time}",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "能提前2个小时吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已调整。",
+          "hidden_state": {
+            "meeting_start": "周六 16:00",
+            "meeting_end": "周六 17:30",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "还是不太好，改到前一天同一时刻吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整到周五下午16点。",
+          "hidden_state": {
+            "meeting_start": "周五 16:00",
+            "meeting_end": "周五 17:30",
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "周五 16:00",
+        "meeting_end": "周五 17:30",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "scheduling_005",
+      "type": "scheduling",
+      "name": "多轮会议修改",
+      "description": "用户多次修改会议时间",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 7,
+        "original_hour": 14,
+        "first_change_hours": 1,
+        "second_change_desc": "后一天同一时刻",
+        "meeting_date": "2026-03-28",
+        "meeting_day_name": "周六",
+        "meeting_day_desc": "这周周六",
+        "original_hour_padded": "14",
+        "first_change_desc": "1个小时",
+        "first_hour": 15,
+        "first_hour_padded": "15",
+        "first_end_time": "周六 16:30",
+        "final_day_name": "周日",
+        "final_hour": 15,
+        "final_hour_padded": "15",
+        "final_end_time": "周日 16:30"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周六下午14点的预算讨论会，持续1个半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周六 14:00",
+            "meeting_end": "{original_end_time}",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "能提前1个小时吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已调整。",
+          "hidden_state": {
+            "meeting_start": "周六 15:00",
+            "meeting_end": "周六 16:30",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "还是不太好，改到后一天同一时刻吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整到周日下午15点。",
+          "hidden_state": {
+            "meeting_start": "周日 15:00",
+            "meeting_end": "周日 16:30",
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "周日 15:00",
+        "meeting_end": "周日 16:30",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "modification_001",
+      "type": "modification",
+      "name": "取消会议",
+      "description": "用户取消之前安排的会议",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 3,
+        "meeting_hour": 15,
+        "meeting_date": "2026-03-24",
+        "meeting_day_name": "周二",
+        "meeting_day_desc": "这周周二",
+        "meeting_hour_padded": "15",
+        "end_time_only": "16:00"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二下午15点的技术分享会，持续1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周二 15:00",
+            "meeting_end": "{original_end_time}",
+            "meeting_status": "scheduled",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "那个技术分享会取消吧，主讲人出差了。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已取消这周周二下午15点的技术分享会。",
+          "hidden_state": {
+            "meeting_start": null,
+            "meeting_end": null,
+            "meeting_status": "cancelled",
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": null,
+        "meeting_end": null,
+        "meeting_status": "cancelled",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "modification_001",
+      "type": "modification",
+      "name": "取消会议",
+      "description": "用户取消之前安排的会议",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 5,
+        "meeting_hour": 15,
+        "meeting_date": "2026-03-26",
+        "meeting_day_name": "周四",
+        "meeting_day_desc": "这周周四",
+        "meeting_hour_padded": "15",
+        "end_time_only": "16:00"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周四下午15点的技术分享会，持续1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周四 15:00",
+            "meeting_end": "{original_end_time}",
+            "meeting_status": "scheduled",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "那个技术分享会取消吧，主讲人出差了。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已取消这周周四下午15点的技术分享会。",
+          "hidden_state": {
+            "meeting_start": null,
+            "meeting_end": null,
+            "meeting_status": "cancelled",
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": null,
+        "meeting_end": null,
+        "meeting_status": "cancelled",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "modification_002",
+      "type": "modification",
+      "name": "缩短会议",
+      "description": "用户要求缩短会议时长",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 2,
+        "meeting_hour": 9,
+        "original_duration": 90,
+        "new_duration": 30,
+        "meeting_date": "2026-03-23",
+        "meeting_day_name": "周一",
+        "meeting_day_desc": "后天",
+        "meeting_hour_padded": "09",
+        "original_duration_desc": "1个半小时",
+        "original_end_time": "周一 10:30",
+        "new_duration_desc": "30分钟",
+        "new_end_time": "周一 09:30",
+        "end_time_only": "10:00"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排后天上午9点的项目启动会，持续1个半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周一 09:00",
+            "meeting_end": "周一 10:30",
+            "meeting_duration_minutes": "90",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "时间太长了，改成30分钟吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议时长调整为30分钟。",
+          "hidden_state": {
+            "meeting_start": "周一 09:00",
+            "meeting_end": "周一 09:30",
+            "meeting_duration_minutes": "30",
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "周一 09:00",
+        "meeting_end": "周一 09:30",
+        "meeting_duration_minutes": "30",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "modification_002",
+      "type": "modification",
+      "name": "缩短会议",
+      "description": "用户要求缩短会议时长",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 3,
+        "meeting_hour": 14,
+        "original_duration": 120,
+        "new_duration": 60,
+        "meeting_date": "2026-03-24",
+        "meeting_day_name": "周二",
+        "meeting_day_desc": "这周周二",
+        "meeting_hour_padded": "14",
+        "original_duration_desc": "2小时",
+        "original_end_time": "周二 16:00",
+        "new_duration_desc": "1小时",
+        "new_end_time": "周二 15:00",
+        "end_time_only": "15:00"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二上午14点的项目启动会，持续2小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周二 14:00",
+            "meeting_end": "周二 16:00",
+            "meeting_duration_minutes": "120",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "时间太长了，改成1小时吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议时长调整为1小时。",
+          "hidden_state": {
+            "meeting_start": "周二 14:00",
+            "meeting_end": "周二 15:00",
+            "meeting_duration_minutes": "60",
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "周二 14:00",
+        "meeting_end": "周二 15:00",
+        "meeting_duration_minutes": "60",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "modification_003",
+      "type": "modification",
+      "name": "添加参会者",
+      "description": "用户在会议中添加新的参会者",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 2,
+        "meeting_hour": 10,
+        "duration": 60,
+        "new_participant": "张总",
+        "meeting_date": "2026-03-23",
+        "meeting_day_name": "周一",
+        "meeting_day_desc": "后天",
+        "meeting_hour_padded": "10",
+        "duration_desc": "1小时",
+        "end_time": "周一 11:00",
+        "end_time_only": "11:00"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排后天下午10点的部门例会，持续1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周一 10:00",
+            "meeting_end": "周一 11:00",
+            "participants": [
+              "我"
+            ],
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "把张总也加上，他也要参加。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将张总添加到参会人员中。",
+          "hidden_state": {
+            "meeting_start": "周一 10:00",
+            "meeting_end": "周一 11:00",
+            "participants": [
+              "我",
+              "张总"
+            ],
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "周一 10:00",
+        "meeting_end": "周一 11:00",
+        "participants": [
+          "我",
+          "张总"
+        ],
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "modification_003",
+      "type": "modification",
+      "name": "添加参会者",
+      "description": "用户在会议中添加新的参会者",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 4,
+        "meeting_hour": 14,
+        "duration": 60,
+        "new_participant": "赵工",
+        "meeting_date": "2026-03-25",
+        "meeting_day_name": "周三",
+        "meeting_day_desc": "这周周三",
+        "meeting_hour_padded": "14",
+        "duration_desc": "1小时",
+        "end_time": "周三 15:00",
+        "end_time_only": "15:00"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周三下午14点的部门例会，持续1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周三 14:00",
+            "meeting_end": "周三 15:00",
+            "participants": [
+              "我"
+            ],
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "把赵工也加上，他也要参加。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将赵工添加到参会人员中。",
+          "hidden_state": {
+            "meeting_start": "周三 14:00",
+            "meeting_end": "周三 15:00",
+            "participants": [
+              "我",
+              "赵工"
+            ],
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "周三 14:00",
+        "meeting_end": "周三 15:00",
+        "participants": [
+          "我",
+          "赵工"
+        ],
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "modification_004",
+      "type": "modification",
+      "name": "会议延期到下周",
+      "description": "用户要求将会议延期到下周",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 3,
+        "meeting_hour": 10,
+        "duration": 60,
+        "meeting_date": "2026-03-24",
+        "meeting_day_name": "周二",
+        "meeting_day_desc": "这周周二",
+        "meeting_hour_padded": "10",
+        "duration_desc": "1小时",
+        "end_time": "周二 11:00",
+        "end_time_only": "11:00"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二下午10点的年度总结会，持续1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周二 10:00",
+            "meeting_end": "周二 11:00",
+            "meeting_status": "scheduled",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "这周太忙了，改到下周同一时间吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议延期到下周{meeting_weekday}下午10点。",
+          "hidden_state": {
+            "meeting_start": "下周{meeting_weekday} 10:00",
+            "meeting_end": "下周{meeting_weekday} 11:00",
+            "meeting_status": "postponed",
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "下周{meeting_weekday} 10:00",
+        "meeting_end": "下周{meeting_weekday} 11:00",
+        "meeting_status": "postponed",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "modification_004",
+      "type": "modification",
+      "name": "会议延期到下周",
+      "description": "用户要求将会议延期到下周",
+      "variables": {
+        "current_date": "2026-03-21",
+        "meeting_day_offset": 2,
+        "meeting_hour": 15,
+        "duration": 90,
+        "meeting_date": "2026-03-23",
+        "meeting_day_name": "周一",
+        "meeting_day_desc": "后天",
+        "meeting_hour_padded": "15",
+        "duration_desc": "1个半小时",
+        "end_time": "周一 16:30",
+        "end_time_only": "16:30"
+      },
+      "dialogue": [
+        {
+          "role": "user",
+          "content": "帮我安排后天下午15点的年度总结会，持续1个半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。",
+          "hidden_state": {
+            "meeting_start": "周一 15:00",
+            "meeting_end": "周一 16:30",
+            "meeting_status": "scheduled",
+            "conflict_resolved": false
+          }
+        },
+        {
+          "role": "user",
+          "content": "这周太忙了，改到下周同一时间吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议延期到下周{meeting_weekday}下午15点。",
+          "hidden_state": {
+            "meeting_start": "下周{meeting_weekday} 15:00",
+            "meeting_end": "下周{meeting_weekday} 16:30",
+            "meeting_status": "postponed",
+            "conflict_resolved": true
+          }
+        }
+      ],
+      "expected_final_state": {
+        "meeting_start": "下周{meeting_weekday} 15:00",
+        "meeting_end": "下周{meeting_weekday} 16:30",
+        "meeting_status": "postponed",
+        "conflict_resolved": true
+      }
+    }
+  ],
+  "transcript_probes": [
+    {
+      "id": "probe_scheduling_001",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周三下午10点的跨部门会议，持续1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，我已为您安排了这周周三下午10点的跨部门会议，持续1小时。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "周三 11:00",
+        "B": "周四 11:00",
+        "C": "周三 12:00",
+        "D": "周四 12:00"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是周三 11:00",
+      "time_reasoning_chain": [
+        "会议开始时间: 周三 10:00",
+        "会议结束时间: 周三 11:00"
+      ],
+      "current_day_hint": "这周周三",
+      "validation_result": {
+        "is_valid": true,
+        "natural_dialogue": true,
+        "clear_time_clues": true,
+        "deducible_answer": true,
+        "good_distractors": false,
+        "quality_score": 0.8,
+        "issues": [
+          "干扰项质量不足，错误选项不够迷惑性"
+        ],
+        "suggestions": [
+          "增加更具迷惑性的干扰选项，例如将时间设置为周三的其他时间或周四的相近时间"
+        ],
+        "question_id": "probe_scheduling_001"
+      },
+      "validation_score": 0.8
+    },
+    {
+      "id": "probe_scheduling_001",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周六下午14点的跨部门会议，持续1个半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，我已为您安排了这周周六下午14点的跨部门会议，持续1个半小时。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "周六 15:30",
+        "B": "周日 15:30",
+        "C": "周六 16:30",
+        "D": "周日 16:30"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是周六 15:30",
+      "time_reasoning_chain": [
+        "会议开始时间: 周六 14:00",
+        "会议结束时间: 周六 15:30"
+      ],
+      "current_day_hint": "这周周六",
+      "validation_result": {
+        "is_valid": true,
+        "natural_dialogue": true,
+        "clear_time_clues": true,
+        "deducible_answer": true,
+        "good_distractors": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "probe_scheduling_001"
+      },
+      "validation_score": 1.0
+    },
+    {
+      "id": "probe_scheduling_002",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二下午14点的项目汇报会议，持续一个半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。"
+        },
+        {
+          "role": "user",
+          "content": "我想把会议提前3个小时，可以吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整为这周周二下午11点。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "周二 12:30",
+        "B": "周三 12:30",
+        "C": "周二 13:30",
+        "D": "周三 13:30"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是周二 12:30",
+      "time_reasoning_chain": [
+        "会议开始时间: 周二 11:00",
+        "会议结束时间: 周二 12:30"
+      ],
+      "current_day_hint": "这周周二",
+      "validation_result": {
+        "is_valid": true,
+        "natural_dialogue": true,
+        "clear_time_clues": true,
+        "deducible_answer": true,
+        "good_distractors": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "probe_scheduling_002"
+      },
+      "validation_score": 1.0
+    },
+    {
+      "id": "probe_scheduling_002",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周四下午15点的项目汇报会议，持续一个半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。"
+        },
+        {
+          "role": "user",
+          "content": "我想把会议提前1个小时，可以吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整为这周周四下午14点。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "周四 15:30",
+        "B": "周五 15:30",
+        "C": "周四 16:30",
+        "D": "周五 16:30"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是周四 15:30",
+      "time_reasoning_chain": [
+        "会议开始时间: 周四 14:00",
+        "会议结束时间: 周四 15:30"
+      ],
+      "current_day_hint": "这周周四",
+      "validation_result": {
+        "is_valid": true,
+        "natural_dialogue": true,
+        "clear_time_clues": true,
+        "deducible_answer": true,
+        "good_distractors": false,
+        "quality_score": 0.8,
+        "issues": [
+          "干扰项质量不足，选项B和D明显不符合时间线索，缺乏迷惑性"
+        ],
+        "suggestions": [
+          "增加更具迷惑性的错误选项，例如将时间设置为周四的其他时间",
+          "确保所有选项都与对话内容相关"
+        ],
+        "question_id": "probe_scheduling_002"
+      },
+      "validation_score": 0.8
+    },
+    {
+      "id": "probe_scheduling_003",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二下午15点的团队周会，持续1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。"
+        },
+        {
+          "role": "user",
+          "content": "那天我有事，改到后天同一时间吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整到周一下午15点。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "周一 16:00",
+        "B": "周二 16:00",
+        "C": "周一 17:00",
+        "D": "周二 17:00"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是周一 16:00",
+      "time_reasoning_chain": [
+        "会议开始时间: 周一 15:00",
+        "会议结束时间: 周一 16:00"
+      ],
+      "current_day_hint": "这周周二",
+      "validation_result": {
+        "is_valid": true,
+        "natural_dialogue": true,
+        "clear_time_clues": true,
+        "deducible_answer": true,
+        "good_distractors": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "probe_scheduling_003"
+      },
+      "validation_score": 1.0
+    },
+    {
+      "id": "probe_scheduling_003",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二下午10点的团队周会，持续1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。"
+        },
+        {
+          "role": "user",
+          "content": "那天我有事，改到后天同一时间吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整到周一下午10点。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "周一 11:00",
+        "B": "周二 11:00",
+        "C": "周一 12:00",
+        "D": "周二 12:00"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是周一 11:00",
+      "time_reasoning_chain": [
+        "会议开始时间: 周一 10:00",
+        "会议结束时间: 周一 11:00"
+      ],
+      "current_day_hint": "这周周二",
+      "validation_result": {
+        "is_valid": false,
+        "natural_dialogue": true,
+        "clear_time_clues": false,
+        "deducible_answer": true,
+        "good_distractors": false,
+        "quality_score": 0.4,
+        "issues": [
+          "时间线索不清晰，用户提到的后天并未明确指代具体日期。",
+          "干扰项质量差，选项B和D与对话内容无关，无法迷惑用户。"
+        ],
+        "suggestions": [
+          "在对话中明确指代具体日期，以提高时间线索的清晰性。",
+          "增加更具迷惑性的干扰项，确保选项之间的竞争性。"
+        ],
+        "question_id": "probe_scheduling_003"
+      },
+      "validation_score": 0.4
+    },
+    {
+      "id": "probe_scheduling_004",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二下午15点的产品评审会，持续2小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。"
+        },
+        {
+          "role": "user",
+          "content": "糟了，我那天下午16点要去见客户，能提前到14点开始吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整为这周周二下午14点，这样在见客户前可以结束。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "周二 16",
+        "B": "下周一 15:30",
+        "C": "周三 14:00",
+        "D": "周五 16:30"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是周二 16",
+      "time_reasoning_chain": [
+        "会议开始时间: 周二 14:00",
+        "会议结束时间: 周二 16"
+      ],
+      "current_day_hint": "这周周二",
+      "validation_result": {
+        "is_valid": false,
+        "natural_dialogue": true,
+        "clear_time_clues": true,
+        "deducible_answer": false,
+        "good_distractors": false,
+        "quality_score": 0.4,
+        "issues": [
+          "正确答案A与对话内容不符，会议结束时间应为周二16:00，而不是周二16。",
+          "选项A的表述不够清晰，缺少具体的时间单位（如小时），可能导致误解。",
+          "干扰项的设置不具备迷惑性，均与对话内容无关，未能有效干扰用户判断。"
+        ],
+        "suggestions": [
+          "确保正确答案与对话内容一致。",
+          "改进选项A的表述，明确为'周二 16:00'。",
+          "增加更具迷惑性的干扰项，使其更贴近对话内容。"
+        ],
+        "question_id": "probe_scheduling_004"
+      },
+      "validation_score": 0.4
+    },
+    {
+      "id": "probe_scheduling_004",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二下午14点的产品评审会，持续2小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。"
+        },
+        {
+          "role": "user",
+          "content": "糟了，我那天下午15点要去见客户，能提前到13点开始吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整为这周周二下午13点，这样在见客户前可以结束。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "周二 15",
+        "B": "下周一 15:30",
+        "C": "周三 14:00",
+        "D": "周五 16:30"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是周二 15",
+      "time_reasoning_chain": [
+        "会议开始时间: 周二 13:00",
+        "会议结束时间: 周二 15"
+      ],
+      "current_day_hint": "这周周二",
+      "validation_result": {
+        "is_valid": true,
+        "natural_dialogue": true,
+        "clear_time_clues": true,
+        "deducible_answer": true,
+        "good_distractors": false,
+        "quality_score": 0.8,
+        "issues": [
+          "干扰项质量不足，其他选项明显不相关，缺乏迷惑性"
+        ],
+        "suggestions": [
+          "增加更具迷惑性的干扰选项，例如与会议时间相近但不正确的选项"
+        ],
+        "question_id": "probe_scheduling_004"
+      },
+      "validation_score": 0.8
+    },
+    {
+      "id": "probe_scheduling_005",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周六下午14点的预算讨论会，持续1个半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。"
+        },
+        {
+          "role": "user",
+          "content": "能提前2个小时吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已调整。"
+        },
+        {
+          "role": "user",
+          "content": "还是不太好，改到前一天同一时刻吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整到周五下午16点。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "周五 17:30",
+        "B": "周六 17:30",
+        "C": "周五 18:30",
+        "D": "周六 18:30"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是周五 17:30",
+      "time_reasoning_chain": [
+        "会议开始时间: 周五 16:00",
+        "会议结束时间: 周五 17:30"
+      ],
+      "current_day_hint": "这周周六",
+      "validation_result": {
+        "is_valid": true,
+        "natural_dialogue": true,
+        "clear_time_clues": true,
+        "deducible_answer": true,
+        "good_distractors": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "probe_scheduling_005"
+      },
+      "validation_score": 1.0
+    },
+    {
+      "id": "probe_scheduling_005",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周六下午14点的预算讨论会，持续1个半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。"
+        },
+        {
+          "role": "user",
+          "content": "能提前1个小时吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已调整。"
+        },
+        {
+          "role": "user",
+          "content": "还是不太好，改到后一天同一时刻吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议调整到周日下午15点。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "周日 16:30",
+        "B": "周一 16:30",
+        "C": "周日 17:30",
+        "D": "周一 17:30"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是周日 16:30",
+      "time_reasoning_chain": [
+        "会议开始时间: 周日 15:00",
+        "会议结束时间: 周日 16:30"
+      ],
+      "current_day_hint": "这周周六",
+      "validation_result": {
+        "is_valid": false,
+        "natural_dialogue": true,
+        "clear_time_clues": true,
+        "deducible_answer": false,
+        "good_distractors": false,
+        "quality_score": 0.4,
+        "issues": [
+          "正确答案不正确，会议结束时间应为周日 16:30，而选项A为周日 16:30，选项B、C、D均不符合对话内容。"
+        ],
+        "suggestions": [
+          "确认正确答案，确保与对话内容一致。",
+          "增加更多干扰项以提高选项的迷惑性。"
+        ],
+        "question_id": "probe_scheduling_005"
+      },
+      "validation_score": 0.4
+    },
+    {
+      "id": "probe_modification_002",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排后天上午9点的项目启动会，持续1个半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。"
+        },
+        {
+          "role": "user",
+          "content": "时间太长了，改成30分钟吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议时长调整为30分钟。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "周一 09:30",
+        "B": "周二 09:30",
+        "C": "周一 10:30",
+        "D": "周二 10:30"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是周一 09:30",
+      "time_reasoning_chain": [
+        "会议开始时间: 周一 09:00",
+        "会议结束时间: 周一 09:30"
+      ],
+      "current_day_hint": "后天",
+      "validation_result": {
+        "is_valid": false,
+        "natural_dialogue": true,
+        "clear_time_clues": false,
+        "deducible_answer": false,
+        "good_distractors": true,
+        "quality_score": 0.4,
+        "issues": [
+          "时间线索不清晰，未明确说明具体日期",
+          "正确答案无法从对话中推理得出"
+        ],
+        "suggestions": [
+          "在对话中明确指出具体的日期",
+          "确保探针问题的答案可以直接从对话推理得出"
+        ],
+        "question_id": "probe_modification_002"
+      },
+      "validation_score": 0.4
+    },
+    {
+      "id": "probe_modification_002",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二上午14点的项目启动会，持续2小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。"
+        },
+        {
+          "role": "user",
+          "content": "时间太长了，改成1小时吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议时长调整为1小时。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "周二 15:00",
+        "B": "周三 15:00",
+        "C": "周二 16:00",
+        "D": "周三 16:00"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是周二 15:00",
+      "time_reasoning_chain": [
+        "会议开始时间: 周二 14:00",
+        "会议结束时间: 周二 15:00"
+      ],
+      "current_day_hint": "这周周二",
+      "validation_result": {
+        "is_valid": true,
+        "natural_dialogue": true,
+        "clear_time_clues": true,
+        "deducible_answer": true,
+        "good_distractors": false,
+        "quality_score": 0.8,
+        "issues": [
+          "干扰项质量不足，选项B和D明显不符合时间逻辑，缺乏迷惑性"
+        ],
+        "suggestions": [
+          "增加更具迷惑性的干扰选项，例如将时间设置为周二的其他时段",
+          "确保所有选项都在合理的时间范围内"
+        ],
+        "question_id": "probe_modification_002"
+      },
+      "validation_score": 0.8
+    },
+    {
+      "id": "probe_modification_003",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排后天下午10点的部门例会，持续1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。"
+        },
+        {
+          "role": "user",
+          "content": "把张总也加上，他也要参加。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将张总添加到参会人员中。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "周一 11:00",
+        "B": "周二 11:00",
+        "C": "周一 12:00",
+        "D": "周二 12:00"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是周一 11:00",
+      "time_reasoning_chain": [
+        "会议开始时间: 周一 10:00",
+        "会议结束时间: 周一 11:00"
+      ],
+      "current_day_hint": "后天",
+      "validation_result": {
+        "is_valid": false,
+        "natural_dialogue": true,
+        "clear_time_clues": false,
+        "deducible_answer": false,
+        "good_distractors": true,
+        "quality_score": 0.4,
+        "issues": [
+          "时间线索不清晰，未明确提及具体日期",
+          "正确答案无法从对话中推理得出"
+        ],
+        "suggestions": [
+          "在对话中明确提及具体日期",
+          "确保探针问题的答案可以直接从对话中推导"
+        ],
+        "question_id": "probe_modification_003"
+      },
+      "validation_score": 0.4
+    },
+    {
+      "id": "probe_modification_003",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周三下午14点的部门例会，持续1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。"
+        },
+        {
+          "role": "user",
+          "content": "把赵工也加上，他也要参加。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将赵工添加到参会人员中。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "周三 15:00",
+        "B": "周四 15:00",
+        "C": "周三 16:00",
+        "D": "周四 16:00"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是周三 15:00",
+      "time_reasoning_chain": [
+        "会议开始时间: 周三 14:00",
+        "会议结束时间: 周三 15:00"
+      ],
+      "current_day_hint": "这周周三",
+      "validation_result": {
+        "is_valid": true,
+        "natural_dialogue": true,
+        "clear_time_clues": true,
+        "deducible_answer": true,
+        "good_distractors": false,
+        "quality_score": 0.8,
+        "issues": [
+          "干扰项质量不足，错误选项不够迷惑性"
+        ],
+        "suggestions": [
+          "增加更具迷惑性的错误选项，例如与会议时间相近但不正确的选项。"
+        ],
+        "question_id": "probe_modification_003"
+      },
+      "validation_score": 0.8
+    },
+    {
+      "id": "probe_modification_004",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排这周周二下午10点的年度总结会，持续1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。"
+        },
+        {
+          "role": "user",
+          "content": "这周太忙了，改到下周同一时间吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议延期到下周{meeting_weekday}下午10点。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "下周{meeting_weekday} 11:00",
+        "B": "周二 11:00",
+        "C": "下周{meeting_weekday} 12:00",
+        "D": "周二 12:00"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是下周{meeting_weekday} 11:00",
+      "time_reasoning_chain": [
+        "会议开始时间: 下周{meeting_weekday} 10:00",
+        "会议结束时间: 下周{meeting_weekday} 11:00"
+      ],
+      "current_day_hint": "这周周二",
+      "validation_result": {
+        "is_valid": false,
+        "natural_dialogue": true,
+        "clear_time_clues": false,
+        "deducible_answer": true,
+        "good_distractors": true,
+        "quality_score": 0.6,
+        "issues": [
+          "时间线索不清晰，{meeting_weekday}未具体化",
+          "选项中未明确指出{meeting_weekday}的具体日期"
+        ],
+        "suggestions": [
+          "在对话中明确指出具体的日期",
+          "在选项中提供具体的日期而不是占位符"
+        ],
+        "question_id": "probe_modification_004"
+      },
+      "validation_score": 0.6
+    },
+    {
+      "id": "probe_modification_004",
+      "type": "transcript_probe",
+      "transcript": [
+        {
+          "role": "user",
+          "content": "帮我安排后天下午15点的年度总结会，持续1个半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已安排。"
+        },
+        {
+          "role": "user",
+          "content": "这周太忙了，改到下周同一时间吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，已将会议延期到下周{meeting_weekday}下午15点。"
+        }
+      ],
+      "probe_question": "根据上述对话，会议将在什么时间结束？",
+      "options": {
+        "A": "下周{meeting_weekday} 16:30",
+        "B": "周二 16:30",
+        "C": "下周{meeting_weekday} 17:30",
+        "D": "周二 17:30"
+      },
+      "answer": "A",
+      "explanation": "根据对话记录，正确时间是下周{meeting_weekday} 16:30",
+      "time_reasoning_chain": [
+        "会议开始时间: 下周{meeting_weekday} 15:00",
+        "会议结束时间: 下周{meeting_weekday} 16:30"
+      ],
+      "current_day_hint": "后天",
+      "validation_result": {
+        "is_valid": false,
+        "natural_dialogue": true,
+        "clear_time_clues": false,
+        "deducible_answer": true,
+        "good_distractors": true,
+        "quality_score": 0.6,
+        "issues": [
+          "时间线索不清晰，{meeting_weekday}未具体化",
+          "选项中存在不必要的干扰项，可能导致混淆"
+        ],
+        "suggestions": [
+          "明确{meeting_weekday}的具体日期",
+          "考虑减少干扰项的数量，确保选项更具针对性"
+        ],
+        "question_id": "probe_modification_004"
+      },
+      "validation_score": 0.6
+    }
+  ],
+  "state_evaluations": [
+    {
+      "id": "state_scheduling_001",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周三下午10点的跨部门会议，持续1小时。",
+          "expected_state": {
+            "meeting_start": "周三 10:00",
+            "meeting_end": "周三 11:00",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "周三 10:00",
+        "meeting_end": "周三 11:00",
+        "conflict_resolved": false
+      }
+    },
+    {
+      "id": "state_scheduling_001",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周六下午14点的跨部门会议，持续1个半小时。",
+          "expected_state": {
+            "meeting_start": "周六 14:00",
+            "meeting_end": "周六 15:30",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "周六 14:00",
+        "meeting_end": "周六 15:30",
+        "conflict_resolved": false
+      }
+    },
+    {
+      "id": "state_scheduling_002",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周二下午14点的项目汇报会议，持续一个半小时。",
+          "expected_state": {
+            "meeting_start": "周二 14:00",
+            "meeting_end": "{original_end_time}",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "我想把会议提前3个小时，可以吗？",
+          "expected_state": {
+            "meeting_start": "周二 11:00",
+            "meeting_end": "周二 12:30",
+            "conflict_resolved": true
+          },
+          "state_description": "第2轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "周二 11:00",
+        "meeting_end": "周二 12:30",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_scheduling_002",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周四下午15点的项目汇报会议，持续一个半小时。",
+          "expected_state": {
+            "meeting_start": "周四 15:00",
+            "meeting_end": "{original_end_time}",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "我想把会议提前1个小时，可以吗？",
+          "expected_state": {
+            "meeting_start": "周四 14:00",
+            "meeting_end": "周四 15:30",
+            "conflict_resolved": true
+          },
+          "state_description": "第2轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "周四 14:00",
+        "meeting_end": "周四 15:30",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_scheduling_003",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周二下午15点的团队周会，持续1小时。",
+          "expected_state": {
+            "meeting_start": "周二 15:00",
+            "meeting_end": "周二 16:00",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "那天我有事，改到后天同一时间吧。",
+          "expected_state": {
+            "meeting_start": "周一 15:00",
+            "meeting_end": "周一 16:00",
+            "conflict_resolved": true
+          },
+          "state_description": "第2轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "周一 15:00",
+        "meeting_end": "周一 16:00",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_scheduling_003",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周二下午10点的团队周会，持续1小时。",
+          "expected_state": {
+            "meeting_start": "周二 10:00",
+            "meeting_end": "周二 11:00",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "那天我有事，改到后天同一时间吧。",
+          "expected_state": {
+            "meeting_start": "周一 10:00",
+            "meeting_end": "周一 11:00",
+            "conflict_resolved": true
+          },
+          "state_description": "第2轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "周一 10:00",
+        "meeting_end": "周一 11:00",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_scheduling_004",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周二下午15点的产品评审会，持续2小时。",
+          "expected_state": {
+            "meeting_start": "周二 15:00",
+            "meeting_end": "{original_end_time}",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "糟了，我那天下午16点要去见客户，能提前到14点开始吗？",
+          "expected_state": {
+            "meeting_start": "周二 14:00",
+            "meeting_end": "周二 16",
+            "conflict_resolved": true
+          },
+          "state_description": "第2轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "周二 14:00",
+        "meeting_end": "周二 16",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_scheduling_004",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周二下午14点的产品评审会，持续2小时。",
+          "expected_state": {
+            "meeting_start": "周二 14:00",
+            "meeting_end": "{original_end_time}",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "糟了，我那天下午15点要去见客户，能提前到13点开始吗？",
+          "expected_state": {
+            "meeting_start": "周二 13:00",
+            "meeting_end": "周二 15",
+            "conflict_resolved": true
+          },
+          "state_description": "第2轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "周二 13:00",
+        "meeting_end": "周二 15",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_scheduling_005",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周六下午14点的预算讨论会，持续1个半小时。",
+          "expected_state": {
+            "meeting_start": "周六 14:00",
+            "meeting_end": "{original_end_time}",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "能提前2个小时吗？",
+          "expected_state": {
+            "meeting_start": "周六 16:00",
+            "meeting_end": "周六 17:30",
+            "conflict_resolved": false
+          },
+          "state_description": "第2轮对话后的状态"
+        },
+        {
+          "turn": 3,
+          "user_input": "还是不太好，改到前一天同一时刻吧。",
+          "expected_state": {
+            "meeting_start": "周五 16:00",
+            "meeting_end": "周五 17:30",
+            "conflict_resolved": true
+          },
+          "state_description": "第3轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "周五 16:00",
+        "meeting_end": "周五 17:30",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_scheduling_005",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周六下午14点的预算讨论会，持续1个半小时。",
+          "expected_state": {
+            "meeting_start": "周六 14:00",
+            "meeting_end": "{original_end_time}",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "能提前1个小时吗？",
+          "expected_state": {
+            "meeting_start": "周六 15:00",
+            "meeting_end": "周六 16:30",
+            "conflict_resolved": false
+          },
+          "state_description": "第2轮对话后的状态"
+        },
+        {
+          "turn": 3,
+          "user_input": "还是不太好，改到后一天同一时刻吧。",
+          "expected_state": {
+            "meeting_start": "周日 15:00",
+            "meeting_end": "周日 16:30",
+            "conflict_resolved": true
+          },
+          "state_description": "第3轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "周日 15:00",
+        "meeting_end": "周日 16:30",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_modification_001",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周二下午15点的技术分享会，持续1小时。",
+          "expected_state": {
+            "meeting_start": "周二 15:00",
+            "meeting_end": "{original_end_time}",
+            "meeting_status": "scheduled",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "那个技术分享会取消吧，主讲人出差了。",
+          "expected_state": {
+            "meeting_start": null,
+            "meeting_end": null,
+            "meeting_status": "cancelled",
+            "conflict_resolved": true
+          },
+          "state_description": "第2轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "meeting_status",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "meeting_status",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": null,
+        "meeting_end": null,
+        "meeting_status": "cancelled",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_modification_001",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周四下午15点的技术分享会，持续1小时。",
+          "expected_state": {
+            "meeting_start": "周四 15:00",
+            "meeting_end": "{original_end_time}",
+            "meeting_status": "scheduled",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "那个技术分享会取消吧，主讲人出差了。",
+          "expected_state": {
+            "meeting_start": null,
+            "meeting_end": null,
+            "meeting_status": "cancelled",
+            "conflict_resolved": true
+          },
+          "state_description": "第2轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "meeting_status",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "meeting_status",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": null,
+        "meeting_end": null,
+        "meeting_status": "cancelled",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_modification_002",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排后天上午9点的项目启动会，持续1个半小时。",
+          "expected_state": {
+            "meeting_start": "周一 09:00",
+            "meeting_end": "周一 10:30",
+            "meeting_duration_minutes": "90",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "时间太长了，改成30分钟吧。",
+          "expected_state": {
+            "meeting_start": "周一 09:00",
+            "meeting_end": "周一 09:30",
+            "meeting_duration_minutes": "30",
+            "conflict_resolved": true
+          },
+          "state_description": "第2轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "meeting_duration_minutes",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "meeting_duration_minutes",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "周一 09:00",
+        "meeting_end": "周一 09:30",
+        "meeting_duration_minutes": "30",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_modification_002",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周二上午14点的项目启动会，持续2小时。",
+          "expected_state": {
+            "meeting_start": "周二 14:00",
+            "meeting_end": "周二 16:00",
+            "meeting_duration_minutes": "120",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "时间太长了，改成1小时吧。",
+          "expected_state": {
+            "meeting_start": "周二 14:00",
+            "meeting_end": "周二 15:00",
+            "meeting_duration_minutes": "60",
+            "conflict_resolved": true
+          },
+          "state_description": "第2轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "meeting_duration_minutes",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "meeting_duration_minutes",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "周二 14:00",
+        "meeting_end": "周二 15:00",
+        "meeting_duration_minutes": "60",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_modification_003",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排后天下午10点的部门例会，持续1小时。",
+          "expected_state": {
+            "meeting_start": "周一 10:00",
+            "meeting_end": "周一 11:00",
+            "participants": [
+              "我"
+            ],
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "把张总也加上，他也要参加。",
+          "expected_state": {
+            "meeting_start": "周一 10:00",
+            "meeting_end": "周一 11:00",
+            "participants": [
+              "我",
+              "张总"
+            ],
+            "conflict_resolved": true
+          },
+          "state_description": "第2轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "participants",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "participants",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "周一 10:00",
+        "meeting_end": "周一 11:00",
+        "participants": [
+          "我",
+          "张总"
+        ],
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_modification_003",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周三下午14点的部门例会，持续1小时。",
+          "expected_state": {
+            "meeting_start": "周三 14:00",
+            "meeting_end": "周三 15:00",
+            "participants": [
+              "我"
+            ],
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "把赵工也加上，他也要参加。",
+          "expected_state": {
+            "meeting_start": "周三 14:00",
+            "meeting_end": "周三 15:00",
+            "participants": [
+              "我",
+              "赵工"
+            ],
+            "conflict_resolved": true
+          },
+          "state_description": "第2轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "participants",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "participants",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "周三 14:00",
+        "meeting_end": "周三 15:00",
+        "participants": [
+          "我",
+          "赵工"
+        ],
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_modification_004",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排这周周二下午10点的年度总结会，持续1小时。",
+          "expected_state": {
+            "meeting_start": "周二 10:00",
+            "meeting_end": "周二 11:00",
+            "meeting_status": "scheduled",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "这周太忙了，改到下周同一时间吧。",
+          "expected_state": {
+            "meeting_start": "下周{meeting_weekday} 10:00",
+            "meeting_end": "下周{meeting_weekday} 11:00",
+            "meeting_status": "postponed",
+            "conflict_resolved": true
+          },
+          "state_description": "第2轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "meeting_status",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "meeting_status",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "下周{meeting_weekday} 10:00",
+        "meeting_end": "下周{meeting_weekday} 11:00",
+        "meeting_status": "postponed",
+        "conflict_resolved": true
+      }
+    },
+    {
+      "id": "state_modification_004",
+      "type": "json_state_evaluation",
+      "dialogue_script": [
+        {
+          "turn": 1,
+          "user_input": "帮我安排后天下午15点的年度总结会，持续1个半小时。",
+          "expected_state": {
+            "meeting_start": "周一 15:00",
+            "meeting_end": "周一 16:30",
+            "meeting_status": "scheduled",
+            "conflict_resolved": false
+          },
+          "state_description": "第1轮对话后的状态"
+        },
+        {
+          "turn": 2,
+          "user_input": "这周太忙了，改到下周同一时间吧。",
+          "expected_state": {
+            "meeting_start": "下周{meeting_weekday} 15:00",
+            "meeting_end": "下周{meeting_weekday} 16:30",
+            "meeting_status": "postponed",
+            "conflict_resolved": true
+          },
+          "state_description": "第2轮对话后的状态"
+        }
+      ],
+      "evaluation_criteria": {
+        "required_keys": [
+          "meeting_start",
+          "meeting_end",
+          "meeting_status",
+          "conflict_resolved"
+        ],
+        "exact_match_keys": [
+          "meeting_start",
+          "meeting_end",
+          "meeting_status",
+          "conflict_resolved"
+        ],
+        "semantic_match_keys": []
+      },
+      "difficulty": "medium",
+      "expected_final_state": {
+        "meeting_start": "下周{meeting_weekday} 15:00",
+        "meeting_end": "下周{meeting_weekday} 16:30",
+        "meeting_status": "postponed",
+        "conflict_resolved": true
+      }
+    }
+  ]
+}

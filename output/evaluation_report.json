@@ -1,0 +1,385 @@
+{
+  "timestamp": "2026-03-21T10:45:05.710132",
+  "summary": {
+    "qa": {
+      "total_questions": 18,
+      "valid_questions": 8,
+      "validation_rate": 0.4444444444444444,
+      "average_quality_score": 0.7555555555555556
+    },
+    "dialogue": {
+      "total_questions": 16,
+      "valid_questions": 9,
+      "validation_rate": 0.5625,
+      "average_quality_score": 0.7000000000000001
+    },
+    "overall": {
+      "total_questions": 34,
+      "valid_questions": 17,
+      "validation_rate": 0.5
+    }
+  },
+  "qa_evaluation": {
+    "historical_events": {
+      "total": 3,
+      "valid": 1,
+      "validation_rate": 0.3333333333333333,
+      "average_score": 0.6666666666666666,
+      "dimensions": {
+        "mutual_exclusive": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "unique_answer": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "clear_question": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "good_distractors": {
+          "count": 1,
+          "rate": 0.3333333333333333
+        },
+        "logical_time": {
+          "count": 2,
+          "rate": 0.6666666666666666
+        }
+      },
+      "issues": [
+        {
+          "question_id": "historical_001",
+          "issues": [
+            "问题的逻辑推理不符合历史事实，加纳独立实际上是在1957年，而不是1847年之前。",
+            "选项C（1960年）虽然是错误的，但并不具备足够的迷惑性，因为它与历史事实相去甚远。",
+            "选项B（1850年）和D（1900年）在历史上也不符合加纳独立的实际时间，干扰项质量较低。"
+          ],
+          "quality_score": 0.4
+        },
+        {
+          "question_id": "historical_002",
+          "issues": [
+            "错误选项缺乏迷惑性",
+            "问题假设不符合历史事实"
+          ],
+          "quality_score": 0.6
+        }
+      ]
+    },
+    "duration": {
+      "total": 3,
+      "valid": 1,
+      "validation_rate": 0.3333333333333333,
+      "average_score": 0.7333333333333334,
+      "dimensions": {
+        "mutual_exclusive": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "unique_answer": {
+          "count": 2,
+          "rate": 0.6666666666666666
+        },
+        "clear_question": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "good_distractors": {
+          "count": 2,
+          "rate": 0.6666666666666666
+        },
+        "logical_time": {
+          "count": 3,
+          "rate": 1.0
+        }
+      },
+      "issues": [
+        {
+          "question_id": "duration_001",
+          "issues": [
+            "正确答案不唯一，选项B和C都可能被认为是合理的答案。"
+          ],
+          "quality_score": 0.6
+        },
+        {
+          "question_id": "duration_003",
+          "issues": [
+            "选项C和选项D的描述不够明确，可能导致混淆。"
+          ],
+          "quality_score": 0.6
+        }
+      ]
+    },
+    "implicit_time": {
+      "total": 3,
+      "valid": 2,
+      "validation_rate": 0.6666666666666666,
+      "average_score": 0.8666666666666667,
+      "dimensions": {
+        "mutual_exclusive": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "unique_answer": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "clear_question": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "good_distractors": {
+          "count": 2,
+          "rate": 0.6666666666666666
+        },
+        "logical_time": {
+          "count": 3,
+          "rate": 1.0
+        }
+      },
+      "issues": [
+        {
+          "question_id": "implicit_003",
+          "issues": [
+            "选项A和其他选项的时间逻辑不够明确，可能导致误解。",
+            "干扰项的迷惑性不足，选项B和D在秋季也是常见活动，选项C的时间逻辑不够清晰。"
+          ],
+          "quality_score": 0.6
+        }
+      ]
+    },
+    "fictional_timeline": {
+      "total": 3,
+      "valid": 2,
+      "validation_rate": 0.6666666666666666,
+      "average_score": 0.8666666666666667,
+      "dimensions": {
+        "mutual_exclusive": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "unique_answer": {
+          "count": 2,
+          "rate": 0.6666666666666666
+        },
+        "clear_question": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "good_distractors": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "logical_time": {
+          "count": 3,
+          "rate": 1.0
+        }
+      },
+      "issues": [
+        {
+          "question_id": "fictional_001",
+          "issues": [
+            "正确答案错误，正确答案应为Klyx而非B选项"
+          ],
+          "quality_score": 0.6
+        }
+      ]
+    },
+    "ordering": {
+      "total": 3,
+      "valid": 0,
+      "validation_rate": 0.0,
+      "average_score": 0.5333333333333333,
+      "dimensions": {
+        "mutual_exclusive": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "unique_answer": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "clear_question": {
+          "count": 2,
+          "rate": 0.6666666666666666
+        },
+        "good_distractors": {
+          "count": 1,
+          "rate": 0.3333333333333333
+        },
+        "logical_time": {
+          "count": 2,
+          "rate": 0.6666666666666666
+        }
+      },
+      "issues": [
+        {
+          "question_id": "ordering_001",
+          "issues": [
+            "问题表述不清晰，未提供任务具体时间",
+            "缺乏对任务时间的明确描述，导致推理不明确"
+          ],
+          "quality_score": 0.6
+        },
+        {
+          "question_id": "ordering_002",
+          "issues": [
+            "选项D的时间安排实际上超出了5点的截止时间，导致逻辑错误。",
+            "错误选项的迷惑性不足，因其均未能在5点前完成任务。"
+          ],
+          "quality_score": 0.4
+        },
+        {
+          "question_id": "ordering_003",
+          "issues": [
+            "选项B的时间安排不够清晰，缺乏具体时间说明，可能导致理解上的歧义。",
+            "其他选项的时间安排没有明确说明，导致干扰项质量不足。"
+          ],
+          "quality_score": 0.6
+        }
+      ]
+    },
+    "concurrency": {
+      "total": 3,
+      "valid": 2,
+      "validation_rate": 0.6666666666666666,
+      "average_score": 0.8666666666666667,
+      "dimensions": {
+        "mutual_exclusive": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "unique_answer": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "clear_question": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "good_distractors": {
+          "count": 2,
+          "rate": 0.6666666666666666
+        },
+        "logical_time": {
+          "count": 3,
+          "rate": 1.0
+        }
+      },
+      "issues": [
+        {
+          "question_id": "concurrency_003",
+          "issues": [
+            "选项B和C可能会影响考试进行，选项A的影响取决于讨论的时间安排，干扰项质量不足"
+          ],
+          "quality_score": 0.6
+        }
+      ]
+    }
+  },
+  "dialogue_evaluation": {
+    "transcript_probes": {
+      "total": 16,
+      "valid": 9,
+      "validation_rate": 0.5625,
+      "average_score": 0.7000000000000001,
+      "dimensions": {
+        "natural_dialogue": {
+          "count": 16,
+          "rate": 1.0
+        },
+        "clear_time_clues": {
+          "count": 11,
+          "rate": 0.6875
+        },
+        "deducible_answer": {
+          "count": 12,
+          "rate": 0.75
+        },
+        "good_distractors": {
+          "count": 8,
+          "rate": 0.5
+        }
+      },
+      "issues": [
+        {
+          "question_id": "probe_scheduling_003",
+          "issues": [
+            "时间线索不清晰，用户提到的后天并未明确指代具体日期。",
+            "干扰项质量差，选项B和D与对话内容无关，无法迷惑用户。"
+          ],
+          "quality_score": 0.4
+        },
+        {
+          "question_id": "probe_scheduling_004",
+          "issues": [
+            "正确答案A与对话内容不符，会议结束时间应为周二16:00，而不是周二16。",
+            "选项A的表述不够清晰，缺少具体的时间单位（如小时），可能导致误解。",
+            "干扰项的设置不具备迷惑性，均与对话内容无关，未能有效干扰用户判断。"
+          ],
+          "quality_score": 0.4
+        },
+        {
+          "question_id": "probe_scheduling_005",
+          "issues": [
+            "正确答案不正确，会议结束时间应为周日 16:30，而选项A为周日 16:30，选项B、C、D均不符合对话内容。"
+          ],
+          "quality_score": 0.4
+        },
+        {
+          "question_id": "probe_modification_002",
+          "issues": [
+            "时间线索不清晰，未明确说明具体日期",
+            "正确答案无法从对话中推理得出"
+          ],
+          "quality_score": 0.4
+        },
+        {
+          "question_id": "probe_modification_003",
+          "issues": [
+            "时间线索不清晰，未明确提及具体日期",
+            "正确答案无法从对话中推理得出"
+          ],
+          "quality_score": 0.4
+        },
+        {
+          "question_id": "probe_modification_004",
+          "issues": [
+            "时间线索不清晰，{meeting_weekday}未具体化",
+            "选项中未明确指出{meeting_weekday}的具体日期"
+          ],
+          "quality_score": 0.6
+        },
+        {
+          "question_id": "probe_modification_004",
+          "issues": [
+            "时间线索不清晰，{meeting_weekday}未具体化",
+            "选项中存在不必要的干扰项，可能导致混淆"
+          ],
+          "quality_score": 0.6
+        }
+      ]
+    }
+  },
+  "issues": [],
+  "recommendations": [
+    "QA类型 'historical_events' 的验证率较低 (33.3%)，需要改进题目质量",
+    "QA类型 'historical_events' 的 'good_distractors' 维度表现不佳 (33.3%)",
+    "QA类型 'historical_events' 的 'logical_time' 维度表现不佳 (66.7%)",
+    "QA类型 'duration' 的验证率较低 (33.3%)，需要改进题目质量",
+    "QA类型 'duration' 的 'unique_answer' 维度表现不佳 (66.7%)",
+    "QA类型 'duration' 的 'good_distractors' 维度表现不佳 (66.7%)",
+    "QA类型 'implicit_time' 的验证率较低 (66.7%)，需要改进题目质量",
+    "QA类型 'implicit_time' 的 'good_distractors' 维度表现不佳 (66.7%)",
+    "QA类型 'fictional_timeline' 的验证率较低 (66.7%)，需要改进题目质量",
+    "QA类型 'fictional_timeline' 的 'unique_answer' 维度表现不佳 (66.7%)",
+    "QA类型 'ordering' 的验证率较低 (0.0%)，需要改进题目质量",
+    "QA类型 'ordering' 的 'clear_question' 维度表现不佳 (66.7%)",
+    "QA类型 'ordering' 的 'good_distractors' 维度表现不佳 (33.3%)",
+    "QA类型 'ordering' 的 'logical_time' 维度表现不佳 (66.7%)",
+    "QA类型 'concurrency' 的验证率较低 (66.7%)，需要改进题目质量",
+    "QA类型 'concurrency' 的 'good_distractors' 维度表现不佳 (66.7%)",
+    "对话类型 'transcript_probes' 的验证率较低 (56.2%)，需要改进题目质量"
+  ]
+}
