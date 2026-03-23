@@ -9,7 +9,7 @@ from dataclasses import dataclass, asdict
 from .distributions import DurationDistribution, create_distribution
 from ..config import (
     DataConfig, ACTIVITY_DISTRIBUTIONS, CONTEXT_TEMPLATES,
-    RANDOM_SEED
+    RANDOM_SEED, get_activity_distributions
 )
 
 
@@ -35,9 +35,14 @@ class PTADatasetGenerator:
         self.rng = np.random.default_rng(self.config.seed)
         random.seed(self.config.seed)
         
+        # Get activity distributions (expanded if configured)
+        activity_dists = get_activity_distributions(
+            use_expanded=self.config.use_expanded_activities
+        )
+        
         # Create distributions for each activity
         self.distributions: Dict[str, DurationDistribution] = {}
-        for activity, dist_config in ACTIVITY_DISTRIBUTIONS.items():
+        for activity, dist_config in activity_dists.items():
             self.distributions[activity] = create_distribution(dist_config)
         
         self.activities = list(self.distributions.keys())

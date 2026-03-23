@@ -32,6 +32,8 @@ class DataConfig:
     # Action thresholds
     defer_threshold: float = 0.8
     interrupt_threshold: float = 0.3
+    # Whether to use expanded activities from MCTACO
+    use_expanded_activities: bool = False
 
 # Activity Duration Distributions (in minutes)
 ACTIVITY_DISTRIBUTIONS = {
@@ -48,6 +50,50 @@ ACTIVITY_DISTRIBUTIONS = {
     "gaming": {"type": "uniform", "params": {"low": 30, "high": 180}},
     "meditation": {"type": "uniform", "params": {"low": 10, "high": 45}},
 }
+
+# Expanded Activity Distributions from MCTACO (higher quality activities)
+EXPANDED_ACTIVITY_DISTRIBUTIONS = {
+    # ===== 原始活动 =====
+    "commute": {"type": "lognormal", "params": {"mean": 30, "std": 10}},
+    "cooking": {"type": "uniform", "params": {"low": 15, "high": 90}},
+    "deep_sleep": {"type": "uniform", "params": {"low": 180, "high": 480}},
+    "gaming": {"type": "uniform", "params": {"low": 30, "high": 180}},
+    "lunch_break": {"type": "uniform", "params": {"low": 20, "high": 60}},
+    "meditation": {"type": "uniform", "params": {"low": 10, "high": 45}},
+    "meeting": {"type": "uniform", "params": {"low": 30, "high": 120}},
+    "nap": {"type": "uniform", "params": {"low": 10, "high": 60}},
+    "phone_call": {"type": "lognormal", "params": {"mean": 10, "std": 5}},
+    "reading": {"type": "uniform", "params": {"low": 20, "high": 120}},
+    "shower": {"type": "uniform", "params": {"low": 5, "high": 30}},
+    "workout": {"type": "uniform", "params": {"low": 30, "high": 90}},
+    # ===== MCTACO扩充活动 =====
+    "do_the_laundry": {"type": "uniform", "params": {"low": 60.0, "high": 120.0}},
+    "write_the_letter": {"type": "uniform", "params": {"low": 15.0, "high": 30.0}},
+    "the_tour": {"type": "uniform", "params": {"low": 45.0, "high": 60.0}},
+    "the_drive": {"type": "uniform", "params": {"low": 120.0, "high": 360.0}},
+    "the_meeting": {"type": "uniform", "params": {"low": 180.0, "high": 300.0}},
+    "the_interview": {"type": "uniform", "params": {"low": 30.0, "high": 300.0}},
+    "the_hearing": {"type": "uniform", "params": {"low": 90.0, "high": 480.0}},
+    "the_fight": {"type": "uniform", "params": {"low": 60.0, "high": 300.0}},
+    "the_award_ceremony": {"type": "uniform", "params": {"low": 60.0, "high": 120.0}},
+    "in_the_interview": {"type": "uniform", "params": {"low": 30.0, "high": 60.0}},
+    "at_the_courthouse": {"type": "uniform", "params": {"low": 180.0, "high": 300.0}},
+    "enjoy_under_the_sun": {"type": "uniform", "params": {"low": 60.0, "high": 120.0}},
+    "sleep": {"type": "uniform", "params": {"low": 120.0, "high": 480.0}},
+    "cook_meat": {"type": "uniform", "params": {"low": 15.0, "high": 60.0}},
+    "story_time": {"type": "uniform", "params": {"low": 30.0, "high": 60.0}},
+    "the_game_of_tag": {"type": "uniform", "params": {"low": 10.0, "high": 30.0}},
+    "would_a_bus_ride_normally": {"type": "uniform", "params": {"low": 15.0, "high": 60.0}},
+    "lost_in_thoughts": {"type": "uniform", "params": {"low": 10.0, "high": 20.0}},
+    "roberta_sit_at_the_computer": {"type": "uniform", "params": {"low": 120.0, "high": 180.0}},
+    "their_average_plane_flight": {"type": "uniform", "params": {"low": 300.0, "high": 360.0}},
+}
+
+def get_activity_distributions(use_expanded: bool = False) -> Dict[str, Any]:
+    """Get activity distributions, optionally including expanded ones"""
+    if use_expanded:
+        return EXPANDED_ACTIVITY_DISTRIBUTIONS.copy()
+    return ACTIVITY_DISTRIBUTIONS.copy()
 
 # Context templates for natural language generation
 CONTEXT_TEMPLATES = {
@@ -123,6 +169,25 @@ CONTEXT_TEMPLATES = {
         "Starting my meditation practice",
         "Doing some breathing exercises",
     ],
+    # MCTACO扩充活动的默认模板
+    "do_the_laundry": ["Going to do the laundry", "Time to wash clothes"],
+    "write_the_letter": ["Going to write a letter", "Sitting down to write"],
+    "the_tour": ["Starting the tour", "Going on a tour"],
+    "the_drive": ["Starting the drive", "Going for a drive"],
+    "the_interview": ["Going into the interview", "Starting the interview"],
+    "the_hearing": ["Attending the hearing", "Going to the hearing"],
+    "the_fight": ["The fight is starting", "Getting into the fight"],
+    "the_award_ceremony": ["Attending the ceremony", "Going to the award ceremony"],
+    "in_the_interview": ["In the interview", "During the interview"],
+    "at_the_courthouse": ["At the courthouse", "Spending time at court"],
+    "enjoy_under_the_sun": ["Enjoying the sun", "Soaking up the sunshine"],
+    "sleep": ["Going to sleep", "Time to rest"],
+    "cook_meat": ["Cooking the meat", "Preparing the meat"],
+    "story_time": ["Story time begins", "Starting story time"],
+    "the_game_of_tag": ["Playing tag", "Starting a game of tag"],
+    "lost_in_thoughts": ["Lost in thought", "Thinking deeply"],
+    "roberta_sit_at_the_computer": ["Sitting at the computer", "Working on the computer"],
+    "their_average_plane_flight": ["On the plane", "During the flight"],
 }
 
 # Evaluation

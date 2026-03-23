@@ -213,20 +213,28 @@ def main():
     parser.add_argument("--output_dir", type=str, default=OUTPUT_DIR, help="Output directory")
     parser.add_argument("--ablation", action="store_true", help="Run ablation study")
     parser.add_argument("--detailed", action="store_true", help="Print detailed analysis")
+    parser.add_argument("--expanded", action="store_true", help="Use expanded activities from MCTACO")
     args = parser.parse_args()
     
     print("=" * 60)
     print("PTA Benchmark - Probabilistic Temporal Alignment")
     print("=" * 60)
+    if args.expanded:
+        print("(Using expanded activities from MCTACO)")
     
     # Configuration
-    data_config = DataConfig(num_samples=args.num_samples, seed=args.seed)
+    data_config = DataConfig(
+        num_samples=args.num_samples, 
+        seed=args.seed,
+        use_expanded_activities=args.expanded
+    )
     eval_config = EvalConfig()
     
     # Generate dataset
     print(f"\nGenerating dataset with {args.num_samples} samples...")
     generator = PTADatasetGenerator(data_config)
     samples = generator.generate_dataset()
+    print(f"  Using {len(generator.activities)} activities")
     
     print(f"Generating {args.num_pairs} paired samples for TSU...")
     paired_samples = generator.generate_paired_samples(args.num_pairs)
@@ -241,9 +249,9 @@ def main():
     models = [
         RandomModel(seed=args.seed),
         MajorityModel(majority_action="defer"),
-        HeuristicModel(),
-        ThresholdModel(),
-        OracleModel()
+        HeuristicModel(use_expanded=args.expanded),
+        ThresholdModel(use_expanded=args.expanded),
+        OracleModel(use_expanded=args.expanded)
     ]
     
     # Run evaluation
