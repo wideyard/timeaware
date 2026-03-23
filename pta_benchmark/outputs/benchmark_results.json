@@ -2,10 +2,10 @@
   {
     "model_name": "Random",
     "metrics": {
-      "ppa": 0.39666666666666667,
-      "tsu": 0.18,
-      "bas": 0.5365853658536586,
-      "boundary_samples": 123,
+      "ppa": 0.42,
+      "tsu": 0.17,
+      "bas": 0.5304347826086957,
+      "boundary_samples": 115,
       "ce": null,
       "ece": null
     },
@@ -14,88 +14,188 @@
       "total_samples": 300,
       "region_breakdown": {
         "late": {
-          "accuracy": 0.4895833333333333,
-          "correct": 47,
-          "total": 96
+          "accuracy": 0.4742268041237113,
+          "correct": 46,
+          "total": 97
         },
         "mid": {
-          "accuracy": 0.40425531914893614,
-          "correct": 38,
-          "total": 94
+          "accuracy": 0.4,
+          "correct": 42,
+          "total": 105
         },
         "early": {
-          "accuracy": 0.3090909090909091,
-          "correct": 34,
-          "total": 110
+          "accuracy": 0.3877551020408163,
+          "correct": 38,
+          "total": 98
         }
       },
       "activity_breakdown": {
-        "meeting": {
-          "accuracy": 0.32,
-          "correct": 8,
-          "total": 25
-        },
-        "reading": {
-          "accuracy": 0.5909090909090909,
-          "correct": 13,
-          "total": 22
-        },
-        "shower": {
-          "accuracy": 0.25806451612903225,
-          "correct": 8,
-          "total": 31
-        },
-        "phone_call": {
-          "accuracy": 0.1875,
-          "correct": 6,
-          "total": 32
-        },
-        "lunch_break": {
-          "accuracy": 0.3125,
-          "correct": 10,
-          "total": 32
-        },
-        "workout": {
-          "accuracy": 0.391304347826087,
-          "correct": 9,
-          "total": 23
-        },
         "deep_sleep": {
-          "accuracy": 0.35294117647058826,
-          "correct": 6,
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 4
+        },
+        "sleep": {
+          "accuracy": 0.5555555555555556,
+          "correct": 5,
+          "total": 9
+        },
+        "at_the_courthouse": {
+          "accuracy": 0.3076923076923077,
+          "correct": 4,
+          "total": 13
+        },
+        "cook_meat": {
+          "accuracy": 0.6666666666666666,
+          "correct": 4,
+          "total": 6
+        },
+        "the_interview": {
+          "accuracy": 0.36363636363636365,
+          "correct": 4,
+          "total": 11
+        },
+        "the_tour": {
+          "accuracy": 0.29411764705882354,
+          "correct": 5,
           "total": 17
         },
-        "cooking": {
-          "accuracy": 0.6190476190476191,
-          "correct": 13,
-          "total": 21
+        "workout": {
+          "accuracy": 0.375,
+          "correct": 3,
+          "total": 8
         },
-        "nap": {
-          "accuracy": 0.41935483870967744,
-          "correct": 13,
-          "total": 31
+        "lunch_break": {
+          "accuracy": 0.5555555555555556,
+          "correct": 5,
+          "total": 9
         },
-        "meditation": {
-          "accuracy": 0.3157894736842105,
-          "correct": 6,
-          "total": 19
+        "meeting": {
+          "accuracy": 0.3333333333333333,
+          "correct": 2,
+          "total": 6
+        },
+        "the_award_ceremony": {
+          "accuracy": 0.5555555555555556,
+          "correct": 5,
+          "total": 9
+        },
+        "their_average_plane_flight": {
+          "accuracy": 0.4444444444444444,
+          "correct": 4,
+          "total": 9
+        },
+        "write_the_letter": {
+          "accuracy": 0.26666666666666666,
+          "correct": 4,
+          "total": 15
+        },
+        "in_the_interview": {
+          "accuracy": 0.5,
+          "correct": 5,
+          "total": 10
+        },
+        "shower": {
+          "accuracy": 0.4375,
+          "correct": 7,
+          "total": 16
         },
         "commute": {
-          "accuracy": 0.5517241379310345,
-          "correct": 16,
-          "total": 29
+          "accuracy": 0.7142857142857143,
+          "correct": 5,
+          "total": 7
+        },
+        "the_drive": {
+          "accuracy": 0.2857142857142857,
+          "correct": 2,
+          "total": 7
         },
         "gaming": {
-          "accuracy": 0.6111111111111112,
-          "correct": 11,
-          "total": 18
+          "accuracy": 0.375,
+          "correct": 3,
+          "total": 8
+        },
+        "phone_call": {
+          "accuracy": 0.3333333333333333,
+          "correct": 4,
+          "total": 12
+        },
+        "enjoy_under_the_sun": {
+          "accuracy": 0.6666666666666666,
+          "correct": 8,
+          "total": 12
+        },
+        "reading": {
+          "accuracy": 0.6666666666666666,
+          "correct": 6,
+          "total": 9
+        },
+        "the_meeting": {
+          "accuracy": 0.23076923076923078,
+          "correct": 3,
+          "total": 13
+        },
+        "the_fight": {
+          "accuracy": 0.3333333333333333,
+          "correct": 3,
+          "total": 9
+        },
+        "lost_in_thoughts": {
+          "accuracy": 0.4166666666666667,
+          "correct": 5,
+          "total": 12
+        },
+        "roberta_sit_at_the_computer": {
+          "accuracy": 0.5,
+          "correct": 2,
+          "total": 4
+        },
+        "cooking": {
+          "accuracy": 0.5714285714285714,
+          "correct": 4,
+          "total": 7
+        },
+        "do_the_laundry": {
+          "accuracy": 0.25,
+          "correct": 2,
+          "total": 8
+        },
+        "the_game_of_tag": {
+          "accuracy": 0.3,
+          "correct": 3,
+          "total": 10
+        },
+        "the_hearing": {
+          "accuracy": 0.7142857142857143,
+          "correct": 5,
+          "total": 7
+        },
+        "story_time": {
+          "accuracy": 0.5,
+          "correct": 4,
+          "total": 8
+        },
+        "nap": {
+          "accuracy": 0.3333333333333333,
+          "correct": 3,
+          "total": 9
+        },
+        "would_a_bus_ride_normally": {
+          "accuracy": 0.42857142857142855,
+          "correct": 3,
+          "total": 7
+        },
+        "meditation": {
+          "accuracy": 0.4444444444444444,
+          "correct": 4,
+          "total": 9
         }
       },
       "error_counts": {
-        "correct": 119,
-        "temporal_error": 76,
-        "commonsense_error": 49,
-        "decision_error": 56
+        "correct": 126,
+        "temporal_error": 60,
+        "commonsense_error": 51,
+        "decision_error": 63
       },
       "action_distribution": {
         "predicted": {
@@ -106,7 +206,7 @@
         "ground_truth": {
           "interrupt": 48,
           "defer": 252,
-          "check-in": 72
+          "check-in": 70
         }
       }
     }
@@ -115,9 +215,9 @@
     "model_name": "Majority",
     "metrics": {
       "ppa": 0.84,
-      "tsu": 0.22,
-      "bas": 0.7804878048780488,
-      "boundary_samples": 123,
+      "tsu": 0.3,
+      "bas": 0.8,
+      "boundary_samples": 115,
       "ce": null,
       "ece": null
     },
@@ -126,81 +226,181 @@
       "total_samples": 300,
       "region_breakdown": {
         "late": {
-          "accuracy": 0.5,
-          "correct": 48,
-          "total": 96
+          "accuracy": 0.5051546391752577,
+          "correct": 49,
+          "total": 97
         },
         "mid": {
           "accuracy": 1.0,
-          "correct": 94,
-          "total": 94
+          "correct": 105,
+          "total": 105
         },
         "early": {
           "accuracy": 1.0,
-          "correct": 110,
-          "total": 110
+          "correct": 98,
+          "total": 98
         }
       },
       "activity_breakdown": {
-        "meeting": {
-          "accuracy": 0.8,
-          "correct": 20,
-          "total": 25
-        },
-        "reading": {
-          "accuracy": 0.8636363636363636,
-          "correct": 19,
-          "total": 22
-        },
-        "shower": {
-          "accuracy": 0.9032258064516129,
-          "correct": 28,
-          "total": 31
-        },
-        "phone_call": {
-          "accuracy": 0.71875,
-          "correct": 23,
-          "total": 32
-        },
-        "lunch_break": {
-          "accuracy": 0.90625,
-          "correct": 29,
-          "total": 32
-        },
-        "workout": {
-          "accuracy": 0.8695652173913043,
-          "correct": 20,
-          "total": 23
-        },
         "deep_sleep": {
-          "accuracy": 0.7058823529411765,
-          "correct": 12,
+          "accuracy": 0.5,
+          "correct": 2,
+          "total": 4
+        },
+        "sleep": {
+          "accuracy": 0.6666666666666666,
+          "correct": 6,
+          "total": 9
+        },
+        "at_the_courthouse": {
+          "accuracy": 0.8461538461538461,
+          "correct": 11,
+          "total": 13
+        },
+        "cook_meat": {
+          "accuracy": 0.8333333333333334,
+          "correct": 5,
+          "total": 6
+        },
+        "the_interview": {
+          "accuracy": 0.8181818181818182,
+          "correct": 9,
+          "total": 11
+        },
+        "the_tour": {
+          "accuracy": 0.8823529411764706,
+          "correct": 15,
           "total": 17
         },
-        "cooking": {
-          "accuracy": 0.8095238095238095,
-          "correct": 17,
-          "total": 21
+        "workout": {
+          "accuracy": 0.875,
+          "correct": 7,
+          "total": 8
         },
-        "nap": {
-          "accuracy": 0.9032258064516129,
-          "correct": 28,
-          "total": 31
+        "lunch_break": {
+          "accuracy": 0.7777777777777778,
+          "correct": 7,
+          "total": 9
         },
-        "meditation": {
-          "accuracy": 0.8947368421052632,
-          "correct": 17,
-          "total": 19
+        "meeting": {
+          "accuracy": 1.0,
+          "correct": 6,
+          "total": 6
+        },
+        "the_award_ceremony": {
+          "accuracy": 0.6666666666666666,
+          "correct": 6,
+          "total": 9
+        },
+        "their_average_plane_flight": {
+          "accuracy": 0.8888888888888888,
+          "correct": 8,
+          "total": 9
+        },
+        "write_the_letter": {
+          "accuracy": 0.8666666666666667,
+          "correct": 13,
+          "total": 15
+        },
+        "in_the_interview": {
+          "accuracy": 0.7,
+          "correct": 7,
+          "total": 10
+        },
+        "shower": {
+          "accuracy": 0.75,
+          "correct": 12,
+          "total": 16
         },
         "commute": {
-          "accuracy": 0.7931034482758621,
-          "correct": 23,
-          "total": 29
+          "accuracy": 0.8571428571428571,
+          "correct": 6,
+          "total": 7
+        },
+        "the_drive": {
+          "accuracy": 0.8571428571428571,
+          "correct": 6,
+          "total": 7
         },
         "gaming": {
+          "accuracy": 0.75,
+          "correct": 6,
+          "total": 8
+        },
+        "phone_call": {
+          "accuracy": 0.9166666666666666,
+          "correct": 11,
+          "total": 12
+        },
+        "enjoy_under_the_sun": {
+          "accuracy": 0.9166666666666666,
+          "correct": 11,
+          "total": 12
+        },
+        "reading": {
           "accuracy": 0.8888888888888888,
-          "correct": 16,
-          "total": 18
+          "correct": 8,
+          "total": 9
+        },
+        "the_meeting": {
+          "accuracy": 0.8461538461538461,
+          "correct": 11,
+          "total": 13
+        },
+        "the_fight": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
+        },
+        "lost_in_thoughts": {
+          "accuracy": 0.9166666666666666,
+          "correct": 11,
+          "total": 12
+        },
+        "roberta_sit_at_the_computer": {
+          "accuracy": 1.0,
+          "correct": 4,
+          "total": 4
+        },
+        "cooking": {
+          "accuracy": 0.8571428571428571,
+          "correct": 6,
+          "total": 7
+        },
+        "do_the_laundry": {
+          "accuracy": 0.875,
+          "correct": 7,
+          "total": 8
+        },
+        "the_game_of_tag": {
+          "accuracy": 0.7,
+          "correct": 7,
+          "total": 10
+        },
+        "the_hearing": {
+          "accuracy": 0.8571428571428571,
+          "correct": 6,
+          "total": 7
+        },
+        "story_time": {
+          "accuracy": 0.875,
+          "correct": 7,
+          "total": 8
+        },
+        "nap": {
+          "accuracy": 0.8888888888888888,
+          "correct": 8,
+          "total": 9
+        },
+        "would_a_bus_ride_normally": {
+          "accuracy": 1.0,
+          "correct": 7,
+          "total": 7
+        },
+        "meditation": {
+          "accuracy": 0.7777777777777778,
+          "correct": 7,
+          "total": 9
         }
       },
       "error_counts": {
@@ -216,7 +416,7 @@
         "ground_truth": {
           "interrupt": 48,
           "defer": 252,
-          "check-in": 72
+          "check-in": 70
         }
       }
     }
@@ -224,111 +424,211 @@
   {
     "model_name": "Heuristic",
     "metrics": {
-      "ppa": 0.6066666666666667,
-      "tsu": 0.36,
-      "bas": 0.4146341463414634,
-      "boundary_samples": 123,
-      "ce": 0.2326443333333334,
-      "ece": 0.23182233333333316
+      "ppa": 0.56,
+      "tsu": 0.27,
+      "bas": 0.391304347826087,
+      "boundary_samples": 115,
+      "ce": 0.258038,
+      "ece": 0.24922466666666654
     },
     "analysis": {
       "model_name": "Heuristic",
       "total_samples": 300,
       "region_breakdown": {
         "late": {
-          "accuracy": 0.5,
+          "accuracy": 0.4948453608247423,
           "correct": 48,
-          "total": 96
+          "total": 97
         },
         "mid": {
-          "accuracy": 0.2553191489361702,
-          "correct": 24,
-          "total": 94
+          "accuracy": 0.20952380952380953,
+          "correct": 22,
+          "total": 105
         },
         "early": {
           "accuracy": 1.0,
-          "correct": 110,
-          "total": 110
+          "correct": 98,
+          "total": 98
         }
       },
       "activity_breakdown": {
-        "meeting": {
-          "accuracy": 0.56,
-          "correct": 14,
-          "total": 25
-        },
-        "reading": {
-          "accuracy": 0.6363636363636364,
-          "correct": 14,
-          "total": 22
-        },
-        "shower": {
-          "accuracy": 0.5806451612903226,
-          "correct": 18,
-          "total": 31
-        },
-        "phone_call": {
-          "accuracy": 0.6875,
-          "correct": 22,
-          "total": 32
-        },
-        "lunch_break": {
-          "accuracy": 0.5,
-          "correct": 16,
-          "total": 32
-        },
-        "workout": {
-          "accuracy": 0.5217391304347826,
-          "correct": 12,
-          "total": 23
-        },
         "deep_sleep": {
-          "accuracy": 0.5294117647058824,
-          "correct": 9,
+          "accuracy": 0.75,
+          "correct": 3,
+          "total": 4
+        },
+        "sleep": {
+          "accuracy": 0.8888888888888888,
+          "correct": 8,
+          "total": 9
+        },
+        "at_the_courthouse": {
+          "accuracy": 0.6153846153846154,
+          "correct": 8,
+          "total": 13
+        },
+        "cook_meat": {
+          "accuracy": 0.6666666666666666,
+          "correct": 4,
+          "total": 6
+        },
+        "the_interview": {
+          "accuracy": 0.7272727272727273,
+          "correct": 8,
+          "total": 11
+        },
+        "the_tour": {
+          "accuracy": 0.47058823529411764,
+          "correct": 8,
           "total": 17
         },
-        "cooking": {
-          "accuracy": 0.6190476190476191,
-          "correct": 13,
-          "total": 21
+        "workout": {
+          "accuracy": 0.375,
+          "correct": 3,
+          "total": 8
         },
-        "nap": {
-          "accuracy": 0.6451612903225806,
-          "correct": 20,
-          "total": 31
+        "lunch_break": {
+          "accuracy": 0.6666666666666666,
+          "correct": 6,
+          "total": 9
         },
-        "meditation": {
-          "accuracy": 0.631578947368421,
-          "correct": 12,
-          "total": 19
+        "meeting": {
+          "accuracy": 0.6666666666666666,
+          "correct": 4,
+          "total": 6
+        },
+        "the_award_ceremony": {
+          "accuracy": 0.7777777777777778,
+          "correct": 7,
+          "total": 9
+        },
+        "their_average_plane_flight": {
+          "accuracy": 0.3333333333333333,
+          "correct": 3,
+          "total": 9
+        },
+        "write_the_letter": {
+          "accuracy": 0.4,
+          "correct": 6,
+          "total": 15
+        },
+        "in_the_interview": {
+          "accuracy": 0.5,
+          "correct": 5,
+          "total": 10
+        },
+        "shower": {
+          "accuracy": 0.625,
+          "correct": 10,
+          "total": 16
         },
         "commute": {
-          "accuracy": 0.6551724137931034,
-          "correct": 19,
-          "total": 29
+          "accuracy": 0.2857142857142857,
+          "correct": 2,
+          "total": 7
+        },
+        "the_drive": {
+          "accuracy": 0.7142857142857143,
+          "correct": 5,
+          "total": 7
         },
         "gaming": {
-          "accuracy": 0.7222222222222222,
-          "correct": 13,
-          "total": 18
+          "accuracy": 0.75,
+          "correct": 6,
+          "total": 8
+        },
+        "phone_call": {
+          "accuracy": 0.5833333333333334,
+          "correct": 7,
+          "total": 12
+        },
+        "enjoy_under_the_sun": {
+          "accuracy": 0.4166666666666667,
+          "correct": 5,
+          "total": 12
+        },
+        "reading": {
+          "accuracy": 0.5555555555555556,
+          "correct": 5,
+          "total": 9
+        },
+        "the_meeting": {
+          "accuracy": 0.7692307692307693,
+          "correct": 10,
+          "total": 13
+        },
+        "the_fight": {
+          "accuracy": 0.3333333333333333,
+          "correct": 3,
+          "total": 9
+        },
+        "lost_in_thoughts": {
+          "accuracy": 0.5,
+          "correct": 6,
+          "total": 12
+        },
+        "roberta_sit_at_the_computer": {
+          "accuracy": 0.5,
+          "correct": 2,
+          "total": 4
+        },
+        "cooking": {
+          "accuracy": 0.5714285714285714,
+          "correct": 4,
+          "total": 7
+        },
+        "do_the_laundry": {
+          "accuracy": 0.625,
+          "correct": 5,
+          "total": 8
+        },
+        "the_game_of_tag": {
+          "accuracy": 0.7,
+          "correct": 7,
+          "total": 10
+        },
+        "the_hearing": {
+          "accuracy": 0.7142857142857143,
+          "correct": 5,
+          "total": 7
+        },
+        "story_time": {
+          "accuracy": 0.375,
+          "correct": 3,
+          "total": 8
+        },
+        "nap": {
+          "accuracy": 0.5555555555555556,
+          "correct": 5,
+          "total": 9
+        },
+        "would_a_bus_ride_normally": {
+          "accuracy": 0.42857142857142855,
+          "correct": 3,
+          "total": 7
+        },
+        "meditation": {
+          "accuracy": 0.2222222222222222,
+          "correct": 2,
+          "total": 9
         }
       },
       "error_counts": {
-        "correct": 182,
-        "temporal_error": 12,
-        "commonsense_error": 106,
+        "correct": 168,
+        "temporal_error": 10,
+        "commonsense_error": 122,
         "decision_error": 0
       },
       "action_distribution": {
         "predicted": {
-          "interrupt": 96,
-          "check-in": 94,
-          "defer": 110
+          "interrupt": 97,
+          "check-in": 105,
+          "defer": 98
         },
         "ground_truth": {
           "interrupt": 48,
           "defer": 252,
-          "check-in": 72
+          "check-in": 70
         }
       }
     }
@@ -339,9 +639,9 @@
       "ppa": 1.0,
       "tsu": 1.0,
       "bas": 1.0,
-      "boundary_samples": 123,
-      "ce": 3.646166615455163e-05,
-      "ece": 8.632223838301218e-06
+      "boundary_samples": 115,
+      "ce": 3.6245352796321904e-05,
+      "ece": 8.34124344309935e-06
     },
     "analysis": {
       "model_name": "Threshold",
@@ -349,80 +649,180 @@
       "region_breakdown": {
         "late": {
           "accuracy": 1.0,
-          "correct": 96,
-          "total": 96
+          "correct": 97,
+          "total": 97
         },
         "mid": {
           "accuracy": 1.0,
-          "correct": 94,
-          "total": 94
+          "correct": 105,
+          "total": 105
         },
         "early": {
           "accuracy": 1.0,
-          "correct": 110,
-          "total": 110
+          "correct": 98,
+          "total": 98
         }
       },
       "activity_breakdown": {
-        "meeting": {
-          "accuracy": 1.0,
-          "correct": 25,
-          "total": 25
-        },
-        "reading": {
-          "accuracy": 1.0,
-          "correct": 22,
-          "total": 22
-        },
-        "shower": {
-          "accuracy": 1.0,
-          "correct": 31,
-          "total": 31
-        },
-        "phone_call": {
-          "accuracy": 1.0,
-          "correct": 32,
-          "total": 32
-        },
-        "lunch_break": {
-          "accuracy": 1.0,
-          "correct": 32,
-          "total": 32
-        },
-        "workout": {
-          "accuracy": 1.0,
-          "correct": 23,
-          "total": 23
-        },
         "deep_sleep": {
+          "accuracy": 1.0,
+          "correct": 4,
+          "total": 4
+        },
+        "sleep": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
+        },
+        "at_the_courthouse": {
+          "accuracy": 1.0,
+          "correct": 13,
+          "total": 13
+        },
+        "cook_meat": {
+          "accuracy": 1.0,
+          "correct": 6,
+          "total": 6
+        },
+        "the_interview": {
+          "accuracy": 1.0,
+          "correct": 11,
+          "total": 11
+        },
+        "the_tour": {
           "accuracy": 1.0,
           "correct": 17,
           "total": 17
         },
-        "cooking": {
+        "workout": {
           "accuracy": 1.0,
-          "correct": 21,
-          "total": 21
+          "correct": 8,
+          "total": 8
         },
-        "nap": {
+        "lunch_break": {
           "accuracy": 1.0,
-          "correct": 31,
-          "total": 31
+          "correct": 9,
+          "total": 9
         },
-        "meditation": {
+        "meeting": {
           "accuracy": 1.0,
-          "correct": 19,
-          "total": 19
+          "correct": 6,
+          "total": 6
+        },
+        "the_award_ceremony": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
+        },
+        "their_average_plane_flight": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
+        },
+        "write_the_letter": {
+          "accuracy": 1.0,
+          "correct": 15,
+          "total": 15
+        },
+        "in_the_interview": {
+          "accuracy": 1.0,
+          "correct": 10,
+          "total": 10
+        },
+        "shower": {
+          "accuracy": 1.0,
+          "correct": 16,
+          "total": 16
         },
         "commute": {
           "accuracy": 1.0,
-          "correct": 29,
-          "total": 29
+          "correct": 7,
+          "total": 7
+        },
+        "the_drive": {
+          "accuracy": 1.0,
+          "correct": 7,
+          "total": 7
         },
         "gaming": {
           "accuracy": 1.0,
-          "correct": 18,
-          "total": 18
+          "correct": 8,
+          "total": 8
+        },
+        "phone_call": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "total": 12
+        },
+        "enjoy_under_the_sun": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "total": 12
+        },
+        "reading": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
+        },
+        "the_meeting": {
+          "accuracy": 1.0,
+          "correct": 13,
+          "total": 13
+        },
+        "the_fight": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
+        },
+        "lost_in_thoughts": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "total": 12
+        },
+        "roberta_sit_at_the_computer": {
+          "accuracy": 1.0,
+          "correct": 4,
+          "total": 4
+        },
+        "cooking": {
+          "accuracy": 1.0,
+          "correct": 7,
+          "total": 7
+        },
+        "do_the_laundry": {
+          "accuracy": 1.0,
+          "correct": 8,
+          "total": 8
+        },
+        "the_game_of_tag": {
+          "accuracy": 1.0,
+          "correct": 10,
+          "total": 10
+        },
+        "the_hearing": {
+          "accuracy": 1.0,
+          "correct": 7,
+          "total": 7
+        },
+        "story_time": {
+          "accuracy": 1.0,
+          "correct": 8,
+          "total": 8
+        },
+        "nap": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
+        },
+        "would_a_bus_ride_normally": {
+          "accuracy": 1.0,
+          "correct": 7,
+          "total": 7
+        },
+        "meditation": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
         }
       },
       "error_counts": {
@@ -434,13 +834,13 @@
       "action_distribution": {
         "predicted": {
           "interrupt": 48,
-          "defer": 180,
-          "check-in": 72
+          "defer": 182,
+          "check-in": 70
         },
         "ground_truth": {
           "interrupt": 48,
           "defer": 252,
-          "check-in": 72
+          "check-in": 70
         }
       }
     }
@@ -451,9 +851,9 @@
       "ppa": 1.0,
       "tsu": 1.0,
       "bas": 1.0,
-      "boundary_samples": 123,
-      "ce": 3.646166615455163e-05,
-      "ece": 8.632223838301218e-06
+      "boundary_samples": 115,
+      "ce": 3.6245352796321904e-05,
+      "ece": 8.34124344309935e-06
     },
     "analysis": {
       "model_name": "Oracle",
@@ -461,80 +861,180 @@
       "region_breakdown": {
         "late": {
           "accuracy": 1.0,
-          "correct": 96,
-          "total": 96
+          "correct": 97,
+          "total": 97
         },
         "mid": {
           "accuracy": 1.0,
-          "correct": 94,
-          "total": 94
+          "correct": 105,
+          "total": 105
         },
         "early": {
           "accuracy": 1.0,
-          "correct": 110,
-          "total": 110
+          "correct": 98,
+          "total": 98
         }
       },
       "activity_breakdown": {
-        "meeting": {
-          "accuracy": 1.0,
-          "correct": 25,
-          "total": 25
-        },
-        "reading": {
-          "accuracy": 1.0,
-          "correct": 22,
-          "total": 22
-        },
-        "shower": {
-          "accuracy": 1.0,
-          "correct": 31,
-          "total": 31
-        },
-        "phone_call": {
-          "accuracy": 1.0,
-          "correct": 32,
-          "total": 32
-        },
-        "lunch_break": {
-          "accuracy": 1.0,
-          "correct": 32,
-          "total": 32
-        },
-        "workout": {
-          "accuracy": 1.0,
-          "correct": 23,
-          "total": 23
-        },
         "deep_sleep": {
+          "accuracy": 1.0,
+          "correct": 4,
+          "total": 4
+        },
+        "sleep": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
+        },
+        "at_the_courthouse": {
+          "accuracy": 1.0,
+          "correct": 13,
+          "total": 13
+        },
+        "cook_meat": {
+          "accuracy": 1.0,
+          "correct": 6,
+          "total": 6
+        },
+        "the_interview": {
+          "accuracy": 1.0,
+          "correct": 11,
+          "total": 11
+        },
+        "the_tour": {
           "accuracy": 1.0,
           "correct": 17,
           "total": 17
         },
-        "cooking": {
+        "workout": {
           "accuracy": 1.0,
-          "correct": 21,
-          "total": 21
+          "correct": 8,
+          "total": 8
         },
-        "nap": {
+        "lunch_break": {
           "accuracy": 1.0,
-          "correct": 31,
-          "total": 31
+          "correct": 9,
+          "total": 9
         },
-        "meditation": {
+        "meeting": {
           "accuracy": 1.0,
-          "correct": 19,
-          "total": 19
+          "correct": 6,
+          "total": 6
+        },
+        "the_award_ceremony": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
+        },
+        "their_average_plane_flight": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
+        },
+        "write_the_letter": {
+          "accuracy": 1.0,
+          "correct": 15,
+          "total": 15
+        },
+        "in_the_interview": {
+          "accuracy": 1.0,
+          "correct": 10,
+          "total": 10
+        },
+        "shower": {
+          "accuracy": 1.0,
+          "correct": 16,
+          "total": 16
         },
         "commute": {
           "accuracy": 1.0,
-          "correct": 29,
-          "total": 29
+          "correct": 7,
+          "total": 7
+        },
+        "the_drive": {
+          "accuracy": 1.0,
+          "correct": 7,
+          "total": 7
         },
         "gaming": {
           "accuracy": 1.0,
-          "correct": 18,
-          "total": 18
+          "correct": 8,
+          "total": 8
+        },
+        "phone_call": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "total": 12
+        },
+        "enjoy_under_the_sun": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "total": 12
+        },
+        "reading": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
+        },
+        "the_meeting": {
+          "accuracy": 1.0,
+          "correct": 13,
+          "total": 13
+        },
+        "the_fight": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
+        },
+        "lost_in_thoughts": {
+          "accuracy": 1.0,
+          "correct": 12,
+          "total": 12
+        },
+        "roberta_sit_at_the_computer": {
+          "accuracy": 1.0,
+          "correct": 4,
+          "total": 4
+        },
+        "cooking": {
+          "accuracy": 1.0,
+          "correct": 7,
+          "total": 7
+        },
+        "do_the_laundry": {
+          "accuracy": 1.0,
+          "correct": 8,
+          "total": 8
+        },
+        "the_game_of_tag": {
+          "accuracy": 1.0,
+          "correct": 10,
+          "total": 10
+        },
+        "the_hearing": {
+          "accuracy": 1.0,
+          "correct": 7,
+          "total": 7
+        },
+        "story_time": {
+          "accuracy": 1.0,
+          "correct": 8,
+          "total": 8
+        },
+        "nap": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
+        },
+        "would_a_bus_ride_normally": {
+          "accuracy": 1.0,
+          "correct": 7,
+          "total": 7
+        },
+        "meditation": {
+          "accuracy": 1.0,
+          "correct": 9,
+          "total": 9
         }
       },
       "error_counts": {
@@ -546,13 +1046,13 @@
       "action_distribution": {
         "predicted": {
           "interrupt": 48,
-          "defer": 180,
-          "check-in": 72
+          "defer": 182,
+          "check-in": 70
         },
         "ground_truth": {
           "interrupt": 48,
           "defer": 252,
-          "check-in": 72
+          "check-in": 70
         }
       }
     }

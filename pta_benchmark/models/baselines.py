@@ -1,12 +1,12 @@
 """Baseline Models for PTA Benchmark"""
 
 import numpy as np
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
 
 from .base import BaseModel
 from ..data import PTASample
 from ..data.distributions import create_distribution
-from ..config import ACTIVITY_DISTRIBUTIONS, ModelConfig
+from ..config import ACTIVITY_DISTRIBUTIONS, EXPANDED_ACTIVITY_DISTRIBUTIONS, ModelConfig
 
 
 class RandomModel(BaseModel):
@@ -44,12 +44,15 @@ class MajorityModel(BaseModel):
 class HeuristicModel(BaseModel):
     """Heuristic baseline - uses fixed thresholds on delta_t / E[d]"""
     
-    def __init__(self, config: ModelConfig = None):
+    def __init__(self, config: Optional[ModelConfig] = None, use_expanded: bool = False):
         super().__init__(name="Heuristic")
         self.config = config or ModelConfig()
+        
+        # Get distributions based on config
+        dist_source = EXPANDED_ACTIVITY_DISTRIBUTIONS if use_expanded else ACTIVITY_DISTRIBUTIONS
         self.distributions = {
             activity: create_distribution(dist_config)
-            for activity, dist_config in ACTIVITY_DISTRIBUTIONS.items()
+            for activity, dist_config in dist_source.items()
         }
     
     def predict(self, sample: PTASample) -> Dict[str, Any]:
@@ -81,12 +84,15 @@ class HeuristicModel(BaseModel):
 class OracleModel(BaseModel):
     """Oracle model - has access to true duration distribution"""
     
-    def __init__(self, config: ModelConfig = None):
+    def __init__(self, config: Optional[ModelConfig] = None, use_expanded: bool = False):
         super().__init__(name="Oracle")
         self.config = config or ModelConfig()
+        
+        # Get distributions based on config
+        dist_source = EXPANDED_ACTIVITY_DISTRIBUTIONS if use_expanded else ACTIVITY_DISTRIBUTIONS
         self.distributions = {
             activity: create_distribution(dist_config)
-            for activity, dist_config in ACTIVITY_DISTRIBUTIONS.items()
+            for activity, dist_config in dist_source.items()
         }
     
     def predict(self, sample: PTASample) -> Dict[str, Any]:
@@ -118,13 +124,21 @@ class OracleModel(BaseModel):
 class ThresholdModel(BaseModel):
     """Model with configurable probability thresholds"""
     
-    def __init__(self, defer_threshold: float = 0.8, interrupt_threshold: float = 0.3):
+    def __init__(
+        self, 
+        defer_threshold: float = 0.8, 
+        interrupt_threshold: float = 0.3,
+        use_expanded: bool = False
+    ):
         super().__init__(name="Threshold")
         self.defer_threshold = defer_threshold
         self.interrupt_threshold = interrupt_threshold
+        
+        # Get distributions based on config
+        dist_source = EXPANDED_ACTIVITY_DISTRIBUTIONS if use_expanded else ACTIVITY_DISTRIBUTIONS
         self.distributions = {
             activity: create_distribution(dist_config)
-            for activity, dist_config in ACTIVITY_DISTRIBUTIONS.items()
+            for activity, dist_config in dist_source.items()
         }
     
     def predict(self, sample: PTASample) -> Dict[str, Any]:
