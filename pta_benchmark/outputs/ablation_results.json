@@ -1,0 +1,50 @@
+[
+  {
+    "ablation": "baseline",
+    "model_name": "Threshold",
+    "metrics": {
+      "ppa": 1.0,
+      "tsu": 1.0,
+      "bas": 1.0,
+      "boundary_samples": 123,
+      "ce": 3.646166615455163e-05,
+      "ece": 8.632223838301218e-06
+    }
+  },
+  {
+    "ablation": "remove_time",
+    "model_name": "Threshold",
+    "metrics": {
+      "ppa": 0.84,
+      "tsu": 1.0,
+      "bas": 0.7804878048780488,
+      "boundary_samples": 123,
+      "ce": 0.24951099999999996,
+      "ece": 0.0
+    }
+  },
+  {
+    "ablation": "remove_commonsense",
+    "model_name": "Threshold",
+    "metrics": {
+      "ppa": 0.73,
+      "tsu": 1.0,
+      "bas": 0.6097560975609756,
+      "boundary_samples": 123,
+      "ce": 0.21972790411504045,
+      "ece": 0.1443267901731418
+    }
+  },
+  {
+    "ablation": "deterministic_duration",
+    "model_name": "Threshold",
+    "metrics": {
+      "ppa": 1.0,
+      "tsu": 1.0,
+      "bas": 1.0,
+      "boundary_samples": 123,
+      "ce": 3.646166615455163e-05,
+      "ece": 8.632223838301218e-06
+    }
+  }
+]

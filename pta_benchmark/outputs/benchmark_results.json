@@ -1,0 +1,560 @@
+[
+  {
+    "model_name": "Random",
+    "metrics": {
+      "ppa": 0.39666666666666667,
+      "tsu": 0.18,
+      "bas": 0.5365853658536586,
+      "boundary_samples": 123,
+      "ce": null,
+      "ece": null
+    },
+    "analysis": {
+      "model_name": "Random",
+      "total_samples": 300,
+      "region_breakdown": {
+        "late": {
+          "accuracy": 0.4895833333333333,
+          "correct": 47,
+          "total": 96
+        },
+        "mid": {
+          "accuracy": 0.40425531914893614,
+          "correct": 38,
+          "total": 94
+        },
+        "early": {
+          "accuracy": 0.3090909090909091,
+          "correct": 34,
+          "total": 110
+        }
+      },
+      "activity_breakdown": {
+        "meeting": {
+          "accuracy": 0.32,
+          "correct": 8,
+          "total": 25
+        },
+        "reading": {
+          "accuracy": 0.5909090909090909,
+          "correct": 13,
+          "total": 22
+        },
+        "shower": {
+          "accuracy": 0.25806451612903225,
+          "correct": 8,
+          "total": 31
+        },
+        "phone_call": {
+          "accuracy": 0.1875,
+          "correct": 6,
+          "total": 32
+        },
+        "lunch_break": {
+          "accuracy": 0.3125,
+          "correct": 10,
+          "total": 32
+        },
+        "workout": {
+          "accuracy": 0.391304347826087,
+          "correct": 9,
+          "total": 23
+        },
+        "deep_sleep": {
+          "accuracy": 0.35294117647058826,
+          "correct": 6,
+          "total": 17
+        },
+        "cooking": {
+          "accuracy": 0.6190476190476191,
+          "correct": 13,
+          "total": 21
+        },
+        "nap": {
+          "accuracy": 0.41935483870967744,
+          "correct": 13,
+          "total": 31
+        },
+        "meditation": {
+          "accuracy": 0.3157894736842105,
+          "correct": 6,
+          "total": 19
+        },
+        "commute": {
+          "accuracy": 0.5517241379310345,
+          "correct": 16,
+          "total": 29
+        },
+        "gaming": {
+          "accuracy": 0.6111111111111112,
+          "correct": 11,
+          "total": 18
+        }
+      },
+      "error_counts": {
+        "correct": 119,
+        "temporal_error": 76,
+        "commonsense_error": 49,
+        "decision_error": 56
+      },
+      "action_distribution": {
+        "predicted": {
+          "defer": 93,
+          "interrupt": 98,
+          "check-in": 109
+        },
+        "ground_truth": {
+          "interrupt": 48,
+          "defer": 252,
+          "check-in": 72
+        }
+      }
+    }
+  },
+  {
+    "model_name": "Majority",
+    "metrics": {
+      "ppa": 0.84,
+      "tsu": 0.22,
+      "bas": 0.7804878048780488,
+      "boundary_samples": 123,
+      "ce": null,
+      "ece": null
+    },
+    "analysis": {
+      "model_name": "Majority",
+      "total_samples": 300,
+      "region_breakdown": {
+        "late": {
+          "accuracy": 0.5,
+          "correct": 48,
+          "total": 96
+        },
+        "mid": {
+          "accuracy": 1.0,
+          "correct": 94,
+          "total": 94
+        },
+        "early": {
+          "accuracy": 1.0,
+          "correct": 110,
+          "total": 110
+        }
+      },
+      "activity_breakdown": {
+        "meeting": {
+          "accuracy": 0.8,
+          "correct": 20,
+          "total": 25
+        },
+        "reading": {
+          "accuracy": 0.8636363636363636,
+          "correct": 19,
+          "total": 22
+        },
+        "shower": {
+          "accuracy": 0.9032258064516129,
+          "correct": 28,
+          "total": 31
+        },
+        "phone_call": {
+          "accuracy": 0.71875,
+          "correct": 23,
+          "total": 32
+        },
+        "lunch_break": {
+          "accuracy": 0.90625,
+          "correct": 29,
+          "total": 32
+        },
+        "workout": {
+          "accuracy": 0.8695652173913043,
+          "correct": 20,
+          "total": 23
+        },
+        "deep_sleep": {
+          "accuracy": 0.7058823529411765,
+          "correct": 12,
+          "total": 17
+        },
+        "cooking": {
+          "accuracy": 0.8095238095238095,
+          "correct": 17,
+          "total": 21
+        },
+        "nap": {
+          "accuracy": 0.9032258064516129,
+          "correct": 28,
+          "total": 31
+        },
+        "meditation": {
+          "accuracy": 0.8947368421052632,
+          "correct": 17,
+          "total": 19
+        },
+        "commute": {
+          "accuracy": 0.7931034482758621,
+          "correct": 23,
+          "total": 29
+        },
+        "gaming": {
+          "accuracy": 0.8888888888888888,
+          "correct": 16,
+          "total": 18
+        }
+      },
+      "error_counts": {
+        "correct": 252,
+        "temporal_error": 0,
+        "commonsense_error": 48,
+        "decision_error": 0
+      },
+      "action_distribution": {
+        "predicted": {
+          "defer": 300
+        },
+        "ground_truth": {
+          "interrupt": 48,
+          "defer": 252,
+          "check-in": 72
+        }
+      }
+    }
+  },
+  {
+    "model_name": "Heuristic",
+    "metrics": {
+      "ppa": 0.6066666666666667,
+      "tsu": 0.36,
+      "bas": 0.4146341463414634,
+      "boundary_samples": 123,
+      "ce": 0.2326443333333334,
+      "ece": 0.23182233333333316
+    },
+    "analysis": {
+      "model_name": "Heuristic",
+      "total_samples": 300,
+      "region_breakdown": {
+        "late": {
+          "accuracy": 0.5,
+          "correct": 48,
+          "total": 96
+        },
+        "mid": {
+          "accuracy": 0.2553191489361702,
+          "correct": 24,
+          "total": 94
+        },
+        "early": {
+          "accuracy": 1.0,
+          "correct": 110,
+          "total": 110
+        }
+      },
+      "activity_breakdown": {
+        "meeting": {
+          "accuracy": 0.56,
+          "correct": 14,
+          "total": 25
+        },
+        "reading": {
+          "accuracy": 0.6363636363636364,
+          "correct": 14,
+          "total": 22
+        },
+        "shower": {
+          "accuracy": 0.5806451612903226,
+          "correct": 18,
+          "total": 31
+        },
+        "phone_call": {
+          "accuracy": 0.6875,
+          "correct": 22,
+          "total": 32
+        },
+        "lunch_break": {
+          "accuracy": 0.5,
+          "correct": 16,
+          "total": 32
+        },
+        "workout": {
+          "accuracy": 0.5217391304347826,
+          "correct": 12,
+          "total": 23
+        },
+        "deep_sleep": {
+          "accuracy": 0.5294117647058824,
+          "correct": 9,
+          "total": 17
+        },
+        "cooking": {
+          "accuracy": 0.6190476190476191,
+          "correct": 13,
+          "total": 21
+        },
+        "nap": {
+          "accuracy": 0.6451612903225806,
+          "correct": 20,
+          "total": 31
+        },
+        "meditation": {
+          "accuracy": 0.631578947368421,
+          "correct": 12,
+          "total": 19
+        },
+        "commute": {
+          "accuracy": 0.6551724137931034,
+          "correct": 19,
+          "total": 29
+        },
+        "gaming": {
+          "accuracy": 0.7222222222222222,
+          "correct": 13,
+          "total": 18
+        }
+      },
+      "error_counts": {
+        "correct": 182,
+        "temporal_error": 12,
+        "commonsense_error": 106,
+        "decision_error": 0
+      },
+      "action_distribution": {
+        "predicted": {
+          "interrupt": 96,
+          "check-in": 94,
+          "defer": 110
+        },
+        "ground_truth": {
+          "interrupt": 48,
+          "defer": 252,
+          "check-in": 72
+        }
+      }
+    }
+  },
+  {
+    "model_name": "Threshold",
+    "metrics": {
+      "ppa": 1.0,
+      "tsu": 1.0,
+      "bas": 1.0,
+      "boundary_samples": 123,
+      "ce": 3.646166615455163e-05,
+      "ece": 8.632223838301218e-06
+    },
+    "analysis": {
+      "model_name": "Threshold",
+      "total_samples": 300,
+      "region_breakdown": {
+        "late": {
+          "accuracy": 1.0,
+          "correct": 96,
+          "total": 96
+        },
+        "mid": {
+          "accuracy": 1.0,
+          "correct": 94,
+          "total": 94
+        },
+        "early": {
+          "accuracy": 1.0,
+          "correct": 110,
+          "total": 110
+        }
+      },
+      "activity_breakdown": {
+        "meeting": {
+          "accuracy": 1.0,
+          "correct": 25,
+          "total": 25
+        },
+        "reading": {
+          "accuracy": 1.0,
+          "correct": 22,
+          "total": 22
+        },
+        "shower": {
+          "accuracy": 1.0,
+          "correct": 31,
+          "total": 31
+        },
+        "phone_call": {
+          "accuracy": 1.0,
+          "correct": 32,
+          "total": 32
+        },
+        "lunch_break": {
+          "accuracy": 1.0,
+          "correct": 32,
+          "total": 32
+        },
+        "workout": {
+          "accuracy": 1.0,
+          "correct": 23,
+          "total": 23
+        },
+        "deep_sleep": {
+          "accuracy": 1.0,
+          "correct": 17,
+          "total": 17
+        },
+        "cooking": {
+          "accuracy": 1.0,
+          "correct": 21,
+          "total": 21
+        },
+        "nap": {
+          "accuracy": 1.0,
+          "correct": 31,
+          "total": 31
+        },
+        "meditation": {
+          "accuracy": 1.0,
+          "correct": 19,
+          "total": 19
+        },
+        "commute": {
+          "accuracy": 1.0,
+          "correct": 29,
+          "total": 29
+        },
+        "gaming": {
+          "accuracy": 1.0,
+          "correct": 18,
+          "total": 18
+        }
+      },
+      "error_counts": {
+        "correct": 300,
+        "temporal_error": 0,
+        "commonsense_error": 0,
+        "decision_error": 0
+      },
+      "action_distribution": {
+        "predicted": {
+          "interrupt": 48,
+          "defer": 180,
+          "check-in": 72
+        },
+        "ground_truth": {
+          "interrupt": 48,
+          "defer": 252,
+          "check-in": 72
+        }
+      }
+    }
+  },
+  {
+    "model_name": "Oracle",
+    "metrics": {
+      "ppa": 1.0,
+      "tsu": 1.0,
+      "bas": 1.0,
+      "boundary_samples": 123,
+      "ce": 3.646166615455163e-05,
+      "ece": 8.632223838301218e-06
+    },
+    "analysis": {
+      "model_name": "Oracle",
+      "total_samples": 300,
+      "region_breakdown": {
+        "late": {
+          "accuracy": 1.0,
+          "correct": 96,
+          "total": 96
+        },
+        "mid": {
+          "accuracy": 1.0,
+          "correct": 94,
+          "total": 94
+        },
+        "early": {
+          "accuracy": 1.0,
+          "correct": 110,
+          "total": 110
+        }
+      },
+      "activity_breakdown": {
+        "meeting": {
+          "accuracy": 1.0,
+          "correct": 25,
+          "total": 25
+        },
+        "reading": {
+          "accuracy": 1.0,
+          "correct": 22,
+          "total": 22
+        },
+        "shower": {
+          "accuracy": 1.0,
+          "correct": 31,
+          "total": 31
+        },
+        "phone_call": {
+          "accuracy": 1.0,
+          "correct": 32,
+          "total": 32
+        },
+        "lunch_break": {
+          "accuracy": 1.0,
+          "correct": 32,
+          "total": 32
+        },
+        "workout": {
+          "accuracy": 1.0,
+          "correct": 23,
+          "total": 23
+        },
+        "deep_sleep": {
+          "accuracy": 1.0,
+          "correct": 17,
+          "total": 17
+        },
+        "cooking": {
+          "accuracy": 1.0,
+          "correct": 21,
+          "total": 21
+        },
+        "nap": {
+          "accuracy": 1.0,
+          "correct": 31,
+          "total": 31
+        },
+        "meditation": {
+          "accuracy": 1.0,
+          "correct": 19,
+          "total": 19
+        },
+        "commute": {
+          "accuracy": 1.0,
+          "correct": 29,
+          "total": 29
+        },
+        "gaming": {
+          "accuracy": 1.0,
+          "correct": 18,
+          "total": 18
+        }
+      },
+      "error_counts": {
+        "correct": 300,
+        "temporal_error": 0,
+        "commonsense_error": 0,
+        "decision_error": 0
+      },
+      "action_distribution": {
+        "predicted": {
+          "interrupt": 48,
+          "defer": 180,
+          "check-in": 72
+        },
+        "ground_truth": {
+          "interrupt": 48,
+          "defer": 252,
+          "check-in": 72
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,3974 @@
+[
+  {
+    "id": 0,
+    "activity": "meeting",
+    "context": "Heading into a meeting",
+    "delta_t": 96.61,
+    "duration": 69.5,
+    "p_active": 0.2599,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 1,
+    "activity": "reading",
+    "context": "Going to read for a while",
+    "delta_t": 93.3,
+    "duration": 29.42,
+    "p_active": 0.267,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 2,
+    "activity": "shower",
+    "context": "Time for a quick wash",
+    "delta_t": 8.49,
+    "duration": 8.2,
+    "p_active": 0.8602,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 3,
+    "activity": "reading",
+    "context": "Starting my book",
+    "delta_t": 49.8,
+    "duration": 112.68,
+    "p_active": 0.702,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 4,
+    "activity": "phone_call",
+    "context": "Need to ring someone",
+    "delta_t": 3.32,
+    "duration": 5.96,
+    "p_active": 0.9821,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 10
+  },
+  {
+    "id": 5,
+    "activity": "lunch_break",
+    "context": "Going to grab some food",
+    "delta_t": 27.16,
+    "duration": 53.11,
+    "p_active": 0.821,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 6,
+    "activity": "shower",
+    "context": "Going to take a shower",
+    "delta_t": 23.54,
+    "duration": 29.27,
+    "p_active": 0.2586,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 7,
+    "activity": "workout",
+    "context": "Going to hit the gym",
+    "delta_t": 19.31,
+    "duration": 41.68,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 8,
+    "activity": "phone_call",
+    "context": "Calling back a colleague",
+    "delta_t": 14.77,
+    "duration": 10.96,
+    "p_active": 0.1441,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 10
+  },
+  {
+    "id": 9,
+    "activity": "meeting",
+    "context": "Heading into a meeting",
+    "delta_t": 40.11,
+    "duration": 59.32,
+    "p_active": 0.8877,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 10,
+    "activity": "reading",
+    "context": "Going to read for a while",
+    "delta_t": 28.94,
+    "duration": 32.99,
+    "p_active": 0.9106,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 11,
+    "activity": "deep_sleep",
+    "context": "Time to go to bed",
+    "delta_t": 236.39,
+    "duration": 380.94,
+    "p_active": 0.812,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 12,
+    "activity": "cooking",
+    "context": "Going to cook something",
+    "delta_t": 71.58,
+    "duration": 38.43,
+    "p_active": 0.2457,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 13,
+    "activity": "shower",
+    "context": "Need to freshen up",
+    "delta_t": 3.58,
+    "duration": 14.69,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 14,
+    "activity": "cooking",
+    "context": "Starting to prepare dinner",
+    "delta_t": 12.39,
+    "duration": 29.99,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 15,
+    "activity": "meeting",
+    "context": "Got a work discussion to attend",
+    "delta_t": 100.99,
+    "duration": 89.84,
+    "p_active": 0.2112,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 16,
+    "activity": "phone_call",
+    "context": "Calling back a colleague",
+    "delta_t": 0.34,
+    "duration": 6.61,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 10
+  },
+  {
+    "id": 17,
+    "activity": "lunch_break",
+    "context": "Going to grab some food",
+    "delta_t": 23.3,
+    "duration": 46.74,
+    "p_active": 0.9174,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 18,
+    "activity": "nap",
+    "context": "Time for a short rest",
+    "delta_t": 20.29,
+    "duration": 41.74,
+    "p_active": 0.7943,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 19,
+    "activity": "reading",
+    "context": "Time for some reading",
+    "delta_t": 9.17,
+    "duration": 50.4,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 20,
+    "activity": "meditation",
+    "context": "Going to meditate",
+    "delta_t": 26.5,
+    "duration": 24.3,
+    "p_active": 0.5285,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 21,
+    "activity": "deep_sleep",
+    "context": "Calling it a night",
+    "delta_t": 29.07,
+    "duration": 197.49,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 22,
+    "activity": "lunch_break",
+    "context": "Stepping out for a meal",
+    "delta_t": 50.6,
+    "duration": 42.28,
+    "p_active": 0.235,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 23,
+    "activity": "cooking",
+    "context": "Time to make some food",
+    "delta_t": 48.14,
+    "duration": 45.48,
+    "p_active": 0.5582,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 24,
+    "activity": "workout",
+    "context": "Starting my workout session",
+    "delta_t": 67.4,
+    "duration": 35.4,
+    "p_active": 0.3767,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 25,
+    "activity": "nap",
+    "context": "Need to rest my eyes for a bit",
+    "delta_t": 13.17,
+    "duration": 18.06,
+    "p_active": 0.9367,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 26,
+    "activity": "lunch_break",
+    "context": "Going to grab some food",
+    "delta_t": 18.03,
+    "duration": 37.85,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 27,
+    "activity": "shower",
+    "context": "Time for a quick wash",
+    "delta_t": 6.02,
+    "duration": 20.76,
+    "p_active": 0.9593,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 28,
+    "activity": "workout",
+    "context": "Going to hit the gym",
+    "delta_t": 77.39,
+    "duration": 87.71,
+    "p_active": 0.2102,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 29,
+    "activity": "meeting",
+    "context": "Heading into a meeting",
+    "delta_t": 100.88,
+    "duration": 53.93,
+    "p_active": 0.2124,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 30,
+    "activity": "commute",
+    "context": "Beginning my commute",
+    "delta_t": 0.87,
+    "duration": 21.02,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 30
+  },
+  {
+    "id": 31,
+    "activity": "shower",
+    "context": "Going to take a shower",
+    "delta_t": 7.02,
+    "duration": 27.57,
+    "p_active": 0.9192,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 32,
+    "activity": "shower",
+    "context": "Time for a quick wash",
+    "delta_t": 4.5,
+    "duration": 19.48,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 33,
+    "activity": "commute",
+    "context": "On my way to the office",
+    "delta_t": 33.07,
+    "duration": 29.13,
+    "p_active": 0.3217,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 30
+  },
+  {
+    "id": 34,
+    "activity": "commute",
+    "context": "On my way to the office",
+    "delta_t": 10.27,
+    "duration": 47.87,
+    "p_active": 0.9992,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 30
+  },
+  {
+    "id": 35,
+    "activity": "cooking",
+    "context": "Starting to prepare dinner",
+    "delta_t": 7.78,
+    "duration": 46.19,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 36,
+    "activity": "deep_sleep",
+    "context": "Finally hitting the sack",
+    "delta_t": 58.18,
+    "duration": 223.36,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 37,
+    "activity": "commute",
+    "context": "Starting my journey home",
+    "delta_t": 36.2,
+    "duration": 23.12,
+    "p_active": 0.2293,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 30
+  },
+  {
+    "id": 38,
+    "activity": "lunch_break",
+    "context": "Stepping out for a meal",
+    "delta_t": 11.5,
+    "duration": 43.64,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 39,
+    "activity": "workout",
+    "context": "Going to hit the gym",
+    "delta_t": 51.47,
+    "duration": 58.94,
+    "p_active": 0.6421,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 40,
+    "activity": "commute",
+    "context": "On my way to the office",
+    "delta_t": 36.01,
+    "duration": 73.28,
+    "p_active": 0.2344,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 30
+  },
+  {
+    "id": 41,
+    "activity": "lunch_break",
+    "context": "Time for lunch",
+    "delta_t": 3.98,
+    "duration": 38.94,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 42,
+    "activity": "phone_call",
+    "context": "Need to ring someone",
+    "delta_t": 2.48,
+    "duration": 6.7,
+    "p_active": 0.9967,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 10
+  },
+  {
+    "id": 43,
+    "activity": "phone_call",
+    "context": "Making a quick call",
+    "delta_t": 1.66,
+    "duration": 9.63,
+    "p_active": 0.9998,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 10
+  },
+  {
+    "id": 44,
+    "activity": "commute",
+    "context": "Starting my journey home",
+    "delta_t": 5.93,
+    "duration": 24.3,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 30
+  },
+  {
+    "id": 45,
+    "activity": "meeting",
+    "context": "Got a work discussion to attend",
+    "delta_t": 65.66,
+    "duration": 95.43,
+    "p_active": 0.6038,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 46,
+    "activity": "cooking",
+    "context": "Time to make some food",
+    "delta_t": 8.74,
+    "duration": 32.27,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 47,
+    "activity": "gaming",
+    "context": "Starting a gaming session",
+    "delta_t": 143.41,
+    "duration": 85.64,
+    "p_active": 0.244,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 48,
+    "activity": "meditation",
+    "context": "Time for some mindfulness",
+    "delta_t": 4.25,
+    "duration": 43.35,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 49,
+    "activity": "commute",
+    "context": "Starting my journey home",
+    "delta_t": 27.46,
+    "duration": 28.09,
+    "p_active": 0.544,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 30
+  },
+  {
+    "id": 50,
+    "activity": "phone_call",
+    "context": "Calling back a colleague",
+    "delta_t": 14.24,
+    "duration": 5.01,
+    "p_active": 0.1624,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 10
+  },
+  {
+    "id": 51,
+    "activity": "nap",
+    "context": "Gonna catch some sleep",
+    "delta_t": 49.89,
+    "duration": 47.43,
+    "p_active": 0.2022,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 52,
+    "activity": "meeting",
+    "context": "Meeting with the team",
+    "delta_t": 94.74,
+    "duration": 58.43,
+    "p_active": 0.2807,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 53,
+    "activity": "phone_call",
+    "context": "Got a phone call to make",
+    "delta_t": 2.24,
+    "duration": 15.08,
+    "p_active": 0.9983,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 10
+  },
+  {
+    "id": 54,
+    "activity": "workout",
+    "context": "Time for my exercise routine",
+    "delta_t": 2.21,
+    "duration": 86.21,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 55,
+    "activity": "commute",
+    "context": "On my way to the office",
+    "delta_t": 1.61,
+    "duration": 49.8,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 30
+  },
+  {
+    "id": 56,
+    "activity": "workout",
+    "context": "Starting my workout session",
+    "delta_t": 5.59,
+    "duration": 82.47,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 57,
+    "activity": "cooking",
+    "context": "Going to cook something",
+    "delta_t": 60.4,
+    "duration": 73.31,
+    "p_active": 0.3946,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 58,
+    "activity": "lunch_break",
+    "context": "Time for lunch",
+    "delta_t": 1.58,
+    "duration": 20.56,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 59,
+    "activity": "meeting",
+    "context": "Heading into a meeting",
+    "delta_t": 11.39,
+    "duration": 90.99,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 60,
+    "activity": "meditation",
+    "context": "Time for some mindfulness",
+    "delta_t": 6.63,
+    "duration": 30.34,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 61,
+    "activity": "shower",
+    "context": "Need to freshen up",
+    "delta_t": 15.61,
+    "duration": 22.89,
+    "p_active": 0.5758,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 62,
+    "activity": "lunch_break",
+    "context": "Going to grab some food",
+    "delta_t": 18.02,
+    "duration": 57.1,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 63,
+    "activity": "meeting",
+    "context": "Meeting with the team",
+    "delta_t": 58.34,
+    "duration": 73.97,
+    "p_active": 0.6852,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 64,
+    "activity": "phone_call",
+    "context": "Calling back a colleague",
+    "delta_t": 1.67,
+    "duration": 6.44,
+    "p_active": 0.9998,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 10
+  },
+  {
+    "id": 65,
+    "activity": "commute",
+    "context": "On my way to the office",
+    "delta_t": 1.26,
+    "duration": 30.14,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 30
+  },
+  {
+    "id": 66,
+    "activity": "shower",
+    "context": "Need to freshen up",
+    "delta_t": 13.41,
+    "duration": 29.16,
+    "p_active": 0.6634,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 67,
+    "activity": "lunch_break",
+    "context": "Time for lunch",
+    "delta_t": 27.7,
+    "duration": 52.17,
+    "p_active": 0.8076,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 68,
+    "activity": "gaming",
+    "context": "Starting a gaming session",
+    "delta_t": 142.57,
+    "duration": 46.37,
+    "p_active": 0.2496,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 69,
+    "activity": "nap",
+    "context": "Need to rest my eyes for a bit",
+    "delta_t": 21.11,
+    "duration": 21.63,
+    "p_active": 0.7779,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 70,
+    "activity": "meditation",
+    "context": "Going to meditate",
+    "delta_t": 13.4,
+    "duration": 31.11,
+    "p_active": 0.903,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 71,
+    "activity": "gaming",
+    "context": "Time for some gaming",
+    "delta_t": 77.04,
+    "duration": 93.88,
+    "p_active": 0.6864,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 72,
+    "activity": "commute",
+    "context": "Beginning my commute",
+    "delta_t": 6.71,
+    "duration": 56.81,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 30
+  },
+  {
+    "id": 73,
+    "activity": "lunch_break",
+    "context": "Time for lunch",
+    "delta_t": 0.8,
+    "duration": 52.66,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 74,
+    "activity": "lunch_break",
+    "context": "Taking my lunch break",
+    "delta_t": 40.69,
+    "duration": 25.85,
+    "p_active": 0.4828,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 75,
+    "activity": "cooking",
+    "context": "Going to cook something",
+    "delta_t": 48.08,
+    "duration": 25.79,
+    "p_active": 0.5589,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 76,
+    "activity": "meeting",
+    "context": "Joining a conference call",
+    "delta_t": 0.48,
+    "duration": 43.83,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 77,
+    "activity": "commute",
+    "context": "Heading to work",
+    "delta_t": 0.48,
+    "duration": 26.1,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 30
+  },
+  {
+    "id": 78,
+    "activity": "lunch_break",
+    "context": "Stepping out for a meal",
+    "delta_t": 18.36,
+    "duration": 47.23,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 79,
+    "activity": "cooking",
+    "context": "Preparing a meal",
+    "delta_t": 73.28,
+    "duration": 52.84,
+    "p_active": 0.2229,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 80,
+    "activity": "phone_call",
+    "context": "Calling back a colleague",
+    "delta_t": 1.71,
+    "duration": 8.54,
+    "p_active": 0.9998,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 10
+  },
+  {
+    "id": 81,
+    "activity": "nap",
+    "context": "Need to rest my eyes for a bit",
+    "delta_t": 3.92,
+    "duration": 30.81,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 82,
+    "activity": "meditation",
+    "context": "Starting my meditation practice",
+    "delta_t": 23.0,
+    "duration": 13.56,
+    "p_active": 0.6286,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 83,
+    "activity": "phone_call",
+    "context": "Need to ring someone",
+    "delta_t": 2.53,
+    "duration": 11.22,
+    "p_active": 0.9962,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 10
+  },
+  {
+    "id": 84,
+    "activity": "reading",
+    "context": "Starting my book",
+    "delta_t": 94.19,
+    "duration": 117.96,
+    "p_active": 0.2581,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 85,
+    "activity": "gaming",
+    "context": "Time for some gaming",
+    "delta_t": 93.89,
+    "duration": 126.37,
+    "p_active": 0.5741,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 86,
+    "activity": "reading",
+    "context": "Settling in with a novel",
+    "delta_t": 78.68,
+    "duration": 71.42,
+    "p_active": 0.4132,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 87,
+    "activity": "phone_call",
+    "context": "Calling back a colleague",
+    "delta_t": 4.33,
+    "duration": 8.0,
+    "p_active": 0.9376,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 10
+  },
+  {
+    "id": 88,
+    "activity": "nap",
+    "context": "Gonna catch some sleep",
+    "delta_t": 14.57,
+    "duration": 33.89,
+    "p_active": 0.9086,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 89,
+    "activity": "meeting",
+    "context": "Got a work discussion to attend",
+    "delta_t": 34.78,
+    "duration": 63.08,
+    "p_active": 0.9469,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 90,
+    "activity": "lunch_break",
+    "context": "Going to grab some food",
+    "delta_t": 11.39,
+    "duration": 47.43,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 91,
+    "activity": "workout",
+    "context": "Going for a run",
+    "delta_t": 27.85,
+    "duration": 84.98,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 92,
+    "activity": "lunch_break",
+    "context": "Taking my lunch break",
+    "delta_t": 28.09,
+    "duration": 53.94,
+    "p_active": 0.7978,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 93,
+    "activity": "phone_call",
+    "context": "Making a quick call",
+    "delta_t": 4.44,
+    "duration": 7.78,
+    "p_active": 0.9309,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 10
+  },
+  {
+    "id": 94,
+    "activity": "deep_sleep",
+    "context": "Time to go to bed",
+    "delta_t": 462.83,
+    "duration": 240.72,
+    "p_active": 0.0572,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 95,
+    "activity": "shower",
+    "context": "Need to freshen up",
+    "delta_t": 6.08,
+    "duration": 8.3,
+    "p_active": 0.9567,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 96,
+    "activity": "cooking",
+    "context": "Going to cook something",
+    "delta_t": 47.05,
+    "duration": 21.34,
+    "p_active": 0.5727,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 97,
+    "activity": "shower",
+    "context": "Hopping in the shower",
+    "delta_t": 21.27,
+    "duration": 28.97,
+    "p_active": 0.3491,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 98,
+    "activity": "lunch_break",
+    "context": "Taking my lunch break",
+    "delta_t": 39.09,
+    "duration": 51.8,
+    "p_active": 0.5226,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 99,
+    "activity": "reading",
+    "context": "Settling in with a novel",
+    "delta_t": 12.94,
+    "duration": 79.01,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 100,
+    "activity": "deep_sleep",
+    "context": "Finally hitting the sack",
+    "delta_t": 175.89,
+    "duration": 349.49,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 101,
+    "activity": "deep_sleep",
+    "context": "Finally hitting the sack",
+    "delta_t": 448.63,
+    "duration": 336.79,
+    "p_active": 0.1046,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 102,
+    "activity": "phone_call",
+    "context": "Got a phone call to make",
+    "delta_t": 8.84,
+    "duration": 3.37,
+    "p_active": 0.5101,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 10
+  },
+  {
+    "id": 103,
+    "activity": "lunch_break",
+    "context": "Taking my lunch break",
+    "delta_t": 7.89,
+    "duration": 24.68,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 104,
+    "activity": "shower",
+    "context": "Going to take a shower",
+    "delta_t": 18.09,
+    "duration": 24.36,
+    "p_active": 0.4765,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 105,
+    "activity": "lunch_break",
+    "context": "Time for lunch",
+    "delta_t": 39.57,
+    "duration": 55.93,
+    "p_active": 0.5106,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 106,
+    "activity": "reading",
+    "context": "Time for some reading",
+    "delta_t": 3.1,
+    "duration": 51.44,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 107,
+    "activity": "workout",
+    "context": "Going to hit the gym",
+    "delta_t": 29.5,
+    "duration": 86.17,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 108,
+    "activity": "meeting",
+    "context": "Joining a conference call",
+    "delta_t": 100.97,
+    "duration": 79.77,
+    "p_active": 0.2115,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 109,
+    "activity": "shower",
+    "context": "Hopping in the shower",
+    "delta_t": 13.88,
+    "duration": 16.98,
+    "p_active": 0.6447,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 110,
+    "activity": "nap",
+    "context": "Need to rest my eyes for a bit",
+    "delta_t": 8.93,
+    "duration": 57.56,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 111,
+    "activity": "shower",
+    "context": "Hopping in the shower",
+    "delta_t": 3.09,
+    "duration": 20.93,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 112,
+    "activity": "nap",
+    "context": "I'm going to take a quick nap",
+    "delta_t": 24.94,
+    "duration": 10.62,
+    "p_active": 0.7011,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 113,
+    "activity": "shower",
+    "context": "Time for a quick wash",
+    "delta_t": 9.12,
+    "duration": 12.38,
+    "p_active": 0.8352,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 114,
+    "activity": "nap",
+    "context": "Need to rest my eyes for a bit",
+    "delta_t": 30.71,
+    "duration": 55.92,
+    "p_active": 0.5858,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 115,
+    "activity": "commute",
+    "context": "Starting my journey home",
+    "delta_t": 29.96,
+    "duration": 13.45,
+    "p_active": 0.4371,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 30
+  },
+  {
+    "id": 116,
+    "activity": "reading",
+    "context": "Time for some reading",
+    "delta_t": 88.62,
+    "duration": 30.64,
+    "p_active": 0.3138,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 117,
+    "activity": "gaming",
+    "context": "Going to play some games",
+    "delta_t": 28.26,
+    "duration": 127.52,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 118,
+    "activity": "gaming",
+    "context": "Going to play some games",
+    "delta_t": 24.47,
+    "duration": 66.12,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 119,
+    "activity": "nap",
+    "context": "Gonna catch some sleep",
+    "delta_t": 44.08,
+    "duration": 19.91,
+    "p_active": 0.3184,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 120,
+    "activity": "gaming",
+    "context": "Going to play some games",
+    "delta_t": 19.09,
+    "duration": 30.81,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 121,
+    "activity": "nap",
+    "context": "I'm going to take a quick nap",
+    "delta_t": 8.92,
+    "duration": 50.07,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 122,
+    "activity": "deep_sleep",
+    "context": "Going to get some proper sleep",
+    "delta_t": 442.36,
+    "duration": 420.29,
+    "p_active": 0.1255,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 123,
+    "activity": "nap",
+    "context": "Time for a short rest",
+    "delta_t": 28.98,
+    "duration": 44.91,
+    "p_active": 0.6203,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 124,
+    "activity": "lunch_break",
+    "context": "Taking my lunch break",
+    "delta_t": 26.9,
+    "duration": 25.0,
+    "p_active": 0.8274,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 125,
+    "activity": "deep_sleep",
+    "context": "Time to go to bed",
+    "delta_t": 299.85,
+    "duration": 369.0,
+    "p_active": 0.6005,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 126,
+    "activity": "reading",
+    "context": "Time for some reading",
+    "delta_t": 14.91,
+    "duration": 39.3,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 127,
+    "activity": "shower",
+    "context": "Time for a quick wash",
+    "delta_t": 5.73,
+    "duration": 29.51,
+    "p_active": 0.9709,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 128,
+    "activity": "nap",
+    "context": "Need to rest my eyes for a bit",
+    "delta_t": 45.38,
+    "duration": 12.12,
+    "p_active": 0.2923,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 129,
+    "activity": "cooking",
+    "context": "Starting to prepare dinner",
+    "delta_t": 2.89,
+    "duration": 27.98,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 130,
+    "activity": "workout",
+    "context": "Time for my exercise routine",
+    "delta_t": 74.73,
+    "duration": 57.51,
+    "p_active": 0.2545,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 131,
+    "activity": "meditation",
+    "context": "Going to meditate",
+    "delta_t": 7.8,
+    "duration": 30.03,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 132,
+    "activity": "phone_call",
+    "context": "Making a quick call",
+    "delta_t": 12.54,
+    "duration": 4.45,
+    "p_active": 0.237,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 10
+  },
+  {
+    "id": 133,
+    "activity": "commute",
+    "context": "Beginning my commute",
+    "delta_t": 4.58,
+    "duration": 40.87,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 30
+  },
+  {
+    "id": 134,
+    "activity": "shower",
+    "context": "Going to take a shower",
+    "delta_t": 0.7,
+    "duration": 16.85,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 135,
+    "activity": "workout",
+    "context": "Time for my exercise routine",
+    "delta_t": 7.7,
+    "duration": 46.68,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 136,
+    "activity": "reading",
+    "context": "Starting my book",
+    "delta_t": 35.31,
+    "duration": 83.46,
+    "p_active": 0.8469,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 137,
+    "activity": "cooking",
+    "context": "Preparing a meal",
+    "delta_t": 24.07,
+    "duration": 31.32,
+    "p_active": 0.879,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 138,
+    "activity": "meditation",
+    "context": "Time for some mindfulness",
+    "delta_t": 11.35,
+    "duration": 24.64,
+    "p_active": 0.9614,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 139,
+    "activity": "nap",
+    "context": "Gonna catch some sleep",
+    "delta_t": 22.79,
+    "duration": 38.62,
+    "p_active": 0.7443,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 140,
+    "activity": "phone_call",
+    "context": "Calling back a colleague",
+    "delta_t": 2.36,
+    "duration": 9.76,
+    "p_active": 0.9976,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 10
+  },
+  {
+    "id": 141,
+    "activity": "cooking",
+    "context": "Going to cook something",
+    "delta_t": 32.18,
+    "duration": 56.19,
+    "p_active": 0.7709,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 142,
+    "activity": "phone_call",
+    "context": "Need to ring someone",
+    "delta_t": 14.2,
+    "duration": 9.94,
+    "p_active": 0.1637,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 10
+  },
+  {
+    "id": 143,
+    "activity": "workout",
+    "context": "Starting my workout session",
+    "delta_t": 33.61,
+    "duration": 85.26,
+    "p_active": 0.9399,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 144,
+    "activity": "commute",
+    "context": "Beginning my commute",
+    "delta_t": 34.38,
+    "duration": 32.73,
+    "p_active": 0.2803,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 30
+  },
+  {
+    "id": 145,
+    "activity": "reading",
+    "context": "Time for some reading",
+    "delta_t": 17.68,
+    "duration": 31.59,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 146,
+    "activity": "reading",
+    "context": "Settling in with a novel",
+    "delta_t": 27.05,
+    "duration": 48.06,
+    "p_active": 0.9295,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 147,
+    "activity": "nap",
+    "context": "Time for a short rest",
+    "delta_t": 28.36,
+    "duration": 25.69,
+    "p_active": 0.6328,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 148,
+    "activity": "lunch_break",
+    "context": "Taking my lunch break",
+    "delta_t": 15.07,
+    "duration": 54.26,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 149,
+    "activity": "reading",
+    "context": "Starting my book",
+    "delta_t": 7.66,
+    "duration": 80.08,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 150,
+    "activity": "phone_call",
+    "context": "Need to ring someone",
+    "delta_t": 10.18,
+    "duration": 28.06,
+    "p_active": 0.3923,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 10
+  },
+  {
+    "id": 151,
+    "activity": "meditation",
+    "context": "Going to meditate",
+    "delta_t": 29.47,
+    "duration": 34.07,
+    "p_active": 0.4438,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 152,
+    "activity": "meditation",
+    "context": "Starting my meditation practice",
+    "delta_t": 4.33,
+    "duration": 10.38,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 153,
+    "activity": "cooking",
+    "context": "Starting to prepare dinner",
+    "delta_t": 13.17,
+    "duration": 27.28,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 154,
+    "activity": "meditation",
+    "context": "Time for some mindfulness",
+    "delta_t": 41.06,
+    "duration": 29.46,
+    "p_active": 0.1125,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 155,
+    "activity": "meditation",
+    "context": "Time for some mindfulness",
+    "delta_t": 13.65,
+    "duration": 14.96,
+    "p_active": 0.8958,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 156,
+    "activity": "commute",
+    "context": "Starting my journey home",
+    "delta_t": 16.04,
+    "duration": 29.7,
+    "p_active": 0.9614,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 30
+  },
+  {
+    "id": 157,
+    "activity": "nap",
+    "context": "I'm going to take a quick nap",
+    "delta_t": 9.52,
+    "duration": 17.53,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 158,
+    "activity": "meditation",
+    "context": "Going to meditate",
+    "delta_t": 4.04,
+    "duration": 18.15,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 159,
+    "activity": "nap",
+    "context": "Need to rest my eyes for a bit",
+    "delta_t": 11.97,
+    "duration": 39.32,
+    "p_active": 0.9606,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 160,
+    "activity": "commute",
+    "context": "Starting my journey home",
+    "delta_t": 18.74,
+    "duration": 21.77,
+    "p_active": 0.9011,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 30
+  },
+  {
+    "id": 161,
+    "activity": "deep_sleep",
+    "context": "Time to go to bed",
+    "delta_t": 277.42,
+    "duration": 381.06,
+    "p_active": 0.6753,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 162,
+    "activity": "shower",
+    "context": "Time for a quick wash",
+    "delta_t": 12.64,
+    "duration": 18.49,
+    "p_active": 0.6944,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 163,
+    "activity": "workout",
+    "context": "Going to hit the gym",
+    "delta_t": 83.78,
+    "duration": 58.95,
+    "p_active": 0.1036,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 164,
+    "activity": "workout",
+    "context": "Time for my exercise routine",
+    "delta_t": 43.51,
+    "duration": 84.57,
+    "p_active": 0.7749,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 165,
+    "activity": "phone_call",
+    "context": "Got a phone call to make",
+    "delta_t": 5.66,
+    "duration": 4.97,
+    "p_active": 0.8339,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 10
+  },
+  {
+    "id": 166,
+    "activity": "phone_call",
+    "context": "Calling back a colleague",
+    "delta_t": 12.42,
+    "duration": 8.65,
+    "p_active": 0.2438,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 10
+  },
+  {
+    "id": 167,
+    "activity": "meeting",
+    "context": "Got a work discussion to attend",
+    "delta_t": 29.69,
+    "duration": 45.98,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 168,
+    "activity": "commute",
+    "context": "Heading to work",
+    "delta_t": 13.61,
+    "duration": 23.03,
+    "p_active": 0.9885,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 30
+  },
+  {
+    "id": 169,
+    "activity": "nap",
+    "context": "Time for a short rest",
+    "delta_t": 2.92,
+    "duration": 39.92,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 170,
+    "activity": "deep_sleep",
+    "context": "Calling it a night",
+    "delta_t": 407.3,
+    "duration": 370.13,
+    "p_active": 0.2423,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 171,
+    "activity": "shower",
+    "context": "Hopping in the shower",
+    "delta_t": 25.07,
+    "duration": 16.94,
+    "p_active": 0.1974,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 172,
+    "activity": "phone_call",
+    "context": "Calling back a colleague",
+    "delta_t": 14.07,
+    "duration": 5.18,
+    "p_active": 0.1689,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 10
+  },
+  {
+    "id": 173,
+    "activity": "shower",
+    "context": "Need to freshen up",
+    "delta_t": 19.39,
+    "duration": 7.85,
+    "p_active": 0.4244,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 174,
+    "activity": "cooking",
+    "context": "Starting to prepare dinner",
+    "delta_t": 78.18,
+    "duration": 64.06,
+    "p_active": 0.1576,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 175,
+    "activity": "phone_call",
+    "context": "Making a quick call",
+    "delta_t": 13.25,
+    "duration": 10.06,
+    "p_active": 0.2027,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 10
+  },
+  {
+    "id": 176,
+    "activity": "cooking",
+    "context": "Preparing a meal",
+    "delta_t": 12.24,
+    "duration": 24.29,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 177,
+    "activity": "workout",
+    "context": "Starting my workout session",
+    "delta_t": 67.53,
+    "duration": 59.38,
+    "p_active": 0.3745,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 178,
+    "activity": "commute",
+    "context": "Beginning my commute",
+    "delta_t": 25.78,
+    "duration": 33.64,
+    "p_active": 0.6197,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 30
+  },
+  {
+    "id": 179,
+    "activity": "meditation",
+    "context": "Doing some breathing exercises",
+    "delta_t": 39.8,
+    "duration": 29.44,
+    "p_active": 0.1486,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 180,
+    "activity": "lunch_break",
+    "context": "Stepping out for a meal",
+    "delta_t": 12.97,
+    "duration": 21.48,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 181,
+    "activity": "reading",
+    "context": "Going to read for a while",
+    "delta_t": 90.95,
+    "duration": 30.93,
+    "p_active": 0.2905,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 182,
+    "activity": "cooking",
+    "context": "Starting to prepare dinner",
+    "delta_t": 71.43,
+    "duration": 79.91,
+    "p_active": 0.2476,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 183,
+    "activity": "reading",
+    "context": "Going to read for a while",
+    "delta_t": 13.06,
+    "duration": 24.9,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 184,
+    "activity": "deep_sleep",
+    "context": "Finally hitting the sack",
+    "delta_t": 210.75,
+    "duration": 181.35,
+    "p_active": 0.8975,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 185,
+    "activity": "gaming",
+    "context": "Time for some gaming",
+    "delta_t": 78.52,
+    "duration": 34.44,
+    "p_active": 0.6765,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 186,
+    "activity": "cooking",
+    "context": "Starting to prepare dinner",
+    "delta_t": 54.79,
+    "duration": 32.82,
+    "p_active": 0.4695,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 187,
+    "activity": "shower",
+    "context": "Need to freshen up",
+    "delta_t": 3.1,
+    "duration": 26.33,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 188,
+    "activity": "lunch_break",
+    "context": "Going to grab some food",
+    "delta_t": 37.25,
+    "duration": 30.99,
+    "p_active": 0.5687,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 189,
+    "activity": "workout",
+    "context": "Time for my exercise routine",
+    "delta_t": 39.53,
+    "duration": 35.09,
+    "p_active": 0.8412,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 190,
+    "activity": "lunch_break",
+    "context": "Stepping out for a meal",
+    "delta_t": 4.9,
+    "duration": 59.95,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 191,
+    "activity": "reading",
+    "context": "Starting my book",
+    "delta_t": 55.92,
+    "duration": 33.68,
+    "p_active": 0.6408,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 192,
+    "activity": "gaming",
+    "context": "Hopping on the console",
+    "delta_t": 79.55,
+    "duration": 119.28,
+    "p_active": 0.6696,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 193,
+    "activity": "shower",
+    "context": "Need to freshen up",
+    "delta_t": 1.92,
+    "duration": 17.42,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 194,
+    "activity": "nap",
+    "context": "Gonna catch some sleep",
+    "delta_t": 4.76,
+    "duration": 20.1,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 195,
+    "activity": "nap",
+    "context": "Time for a short rest",
+    "delta_t": 17.86,
+    "duration": 41.73,
+    "p_active": 0.8429,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 196,
+    "activity": "gaming",
+    "context": "Going to play some games",
+    "delta_t": 46.44,
+    "duration": 142.79,
+    "p_active": 0.8904,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 197,
+    "activity": "meditation",
+    "context": "Going to meditate",
+    "delta_t": 2.68,
+    "duration": 41.39,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 198,
+    "activity": "gaming",
+    "context": "Hopping on the console",
+    "delta_t": 127.42,
+    "duration": 109.43,
+    "p_active": 0.3505,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 199,
+    "activity": "gaming",
+    "context": "Starting a gaming session",
+    "delta_t": 7.6,
+    "duration": 128.02,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 200,
+    "activity": "commute",
+    "context": "Starting my journey home",
+    "delta_t": 29.95,
+    "duration": 31.88,
+    "p_active": 0.4376,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 30
+  },
+  {
+    "id": 201,
+    "activity": "commute",
+    "context": "Starting my journey home",
+    "delta_t": 40.46,
+    "duration": 32.62,
+    "p_active": 0.1392,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 30
+  },
+  {
+    "id": 202,
+    "activity": "cooking",
+    "context": "Starting to prepare dinner",
+    "delta_t": 66.79,
+    "duration": 50.72,
+    "p_active": 0.3094,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 203,
+    "activity": "lunch_break",
+    "context": "Going to grab some food",
+    "delta_t": 54.05,
+    "duration": 52.59,
+    "p_active": 0.1487,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 204,
+    "activity": "lunch_break",
+    "context": "Going to grab some food",
+    "delta_t": 7.84,
+    "duration": 42.49,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 205,
+    "activity": "deep_sleep",
+    "context": "Finally hitting the sack",
+    "delta_t": 170.44,
+    "duration": 466.6,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 206,
+    "activity": "meeting",
+    "context": "Meeting with the team",
+    "delta_t": 0.92,
+    "duration": 116.38,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 207,
+    "activity": "nap",
+    "context": "Time for a short rest",
+    "delta_t": 4.78,
+    "duration": 22.3,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 208,
+    "activity": "commute",
+    "context": "Heading to work",
+    "delta_t": 1.0,
+    "duration": 40.84,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 30
+  },
+  {
+    "id": 209,
+    "activity": "phone_call",
+    "context": "Calling back a colleague",
+    "delta_t": 2.09,
+    "duration": 8.71,
+    "p_active": 0.9989,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 10
+  },
+  {
+    "id": 210,
+    "activity": "lunch_break",
+    "context": "Taking my lunch break",
+    "delta_t": 20.33,
+    "duration": 32.08,
+    "p_active": 0.9917,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 211,
+    "activity": "deep_sleep",
+    "context": "Calling it a night",
+    "delta_t": 85.41,
+    "duration": 180.5,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 212,
+    "activity": "meeting",
+    "context": "Meeting with the team",
+    "delta_t": 34.99,
+    "duration": 75.74,
+    "p_active": 0.9445,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 213,
+    "activity": "nap",
+    "context": "I'm going to take a quick nap",
+    "delta_t": 48.61,
+    "duration": 31.57,
+    "p_active": 0.2278,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 214,
+    "activity": "phone_call",
+    "context": "Calling back a colleague",
+    "delta_t": 1.44,
+    "duration": 15.24,
+    "p_active": 0.9999,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 10
+  },
+  {
+    "id": 215,
+    "activity": "commute",
+    "context": "On my way to the office",
+    "delta_t": 2.98,
+    "duration": 21.09,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 30
+  },
+  {
+    "id": 216,
+    "activity": "deep_sleep",
+    "context": "Finally hitting the sack",
+    "delta_t": 216.41,
+    "duration": 194.57,
+    "p_active": 0.8786,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 217,
+    "activity": "meditation",
+    "context": "Starting my meditation practice",
+    "delta_t": 1.14,
+    "duration": 15.27,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 218,
+    "activity": "nap",
+    "context": "Time for a short rest",
+    "delta_t": 0.33,
+    "duration": 10.46,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 219,
+    "activity": "meditation",
+    "context": "Doing some breathing exercises",
+    "delta_t": 11.57,
+    "duration": 13.87,
+    "p_active": 0.9551,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 220,
+    "activity": "meeting",
+    "context": "Got a work discussion to attend",
+    "delta_t": 60.25,
+    "duration": 83.12,
+    "p_active": 0.6639,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 221,
+    "activity": "phone_call",
+    "context": "Need to ring someone",
+    "delta_t": 3.81,
+    "duration": 13.88,
+    "p_active": 0.9644,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 10
+  },
+  {
+    "id": 222,
+    "activity": "gaming",
+    "context": "Time for some gaming",
+    "delta_t": 28.94,
+    "duration": 158.32,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 223,
+    "activity": "reading",
+    "context": "Starting my book",
+    "delta_t": 55.46,
+    "duration": 65.45,
+    "p_active": 0.6454,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 224,
+    "activity": "nap",
+    "context": "I'm going to take a quick nap",
+    "delta_t": 8.39,
+    "duration": 50.66,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 225,
+    "activity": "workout",
+    "context": "Going to hit the gym",
+    "delta_t": 7.45,
+    "duration": 66.04,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 226,
+    "activity": "cooking",
+    "context": "Time to make some food",
+    "delta_t": 5.46,
+    "duration": 20.86,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 227,
+    "activity": "commute",
+    "context": "Starting my journey home",
+    "delta_t": 6.53,
+    "duration": 29.24,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 30
+  },
+  {
+    "id": 228,
+    "activity": "gaming",
+    "context": "Starting a gaming session",
+    "delta_t": 28.04,
+    "duration": 140.79,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 229,
+    "activity": "shower",
+    "context": "Hopping in the shower",
+    "delta_t": 0.75,
+    "duration": 19.85,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 230,
+    "activity": "shower",
+    "context": "Need to freshen up",
+    "delta_t": 13.93,
+    "duration": 9.32,
+    "p_active": 0.6429,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 231,
+    "activity": "shower",
+    "context": "Going to take a shower",
+    "delta_t": 5.21,
+    "duration": 5.1,
+    "p_active": 0.9915,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 232,
+    "activity": "phone_call",
+    "context": "Making a quick call",
+    "delta_t": 14.16,
+    "duration": 8.99,
+    "p_active": 0.1653,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 10
+  },
+  {
+    "id": 233,
+    "activity": "cooking",
+    "context": "Going to cook something",
+    "delta_t": 22.92,
+    "duration": 55.22,
+    "p_active": 0.8944,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 234,
+    "activity": "shower",
+    "context": "Going to take a shower",
+    "delta_t": 3.48,
+    "duration": 19.86,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 235,
+    "activity": "nap",
+    "context": "I'm going to take a quick nap",
+    "delta_t": 6.25,
+    "duration": 51.81,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 236,
+    "activity": "meeting",
+    "context": "Got a work discussion to attend",
+    "delta_t": 13.74,
+    "duration": 108.65,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 237,
+    "activity": "deep_sleep",
+    "context": "Finally hitting the sack",
+    "delta_t": 210.81,
+    "duration": 346.06,
+    "p_active": 0.8973,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 238,
+    "activity": "phone_call",
+    "context": "Making a quick call",
+    "delta_t": 14.88,
+    "duration": 15.04,
+    "p_active": 0.1405,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 10
+  },
+  {
+    "id": 239,
+    "activity": "shower",
+    "context": "Need to freshen up",
+    "delta_t": 5.36,
+    "duration": 15.48,
+    "p_active": 0.9856,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 240,
+    "activity": "nap",
+    "context": "I'm going to take a quick nap",
+    "delta_t": 12.15,
+    "duration": 36.01,
+    "p_active": 0.9571,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 241,
+    "activity": "reading",
+    "context": "Going to read for a while",
+    "delta_t": 44.89,
+    "duration": 108.97,
+    "p_active": 0.7511,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 242,
+    "activity": "lunch_break",
+    "context": "Stepping out for a meal",
+    "delta_t": 2.39,
+    "duration": 58.46,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 243,
+    "activity": "meeting",
+    "context": "Joining a conference call",
+    "delta_t": 71.14,
+    "duration": 107.31,
+    "p_active": 0.5429,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 244,
+    "activity": "workout",
+    "context": "Starting my workout session",
+    "delta_t": 63.92,
+    "duration": 74.01,
+    "p_active": 0.4347,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 245,
+    "activity": "lunch_break",
+    "context": "Going to grab some food",
+    "delta_t": 52.47,
+    "duration": 40.68,
+    "p_active": 0.1882,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 246,
+    "activity": "phone_call",
+    "context": "Got a phone call to make",
+    "delta_t": 2.71,
+    "duration": 18.7,
+    "p_active": 0.9942,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 10
+  },
+  {
+    "id": 247,
+    "activity": "reading",
+    "context": "Starting my book",
+    "delta_t": 60.89,
+    "duration": 106.56,
+    "p_active": 0.5911,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 248,
+    "activity": "nap",
+    "context": "Gonna catch some sleep",
+    "delta_t": 10.28,
+    "duration": 47.18,
+    "p_active": 0.9944,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 249,
+    "activity": "deep_sleep",
+    "context": "Finally hitting the sack",
+    "delta_t": 469.03,
+    "duration": 293.14,
+    "p_active": 0.0366,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 250,
+    "activity": "cooking",
+    "context": "Going to cook something",
+    "delta_t": 31.0,
+    "duration": 38.93,
+    "p_active": 0.7867,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 52.5
+  },
+  {
+    "id": 251,
+    "activity": "workout",
+    "context": "Starting my workout session",
+    "delta_t": 46.06,
+    "duration": 54.55,
+    "p_active": 0.7323,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 252,
+    "activity": "phone_call",
+    "context": "Calling back a colleague",
+    "delta_t": 4.97,
+    "duration": 13.74,
+    "p_active": 0.8932,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 10
+  },
+  {
+    "id": 253,
+    "activity": "lunch_break",
+    "context": "Time for lunch",
+    "delta_t": 8.21,
+    "duration": 25.24,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 254,
+    "activity": "nap",
+    "context": "I'm going to take a quick nap",
+    "delta_t": 1.04,
+    "duration": 57.74,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 255,
+    "activity": "workout",
+    "context": "Going to hit the gym",
+    "delta_t": 59.68,
+    "duration": 75.21,
+    "p_active": 0.5053,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 256,
+    "activity": "lunch_break",
+    "context": "Stepping out for a meal",
+    "delta_t": 21.37,
+    "duration": 27.43,
+    "p_active": 0.9658,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 257,
+    "activity": "deep_sleep",
+    "context": "Time to go to bed",
+    "delta_t": 47.67,
+    "duration": 257.83,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 330.0
+  },
+  {
+    "id": 258,
+    "activity": "meeting",
+    "context": "Heading into a meeting",
+    "delta_t": 26.65,
+    "duration": 88.73,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 259,
+    "activity": "meditation",
+    "context": "Time for some mindfulness",
+    "delta_t": 6.31,
+    "duration": 18.84,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 260,
+    "activity": "commute",
+    "context": "On my way to the office",
+    "delta_t": 44.63,
+    "duration": 30.62,
+    "p_active": 0.0829,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 30
+  },
+  {
+    "id": 261,
+    "activity": "gaming",
+    "context": "Going to play some games",
+    "delta_t": 4.34,
+    "duration": 172.95,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 262,
+    "activity": "meditation",
+    "context": "Starting my meditation practice",
+    "delta_t": 6.98,
+    "duration": 29.35,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 263,
+    "activity": "commute",
+    "context": "Starting my journey home",
+    "delta_t": 11.48,
+    "duration": 21.72,
+    "p_active": 0.9974,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 30
+  },
+  {
+    "id": 264,
+    "activity": "nap",
+    "context": "Need to rest my eyes for a bit",
+    "delta_t": 42.31,
+    "duration": 18.02,
+    "p_active": 0.3537,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 265,
+    "activity": "commute",
+    "context": "On my way to the office",
+    "delta_t": 3.34,
+    "duration": 21.51,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 30
+  },
+  {
+    "id": 266,
+    "activity": "gaming",
+    "context": "Time for some gaming",
+    "delta_t": 99.2,
+    "duration": 144.0,
+    "p_active": 0.5387,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 267,
+    "activity": "workout",
+    "context": "Time for my exercise routine",
+    "delta_t": 16.13,
+    "duration": 86.49,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 268,
+    "activity": "shower",
+    "context": "Hopping in the shower",
+    "delta_t": 16.2,
+    "duration": 11.61,
+    "p_active": 0.552,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 269,
+    "activity": "meeting",
+    "context": "Joining a conference call",
+    "delta_t": 31.7,
+    "duration": 67.22,
+    "p_active": 0.9811,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 270,
+    "activity": "gaming",
+    "context": "Starting a gaming session",
+    "delta_t": 108.94,
+    "duration": 157.7,
+    "p_active": 0.4737,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 271,
+    "activity": "shower",
+    "context": "Time for a quick wash",
+    "delta_t": 1.29,
+    "duration": 18.27,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 272,
+    "activity": "commute",
+    "context": "Starting my journey home",
+    "delta_t": 40.32,
+    "duration": 21.48,
+    "p_active": 0.1415,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 30
+  },
+  {
+    "id": 273,
+    "activity": "meeting",
+    "context": "Got a work discussion to attend",
+    "delta_t": 42.37,
+    "duration": 76.59,
+    "p_active": 0.8626,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 274,
+    "activity": "workout",
+    "context": "Starting my workout session",
+    "delta_t": 2.26,
+    "duration": 56.07,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 275,
+    "activity": "phone_call",
+    "context": "Making a quick call",
+    "delta_t": 7.77,
+    "duration": 11.05,
+    "p_active": 0.6175,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 10
+  },
+  {
+    "id": 276,
+    "activity": "meeting",
+    "context": "Heading into a meeting",
+    "delta_t": 5.7,
+    "duration": 79.9,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 277,
+    "activity": "meeting",
+    "context": "Got a work discussion to attend",
+    "delta_t": 20.63,
+    "duration": 32.7,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 278,
+    "activity": "nap",
+    "context": "Gonna catch some sleep",
+    "delta_t": 17.51,
+    "duration": 40.41,
+    "p_active": 0.8498,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 35.0
+  },
+  {
+    "id": 279,
+    "activity": "commute",
+    "context": "On my way to the office",
+    "delta_t": 8.9,
+    "duration": 25.36,
+    "p_active": 0.9998,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 30
+  },
+  {
+    "id": 280,
+    "activity": "meeting",
+    "context": "Got a work discussion to attend",
+    "delta_t": 28.23,
+    "duration": 96.75,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 281,
+    "activity": "reading",
+    "context": "Time for some reading",
+    "delta_t": 22.75,
+    "duration": 112.07,
+    "p_active": 0.9725,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 282,
+    "activity": "meditation",
+    "context": "Time for some mindfulness",
+    "delta_t": 18.57,
+    "duration": 37.81,
+    "p_active": 0.755,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 27.5
+  },
+  {
+    "id": 283,
+    "activity": "workout",
+    "context": "Starting my workout session",
+    "delta_t": 16.63,
+    "duration": 77.62,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 284,
+    "activity": "phone_call",
+    "context": "Calling back a colleague",
+    "delta_t": 2.98,
+    "duration": 8.49,
+    "p_active": 0.99,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 10
+  },
+  {
+    "id": 285,
+    "activity": "lunch_break",
+    "context": "Time for lunch",
+    "delta_t": 5.5,
+    "duration": 31.24,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 286,
+    "activity": "reading",
+    "context": "Going to read for a while",
+    "delta_t": 34.75,
+    "duration": 35.23,
+    "p_active": 0.8525,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 70.0
+  },
+  {
+    "id": 287,
+    "activity": "meeting",
+    "context": "Heading into a meeting",
+    "delta_t": 16.34,
+    "duration": 112.97,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 288,
+    "activity": "shower",
+    "context": "Hopping in the shower",
+    "delta_t": 9.39,
+    "duration": 21.5,
+    "p_active": 0.8245,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 289,
+    "activity": "lunch_break",
+    "context": "Time for lunch",
+    "delta_t": 15.54,
+    "duration": 58.0,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 290,
+    "activity": "meeting",
+    "context": "Heading into a meeting",
+    "delta_t": 10.12,
+    "duration": 106.14,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 75.0
+  },
+  {
+    "id": 291,
+    "activity": "shower",
+    "context": "Going to take a shower",
+    "delta_t": 26.15,
+    "duration": 27.31,
+    "p_active": 0.154,
+    "valid_actions": [
+      "interrupt"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 292,
+    "activity": "lunch_break",
+    "context": "Time for lunch",
+    "delta_t": 11.37,
+    "duration": 46.4,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 40.0
+  },
+  {
+    "id": 293,
+    "activity": "phone_call",
+    "context": "Need to ring someone",
+    "delta_t": 10.82,
+    "duration": 20.88,
+    "p_active": 0.3433,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "late",
+    "expected_duration": 10
+  },
+  {
+    "id": 294,
+    "activity": "gaming",
+    "context": "Time for some gaming",
+    "delta_t": 79.12,
+    "duration": 137.97,
+    "p_active": 0.6725,
+    "valid_actions": [
+      "check-in",
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 105.0
+  },
+  {
+    "id": 295,
+    "activity": "phone_call",
+    "context": "Need to ring someone",
+    "delta_t": 4.71,
+    "duration": 13.2,
+    "p_active": 0.9126,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 10
+  },
+  {
+    "id": 296,
+    "activity": "shower",
+    "context": "Hopping in the shower",
+    "delta_t": 0.48,
+    "duration": 16.0,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 17.5
+  },
+  {
+    "id": 297,
+    "activity": "workout",
+    "context": "Going for a run",
+    "delta_t": 37.89,
+    "duration": 70.05,
+    "p_active": 0.8685,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "mid",
+    "expected_duration": 60.0
+  },
+  {
+    "id": 298,
+    "activity": "commute",
+    "context": "Starting my journey home",
+    "delta_t": 7.0,
+    "duration": 19.06,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 30
+  },
+  {
+    "id": 299,
+    "activity": "nap",
+    "context": "I'm going to take a quick nap",
+    "delta_t": 7.01,
+    "duration": 53.03,
+    "p_active": 1.0,
+    "valid_actions": [
+      "defer"
+    ],
+    "delta_t_region": "early",
+    "expected_duration": 35.0
+  }
+]
