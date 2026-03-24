@@ -1,0 +1,689 @@
+{
+  "historical_events": [
+    {
+      "question": "假设美洲原住民在1492年成功阻止了哥伦布的探险，那么美洲的欧洲殖民化会在什么时候开始？",
+      "options": {
+        "A": "1500年",
+        "B": "1607年",
+        "C": "1521年",
+        "D": "1492年"
+      },
+      "answer": "A",
+      "explanation": "假设哥伦布的探险被阻止，欧洲殖民化将推迟，而1500年是合理的推测时间。1607年是英属美洲建立的第一个永久殖民地，1521年则是西班牙征服墨西哥的时间，1492年是反事实前提下的时间。",
+      "is_counterfactual": true,
+      "historical_context": "哥伦布于1492年到达美洲，开启了欧洲的殖民时代。如果这一事件未能发生，殖民化的时间将会推后。",
+      "id": "historical_001",
+      "type": "historical_events",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "historical_001"
+      },
+      "validation_score": 1.0
+    },
+    {
+      "question": "假设希腊在公元前490年没有在马拉松战役中获胜，那么波斯战争的转折点会在什么时候发生？",
+      "options": {
+        "A": "公元前480年",
+        "B": "公元前490年",
+        "C": "公元前460年",
+        "D": "公元前475年"
+      },
+      "answer": "A",
+      "explanation": "如果希腊在公元前490年未能获胜，波斯战争的转折点可能会推迟到公元前480年的萨拉米斯海战。公元前490年是反事实前提下的时间，而460年和475年都是更晚的时间。",
+      "is_counterfactual": true,
+      "historical_context": "马拉松战役是波斯战争中的重要战役，希腊的胜利标志着波斯扩展的失败。如果反转这一结果，战争进程将受到影响。",
+      "id": "historical_002",
+      "type": "historical_events",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "historical_002"
+      },
+      "validation_score": 1.0
+    },
+    {
+      "question": "假设印度在1857年成功反抗英国统治并实现独立，那么印度的现代化进程会在什么时间开始？",
+      "options": {
+        "A": "1857年",
+        "B": "1900年",
+        "C": "1947年",
+        "D": "1930年"
+      },
+      "answer": "A",
+      "explanation": "如果1857年印度成功独立，现代化进程将立即启动，因此1857年是现代化的开始时间。1900年、1947年和1930年都是不合理的推测，反映了后来的历史时间。",
+      "is_counterfactual": true,
+      "historical_context": "1857年印度大起义是反抗英国统治的重要时刻，成功的反抗可能会导致印度的早期现代化进程。",
+      "id": "historical_003",
+      "type": "historical_events",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "historical_003"
+      },
+      "validation_score": 1.0
+    }
+  ],
+  "ordering": [
+    {
+      "question": "某人在下午2点需要完成多个任务，确保在截止时间前完成。",
+      "tasks": [
+        {
+          "name": "开会",
+          "duration": "1小时",
+          "deadline": "下午3点前",
+          "constraint": "公司"
+        },
+        {
+          "name": "去银行",
+          "duration": "30分钟",
+          "deadline": "下午4点前",
+          "constraint": "市中心"
+        },
+        {
+          "name": "取快递",
+          "duration": "15分钟",
+          "deadline": "下午4点前",
+          "constraint": "公司附近"
+        }
+      ],
+      "current_time": "下午2点",
+      "options": {
+        "A": "开会 -> 去银行 -> 取快递",
+        "B": "取快递 -> 去银行 -> 开会",
+        "C": "去银行 -> 取快递 -> 开会",
+        "D": "开会 -> 取快递 -> 去银行"
+      },
+      "answer": "A",
+      "explanation": "选项A满足所有deadline，其他选项由于执行顺序导致任务无法在截止时间前完成。",
+      "timeline": "2:00-3:00 开会 -> 3:00-3:30 去银行 -> 3:30-3:45 取快递",
+      "id": "ordering_001",
+      "type": "ordering",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "ordering_001"
+      },
+      "validation_score": 1.0
+    },
+    {
+      "question": "某人需要在下午1点完成一系列任务，确保所有任务在截止时间之前完成。",
+      "tasks": [
+        {
+          "name": "取快递",
+          "duration": "20分钟",
+          "deadline": "下午1点半前",
+          "constraint": "公司"
+        },
+        {
+          "name": "去超市",
+          "duration": "40分钟",
+          "deadline": "下午2点前",
+          "constraint": "市中心"
+        },
+        {
+          "name": "开会",
+          "duration": "30分钟",
+          "deadline": "下午2点前",
+          "constraint": "公司"
+        },
+        {
+          "name": "去银行",
+          "duration": "30分钟",
+          "deadline": "下午2点半前",
+          "constraint": "公司附近"
+        }
+      ],
+      "current_time": "下午1点",
+      "options": {
+        "A": "取快递 -> 去超市 -> 开会 -> 去银行",
+        "B": "开会 -> 去超市 -> 取快递 -> 去银行",
+        "C": "去超市 -> 取快递 -> 开会 -> 去银行",
+        "D": "取快递 -> 开会 -> 去超市 -> 去银行"
+      },
+      "answer": "A",
+      "explanation": "选项A是唯一满足所有任务截止时间的顺序，其他选项由于时间安排导致某些任务无法按时完成。",
+      "timeline": "1:00-1:20 取快递 -> 1:20-2:00 去超市 -> 2:00-2:30 开会 -> 2:30-3:00 去银行",
+      "id": "ordering_002",
+      "type": "ordering",
+      "validation_result": {
+        "is_valid": false,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": false,
+        "logical_time": false,
+        "quality_score": 0.4,
+        "issues": [
+          "选项B和C导致时间冲突，无法在截止时间前完成所有任务。",
+          "选项D的顺序导致去超市的任务无法按时完成。"
+        ],
+        "suggestions": [
+          "重新设计选项B、C和D，确保它们在时间上合理且不冲突。",
+          "提供更明确的时间约束说明，以帮助理解任务的截止时间。"
+        ],
+        "question_id": "ordering_002"
+      },
+      "validation_score": 0.4
+    },
+    {
+      "question": "某人在下午3点有几个任务需要完成，确保在截止时间前完成。",
+      "tasks": [
+        {
+          "name": "开会",
+          "duration": "1小时",
+          "deadline": "下午4点前",
+          "constraint": "公司"
+        },
+        {
+          "name": "送资料",
+          "duration": "45分钟",
+          "deadline": "下午5点前",
+          "constraint": "客户办公室"
+        },
+        {
+          "name": "去银行",
+          "duration": "30分钟",
+          "deadline": "下午4点半前",
+          "constraint": "市中心"
+        }
+      ],
+      "current_time": "下午3点",
+      "options": {
+        "A": "开会 -> 去银行 -> 送资料",
+        "B": "去银行 -> 开会 -> 送资料",
+        "C": "送资料 -> 开会 -> 去银行",
+        "D": "开会 -> 送资料 -> 去银行"
+      },
+      "answer": "A",
+      "explanation": "选项A是在所有时间约束下唯一可行的顺序，其他选项将导致任务无法在截止时间前完成。",
+      "timeline": "3:00-4:00 开会 -> 4:00-4:30 去银行 -> 4:30-5:15 送资料",
+      "id": "ordering_003",
+      "type": "ordering",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "ordering_003"
+      },
+      "validation_score": 1.0
+    }
+  ],
+  "implicit_time": [
+    {
+      "question": "在一个阳光明媚的日子里，街道两旁的樱花树盛开，公园里的人们穿着轻薄的衣服，享受着春天的温暖。这时最不可能发生什么？",
+      "options": {
+        "A": "春游踏青",
+        "B": "冬季滑雪",
+        "C": "樱花节庆祝",
+        "D": "春季运动会"
+      },
+      "answer": "B",
+      "explanation": "樱花盛开和轻薄衣服表明这是春季，而冬季滑雪活动与春季明显不符。",
+      "time_clues": [
+        "樱花盛开",
+        "轻薄衣服"
+      ],
+      "inferred_time": "春季",
+      "id": "implicit_001",
+      "type": "implicit_time",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "implicit_001"
+      },
+      "validation_score": 1.0
+    },
+    {
+      "question": "校园里，学生们穿着校服，正在紧张地复习，墙上贴满了期末考试的通知，教室里散发着书本的气味。这时最不可能发生什么？",
+      "options": {
+        "A": "暑假游玩",
+        "B": "期末考试",
+        "C": "复习备考",
+        "D": "冬季运动会"
+      },
+      "answer": "A",
+      "explanation": "期末考试和复习说明这是学期结束前的时间，而暑假游玩与此时的校园活动不相符。",
+      "time_clues": [
+        "期末考试通知",
+        "学生复习"
+      ],
+      "inferred_time": "学期末",
+      "id": "implicit_002",
+      "type": "implicit_time",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "implicit_002"
+      },
+      "validation_score": 1.0
+    },
+    {
+      "question": "街道上挂满了红色的灯笼，商店里摆放着各种中秋月饼，人们穿着轻便的衣服，享受着温暖的秋日阳光。这时最不可能发生什么？",
+      "options": {
+        "A": "中秋节聚会",
+        "B": "春节庆祝",
+        "C": "秋季野餐",
+        "D": "秋季赏月"
+      },
+      "answer": "B",
+      "explanation": "中秋节的装饰和活动表明这是秋季，而春节庆祝活动在秋季是不可能的。",
+      "time_clues": [
+        "红色灯笼",
+        "中秋月饼"
+      ],
+      "inferred_time": "秋季",
+      "id": "implicit_003",
+      "type": "implicit_time",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "implicit_003"
+      },
+      "validation_score": 1.0
+    }
+  ],
+  "duration": [
+    {
+      "question": "你在厨房里煮意大利面，水开后煮了10分钟，然后将面捞出放在盘子里。过了10分钟后准备吃。这时意大利面的温度最可能是什么样的？室温为22℃。",
+      "options": {
+        "A": "仍然很热，几乎没有降温（错误）",
+        "B": "温度已降到接近室温（正确）",
+        "C": "表面凉了但内部还很烫（错误）",
+        "D": "已经完全凉透，冰凉（错误）"
+      },
+      "answer": "B",
+      "explanation": "意大利面在水中煮了10分钟，温度较高，捞出后在室温下放置10分钟，温度会下降至接近室温。",
+      "time_calculation": "煮10分钟，放置10分钟，总共20分钟，足够降温。",
+      "physical_consequence": "时间流逝导致面条温度逐渐降低，最终接近室温。",
+      "id": "duration_001",
+      "type": "duration",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "duration_001"
+      },
+      "validation_score": 1.0
+    },
+    {
+      "question": "你在夏天的阳光下放了一杯水，过了15分钟后，水位比最初减少了5厘米。假设室温为30℃，这种情况下，水位的变化最可能是由于什么原因？",
+      "options": {
+        "A": "水分蒸发，水位下降（正确）",
+        "B": "水被阳光加热至沸腾（错误）",
+        "C": "水杯破裂导致水位下降（错误）",
+        "D": "外部物体掉入水中（错误）"
+      },
+      "answer": "A",
+      "explanation": "在夏天阳光下，水会因蒸发而减少，15分钟内足以造成显著的水位下降。",
+      "time_calculation": "根据蒸发速率，15分钟水位下降5厘米是合理的。",
+      "physical_consequence": "时间流逝使水分子获得能量，导致水分蒸发，水位下降。",
+      "id": "duration_002",
+      "type": "duration",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "duration_002"
+      },
+      "validation_score": 1.0
+    },
+    {
+      "question": "你在一个潮湿的天气里，将刚洗好的衣服挂在阳台上晾干，经过2小时后，衣服的湿度有显著降低。那么在这段时间内，衣服的状态最可能是什么样的？",
+      "options": {
+        "A": "衣服几乎干透，湿度很低（错误）",
+        "B": "衣服仍然湿润，但明显变干了（正确）",
+        "C": "衣服完全没有变化，依然湿透（错误）",
+        "D": "衣服变得更湿，湿度增加（错误）"
+      },
+      "answer": "B",
+      "explanation": "在潮湿天气中，衣服的干燥速度较慢，但经过2小时会有明显的湿度降低。",
+      "time_calculation": "2小时足以使衣服的湿度降低，尽管未必完全干透。",
+      "physical_consequence": "时间流逝使水分从衣服中蒸发，导致湿度降低。",
+      "id": "duration_003",
+      "type": "duration",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "duration_003"
+      },
+      "validation_score": 1.0
+    }
+  ],
+  "fictional_timeline": [
+    {
+      "question": "在Rylax星球，一周有5天：Frax、Glun、Zylo、Kree、Touv。每个月有30天。今天是Rylax年历的第6天（Frax）。10天后是星期几？",
+      "world_name": "Rylax",
+      "time_system_rules": "一周5天，Frax、Glun、Zylo、Kree、Touv；每月30天。",
+      "options": {
+        "A": "Kree",
+        "B": "Touv",
+        "C": "Frax",
+        "D": "Glun"
+      },
+      "answer": "B",
+      "explanation": "从Frax开始，10天后是第16天。16 mod 5 = 1，对应星期Touv。",
+      "calculation_steps": [
+        "计算今天的天数和星期：今天是第6天（Frax）。",
+        "计算10天后是第16天。",
+        "确定16 mod 5的结果：16 mod 5 = 1。",
+        "根据星期顺序，1对应Touv。"
+      ],
+      "id": "fictional_001",
+      "type": "fictional_timeline",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "fictional_001"
+      },
+      "validation_score": 1.0
+    },
+    {
+      "question": "在Xylen星球，每个月有24天，每周有6天：Luna、Solar、Stella、Nova、Celest、Terra。今天是Xylen年历的第18天（Solar）。从今天到下一个Luna日还有多少天？",
+      "world_name": "Xylen",
+      "time_system_rules": "一周6天（Luna、Solar、Stella、Nova、Celest、Terra）；每月24天。",
+      "options": {
+        "A": "6",
+        "B": "8",
+        "C": "4",
+        "D": "5"
+      },
+      "answer": "A",
+      "explanation": "今天是第18天（Solar），下一个Luna日是第24天，18到24之间有6天。",
+      "calculation_steps": [
+        "确定今天的天数和星期：第18天（Solar）。",
+        "下一个Luna日是本月的第24天。",
+        "计算18到24之间的天数：24 - 18 = 6天。"
+      ],
+      "id": "fictional_002",
+      "type": "fictional_timeline",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": false,
+        "logical_time": true,
+        "quality_score": 0.8,
+        "issues": [
+          "干扰项质量不足，错误选项没有足够的迷惑性"
+        ],
+        "suggestions": [
+          "增加更具迷惑性的干扰选项，例如选择8天或7天等更接近的数字"
+        ],
+        "question_id": "fictional_002"
+      },
+      "validation_score": 0.8
+    },
+    {
+      "question": "在Vortan星球，一年有12个月，每个月有20天，每周有4天：Aryn、Bryn、Cyn、Dryn。今天是Vortan年历的第25天（Bryn）。每3天一次的庆典在下一个Cyn日举行，那么今天之后的下一个庆典日是几号？",
+      "world_name": "Vortan",
+      "time_system_rules": "一年12个月，每月20天；一周4天（Aryn、Bryn、Cyn、Dryn）；每3天一次的庆典。",
+      "options": {
+        "A": "第27天",
+        "B": "第30天",
+        "C": "第1天",
+        "D": "第3天"
+      },
+      "answer": "A",
+      "explanation": "今天是第25天（Bryn），下一个Cyn日是第26天，之后的庆典在第27天。",
+      "calculation_steps": [
+        "今天是第25天（Bryn）。",
+        "下一个Cyn日是第26天。",
+        "庆典在下一个Cyn日之后的3天，即第27天。"
+      ],
+      "id": "fictional_003",
+      "type": "fictional_timeline",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": false,
+        "logical_time": true,
+        "quality_score": 0.8,
+        "issues": [
+          "干扰项质量不足，错误选项不够迷惑性"
+        ],
+        "suggestions": [
+          "增加干扰项的迷惑性，例如提供更接近正确答案的选项"
+        ],
+        "question_id": "fictional_003"
+      },
+      "validation_score": 0.8
+    }
+  ],
+  "concurrency": [
+    {
+      "question": "你正在主持一场重要的公司会议，期间发生了几个突发安排。",
+      "main_task": "主持重要会议",
+      "conflicting_events": [
+        {
+          "option": "A",
+          "event": "另一场重要会议需要你立即参加（物理冲突，必须亲自执行）",
+          "conflict_type": "物理冲突"
+        },
+        {
+          "option": "B",
+          "event": "有员工在会议中提出紧急问题需要你解决（注意力冲突，无法分心）",
+          "conflict_type": "注意力冲突"
+        },
+        {
+          "option": "C",
+          "event": "会议结束后需要填报会议纪要（时间冲突，会议期间无法填报）",
+          "conflict_type": "时间冲突"
+        },
+        {
+          "option": "D",
+          "event": "助理需要确认下周会议的日程（可委托，正确答案）",
+          "conflict_type": "可接受"
+        }
+      ],
+      "options": {
+        "A": "另一场重要会议需要你立即参加",
+        "B": "有员工在会议中提出紧急问题需要你解决",
+        "C": "会议结束后需要填报会议纪要",
+        "D": "助理需要确认下周会议的日程"
+      },
+      "answer": "D",
+      "explanation": "助理可以处理下周会议的日程确认，不会影响当前会议的进行。",
+      "conflict_analysis": "A选项需要立即参加另一场会议，构成物理冲突；B选项提出紧急问题会影响会议进行，构成注意力冲突；C选项无法在会议期间填报会议纪要，构成时间冲突。",
+      "id": "concurrency_001",
+      "type": "concurrency",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "concurrency_001"
+      },
+      "validation_score": 1.0
+    },
+    {
+      "question": "你正在进行一台复杂的外科手术，期间发生了几个突发安排。",
+      "main_task": "进行一台复杂的外科手术",
+      "conflicting_events": [
+        {
+          "option": "A",
+          "event": "另一位患者需要紧急手术（物理冲突，必须亲自执行）",
+          "conflict_type": "物理冲突"
+        },
+        {
+          "option": "B",
+          "event": "家属在手术室外情绪激动，需要安抚（注意力冲突，手术中无法分心）",
+          "conflict_type": "注意力冲突"
+        },
+        {
+          "option": "C",
+          "event": "手术结束后要填写病历（时间冲突，手术期间无法填写）",
+          "conflict_type": "时间冲突"
+        },
+        {
+          "option": "D",
+          "event": "护士询问手术后的护理方案（可委托，正确答案）",
+          "conflict_type": "可接受"
+        }
+      ],
+      "options": {
+        "A": "另一位患者需要紧急手术",
+        "B": "家属在手术室外情绪激动，需要安抚",
+        "C": "手术结束后要填写病历",
+        "D": "护士询问手术后的护理方案"
+      },
+      "answer": "D",
+      "explanation": "护士可以处理手术后的护理方案确认，不会影响当前手术的进行。",
+      "conflict_analysis": "A选项需要立即参加另一位患者的手术，构成物理冲突；B选项家属情绪激动会影响手术专注，构成注意力冲突；C选项在手术期间无法填写病历，构成时间冲突。",
+      "id": "concurrency_002",
+      "type": "concurrency",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "concurrency_002"
+      },
+      "validation_score": 1.0
+    },
+    {
+      "question": "你正在参加一场重要的考试，期间发生了几个突发安排。",
+      "main_task": "参加考试",
+      "conflicting_events": [
+        {
+          "option": "A",
+          "event": "另一个考生需要你当场证明身份（物理冲突，必须亲自执行）",
+          "conflict_type": "物理冲突"
+        },
+        {
+          "option": "B",
+          "event": "考官在考试期间提出需要额外说明的问题（注意力冲突，无法分心）",
+          "conflict_type": "注意力冲突"
+        },
+        {
+          "option": "C",
+          "event": "考试结束后需要填写反馈表（时间冲突，考试期间无法填写）",
+          "conflict_type": "时间冲突"
+        },
+        {
+          "option": "D",
+          "event": "同学需要你在下课后讨论考试内容（可委托，正确答案）",
+          "conflict_type": "可接受"
+        }
+      ],
+      "options": {
+        "A": "另一个考生需要你当场证明身份",
+        "B": "考官在考试期间提出需要额外说明的问题",
+        "C": "考试结束后需要填写反馈表",
+        "D": "同学需要你在下课后讨论考试内容"
+      },
+      "answer": "D",
+      "explanation": "同学的讨论可以在考试结束后进行，不会影响当前考试的完成。",
+      "conflict_analysis": "A选项需要当场证明身份，构成物理冲突；B选项考官在考试期间提出问题会影响考试专注，构成注意力冲突；C选项在考试期间无法填写反馈表，构成时间冲突。",
+      "id": "concurrency_003",
+      "type": "concurrency",
+      "validation_result": {
+        "is_valid": true,
+        "mutual_exclusive": true,
+        "unique_answer": true,
+        "clear_question": true,
+        "good_distractors": true,
+        "logical_time": true,
+        "quality_score": 1.0,
+        "issues": [],
+        "suggestions": [],
+        "question_id": "concurrency_003"
+      },
+      "validation_score": 1.0
+    }
+  ]
+}
