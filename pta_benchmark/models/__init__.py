@@ -8,6 +8,7 @@ from .baselines import (
     OracleModel,
     ThresholdModel
 )
+from .llm_model import LLMModel, create_llm_model
 
 __all__ = [
     "BaseModel",
@@ -15,5 +16,7 @@ __all__ = [
     "MajorityModel",
     "HeuristicModel",
     "OracleModel",
-    "ThresholdModel"
+    "ThresholdModel",
+    "LLMModel",
+    "create_llm_model",
 ]

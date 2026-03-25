@@ -9,12 +9,18 @@ from config import API_CONFIG_PATH, MODELS, DEFAULT_MODEL, TEMPERATURE, MAX_TOKE
 def load_api_config():
     """从api.txt加载API配置"""
     config = {}
-    with open(API_CONFIG_PATH, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if "=" in line:
-                key, value = line.split("=", 1)
-                config[key.strip()] = value.strip()
+    if not os.path.exists(API_CONFIG_PATH):
+        print(f"Warning: {API_CONFIG_PATH} not found. Using default configuration.")
+        return config
+    try:
+        with open(API_CONFIG_PATH, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if "=" in line and not line.startswith("#"):
+                    key, value = line.split("=", 1)
+                    config[key.strip()] = value.strip()
+    except Exception as e:
+        print(f"Warning: Failed to load API config: {e}")
     return config
 
 

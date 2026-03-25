@@ -19,10 +19,14 @@ from pta_benchmark.models import (
     HeuristicModel,
     OracleModel,
     ThresholdModel,
-    BaseModel
+    BaseModel,
+    LLMModel,
 )
 from pta_benchmark.metrics import compute_all_metrics
 from pta_benchmark.analysis import generate_analysis_report
+
+
+LLM_MODELS = ["gpt-4o-mini", "doubao-seed-1-8", "doubao-seed-2-0-pro"]
 
 
 def run_evaluation(
@@ -73,7 +77,7 @@ def print_results_table(results: List[Dict[str, Any]]):
     print("=" * 80)
     
     # Header
-    header = f"{'Model':<20} {'PPA':>8} {'TSU':>8} {'BAS':>8} {'CE':>8} {'ECE':>8}"
+    header = f"{'Model':<25} {'PPA':>8} {'TSU':>8} {'BAS':>8} {'CE':>8} {'ECE':>8}"
     print(header)
     print("-" * 80)
     
@@ -87,7 +91,7 @@ def print_results_table(results: List[Dict[str, Any]]):
         ce = f"{metrics['ce']:.3f}" if metrics['ce'] is not None else "N/A"
         ece = f"{metrics['ece']:.3f}" if metrics['ece'] is not None else "N/A"
         
-        print(f"{name:<20} {ppa:>8} {tsu:>8} {bas:>8} {ce:>8} {ece:>8}")
+        print(f"{name:<25} {ppa:>8} {tsu:>8} {bas:>8} {ce:>8} {ece:>8}")
     
     print("=" * 80)
 
@@ -169,7 +173,8 @@ def run_ablation_study(
 def save_results(
     results: List[Dict[str, Any]],
     ablation_results: List[Dict[str, Any]],
-    output_dir: str
+    output_dir: str,
+    save_predictions: bool = False
 ):
     """Save all results to files"""
     os.makedirs(output_dir, exist_ok=True)
@@ -178,14 +183,20 @@ def save_results(
     main_results_path = os.path.join(output_dir, "benchmark_results.json")
     serializable_results = []
     for r in results:
-        serializable_results.append({
+        result_data = {
             "model_name": r["model_name"],
             "metrics": r["metrics"],
             "analysis": r["analysis"]
-        })
+        }
+        if save_predictions and "predictions" in r:
+            result_data["predictions"] = [
+                {k: v for k, v in p.items() if k != "raw_response"}
+                for p in r["predictions"]
+            ]
+        serializable_results.append(result_data)
     
-    with open(main_results_path, 'w') as f:
-        json.dump(serializable_results, f, indent=2)
+    with open(main_results_path, 'w', encoding='utf-8') as f:
+        json.dump(serializable_results, f, indent=2, ensure_ascii=False)
     print(f"\nResults saved to: {main_results_path}")
     
     # Save ablation results
@@ -199,21 +210,88 @@ def save_results(
                 "metrics": ar["result"]["metrics"]
             })
         
-        with open(ablation_path, 'w') as f:
-            json.dump(serializable_ablation, f, indent=2)
+        with open(ablation_path, 'w', encoding='utf-8') as f:
+            json.dump(serializable_ablation, f, indent=2, ensure_ascii=False)
         print(f"Ablation results saved to: {ablation_path}")
+
+
+def initialize_baseline_models(args) -> List[BaseModel]:
+    """Initialize baseline (non-LLM) models"""
+    return [
+        RandomModel(seed=args.seed),
+        MajorityModel(majority_action="defer"),
+        HeuristicModel(use_expanded=args.expanded),
+        ThresholdModel(use_expanded=args.expanded),
+        OracleModel(use_expanded=args.expanded)
+    ]
+
+
+def initialize_llm_models(args) -> List[LLMModel]:
+    """Initialize LLM models based on args"""
+    models = []
+    
+    # Determine which models to use
+    if args.llm_models:
+        model_keys = [m for m in args.llm_models if m in LLM_MODELS]
+        if not model_keys:
+            print(f"Warning: No valid LLM models specified. Using {LLM_MODELS[0]}.")
+            model_keys = [LLM_MODELS[0]]
+    else:
+        model_keys = LLM_MODELS
+    
+    # Determine languages
+    languages = []
+    if args.lang in ["en", "zh"]:
+        languages = [args.lang]
+    elif args.lang == "both":
+        languages = ["en", "zh"]
+    else:
+       
+        languages = ["en"]
+    
+    for model_key in model_keys:
+        for lang in languages:
+            lang_display = "EN" if lang == "en" else "ZH"
+            print(f"  - {model_key} ({lang_display})")
+            model = LLMModel(
+                model_key=model_key,
+                language=lang,
+                use_expanded=args.expanded,
+                rate_limit_delay=args.rate_limit_delay,
+            )
+            models.append(model)
+    
+    return models
 
 
 def main():
     """Main entry point"""
     parser = argparse.ArgumentParser(description="PTA Benchmark")
+    
+    # Data generation args
     parser.add_argument("--num_samples", type=int, default=500, help="Number of samples")
     parser.add_argument("--num_pairs", type=int, default=100, help="Number of paired samples for TSU")
     parser.add_argument("--seed", type=int, default=42, help="Random seed")
+    parser.add_argument("--expanded", action="store_true", help="Use expanded activities from MCTACO")
+    
+    # Model selection args
+    parser.add_argument("--baselines", action="store_true", default=True, help="Evaluate baseline models (default: True)")
+    parser.add_argument("--no-baselines", action="store_false", dest="baselines", help="Skip baseline models")
+    parser.add_argument("--llm", action="store_true", help="Evaluate LLM models")
+    parser.add_argument("--llm_models", nargs="+", choices=LLM_MODELS, help=f"LLM models to evaluate: {LLM_MODELS}")
+    parser.add_argument("--lang", type=str, default="en", choices=["en", "zh", "both"], help="Prompt language")
+    
+    # LLM-specific args
+    parser.add_argument("--rate_limit_delay", type=float, default=0.5, help="Delay between LLM API calls (seconds)")
+    
+    # Output args
     parser.add_argument("--output_dir", type=str, default=OUTPUT_DIR, help="Output directory")
+    parser.add_argument("--save_predictions", action="store_true", help="Save prediction details")
+    
+    # Analysis args
     parser.add_argument("--ablation", action="store_true", help="Run ablation study")
     parser.add_argument("--detailed", action="store_true", help="Print detailed analysis")
-    parser.add_argument("--expanded", action="store_true", help="Use expanded activities from MCTACO")
+    
     args = parser.parse_args()
     
     print("=" * 60)
@@ -246,21 +324,31 @@ def main():
     
     # Initialize models
     print("\nInitializing models...")
-    models = [
-        RandomModel(seed=args.seed),
-        MajorityModel(majority_action="defer"),
-        HeuristicModel(use_expanded=args.expanded),
-        ThresholdModel(use_expanded=args.expanded),
-        OracleModel(use_expanded=args.expanded)
-    ]
+    models: List[BaseModel] = []
+    
+    if args.baselines:
+        print("  Baseline models:")
+        for model in initialize_baseline_models(args):
+            print(f"    - {model.name}")
+            models.append(model)
+    
+    if args.llm:
+        print("  LLM models:")
+        for model in initialize_llm_models(args):
+            models.append(model)
+    
+    if not models:
+        print("Error: No models selected for evaluation. Use --baselines and/or --llm")
+        return
     
     # Run evaluation
     print("\nRunning evaluation...")
     results = []
     for model in models:
-        print(f"  Evaluating {model.name}...")
+        print(f"\n  Evaluating {model.name}...")
         result = run_evaluation(model, samples, paired_samples, eval_config)
         results.append(result)
+        print(f"    PPA: {result['metrics']['ppa']:.3f}")
     
     # Print results
     print_results_table(results)
@@ -268,18 +356,19 @@ def main():
     if args.detailed:
         print_analysis_details(results)
     
-    # Run ablation study
+    # Run ablation study (for baselines only)
     ablation_results = []
-    if args.ablation:
+    if args.ablation and args.baselines:
         ablation_results = run_ablation_study(
             ThresholdModel,
             samples,
             paired_samples,
-            ["remove_time", "remove_commonsense", "deterministic_duration"]
+            ["remove_time", "remove_commonsense", "deterministic_duration"],
+            use_expanded=args.expanded
         )
     
     # Save results
-    save_results(results, ablation_results, args.output_dir)
+    save_results(results, ablation_results, args.output_dir, args.save_predictions)
     
     print("\nBenchmark complete!")
     return results, ablation_results
