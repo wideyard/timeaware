@@ -1,0 +1,5 @@
+allennlp==0.4.3
+pytest
+flaky
+pylev
+stemming
