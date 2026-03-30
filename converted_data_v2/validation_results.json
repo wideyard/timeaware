@@ -1,0 +1,156 @@
+{
+  "summary": {
+    "total_samples": 214665,
+    "valid_samples": 207434,
+    "validation_rate": 96.63149558614586
+  },
+  "by_task": {
+    "T3_concurrency": {
+      "total": 20802,
+      "valid": 20802
+    },
+    "T1_temporal": {
+      "total": 155966,
+      "valid": 149858
+    },
+    "T5_counterfactual": {
+      "total": 41,
+      "valid": 41
+    },
+    "T4_memory": {
+      "total": 5200,
+      "valid": 5200
+    },
+    "T2_state": {
+      "total": 32656,
+      "valid": 31533
+    }
+  },
+  "by_dataset": {
+    "atomic_fixed": {
+      "total": 19934,
+      "valid": 19934,
+      "rate": 100.0
+    },
+    "cosmosqa": {
+      "total": 25262,
+      "valid": 25262,
+      "rate": 100.0
+    },
+    "dialogue_temporal_benchmark": {
+      "total": 7,
+      "valid": 7,
+      "rate": 100.0
+    },
+    "drop": {
+      "total": 7115,
+      "valid": 7115,
+      "rate": 100.0
+    },
+    "hellaswag": {
+      "total": 59950,
+      "valid": 59950,
+      "rate": 100.0
+    },
+    "longbench_qasper_t4": {
+      "total": 200,
+      "valid": 200,
+      "rate": 100.0
+    },
+    "mctaco": {
+      "total": 1229,
+      "valid": 1229,
+      "rate": 100.0
+    },
+    "narrativeqa": {
+      "total": 5000,
+      "valid": 5000,
+      "rate": 100.0
+    },
+    "openpi2_t2": {
+      "total": 1193,
+      "valid": 1193,
+      "rate": 100.0
+    },
+    "pasta_t2_t5": {
+      "total": 16952,
+      "valid": 16952,
+      "rate": 100.0
+    },
+    "piqa": {
+      "total": 3084,
+      "valid": 3084,
+      "rate": 100.0
+    },
+    "propara": {
+      "total": 2639,
+      "valid": 1934,
+      "rate": 73.28533535430087
+    },
+    "propara_fixed": {
+      "total": 2639,
+      "valid": 2639,
+      "rate": 100.0
+    },
+    "propara_fixed_v2": {
+      "total": 2639,
+      "valid": 2639,
+      "rate": 100.0
+    },
+    "situated_gen_t2_t5": {
+      "total": 6594,
+      "valid": 6176,
+      "rate": 93.66090385198666
+    },
+    "socialiqa_train": {
+      "total": 33410,
+      "valid": 33410,
+      "rate": 100.0
+    },
+    "t3_conflict_detection": {
+      "total": 369,
+      "valid": 369,
+      "rate": 100.0
+    },
+    "t5_counterfactual": {
+      "total": 34,
+      "valid": 34,
+      "rate": 100.0
+    },
+    "timeqa_dev": {
+      "total": 2927,
+      "valid": 2927,
+      "rate": 100.0
+    },
+    "timeqa_easy": {
+      "total": 3021,
+      "valid": 0,
+      "rate": 0.0
+    },
+    "timeqa_hard": {
+      "total": 3087,
+      "valid": 0,
+      "rate": 0.0
+    },
+    "timeqa_test": {
+      "total": 2840,
+      "valid": 2840,
+      "rate": 100.0
+    },
+    "timeqa_train": {
+      "total": 13721,
+      "valid": 13721,
+      "rate": 100.0
+    },
+    "trip_conflict_t3": {
+      "total": 499,
+      "valid": 499,
+      "rate": 100.0
+    },
+    "winogrande": {
+      "total": 320,
+      "valid": 320,
+      "rate": 100.0
+    }
+  }
+}

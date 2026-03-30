@@ -1,0 +1,102 @@
+{
+  "total_samples": 214665,
+  "total_success": 214665,
+  "success_rate": 100.0,
+  "datasets": {
+    "TimeQA": {
+      "total": 13721,
+      "success": 13721,
+      "rate": 100.0
+    },
+    "DROP": {
+      "total": 7115,
+      "success": 7115,
+      "rate": 100.0
+    },
+    "MCTACO": {
+      "total": 1229,
+      "success": 1229,
+      "rate": 100.0
+    },
+    "ProPara": {
+      "total": 2639,
+      "success": 2639,
+      "rate": 100.0
+    },
+    "ATOMIC": {
+      "total": 19934,
+      "success": 19934,
+      "rate": 100.0
+    },
+    "PIQA": {
+      "total": 3084,
+      "success": 3084,
+      "rate": 100.0
+    },
+    "SocialIQA": {
+      "total": 33410,
+      "success": 33410,
+      "rate": 100.0
+    },
+    "NarrativeQA": {
+      "total": 5000,
+      "success": 5000,
+      "rate": 100.0
+    },
+    "HellaSwag": {
+      "total": 59950,
+      "success": 59950,
+      "rate": 100.0
+    },
+    "Winogrande": {
+      "total": 320,
+      "success": 320,
+      "rate": 100.0
+    },
+    "CosmosQA": {
+      "total": 25262,
+      "success": 25262,
+      "rate": 100.0
+    },
+    "OpenPI2": {
+      "total": 1193,
+      "success": 1193,
+      "rate": 100.0
+    },
+    "PASTA": {
+      "total": 16952,
+      "success": 16952,
+      "rate": 100.0
+    },
+    "T3_Conflict": {
+      "total": 369,
+      "success": 369,
+      "rate": 100.0
+    },
+    "T5_Counterfactual": {
+      "total": 34,
+      "success": 34,
+      "rate": 100.0
+    },
+    "TRIP": {
+      "total": 499,
+      "success": 499,
+      "rate": 100.0
+    },
+    "SituatedGen": {
+      "total": 6594,
+      "success": 6594,
+      "rate": 100.0
+    },
+    "LongBench": {
+      "total": 200,
+      "success": 200,
+      "rate": 100.0
+    },
+    "DialogueTemporal": {
+      "total": 7,
+      "success": 7,
+      "rate": 100.0
+    }
+  }
+}

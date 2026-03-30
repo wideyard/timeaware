@@ -1,0 +1,722 @@
+{
+  "summary": {
+    "atomic_fixed.jsonl": {
+      "total": 19934,
+      "valid": 0,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 19934,
+      "empty_state": 0
+    },
+    "cosmosqa.jsonl": {
+      "total": 25262,
+      "valid": 0,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 25262,
+      "empty_state": 0
+    },
+    "drop.jsonl": {
+      "total": 7115,
+      "valid": 0,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 7115,
+      "empty_state": 0
+    },
+    "hellaswag.jsonl": {
+      "total": 59950,
+      "valid": 0,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 59950,
+      "empty_state": 0
+    },
+    "longbench_qasper_t4.jsonl": {
+      "total": 200,
+      "valid": 200,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 0,
+      "empty_state": 0
+    },
+    "mctaco.jsonl": {
+      "total": 1229,
+      "valid": 0,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 1229,
+      "empty_state": 0
+    },
+    "narrativeqa.jsonl": {
+      "total": 5000,
+      "valid": 0,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 5000,
+      "empty_state": 0
+    },
+    "openpi2_t2.jsonl": {
+      "total": 1193,
+      "valid": 1193,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 0,
+      "empty_state": 0
+    },
+    "pasta_t2_t5.jsonl": {
+      "total": 16952,
+      "valid": 16952,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 0,
+      "empty_state": 0
+    },
+    "piqa.jsonl": {
+      "total": 3084,
+      "valid": 0,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 3084,
+      "empty_state": 0
+    },
+    "propara.jsonl": {
+      "total": 2639,
+      "valid": 0,
+      "missing_answer": 2639,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 2639,
+      "empty_state": 0
+    },
+    "propara_fixed.jsonl": {
+      "total": 2639,
+      "valid": 0,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 2639,
+      "empty_state": 0
+    },
+    "propara_fixed_v2.jsonl": {
+      "total": 2639,
+      "valid": 2639,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 0,
+      "empty_state": 0
+    },
+    "situated_gen_t2_t5.jsonl": {
+      "total": 6594,
+      "valid": 6176,
+      "missing_answer": 418,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 0,
+      "empty_state": 0
+    },
+    "socialiqa_train.jsonl": {
+      "total": 33410,
+      "valid": 0,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 33410,
+      "empty_state": 0
+    },
+    "t3_conflict_detection.jsonl": {
+      "total": 369,
+      "valid": 369,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 0,
+      "empty_state": 0
+    },
+    "t5_counterfactual.jsonl": {
+      "total": 34,
+      "valid": 34,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 0,
+      "empty_state": 0
+    },
+    "timeqa_dev.jsonl": {
+      "total": 2927,
+      "valid": 0,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 2927,
+      "empty_state": 0
+    },
+    "timeqa_easy.jsonl": {
+      "total": 3021,
+      "valid": 0,
+      "missing_answer": 3021,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 3021,
+      "empty_state": 0
+    },
+    "timeqa_hard.jsonl": {
+      "total": 3087,
+      "valid": 0,
+      "missing_answer": 3087,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 3087,
+      "empty_state": 0
+    },
+    "timeqa_test.jsonl": {
+      "total": 2840,
+      "valid": 0,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 2840,
+      "empty_state": 0
+    },
+    "timeqa_train.jsonl": {
+      "total": 13721,
+      "valid": 0,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 13721,
+      "empty_state": 0
+    },
+    "trip_conflict_t3.jsonl": {
+      "total": 499,
+      "valid": 499,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 0,
+      "empty_state": 0
+    },
+    "winogrande.jsonl": {
+      "total": 320,
+      "valid": 0,
+      "missing_answer": 0,
+      "missing_context": 0,
+      "missing_query": 0,
+      "missing_ground_truth": 320,
+      "empty_state": 0
+    }
+  },
+  "errors": [
+    {
+      "line": 1,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 2,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 3,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 4,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 5,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 6,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 7,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 8,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 9,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 10,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 11,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 12,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 13,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 14,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 15,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 16,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 17,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 18,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 19,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 20,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 21,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 22,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 23,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 24,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 25,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 26,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 27,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 28,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 29,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 30,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 31,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 32,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 33,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 34,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 35,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 36,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 37,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 38,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 39,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 40,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 41,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 42,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 43,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 44,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 45,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 46,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 47,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 48,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 49,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 50,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 51,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 52,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 53,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 54,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 55,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 56,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 57,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 58,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 59,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 60,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 61,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 62,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 63,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 64,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 65,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 66,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 67,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 68,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 69,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 70,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 71,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 72,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 73,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 74,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 75,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 76,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 77,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 78,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 79,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 80,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 81,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 82,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 83,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 84,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 85,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 86,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 87,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 88,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 89,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 90,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 91,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 92,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 93,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 94,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 95,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 96,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 97,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 98,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 99,
+      "id": "unknown",
+      "error": "missing_answer"
+    },
+    {
+      "line": 100,
+      "id": "unknown",
+      "error": "missing_answer"
+    }
+  ]
+}
