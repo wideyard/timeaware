@@ -1,34 +1,3 @@
-{
-    "goal": "find a new job",
-    "steps": [
-        "decided to find a new job",
-        "go online on the web",
-        "search for jobs sites",
-        "browse sites for jobs",
-        "apply for interviews",
-        "wait to be called in"
-    ],
-    "original_index": 296,
-    "curr_index": 149,
-    "branching_info": {
-        "branching_idx": 3,
-        "branching_step": "browse sites for jobs",
-        "option 1": "find a job on the internet",
-        "option 2": "ask your friends for some advice",
-        "type": "silver_dev",
-        "dataset": "train",
-        "freeform_ra": [
-            [
-                "want to have personalized suggestions",
-                2,
-                "medium"
-            ],
-            [
-                "want to make as many attempts as possible",
-                1,
-                "medium"
-            ]
-        ]
-    },
-    "index": 104
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:26a6150cf933dcfe3171a4c513dbe35054dcd5966fda4a589a79faa428008d1e
+size 925

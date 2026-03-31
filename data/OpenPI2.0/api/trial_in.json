@@ -1,14 +1,3 @@
-{
-  "input":[
-    {
-      "id": "1", 
-      "goal": "Make Carob Fruit Balls", 
-      "steps": ["Mix all of the ingredients together.", "Roll into small balls.", "Place in the freezer for half an hour.", "Serve."]
-    },
-    {
-      "id": "2", 
-      "goal": "Upload a video on YouTube", 
-      "steps": ["Come up with an idea.", "Shoot the video using a phone or camera.", "Edit the video using some software.", "Upload the finished video to YouTube."]
-    }
-  ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:653676b2b403eded00da98ea062ba9af4476bcc1e6132820a542a135eac46f9d
+size 477

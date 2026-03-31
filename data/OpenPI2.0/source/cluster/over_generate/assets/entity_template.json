@@ -1,6 +1,3 @@
-[
-  {"role": "user", "content": "{context}"},
-  {"role": "assistant", "content": "Yes, I understand."},
-  {"role": "user", "content": "{entity_context}"},
-  {"role": "assistant", "content": "Based on the given context, here are the extra entities that are referring to the same object as the given entities:\n{entity_ans}"}
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d523c8c3fa850398066d2c46901905ddc6250e95f3968046846cd041eb5fbf2
+size 332

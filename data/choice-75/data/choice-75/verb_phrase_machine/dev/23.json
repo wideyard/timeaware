@@ -1,33 +1,3 @@
-{
-    "goal": "take items to counter and pay",
-    "steps": [
-        "pick out items to purchase",
-        "think if anything was forgotten",
-        "double check cost of items in cart",
-        "locate check out area",
-        "choose quickest checkout lane",
-        "pay for items when turn comes"
-    ],
-    "curr_index": 6230,
-    "index": 23,
-    "branching_info": {
-        "branching_idx": 4,
-        "branching_step": "choose quickest checkout lane",
-        "option 1": "do a self-checkout",
-        "option 2": "do a checkout at one of the counters",
-        "type": "golden",
-        "dataset": "test",
-        "freeform_ra": [
-            [
-                "has only a few items",
-                1,
-                "medium"
-            ],
-            [
-                "does not have a lot of time available",
-                0,
-                "na"
-            ]
-        ]
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f13441f29e5b6a01b727dbbae1b42cec68d53eddbc184d64f2028268b2c3fb3f
+size 929

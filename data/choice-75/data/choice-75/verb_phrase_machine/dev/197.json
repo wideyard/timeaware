@@ -1,33 +1,3 @@
-{
-    "goal": "make a banana strawberry smoothie",
-    "steps": [
-        "decided to make a banana strawberry smoothie",
-        "look up smoothie recipe",
-        "go to the store",
-        "buy smoothie ingredients",
-        "drive home from store",
-        "make smoothie with ingredients"
-    ],
-    "curr_index": 2769,
-    "branching_info": {
-        "branching_idx": 1,
-        "branching_step": "look up smoothie recipe",
-        "option 1": "ask your grandmother for her recipe",
-        "option 2": "look up a smoothie recipe online",
-        "type": "silver_dev",
-        "dataset": "test",
-        "freeform_ra": [
-            [
-                "Doe's grandmother is an experienced cook",
-                1,
-                "easy"
-            ],
-            [
-                "is in a hurry",
-                2,
-                "medium"
-            ]
-        ]
-    },
-    "index": 197
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2cb9ab753fd58e7455fd135d51a4f695dc204f27843e11a050fea85421a5c205
+size 930

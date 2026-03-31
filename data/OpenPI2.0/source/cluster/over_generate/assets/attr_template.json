@@ -1,6 +1,3 @@
-[
-  {"role": "user", "content": "{context}"},
-  {"role": "assistant", "content": "Yes, I understand."},
-  {"role": "user", "content": "{attr_context}"},
-  {"role": "assistant", "content": "Based on the given context, here are the extra attributes that describe the same property as the given attributes:\n{entity_ans}"}
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:10c0231af17cfd032dcead8c6475ec6e8a8e675d47283591e699ce0076bb839b
+size 328

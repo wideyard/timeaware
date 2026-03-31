@@ -1,20 +1,3 @@
-{
-  "timestamp": "2026-03-30T17:44:43.603662",
-  "total_samples": 21394,
-  "datasets": {
-    "openpi2": 1193,
-    "pasta": 16952,
-    "t3_conflict": 369,
-    "t5_counterfactual": 34,
-    "propara_fixed": 2639,
-    "longbench": 200,
-    "dialogue_temporal": 7
-  },
-  "task_coverage": {
-    "T1": "TimeQA, DROP, MCTACO (existing)",
-    "T2": "OpenPI2.0, PASTA, ProPara (new + fix)",
-    "T3": "Conflict Detection (synthetic)",
-    "T4": "LongBench, qasper (new)",
-    "T5": "Counterfactual, PASTA counterfactual"
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:da4b7481bb9c23ae701752fde4551b1027dc0b9a1b699152e8a3ccc6b86e899d
+size 535
