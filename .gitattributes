@@ -1,3 +1,4 @@
 *.jsonl filter=lfs diff=lfs merge=lfs -text
 *.json filter=lfs diff=lfs merge=lfs -text
 data/ATOMIC/**/*.tsv filter=lfs diff=lfs merge=lfs -text
+data/DROP/*.jsonl filter=lfs diff=lfs merge=lfs -text
