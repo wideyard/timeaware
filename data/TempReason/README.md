@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # TempReason
 Data and implementation for "Towards Benchmarking and Improving the Temporal Reasoning Capability of Large Language Models"
 
@@ -36,8 +35,7 @@ If you find our work useful, please cite our paper as:
 
 }
 ```
-=======
----
+
 license: cc-by-sa-3.0
 task_categories:
 - question-answering
@@ -45,9 +43,8 @@ language:
 - en
 size_categories:
 - 10K<n<100K
----
+
 The TempReason dataset to evaluate the temporal reasoning capability of Large Language Models.
 
 
 From paper "Towards Benchmarking and Improving the Temporal Reasoning Capability of Large Language Models" in ACL 2023.
->>>>>>> 72f93d05d5338c420e563f2289c3c45783f1fb9f
