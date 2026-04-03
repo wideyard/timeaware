@@ -99,7 +99,7 @@ SUBTASK_CONFIG = {
     },
     "T1-HistNoise": {
         "dimension": "T1",
-        "atomic_tasks": ["T1-TimeCalc-HistNoise"],
+        "atomic_tasks": ["T1-HistNoise"],
         "sample_count": 10,
         "context_mode": "optional",
         "has_noise_version": True,
@@ -107,7 +107,7 @@ SUBTASK_CONFIG = {
     },
     "T1-ConfusionNoise": {
         "dimension": "T1",
-        "atomic_tasks": ["T1-TimeCalc-ConfusionNoise"],
+        "atomic_tasks": ["T1-ConfusionNoise"],
         "sample_count": 10,
         "context_mode": "optional",
         "has_noise_version": True,
@@ -115,7 +115,7 @@ SUBTASK_CONFIG = {
     },
     "T1-NumNoise": {
         "dimension": "T1",
-        "atomic_tasks": ["T1-TimeCalc-NumNoise"],
+        "atomic_tasks": ["T1-NumNoise"],
         "sample_count": 10,
         "context_mode": "optional",
         "has_noise_version": True,
@@ -142,7 +142,7 @@ SUBTASK_CONFIG = {
     },
     "T2-Transition": {
         "dimension": "T2",
-        "atomic_tasks": ["T2-StateTransition-BeforeAfter", "T2-StateTransition-WithContext", "T2-StateTransition-MC"],
+        "atomic_tasks": ["T2-BeforeAfter", "T2-TransitionWithContext", "T2-TransitionMC"],
         "sample_count": 10,
         "context_mode": "optional",
         "has_noise_version": False,
@@ -150,7 +150,7 @@ SUBTASK_CONFIG = {
     },
     "T2-Basic": {
         "dimension": "T2",
-        "atomic_tasks": ["T2-PositionTrack-Basic", "T2-PositionTrack-Timeline", "T2-PositionTrack-WithContext", "T2-PositionTrack-MC"],
+        "atomic_tasks": ["T2-Basic", "T2-Timeline", "T2-WithContext", "T2-MC"],
         "sample_count": 10,
         "context_mode": "required",
         "has_noise_version": False,
@@ -282,7 +282,7 @@ SUBTASK_CONFIG = {
     # ==================== T4: Long-term Memory ====================
     "T4-Buried": {
         "dimension": "T4",
-        "atomic_tasks": ["T4-Convo-Buried", "T4-Buried-Info", "T4-BuriedInfo-Easy", "T4-BuriedInfo-Hard", "T4-Buried-Time"],
+        "atomic_tasks": ["T4-Convo-Buried", "T4-Buried", "T4-BuriedInfo-Easy", "T4-BuriedInfo-Hard", "T4-Memory"],
         "sample_count": 10,
         "context_mode": "required",
         "has_noise_version": False,
@@ -290,7 +290,7 @@ SUBTASK_CONFIG = {
     },
     "T4-Noise": {
         "dimension": "T4",
-        "atomic_tasks": ["T4-Convo-Noisy", "T4-Noise-Retrieval", "T4-NoiseRetrieval-Hard", "T4-Noisy-Retrieval"],
+        "atomic_tasks": ["T4-Convo-Noisy", "T4-Noise", "T4-NoiseRetrieval-Hard", "T4-Noisy"],
         "sample_count": 10,
         "context_mode": "required",
         "has_noise_version": True,

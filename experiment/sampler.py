@@ -137,7 +137,7 @@ def sample_subtask(subtask_key: str, sample_count: int = 10,
             continue
         
         # Load all matching samples
-        loaded = _load_samples_from_file(jsonl_path, [atomic_task])
+        loaded = _load_samples_from_file(jsonl_path, [atomic_task], max_per_subtask=sample_count + 50)
         samples = loaded.get(atomic_task, [])
         
         if not samples:
@@ -182,7 +182,8 @@ def sample_all_subtasks(sample_count: int = 10,
             continue
         
         config = SUBTASK_CONFIG[subtask_key]
-        n = config.get('sample_count', sample_count)
+        # Use passed sample_count parameter, not config value
+        n = sample_count if sample_count else config.get('sample_count', 10)
         if n == 'all':
             n = 999999  # effectively all
         
