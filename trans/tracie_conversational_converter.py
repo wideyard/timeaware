@@ -209,7 +209,7 @@ def create_t1_ordering_samples(pair: Tuple[Dict, Dict]) -> List[ConversationalSa
     samples.append(ConversationalSample(
         task="T1",
         sub_task="T1-Convo-Ordering",
-        context=story[:500],  # Truncate for context
+        context=story,  # Truncate for context
         conversation=convo,
         query=f"Does \"{subject.strip()}\" happen before or after \"{ref.strip()}\"?",
         answer=answer,
@@ -236,7 +236,7 @@ def create_t1_ordering_samples(pair: Tuple[Dict, Dict]) -> List[ConversationalSa
     samples.append(ConversationalSample(
         task="T1",
         sub_task="T1-Convo-MultiChoice",
-        context=story[:500],
+        context=story,
         conversation=convo_mc,
         query=f"Select: {subject.strip()} relative to {ref.strip()}",answer=options[correct_idx],
         ground_truth={
@@ -261,7 +261,7 @@ def create_t1_ordering_samples(pair: Tuple[Dict, Dict]) -> List[ConversationalSa
         samples.append(ConversationalSample(
             task="T1",
             sub_task="T1-Convo-Sequence",
-            context=story[:500],
+            context=story,
             conversation=convo_seq,
             query=f"Order: {subject.strip()} vs {ref.strip()}",
             answer=sequence_answer,
@@ -313,7 +313,7 @@ def create_t2_state_samples(pair: Tuple[Dict, Dict]) -> List[ConversationalSampl
     samples.append(ConversationalSample(
         task="T2",
         sub_task="T2-Convo-State",
-        context=story[:500],
+        context=story,
         conversation=convo_state,
         query=state_question,
         answer=state_answer,
@@ -343,7 +343,7 @@ def create_t2_state_samples(pair: Tuple[Dict, Dict]) -> List[ConversationalSampl
     samples.append(ConversationalSample(
         task="T2",
         sub_task="T2-Convo-Consequence",
-        context=story[:500],
+        context=story,
         conversation=convo_conseq,
         query=consequence_q,
         answer=consequence_a,
@@ -396,7 +396,7 @@ def create_t1_implicit_causal_samples(story_groups: Dict[str, List[Dict]]) -> Li
             samples.append(ConversationalSample(
                 task="T1",
                 sub_task="T1-Convo-Causal",
-                context=story[:500],
+                context=story,
                 conversation=convo,
                 query=causal_question,
                 answer=causal_answer,

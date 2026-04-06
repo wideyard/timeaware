@@ -313,12 +313,12 @@ class T2Converter:
                         break
         
         if relevant:
-            return relevant[0][:200]
+            return relevant[0]
         
         # Fallback: return first sentence with character
         for s in sentences:
             if character in s:
-                return s.strip()[:200]
+                return s.strip()
         
         return f"{character} is present in the narrative."
 

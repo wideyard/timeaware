@@ -181,7 +181,7 @@ def create_t1_duration_samples(grouped_data: Dict[Tuple[str, str], Dict[str, Lis
             sample = ConversationalSample(
                 task="T1",
                 sub_task="T1-Convo-MultiChoice",
-                context=sentence[:500],
+                context=sentence,
                 conversation=conversation,
                 query=question,
                 answer=option_labels[correct_idx],
@@ -217,7 +217,7 @@ def create_t1_duration_samples(grouped_data: Dict[Tuple[str, str], Dict[str, Lis
             sample = ConversationalSample(
                 task="T1",
                 sub_task="T1-Convo-CommonSense",
-                context=sentence[:500],
+                context=sentence,
                 conversation=conversation,
                 query=question,
                 answer=target_answer,
@@ -267,7 +267,7 @@ def create_t1_duration_samples(grouped_data: Dict[Tuple[str, str], Dict[str, Lis
             sample = ConversationalSample(
                 task="T1",
                 sub_task="T1-Convo-Distractor",
-                context=sentence[:500],
+                context=sentence,
                 conversation=conversation,
                 query=question,
                 answer=correct,

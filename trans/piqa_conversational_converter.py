@@ -625,7 +625,7 @@ class T5Converter:
         })
         
         # Query
-        query = f"Same options (A: {sol1[:30]}, B: {sol2[:30]}). Which is correct in the OPPOSITE world?"
+        query = f"Same options (A: {sol1}, B: {sol2}). Which is correct in the OPPOSITE world?"
         
         conversation.append({
             "role": "user",

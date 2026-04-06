@@ -239,7 +239,7 @@ class CosmosQAConversationalConverter:
         return ConversationalSample(
             task="T2",
             sub_task="T2-Convo-Tense",
-            context=context[:500],
+            context=context,
             conversation=conversation,
             query=question_text,
             answer=answer_text,
@@ -303,7 +303,7 @@ class CosmosQAConversationalConverter:
         return ConversationalSample(
             task="T2",
             sub_task="T2-Convo-Timeline",
-            context=context[:500],
+            context=context,
             conversation=conversation,
             query=question_text,
             answer=answer_text,
@@ -408,7 +408,7 @@ class CosmosQAConversationalConverter:
         return ConversationalSample(
             task="T4",
             sub_task="T4-Convo-Buried",
-            context=context[:500],
+            context=context,
             conversation=conversation,
             query=question_text,
             answer="I had something planned" if time_anchor else "I had an important event",
@@ -476,7 +476,7 @@ class CosmosQAConversationalConverter:
         return ConversationalSample(
             task="T4",
             sub_task="T4-Convo-Noisy",
-            context=context[:500],
+            context=context,
             conversation=conversation,
             query=question,
             answer=answer_text,
@@ -535,7 +535,7 @@ class CosmosQAConversationalConverter:
         
         conversation.append({
             "role": "user",
-            "content": f"Let me tell you about my experience. {context_first_person[:200]}..."
+            "content": f"Let me tell you about my experience. {context_first_person}"
         })
         conversation.append({
             "role": "assistant",
@@ -570,7 +570,7 @@ class CosmosQAConversationalConverter:
         return ConversationalSample(
             task="T5",
             sub_task="T5-Convo-Emotion",
-            context=context[:500],
+            context=context,
             conversation=conversation,
             query=question_text,
             answer=answer_text,
@@ -636,7 +636,7 @@ class CosmosQAConversationalConverter:
         return ConversationalSample(
             task="T5",
             sub_task="T5-Convo-Rule",
-            context=context[:500],
+            context=context,
             conversation=conversation,
             query=question_text,
             answer=answer_text,

@@ -291,7 +291,7 @@ class DROPConversationalConverter:
         return ConversationalSample(
             task="T1",
             sub_task="T1-Convo-Duration",
-            passage=passage[:500],
+            passage=passage,
             conversation=conversation,
             query=f"If the game started at {start_time}:00 PM and the first half lasted {duration} minutes, when did halftime begin?",
             answer=answer_text,
@@ -355,7 +355,7 @@ class DROPConversationalConverter:
         return ConversationalSample(
             task="T1",
             sub_task="T1-Convo-Addition",
-            passage=passage[:500],
+            passage=passage,
             conversation=conversation,
             query=f"If I {operation} for {num1} minutes and then {num2} more minutes, how long in total?",
             answer=f"{num1 + num2} minutes",
@@ -401,7 +401,7 @@ class DROPConversationalConverter:
         return ConversationalSample(
             task="T1",
             sub_task="T1-Convo-Sequence",
-            passage=passage[:500],
+            passage=passage,
             conversation=conversation,
             query=f"According to the passage, at what time reference '{time_ref}' did this occur?",
             answer=answer,
@@ -484,7 +484,7 @@ class DROPConversationalConverter:
         return ConversationalSample(
             task="T3",
             sub_task="T3-Convo-TimeOverlap",
-            passage=passage[:500],
+            passage=passage,
             conversation=conversation,
             query="Given the game schedule and the coach's press conference, is there a time conflict?",
             answer="Yes, there is a scheduling conflict - both events occur during the same time period",
@@ -541,7 +541,7 @@ class DROPConversationalConverter:
         return ConversationalSample(
             task="T3",
             sub_task="T3-Convo-Conflict",
-            passage=passage[:500],
+            passage=passage,
             conversation=conversation,
             query="If the game and concert happen at the same time with shared parking, what conflict emerges?",
             answer="Parking shortage - both events compete for limited parking spaces",
@@ -646,7 +646,7 @@ class DROPConversationalConverter:
         return ConversationalSample(
             task="T5",
             sub_task="T5-Convo-RuleChange",
-            passage=passage[:500],
+            passage=passage,
             conversation=conversation,
             query="Under the modified scoring rules, how many points is 2 touchdowns + 1 field goal?",
             answer=f"{cf_score} points",
@@ -712,7 +712,7 @@ class DROPConversationalConverter:
         return ConversationalSample(
             task="T5",
             sub_task="T5-Convo-Counterfactual",
-            passage=passage[:500],
+            passage=passage,
             conversation=conversation,
             query=f"With double touchdown points, how many points from {touch_count} touchdowns?",
             answer=f"{cf_points} points",

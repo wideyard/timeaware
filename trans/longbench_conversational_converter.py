@@ -136,7 +136,7 @@ class T4Converter:
         # Round 1: Embed time information in context
         conversation.append({
             "role": "user",
-            "content": f"Let me tell you about something important. {time_expr.lower()}. {key_para[:200]}"
+            "content": f"Let me tell you about something important. {time_expr.lower()}. {key_para}"
         })
         
         conversation.append({
@@ -173,7 +173,7 @@ class T4Converter:
         return ConversationalSample(
             task="T4",
             sub_task="T4-Convo-Buried",
-            context=key_para[:300],
+            context=key_para,
             conversation=conversation,
             query="What important time did I mention earlier?",
             answer=time_anchor,
@@ -210,7 +210,7 @@ class T4Converter:
         # Embed key info in mid-conversation
         conversation.append({
             "role": "user",
-            "content": f"Here's something: {key_para[:200]}... Also, important: the deadline is {key_time}."
+            "content": f"Here's something: {key_para}... Also, important: the deadline is {key_time}."
         })
         
         conversation.append({
@@ -242,7 +242,7 @@ class T4Converter:
         return ConversationalSample(
             task="T4",
             sub_task="T4-Convo-Noisy",
-            context=key_para[:300],
+            context=key_para,
             conversation=conversation,
             query="What was the important deadline I mentioned?",
             answer=key_time,

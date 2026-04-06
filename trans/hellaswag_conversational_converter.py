@@ -92,6 +92,24 @@ class HellaSwagConversationalConverter:
         self.samples = samples
         self.loader = HellaSwagLoader(DATA_DIR)
         self.converted: List[ConversationalSample] = []
+
+    def _normalize_ending(self, text: str) -> str:
+        """Normalize ending text for readable options/answers."""
+        clean = (text or "").strip()
+        clean = re.sub(r"^[,\s]+", "", clean)
+        clean = re.sub(r"\s+", " ", clean)
+        return clean
+
+    def _option_letter(self, idx: int) -> str:
+        return chr(ord("A") + idx)
+
+    def _build_mc_question(self, prefix: str, endings: List[str]) -> str:
+        """Build a multiple-choice question from endings."""
+        option_lines = []
+        for idx, ending in enumerate(endings):
+            option_lines.append(f"{self._option_letter(idx)}. {self._normalize_ending(ending)}")
+        options_block = "\n".join(option_lines)
+        return f"{prefix}\n\n{options_block}\n\nAnswer with the option letter only."
         
     def convert_all(self, max_samples: int = 5000) -> List[ConversationalSample]:
         """转换所有数据。"""
@@ -117,7 +135,7 @@ class HellaSwagConversationalConverter:
             wrong_endings = [e for i, e in enumerate(endings) if i != label]
             
             # T2: 状态更新
-            t2_samples = self._generate_t2_samples(context, correct_ending, activity, source_id)
+            t2_samples = self._generate_t2_samples(context, endings, label, activity, source_id)
             self.converted.extend(t2_samples)
             
             # T3: 并发冲突
@@ -137,22 +155,38 @@ class HellaSwagConversationalConverter:
     # T2: 状态更新 (State Update)
     # =====================================================================
     
-    def _generate_t2_samples(self, context: str, correct_ending: str,
+    def _generate_t2_samples(self, context: str, endings: List[str], label: int,
                             activity: str, source_id: str) -> List[ConversationalSample]:
         """生成T2状态更新样本。"""
         results = []
+        correct_ending = endings[label] if label < len(endings) else endings[0]
         
         # T2-Convo-State: 状态推断
-        conv = self._create_state_inference_conversation(context, correct_ending, activity, source_id)
+        conv = self._create_state_inference_conversation(
+            context,
+            correct_ending,
+            endings,
+            label,
+            activity,
+            source_id,
+        )
         results.append(conv)
         
         # T2-Convo-Progressive: 动作进展
-        conv = self._create_progressive_conversation(context, correct_ending, activity, source_id)
+        conv = self._create_progressive_conversation(
+            context,
+            correct_ending,
+            endings,
+            label,
+            activity,
+            source_id,
+        )
         results.append(conv)
         
         return results
     
     def _create_state_inference_conversation(self, context: str, correct_ending: str,
+                                            endings: List[str], label: int,
                                             activity: str, source_id: str) -> ConversationalSample:
         """创建状态推断对话。"""
         conversation = []
@@ -185,20 +219,20 @@ class HellaSwagConversationalConverter:
             "content": "I see."
         })
         
-        # 核心问题：当前状态
-        question = "Given what I'm doing, what is my current state?"
+        # 核心问题：基于HellaSwag endings的多选推理
+        question = self._build_mc_question(
+            "Which ending is the most plausible next event in this activity?",
+            endings,
+        )
         
         # 从正确答案推断状态
-        correct_ending_clean = correct_ending.strip()
-        if correct_ending_clean.startswith((",", "and", "then")):
-            correct_ending_clean = correct_ending_clean[1:].strip()
-        
-        answer_text = f"Currently in progress: {correct_ending_clean[:100]}"
+        correct_ending_clean = self._normalize_ending(correct_ending)
+        answer_text = self._option_letter(label)
         
         return ConversationalSample(
             task="T2",
             sub_task="T2-Convo-State",
-            context=context[:300],
+            context=context,
             conversation=conversation,
             query=question,
             answer=answer_text,
@@ -209,13 +243,17 @@ class HellaSwagConversationalConverter:
             },
             ground_truth={
                 "current_state": "in_progress",
-                "next_action": correct_ending_clean[:80]
+                "next_action": correct_ending_clean[:80],
+                "correct_option": self._option_letter(label),
+                "correct_option_index": label,
+                "options": [self._normalize_ending(e) for e in endings],
             },
             difficulty="medium",
             source_id=f"hellaswag_t2_state_{source_id}"
         )
     
     def _create_progressive_conversation(self, context: str, correct_ending: str,
+                                         endings: List[str], label: int,
                                          activity: str, source_id: str) -> ConversationalSample:
         """创建动作进展对话。"""
         conversation = []
@@ -243,13 +281,16 @@ class HellaSwagConversationalConverter:
             "content": "What's my progress status?"
         })
         
-        question = "Am I done with this activity, or is it still in progress?"
-        answer_text = f"Still in progress. The next logical step is: {correct_ending[:80]}"
+        question = self._build_mc_question(
+            "Given the context, which option best describes the next logical step?",
+            endings,
+        )
+        answer_text = self._option_letter(label)
         
         return ConversationalSample(
             task="T2",
             sub_task="T2-Convo-Progressive",
-            context=context[:300],
+            context=context,
             conversation=conversation,
             query=question,
             answer=answer_text,
@@ -260,7 +301,10 @@ class HellaSwagConversationalConverter:
             },
             ground_truth={
                 "progress": "ongoing",
-                "next_step": correct_ending[:80]
+                "next_step": self._normalize_ending(correct_ending)[:80],
+                "correct_option": self._option_letter(label),
+                "correct_option_index": label,
+                "options": [self._normalize_ending(e) for e in endings],
             },
             difficulty="easy",
             source_id=f"hellaswag_t2_prog_{source_id}"
@@ -335,7 +379,7 @@ class HellaSwagConversationalConverter:
         return ConversationalSample(
             task="T3",
             sub_task="T3-Convo-Conflict",
-            context=context[:300],
+            context=context,
             conversation=conversation,
             query=question,
             answer=answer_text,
@@ -410,7 +454,7 @@ class HellaSwagConversationalConverter:
         return ConversationalSample(
             task="T3",
             sub_task="T3-Convo-TimeConflict",
-            context=context[:300],
+            context=context,
             conversation=conversation,
             query=question,
             answer=answer_text,
@@ -498,7 +542,7 @@ class HellaSwagConversationalConverter:
         return ConversationalSample(
             task="T5",
             sub_task="T5-Convo-RuleReversal",
-            context=context[:300],
+            context=context,
             conversation=conversation,
             query="In this world where physical rules are reversed, what happens next?",
             answer=answer_text,
@@ -570,7 +614,7 @@ class HellaSwagConversationalConverter:
         return ConversationalSample(
             task="T5",
             sub_task="T5-Convo-WrongToRight",
-            context=context[:300],
+            context=context,
             conversation=conversation,
             query="If the normally wrong answer becomes right, what should I do?",
             answer=answer_text,
