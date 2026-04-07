@@ -7,7 +7,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 
-INPUT = Path("output/small_batch_interaction_compare_t1_t5_s20_typed.json")
+INPUT = Path("output/small_batch_interaction_compare_t1_t5_s20_typed_post_hellaswag_fix.json")
 FIG_DIR = Path("output/figures")
 EXAMPLE_MD = Path("output/small_batch_interaction_examples.md")
 

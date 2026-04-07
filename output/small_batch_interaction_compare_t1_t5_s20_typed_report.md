@@ -9,7 +9,7 @@ This experiment compares model performance across three interaction styles withi
 The focus is to measure whether multi-turn context and noise change accuracy, and to reduce false negatives caused by format mismatch.
 
 ## 2. Data and Setup
-- Input result file: [output/small_batch_interaction_compare_t1_t5_s20_typed.json](output/small_batch_interaction_compare_t1_t5_s20_typed.json)
+- Input result file: [output/small_batch_interaction_compare_t1_t5_s20_typed_post_hellaswag_fix.json](output/small_batch_interaction_compare_t1_t5_s20_typed_post_hellaswag_fix.json)
 - Models:
   - gpt-4o-mini
   - doubao-seed-1-8
@@ -39,85 +39,85 @@ Metrics:
 ## 4. Overall Results (Per Model)
 | Model | Total | Strict Correct | Partial Correct | Strict Acc | Combined Acc |
 |---|---:|---:|---:|---:|---:|
-| gpt-4o-mini | 300 | 106 | 32 | 35.33% | 46.00% |
-| doubao-seed-1-8 | 300 | 91 | 30 | 30.33% | 40.33% |
-| doubao-seed-2-0-pro | 300 | 90 | 34 | 30.00% | 41.33% |
+| gpt-4o-mini | 300 | 134 | 11 | 44.67% | 48.33% |
+| doubao-seed-1-8 | 300 | 118 | 12 | 39.33% | 43.33% |
+| doubao-seed-2-0-pro | 300 | 121 | 11 | 40.33% | 44.00% |
 
 Key read:
-- Combined accuracy is materially higher than strict accuracy for all models.
-- Partial credit contributes a non-trivial lift (about 10-11 points), indicating many near-miss answers.
+- Combined accuracy remains higher than strict accuracy for all models.
+- Partial credit now contributes a modest lift (about 3.7-4.0 points), indicating fewer near-miss cases after the data fix.
 
 ## 5. Interaction-Style Effect (Combined Accuracy)
 ### gpt-4o-mini
-- single: 45.00%
-- multiturn_clean: 46.00%
-- multiturn_noisy: 47.00%
+- single: 48.00%
+- multiturn_clean: 49.00%
+- multiturn_noisy: 48.00%
 
 ### doubao-seed-1-8
-- single: 39.00%
-- multiturn_clean: 41.00%
-- multiturn_noisy: 41.00%
+- single: 40.00%
+- multiturn_clean: 46.00%
+- multiturn_noisy: 44.00%
 
 ### doubao-seed-2-0-pro
-- single: 40.00%
-- multiturn_clean: 44.00%
-- multiturn_noisy: 40.00%
+- single: 45.00%
+- multiturn_clean: 43.00%
+- multiturn_noisy: 44.00%
 
 Key read:
-- Clean multi-turn generally helps or stays neutral.
-- Noisy multi-turn is not uniformly harmful; effect is subtask/model dependent.
-- doubao-seed-2-0-pro benefits from clean context but drops back under noisy context.
+- Clean multi-turn is still beneficial overall for two models.
+- Noisy multi-turn remains mixed and subtask-dependent.
+- doubao-seed-2-0-pro now shows stronger single-turn baseline and slight clean-context drop.
 
 ## 6. By Answer Type (Combined Accuracy)
 ### gpt-4o-mini
-- yesno: 98.04% (n=51)
-- mc: 51.67% (n=60)
-- span: 35.71% (n=84)
-- free_form: 25.71% (n=105)
+- yesno: 85.96% (n=57)
+- mc: 67.78% (n=90)
+- span: 34.48% (n=87)
+- free_form: 7.58% (n=66)
 
 ### doubao-seed-1-8
-- yesno: 66.67% (n=51)
-- mc: 48.33% (n=60)
-- free_form: 31.43% (n=105)
-- span: 29.76% (n=84)
+- yesno: 54.39% (n=57)
+- mc: 64.44% (n=90)
+- free_form: 19.70% (n=66)
+- span: 32.18% (n=87)
 
 ### doubao-seed-2-0-pro
-- yesno: 58.82% (n=51)
-- mc: 50.00% (n=60)
-- span: 34.52% (n=84)
-- free_form: 33.33% (n=105)
+- yesno: 50.88% (n=57)
+- mc: 68.89% (n=90)
+- span: 28.74% (n=87)
+- free_form: 24.24% (n=66)
 
 Key read:
-- The largest failure concentration is free-form and span, not yes/no.
-- yes/no is easiest and most stable for gpt-4o-mini.
-- Open-ended answer styles dominate total error volume.
+- MC and yes/no are now clearly stronger than free-form and span.
+- Free-form remains the largest failure concentration, especially for gpt-4o-mini.
+- Error volume is still dominated by open-ended answer styles.
 
 ## 7. Subtask Trends (Combined Accuracy)
 ### gpt-4o-mini
-- T1-Counting: 30% -> 65% -> 70% (single -> clean -> noisy)
-- T2-Status: 50% -> 50% -> 50%
-- T3-SpaceConflict: 85% -> 80% -> 85%
+- T1-Counting: 35% -> 65% -> 70% (single -> clean -> noisy)
+- T2-Status: 70% -> 60% -> 60%
+- T3-SpaceConflict: 75% -> 90% -> 85%
 - T4-NoiseRetrieval: 35% -> 20% -> 20%
-- T5-RuleReversal: 25% -> 15% -> 10%
+- T5-RuleReversal: 25% -> 10% -> 5%
 
 ### doubao-seed-1-8
-- T1-Counting: 45% -> 60% -> 60%
-- T2-Status: 45% -> 45% -> 45%
-- T3-SpaceConflict: 55% -> 60% -> 60%
-- T4-NoiseRetrieval: 25% -> 25% -> 25%
+- T1-Counting: 45% -> 65% -> 60%
+- T2-Status: 65% -> 65% -> 60%
+- T3-SpaceConflict: 45% -> 60% -> 55%
+- T4-NoiseRetrieval: 25% -> 25% -> 30%
 - T5-RuleReversal: 25% -> 15% -> 15%
 
 ### doubao-seed-2-0-pro
-- T1-Counting: 55% -> 65% -> 70%
-- T2-Status: 50% -> 50% -> 50%
-- T3-SpaceConflict: 40% -> 65% -> 55%
-- T4-NoiseRetrieval: 30% -> 30% -> 20%
+- T1-Counting: 65% -> 65% -> 75%
+- T2-Status: 60% -> 60% -> 60%
+- T3-SpaceConflict: 45% -> 55% -> 55%
+- T4-NoiseRetrieval: 30% -> 25% -> 25%
 - T5-RuleReversal: 25% -> 10% -> 5%
 
 Key read:
-- T1-Counting consistently improves in multi-turn settings.
-- T5-RuleReversal is hardest across all models, with clear degradation from single to noisy.
-- T4-NoiseRetrieval remains weak and noise-sensitive.
+- T1-Counting still benefits from multi-turn context for most models.
+- T2-Status no longer shows the previous flat profile and now varies by model/style.
+- T5-RuleReversal remains the hardest and degrades toward noisy interaction.
 
 ## 8. Why Accuracy Looked Low Before, and Why This Is Better
 Compared with earlier string-equality style scoring, this typed setup reduces false negatives:
@@ -126,8 +126,8 @@ Compared with earlier string-equality style scoring, this typed setup reduces fa
 - Partial credit captures "mostly right" status answers.
 
 Observed evidence:
-- Partial-correct records: 96
-- Many partials are T2-Status cases where the model gets status right but omits next-step detail.
+- Partial-correct records: 34
+- Partials are still concentrated in T2/T4 style cases, but far fewer than before.
 
 ## 9. Qualitative Examples
 Detailed example dump: [output/small_batch_interaction_examples.md](output/small_batch_interaction_examples.md)

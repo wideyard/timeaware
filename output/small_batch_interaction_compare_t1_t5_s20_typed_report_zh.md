@@ -9,7 +9,7 @@
 核心目标是测量多轮上下文和噪声是否改变准确率，并减少因格式不匹配导致的假阴性。
 
 ## 2. 数据与设置
-- 输入结果文件：[output/small_batch_interaction_compare_t1_t5_typed.json](output/small_batch_interaction_compare_t1_t5_typed.json)
+- 输入结果文件：[output/small_batch_interaction_compare_t1_t5_s20_typed_post_hellaswag_fix.json](output/small_batch_interaction_compare_t1_t5_s20_typed_post_hellaswag_fix.json)
 - 模型：
   - gpt-4o-mini
   - doubao-seed-1-8
@@ -39,85 +39,85 @@
 ## 4. 整体结果（按模型）
 | Model | Total | Strict Correct | Partial Correct | Strict Acc | Combined Acc |
 |---|---:|---:|---:|---:|---:|
-| gpt-4o-mini | 300 | 106 | 32 | 35.33% | 46.00% |
-| doubao-seed-1-8 | 300 | 91 | 30 | 30.33% | 40.33% |
-| doubao-seed-2-0-pro | 300 | 90 | 34 | 30.00% | 41.33% |
+| gpt-4o-mini | 300 | 134 | 11 | 44.67% | 48.33% |
+| doubao-seed-1-8 | 300 | 118 | 12 | 39.33% | 43.33% |
+| doubao-seed-2-0-pro | 300 | 121 | 11 | 40.33% | 44.00% |
 
 关键解读：
-- 所有模型的综合准确率都显著高于严格准确率。
-- 部分得分贡献了不可忽视的提升（约10-11个百分点），表明存在大量"差一点就答对"的情况。
+- 所有模型的综合准确率仍高于严格准确率。
+- 部分得分带来的提升缩小到约 3.7-4.0 个百分点，说明修复后近似正确样本减少。
 
 ## 5. 交互风格效应（综合准确率）
 ### gpt-4o-mini
-- single: 45.00%
-- multiturn_clean: 46.00%
-- multiturn_noisy: 47.00%
+- single: 48.00%
+- multiturn_clean: 49.00%
+- multiturn_noisy: 48.00%
 
 ### doubao-seed-1-8
-- single: 39.00%
-- multiturn_clean: 41.00%
-- multiturn_noisy: 41.00%
+- single: 40.00%
+- multiturn_clean: 46.00%
+- multiturn_noisy: 44.00%
 
 ### doubao-seed-2-0-pro
-- single: 40.00%
-- multiturn_clean: 44.00%
-- multiturn_noisy: 40.00%
+- single: 45.00%
+- multiturn_clean: 43.00%
+- multiturn_noisy: 44.00%
 
 关键解读：
-- 清洁多轮上下文通常有帮助或保持中性。
-- 噪声多轮上下文并非一律有害；其影响因子任务和模型而异。
-- doubao-seed-2-0-pro 从清洁上下文中受益，但在噪声上下文下回落。
+- 对两个模型而言，清洁多轮依然总体有帮助。
+- 噪声多轮仍是混合效应，强依赖模型与子任务。
+- doubao-seed-2-0-pro 在本轮中 single 基线更强，clean 略有回落。
 
 ## 6. 按答案类型分析（综合准确率）
 ### gpt-4o-mini
-- yesno: 98.04% (n=51)
-- mc: 51.67% (n=60)
-- span: 35.71% (n=84)
-- free_form: 25.71% (n=105)
+- yesno: 85.96% (n=57)
+- mc: 67.78% (n=90)
+- span: 34.48% (n=87)
+- free_form: 7.58% (n=66)
 
 ### doubao-seed-1-8
-- yesno: 66.67% (n=51)
-- mc: 48.33% (n=60)
-- free_form: 31.43% (n=105)
-- span: 29.76% (n=84)
+- yesno: 54.39% (n=57)
+- mc: 64.44% (n=90)
+- free_form: 19.70% (n=66)
+- span: 32.18% (n=87)
 
 ### doubao-seed-2-0-pro
-- yesno: 58.82% (n=51)
-- mc: 50.00% (n=60)
-- span: 34.52% (n=84)
-- free_form: 33.33% (n=105)
+- yesno: 50.88% (n=57)
+- mc: 68.89% (n=90)
+- span: 28.74% (n=87)
+- free_form: 24.24% (n=66)
 
 关键解读：
-- 最大失败集中在 free-form 和 span 类型，而非 yes/no。
-- yes/no 对 gpt-4o-mini 来说最容易且最稳定。
-- 开放式答案类型主导了总错误量。
+- MC 与 yes/no 明显强于 free-form 和 span。
+- free-form 仍是主要错误来源，尤其在 gpt-4o-mini 上更突出。
+- 总体错误仍主要来自开放式答案类型。
 
 ## 7. 子任务趋势（综合准确率）
 ### gpt-4o-mini
-- T1-Counting: 30% -> 65% -> 70% (single -> clean -> noisy)
-- T2-Status: 50% -> 50% -> 50%
-- T3-SpaceConflict: 85% -> 80% -> 85%
+- T1-Counting: 35% -> 65% -> 70% (single -> clean -> noisy)
+- T2-Status: 70% -> 60% -> 60%
+- T3-SpaceConflict: 75% -> 90% -> 85%
 - T4-NoiseRetrieval: 35% -> 20% -> 20%
-- T5-RuleReversal: 25% -> 15% -> 10%
+- T5-RuleReversal: 25% -> 10% -> 5%
 
 ### doubao-seed-1-8
-- T1-Counting: 45% -> 60% -> 60%
-- T2-Status: 45% -> 45% -> 45%
-- T3-SpaceConflict: 55% -> 60% -> 60%
-- T4-NoiseRetrieval: 25% -> 25% -> 25%
+- T1-Counting: 45% -> 65% -> 60%
+- T2-Status: 65% -> 65% -> 60%
+- T3-SpaceConflict: 45% -> 60% -> 55%
+- T4-NoiseRetrieval: 25% -> 25% -> 30%
 - T5-RuleReversal: 25% -> 15% -> 15%
 
 ### doubao-seed-2-0-pro
-- T1-Counting: 55% -> 65% -> 70%
-- T2-Status: 50% -> 50% -> 50%
-- T3-SpaceConflict: 40% -> 65% -> 55%
-- T4-NoiseRetrieval: 30% -> 30% -> 20%
+- T1-Counting: 65% -> 65% -> 75%
+- T2-Status: 60% -> 60% -> 60%
+- T3-SpaceConflict: 45% -> 55% -> 55%
+- T4-NoiseRetrieval: 30% -> 25% -> 25%
 - T5-RuleReversal: 25% -> 10% -> 5%
 
 关键解读：
-- T1-Counting 在多轮设置下持续改善。
-- T5-RuleReversal 对所有模型来说最难，从 single 到 noisy 明显下降。
-- T4-NoiseRetrieval 持续表现较弱且对噪声敏感。
+- T1-Counting 对多数模型仍然受益于多轮上下文。
+- T2-Status 不再是此前的"全平"模式，现已体现模型/风格差异。
+- T5-RuleReversal 仍是最难任务，并在 noisy 下继续恶化。
 
 ## 8. 为什么之前的准确率看起来低，现在更好
 与早期的字符串相等式评分相比，此类型化设置减少了假阴性：
@@ -126,8 +126,8 @@
 - 部分得分捕捉"基本正确"的状态答案。
 
 观察证据：
-- 部分正确记录数：96
-- 许多部分正确案例是 T2-Status，模型状态判断正确但遗漏下一步细节。
+- 部分正确记录数：34
+- 部分正确仍集中在 T2/T4 类案例，但数量较修复前明显下降。
 
 ## 9. 定性案例
 详细案例输出：[output/small_batch_interaction_examples.md](output/small_batch_interaction_examples.md)
