@@ -23,20 +23,20 @@ ALL_DATASETS = [
 ]
 
 TASK_MAP = {
-    'CosmosQA': 'T4',
-    'DROP': 'T4',
+    'CosmosQA': 'T3',
+    'DROP': 'T3',
     'HellaSwag': 'T2',
     'MCTACO': 'T1',
-    'narrative-qa': 'T4',
+    'narrative-qa': 'T3',
     'pasta': 'T2',
     'PIQA': 'T2',
-    'qasper': 'T4',
-    'SI-Bench': 'T4',
-    'SocialIQA': 'T4',
+    'qasper': 'T3',
+    'SI-Bench': 'T3',
+    'SocialIQA': 'T3',
     'TempReason': 'T1',
     'TimeDial': 'T1',
     'TimeQA': 'T1',
-    'tracie': 'T3',
+    'tracie': 'T2',
     'UDST-DurationQA': 'T1'
 }
 

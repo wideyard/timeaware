@@ -1,10 +1,10 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import json
 
 print("=== TIMEDIAL Noise Verification ===\n")
 
 # Check multi_v1 (light noise)
-with open('d:\\workspace\\timeaware\\data-converted\\TimeDial\\sample_T5\\TIMEDIAL_multi_v1.jsonl') as f:
+with open('d:\\workspace\\timeaware\\data-converted\\TimeDial\\sample_T1\\TIMEDIAL_multi_v1.jsonl') as f:
     data = json.loads(f.readline())
     print("TIMEDIAL multi_v1 (light noise):")
     for idx, msg in enumerate(data['messages']):
@@ -15,7 +15,7 @@ with open('d:\\workspace\\timeaware\\data-converted\\TimeDial\\sample_T5\\TIMEDI
     print()
 
 # Check multi_v3 (heavy noise)
-with open('d:\\workspace\\timeaware\\data-converted\\TimeDial\\sample_T5\\TIMEDIAL_multi_v3.jsonl') as f:
+with open('d:\\workspace\\timeaware\\data-converted\\TimeDial\\sample_T1\\TIMEDIAL_multi_v3.jsonl') as f:
     data = json.loads(f.readline())
     print("TIMEDIAL multi_v3 (heavy noise):")
     for idx, msg in enumerate(data['messages']):
@@ -27,7 +27,7 @@ with open('d:\\workspace\\timeaware\\data-converted\\TimeDial\\sample_T5\\TIMEDI
 
 # Check for repetition
 print("Checking for repetition in assistant responses...")
-with open('d:\\workspace\\timeaware\\data-converted\\TimeDial\\sample_T5\\TIMEDIAL_multi_v3.jsonl') as f:
+with open('d:\\workspace\\timeaware\\data-converted\\TimeDial\\sample_T1\\TIMEDIAL_multi_v3.jsonl') as f:
     for i in range(5):
         data = json.loads(f.readline())
         for msg in data['messages']:

@@ -14,6 +14,8 @@ DATA_CONVERTED = ROOT / 'data-converted'
 
 STYLES = ['single', 'multi_v1', 'multi_v2', 'multi_v3']
 
+TASK_TAG_RE = re.compile(r'^T[1-5]$')
+
 
 def read_jsonl(path: Path):
     with path.open('r', encoding='utf-8', errors='ignore') as f:
@@ -205,19 +207,58 @@ def load_existing_predictions(pred_dir: Path):
     return rows, done
 
 
+def resolve_dataset_folder(dataset: str, folder: str, preferred_task: str | None = None) -> Path:
+    ds_dir = DATA_CONVERTED / dataset
+    if not ds_dir.exists():
+        raise RuntimeError(f'Dataset directory not found: {ds_dir.as_posix()}')
+
+    exact = ds_dir / folder
+    if exact.exists():
+        return exact
+
+    if preferred_task and TASK_TAG_RE.match(str(preferred_task)):
+        tagged = ds_dir / f'{folder}_{preferred_task}'
+        if tagged.exists():
+            return tagged
+
+    cand = []
+    for p in ds_dir.iterdir():
+        if p.is_dir() and re.fullmatch(rf'{re.escape(folder)}_T[1-5]', p.name):
+            cand.append(p)
+
+    if preferred_task and TASK_TAG_RE.match(str(preferred_task)):
+        want = f'{folder}_{preferred_task}'
+        for p in cand:
+            if p.name == want:
+                return p
+
+    if len(cand) == 1:
+        return cand[0]
+
+    raise RuntimeError(
+        f'Cannot resolve folder for dataset={dataset}, folder={folder}, preferred_task={preferred_task}. '
+        f'Candidates={[p.name for p in sorted(cand)]}'
+    )
+
+
 def find_all_single_datasets():
     datasets = []
     for ds_dir in DATA_CONVERTED.iterdir():
         if not ds_dir.is_dir():
             continue
-        fp = ds_dir / 'full' / f'{ds_dir.name}_single.jsonl'
+        try:
+            full_dir = resolve_dataset_folder(ds_dir.name, 'full')
+        except Exception:
+            continue
+        fp = full_dir / f'{ds_dir.name}_single.jsonl'
         if fp.exists():
             datasets.append(ds_dir.name)
     return sorted(datasets)
 
 
 def load_single_samples(dataset, max_per_dataset):
-    fp = DATA_CONVERTED / dataset / 'full' / f'{dataset}_single.jsonl'
+    full_dir = resolve_dataset_folder(dataset, 'full')
+    fp = full_dir / f'{dataset}_single.jsonl'
     rows = []
     seen = set()
     for obj in read_jsonl(fp):

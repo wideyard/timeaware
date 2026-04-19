@@ -1,9 +1,9 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import json
 
 print('=== CHECKING NEW TIMEDIAL SAMPLES FOR TRUE COUNTERFACTUAL (5 samples) ===\n')
 
-with open('data-converted/TimeDial/sample_T5/TIMEDIAL_single.jsonl', encoding='utf-8') as f:
+with open('data-converted/TimeDial/sample_T1/TIMEDIAL_single.jsonl', encoding='utf-8') as f:
     for sample_idx in range(5):
         line = f.readline()
         if not line:

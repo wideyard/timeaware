@@ -1,11 +1,11 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import json
 from collections import Counter
 
 print('=== DISTRIBUTION OF COUNTERFACTUAL METHODS ===\n')
 
 method_counts = Counter()
-with open('data-converted/TimeDial/sample_T5/TIMEDIAL_single.jsonl', encoding='utf-8') as f:
+with open('data-converted/TimeDial/sample_T1/TIMEDIAL_single.jsonl', encoding='utf-8') as f:
     for idx, line in enumerate(f):
         d = json.loads(line)
         rule_name = d['metadata']['rule_applied']
@@ -27,7 +27,7 @@ with open('data-converted/TimeDial/sample_T5/TIMEDIAL_single.jsonl', encoding='u
 print('\n=== EXAMPLE OF EACH METHOD ===\n')
 
 methods_shown = set()
-with open('data-converted/TimeDial/sample_T5/TIMEDIAL_single.jsonl', encoding='utf-8') as f:
+with open('data-converted/TimeDial/sample_T1/TIMEDIAL_single.jsonl', encoding='utf-8') as f:
     for idx, line in enumerate(f):
         d = json.loads(line)
         rule_name = d['metadata']['rule_applied']

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Verify sample format for all 4 new datasets"""
 
@@ -20,7 +20,7 @@ with open('TempReason/sample_T5/TEMPREASON_single.jsonl') as f:
 
 # Check tracie  
 print('=== TRACIE ===')
-with open('tracie/sample_T5/TRACIE_single.jsonl') as f:
+with open('tracie/sample_T3/TRACIE_single.jsonl') as f:
     d = json.loads(f.readline())
     print('Messages count:', len(d['messages']))
     print('Last message role:', d['messages'][-1]['role'])
@@ -42,7 +42,7 @@ with open('TRIP/sample_T5/TRIP_single.jsonl') as f:
 
 # Check TimeDial conversation format
 print('=== TIMEDIAL (message roles check) ===')
-with open('TimeDial/sample_T5/TIMEDIAL_single.jsonl') as f:
+with open('TimeDial/sample_T1/TIMEDIAL_single.jsonl') as f:
     d = json.loads(f.readline())
     print('Messages count:', len(d['messages']))
     print('Message roles:')

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Generate T5 Counterfactual samples for 6 datasets:
+Generate T4 Counterfactual samples for 6 datasets:
 - MCTACO, UDST-DurationQA (duration-based)
 - TempReason, tracie, TimeDial, TRIP (temporal-relational)
 
-Supports both 'sample' (100 samples) and 'full_T5' (full volume) generation modes.
+Supports both 'sample' (100 samples) and 'full_T4' (full volume) generation modes.
 """
 
 import json
@@ -17,6 +17,35 @@ from typing import List, Dict, Any, Tuple
 from datetime import datetime, timedelta
 
 random.seed(42)
+
+
+def resolve_answer_key(answer, options):
+    """Convert a text-based answer to its option letter key.
+
+    If the answer is already a letter key (A, B, C, ...), return it as-is.
+    Otherwise, find the option whose text matches the answer and return its key.
+
+    Args:
+        answer: The answer text (e.g., "yes", "January 31, 1948") or letter key (e.g., "A")
+        options: List of option dicts with 'key' and 'text' fields
+
+    Returns:
+        List of letter keys (e.g., ["A"])
+    """
+    key_to_text = {str(o.get('key', '')).strip().upper(): str(o.get('text', '')).strip().lower() for o in options}
+
+    # Already a letter key
+    if str(answer).strip().upper() in key_to_text:
+        return [str(answer).strip().upper()]
+
+    # Try to match text content
+    answer_lower = str(answer).strip().lower()
+    for key, text in key_to_text.items():
+        if text == answer_lower or text in answer_lower or answer_lower in text:
+            return [key]
+
+    # Fallback: return original (will be caught by validation later)
+    return [str(answer)]
 
 # ============================================================================
 # UTILITY FUNCTIONS (from original)
@@ -132,6 +161,7 @@ def generate_mctaco_rule_and_answer(candidate: str) -> Tuple[Dict[str, str], str
 
 def generate_mctaco_dialogue(sample, rule, answer, add_noise=None):
     """Generate multi-turn MCTACO dialogue"""
+    options = [{"key": "A", "text": "yes"}, {"key": "B", "text": "no"}]
     return {
         "messages": [
             {
@@ -147,8 +177,8 @@ def generate_mctaco_dialogue(sample, rule, answer, add_noise=None):
                 "content": f"Is '{sample['candidate']}' reasonable? Answer yes or no."
             }
         ],
-        "options": [{"key": "A", "text": "yes"}, {"key": "B", "text": "no"}],
-        "answer_key": [answer]
+        "options": options,
+        "answer_key": resolve_answer_key(answer, options)
     }
 
 # ============================================================================
@@ -250,6 +280,7 @@ def generate_udst_rule_and_answer(candidate: str) -> Tuple[Dict[str, str], str]:
 
 def generate_udst_dialogue(sample, rule, answer, add_noise=None):
     """Generate UDST dialogue"""
+    options = [{"key": "A", "text": "yes"}, {"key": "B", "text": "no"}]
     return {
         "messages": [
             {
@@ -265,8 +296,8 @@ def generate_udst_dialogue(sample, rule, answer, add_noise=None):
                 "content": f"Would '{sample['candidate']}' be reasonable? Yes or no?"
             }
         ],
-        "options": [{"key": "A", "text": "yes"}, {"key": "B", "text": "no"}],
-        "answer_key": [answer]
+        "options": options,
+        "answer_key": resolve_answer_key(answer, options)
     }
 
 # ============================================================================
@@ -338,6 +369,10 @@ def generate_tempreason_dialogue(sample, rule, answer, add_noise=None):
     option_a = answer
     option_b = sample['original_date']
     
+    options = [
+            {"key": "A", "text": option_a},
+            {"key": "B", "text": option_b}
+        ]
     return {
         "messages": [
             {
@@ -353,11 +388,8 @@ def generate_tempreason_dialogue(sample, rule, answer, add_noise=None):
                 "content": f"What is the new date according to this world's rules?\n\nOptions:\nA. {option_a}\nB. {option_b}\n\nThink carefully through all options and return only the final correct option letter(s)."
             }
         ],
-        "options": [
-            {"key": "A", "text": option_a},
-            {"key": "B", "text": option_b}
-        ],
-        "answer_key": [answer]
+        "options": options,
+        "answer_key": resolve_answer_key(answer, options)
     }
 
 # ============================================================================
@@ -436,6 +468,10 @@ def generate_tracie_rule_and_answer(sample: Dict) -> Tuple[Dict[str, str], str]:
 def generate_tracie_dialogue(sample, rule, answer, add_noise=None):
     """Generate tracie dialogue - temporal consistency judgment"""
     
+    options = [
+            {"key": "A", "text": "positive"},
+            {"key": "B", "text": "negative"}
+        ]
     return {
         "messages": [
             {
@@ -451,11 +487,8 @@ def generate_tracie_dialogue(sample, rule, answer, add_noise=None):
                 "content": f"Is this relationship consistent?\n\nOptions:\nA. positive (consistent)\nB. negative (inconsistent)\n\nThink carefully through all options and return only the final correct option letter(s)."
             }
         ],
-        "options": [
-            {"key": "A", "text": "positive"},
-            {"key": "B", "text": "negative"}
-        ],
-        "answer_key": [answer]
+        "options": options,
+        "answer_key": resolve_answer_key(answer, options)
     }
 
 # ============================================================================
@@ -697,13 +730,14 @@ def generate_timedial_dialogue(sample, rule, answer, add_noise=None):
         "content": f"Given the new world's rules ({rule['reasoning']}), which time-related answer is now more appropriate?\n\nOptions:\nA. {option_a}\nB. {option_b}\n\nThink carefully about how the rule changes the reasonableness of each option. Return only the correct option letter."
     })
     
-    return {
-        "messages": messages,
-        "options": [
+    options = [
             {"key": "A", "text": option_a},
             {"key": "B", "text": option_b}
-        ],
-        "answer_key": [answer]
+        ]
+    return {
+        "messages": messages,
+        "options": options,
+        "answer_key": resolve_answer_key(answer, options)
     }
 
 # ============================================================================
@@ -801,6 +835,10 @@ def generate_trip_dialogue(sample, rule, answer, add_noise=None):
     option_a = answer
     option_b = "no" if answer == "yes" else "yes"
     
+    options = [
+            {"key": "A", "text": option_a},
+            {"key": "B", "text": option_b}
+        ]
     return {
         "messages": [
             {
@@ -816,11 +854,8 @@ def generate_trip_dialogue(sample, rule, answer, add_noise=None):
                 "content": f"Is this trip feasible under the new rules?\n\nOptions:\nA. {option_a}\nB. {option_b}\n\nThink carefully through all options and return only the final correct option letter(s)."
             }
         ],
-        "options": [
-            {"key": "A", "text": option_a},
-            {"key": "B", "text": option_b}
-        ],
-        "answer_key": [answer]
+        "options": options,
+        "answer_key": resolve_answer_key(answer, options)
     }
 
 # ============================================================================
@@ -887,8 +922,8 @@ def generate_samples(dataset_type: str = "mctaco", num_samples: int = 100, outpu
     
     Args:
         dataset_type: 'mctaco', 'udst', 'tempreason', 'tracie', 'timedial', 'trip'
-        num_samples: Number of samples to generate (100 for 'sample', full for 'full_T5')
-        output_mode: 'sample' (100 samples) or 'full_T5' (full volume)
+        num_samples: Number of samples to generate (100 for 'sample', full for 'full_T4')
+        output_mode: 'sample' (100 samples) or 'full_T4' (full volume)
     """
     
     dataset_config = {
@@ -939,7 +974,7 @@ def generate_samples(dataset_type: str = "mctaco", num_samples: int = 100, outpu
     
     # For MCTACO and UDST, pass is_full flag
     if dataset_type in ['mctaco', 'udst']:
-        is_full = (output_mode == 'full_T5')
+        is_full = (output_mode == 'full_T4')
         raw_samples = config['loader'](num_samples, is_full=is_full)
     else:
         raw_samples = config['loader'](num_samples)
@@ -949,10 +984,10 @@ def generate_samples(dataset_type: str = "mctaco", num_samples: int = 100, outpu
         return
     
     # Determine output directory
-    if output_mode == 'full_T5':
-        output_dir = f"d:\\workspace\\timeaware\\data-converted\\{config['dir_suffix']}\\full_T5"
+    if output_mode == 'full_T4':
+        output_dir = f"d:\\workspace\\timeaware\\data-converted\\{config['dir_suffix']}\\full_T4"
     else:  # sample
-        output_dir = f"d:\\workspace\\timeaware\\data-converted\\{config['dir_suffix']}\\sample_T5"
+        output_dir = f"d:\\workspace\\timeaware\\data-converted\\{config['dir_suffix']}\\sample_T4"
     
     os.makedirs(output_dir, exist_ok=True)
     
@@ -979,7 +1014,7 @@ def generate_samples(dataset_type: str = "mctaco", num_samples: int = 100, outpu
             single_dialogue = config['dialogue_gen'](sample, rule, computed_answer)
             single_record = {
                 "dataset_name": dataset_type.upper(),
-                "task_type": "T5",
+                "task_type": "T4",
                 "source_id": source_id,
                 "format": "multi_turn",
                 "language": "en",
@@ -1046,17 +1081,17 @@ def generate_samples(dataset_type: str = "mctaco", num_samples: int = 100, outpu
 
 if __name__ == "__main__":
     print("=" * 70)
-    print("T5 Counterfactual Extended Sample Generation (6 Datasets)")
+    print("T4 Counterfactual Extended Sample Generation (6 Datasets)")
     print("=" * 70)
     
-    # Phase 1: Generate MCTACO/UDST full_T5 versions
-    print("\n[PHASE 1] Generating MCTACO/UDST full_T5 (full volume)...\n")
-    generate_samples("mctaco", num_samples=2000, output_mode="full_T5")  # Load all available
+    # Phase 1: Generate MCTACO/UDST full_T4 versions
+    print("\n[PHASE 1] Generating MCTACO/UDST full_T4 (full volume)...\n")
+    generate_samples("mctaco", num_samples=2000, output_mode="full_T4")  # Load all available
     print("\n" + "=" * 70 + "\n")
-    generate_samples("udst", num_samples=2000, output_mode="full_T5")
+    generate_samples("udst", num_samples=2000, output_mode="full_T4")
     
     # Phase 2: Generate 4 new datasets (sample mode for user review)
-    print("\n[PHASE 2] Generating new datasets (sample_T5 - 100 samples each for review)...\n")
+    print("\n[PHASE 2] Generating new datasets (sample_T4 - 100 samples each for review)...\n")
     for dataset in ["tempreason", "tracie", "timedial", "trip"]:
         generate_samples(dataset, num_samples=100, output_mode="sample")
         print("\n" + "=" * 70 + "\n")

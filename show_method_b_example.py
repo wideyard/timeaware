@@ -1,10 +1,10 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import json
 
 print('=== COMPLETE TIMEDIAL COUNTERFACTUAL EXAMPLE (Method B) ===\n')
 
 # Find a Method B example
-with open('data-converted/TimeDial/sample_T5/TIMEDIAL_single.jsonl', encoding='utf-8') as f:
+with open('data-converted/TimeDial/sample_T1/TIMEDIAL_single.jsonl', encoding='utf-8') as f:
     for line in f:
         d = json.loads(line)
         if 'Duration constraint' in d['metadata']['rule_applied']:

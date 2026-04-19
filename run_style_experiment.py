@@ -20,6 +20,42 @@ STYLE_TO_SUFFIX = {
     'multi_v3': '_multi_v3.jsonl',
 }
 
+TASK_TAG_RE = re.compile(r'^T[1-4]$')
+
+
+def resolve_dataset_folder(dataset: str, folder: str, preferred_task: str | None = None) -> Path:
+    ds_dir = DATA_CONVERTED / dataset
+    if not ds_dir.exists():
+        raise RuntimeError(f'Dataset directory not found: {ds_dir.as_posix()}')
+
+    exact = ds_dir / folder
+    if exact.exists():
+        return exact
+
+    if preferred_task and TASK_TAG_RE.match(str(preferred_task)):
+        tagged = ds_dir / f'{folder}_{preferred_task}'
+        if tagged.exists():
+            return tagged
+
+    cand = []
+    for p in ds_dir.iterdir():
+        if p.is_dir() and re.fullmatch(rf'{re.escape(folder)}_T[1-5]', p.name):
+            cand.append(p)
+
+    if preferred_task and TASK_TAG_RE.match(str(preferred_task)):
+        want = f'{folder}_{preferred_task}'
+        for p in cand:
+            if p.name == want:
+                return p
+
+    if len(cand) == 1:
+        return cand[0]
+
+    raise RuntimeError(
+        f'Cannot resolve folder for dataset={dataset}, folder={folder}, preferred_task={preferred_task}. '
+        f'Candidates={[p.name for p in sorted(cand)]}'
+    )
+
 
 def read_jsonl(path: Path):
     with path.open('r', encoding='utf-8', errors='ignore') as f:
@@ -38,6 +74,47 @@ def normalize_text(s: str) -> str:
     s = re.sub(r'[`\"\'\(\)\[\]{}<>]', ' ', s)
     s = re.sub(r'\s+', ' ', s)
     return s.strip()
+
+
+def map_gold_keys(answer_key, options):
+    """Map answer_key values to option letter keys.
+
+    Handles both letter-based answer_keys (e.g. ['A', 'B']) and
+    text-based answer_keys (e.g. ['January 31, 1948'], ['yes']).
+    For text-based values, finds the matching option by its text content
+    and returns the corresponding letter key.
+    """
+    key_to_text = {str(o.get('key', '')).upper(): normalize_text(str(o.get('text', ''))) for o in options}
+    text_to_key = {v: k for k, v in key_to_text.items() if v}
+    out = []
+
+    for a in answer_key or []:
+        s = str(a).strip()
+        if not s:
+            continue
+
+        s_up = s.upper()
+        if s_up in key_to_text:
+            if s_up not in out:
+                out.append(s_up)
+            continue
+
+        ns = normalize_text(s)
+        if ns in text_to_key:
+            k = text_to_key[ns]
+            if k not in out:
+                out.append(k)
+            continue
+
+        # Fallback for slight formatting differences in textual gold labels.
+        for k, t in key_to_text.items():
+            if not t:
+                continue
+            if ns == t or ns in t or t in ns:
+                if k not in out:
+                    out.append(k)
+
+    return out
 
 
 def parse_api_txt(path: Path):
@@ -194,8 +271,9 @@ def find_datasets_with_full():
     for ds_dir in DATA_CONVERTED.iterdir():
         if not ds_dir.is_dir():
             continue
-        full_dir = ds_dir / 'full'
-        if not full_dir.exists():
+        try:
+            full_dir = resolve_dataset_folder(ds_dir.name, 'full')
+        except Exception:
             continue
         has_all = True
         for suffix in STYLE_TO_SUFFIX.values():
@@ -209,7 +287,7 @@ def find_datasets_with_full():
 
 
 def load_style_maps(dataset):
-    full_dir = DATA_CONVERTED / dataset / 'full'
+    full_dir = resolve_dataset_folder(dataset, 'full')
     style_maps = {}
     for style in STYLES:
         fp = full_dir / f'{dataset}{STYLE_TO_SUFFIX[style]}'
@@ -223,7 +301,7 @@ def load_style_maps(dataset):
 
 
 def load_style_maps_limited(dataset, max_per_dataset):
-    full_dir = DATA_CONVERTED / dataset / 'full'
+    full_dir = resolve_dataset_folder(dataset, 'full')
 
     # pick candidate source_ids from single file in order
     single_fp = full_dir / f'{dataset}{STYLE_TO_SUFFIX["single"]}'
@@ -376,7 +454,7 @@ def main():
         ds, sid, style, sample, model_cfg = task
         raw, err = call_with_retry(model_cfg, sample.get('messages', []), retries=0, timeout=20)
         pred_keys = extract_predicted_keys(raw or '', sample.get('options', [])) if raw else []
-        gold_keys = [str(x).upper() for x in sample.get('answer_key', [])]
+        gold_keys = map_gold_keys(sample.get('answer_key', []), sample.get('options', []))
         pred_set = set(pred_keys)
         gold_set = set(gold_keys)
         exact = int(pred_set == gold_set)

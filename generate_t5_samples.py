@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Generate T5 Counterfactual samples for MCTACO and UDST-DurationQA
+Generate T4 Counterfactual samples for MCTACO and UDST-DurationQA
 Format: JSON lines with multi-turn dialogue
 Uses smart rules: rules are generated to flip the original answer
 """
@@ -14,6 +14,35 @@ from pathlib import Path
 from typing import List, Dict, Any, Tuple
 
 random.seed(42)
+
+
+def resolve_answer_key(answer, options):
+    """Convert a text-based answer to its option letter key.
+
+    If the answer is already a letter key (A, B, C, ...), return it as-is.
+    Otherwise, find the option whose text matches the answer and return its key.
+
+    Args:
+        answer: The answer text (e.g., "yes", "January 31, 1948") or letter key (e.g., "A")
+        options: List of option dicts with 'key' and 'text' fields
+
+    Returns:
+        List of letter keys (e.g., ["A"])
+    """
+    key_to_text = {str(o.get('key', '')).strip().upper(): str(o.get('text', '')).strip().lower() for o in options}
+
+    # Already a letter key
+    if str(answer).strip().upper() in key_to_text:
+        return [str(answer).strip().upper()]
+
+    # Try to match text content
+    answer_lower = str(answer).strip().lower()
+    for key, text in key_to_text.items():
+        if text == answer_lower or text in answer_lower or answer_lower in text:
+            return [key]
+
+    # Fallback: return original (will be caught by validation later)
+    return [str(answer)]
 
 def parse_duration(duration_str: str) -> Tuple[float, str]:
     """
@@ -300,13 +329,14 @@ def generate_mctaco_dialogue(sample: Dict, rule: Dict, answer: str, add_noise: s
         }
     ]
     
+    options = [
+        {"key": "A", "text": "yes"},
+        {"key": "B", "text": "no"}
+    ]
     return {
         "messages": messages,
-        "options": [
-            {"key": "A", "text": "yes"},
-            {"key": "B", "text": "no"}
-        ],
-        "answer_key": [answer]
+        "options": options,
+        "answer_key": resolve_answer_key(answer, options)
     }
 
 def generate_udst_dialogue(sample: Dict, rule: Dict, answer: str, add_noise: str = None) -> Dict:
@@ -326,13 +356,14 @@ def generate_udst_dialogue(sample: Dict, rule: Dict, answer: str, add_noise: str
         }
     ]
     
+    options = [
+        {"key": "A", "text": "yes"},
+        {"key": "B", "text": "no"}
+    ]
     return {
         "messages": messages,
-        "options": [
-            {"key": "A", "text": "yes"},
-            {"key": "B", "text": "no"}
-        ],
-        "answer_key": [answer]
+        "options": options,
+        "answer_key": resolve_answer_key(answer, options)
     }
 
 def add_multi_noise_v1(dialogue: Dict) -> Dict:
@@ -383,13 +414,13 @@ def generate_samples(dataset_type: str = "mctaco", num_samples: int = 100):
         raw_samples = load_mctaco_samples(num_samples)
         dialogue_generator = generate_mctaco_dialogue
         rule_generator = generate_mctaco_rule_and_answer
-        output_dir = "d:\\workspace\\timeaware\\data-converted\\MCTACO\\sample"
+        output_dir = "d:\\workspace\\timeaware\\data-converted\\MCTACO\\sample_T4"
     else:  # udst
         print("[UDST] Loading samples...")
         raw_samples = load_udst_samples(num_samples)
         dialogue_generator = generate_udst_dialogue
         rule_generator = generate_udst_rule_and_answer
-        output_dir = "d:\\workspace\\timeaware\\data-converted\\UDST-DurationQA\\sample"
+        output_dir = "d:\\workspace\\timeaware\\data-converted\\UDST-DurationQA\\sample_T4"
     
     os.makedirs(output_dir, exist_ok=True)
     
@@ -411,7 +442,7 @@ def generate_samples(dataset_type: str = "mctaco", num_samples: int = 100):
         single_dialogue = dialogue_generator(sample, rule, computed_answer)
         single_record = {
             "dataset_name": dataset_type.upper(),
-            "task_type": "T5",
+            "task_type": "T4",
             "source_id": source_id,
             "format": "multi_turn",
             "language": "en",
@@ -466,7 +497,7 @@ def generate_samples(dataset_type: str = "mctaco", num_samples: int = 100):
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("T5 Counterfactual Sample Generation")
+    print("T4 Counterfactual Sample Generation")
     print("=" * 60)
     
     # Generate MCTACO samples

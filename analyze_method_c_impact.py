@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import json
 import re
 
-with open('data-converted/TimeDial/sample_T5/TIMEDIAL_single.jsonl', encoding='utf-8') as f:
+with open('data-converted/TimeDial/sample_T1/TIMEDIAL_single.jsonl', encoding='utf-8') as f:
     samples = [json.loads(line) for line in f]
 
 print('=== TIMEDIAL Method C Impact Analysis ===\n')

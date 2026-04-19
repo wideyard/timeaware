@@ -1,10 +1,10 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import json
 
 datasets_to_check = [
     ('d:\\workspace\\timeaware\\data-converted\\TempReason\\sample_T5\\TEMPREASON_single.jsonl', 'TEMPREASON'),
-    ('d:\\workspace\\timeaware\\data-converted\\tracie\\sample_T5\\TRACIE_single.jsonl', 'TRACIE'),
-    ('d:\\workspace\\timeaware\\data-converted\\TimeDial\\sample_T5\\TIMEDIAL_single.jsonl', 'TIMEDIAL'),
+    ('d:\\workspace\\timeaware\\data-converted\\tracie\\sample_T3\\TRACIE_single.jsonl', 'TRACIE'),
+    ('d:\\workspace\\timeaware\\data-converted\\TimeDial\\sample_T1\\TIMEDIAL_single.jsonl', 'TIMEDIAL'),
 ]
 
 for filepath, dataset_name in datasets_to_check:

@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import json
 
 print('=== COMPLETE TIMEDIAL SAMPLE ===\n')
-with open('data-converted/TimeDial/sample_T5/TIMEDIAL_single.jsonl') as f:
+with open('data-converted/TimeDial/sample_T1/TIMEDIAL_single.jsonl') as f:
     d = json.loads(f.readline())
     
 print(f'Dataset: {d["dataset_name"]}')

@@ -1,9 +1,9 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import json
 
 print('=== DETAILED TIMEDIAL SAMPLE WITH COUNTERFACTUAL REASONING ===\n')
 
-with open('data-converted/TimeDial/sample_T5/TIMEDIAL_single.jsonl') as f:
+with open('data-converted/TimeDial/sample_T1/TIMEDIAL_single.jsonl') as f:
     # Get sample 1 which shows answer changing
     for i in range(2):
         line = f.readline()

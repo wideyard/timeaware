@@ -5,8 +5,8 @@ datasets = {
     'MCTACO_full_T5': 'd:\\workspace\\timeaware\\data-converted\\MCTACO\\full_T5',
     'UDST_full_T5': 'd:\\workspace\\timeaware\\data-converted\\UDST-DurationQA\\full_T5',
     'TempReason_sample_T5': 'd:\\workspace\\timeaware\\data-converted\\TempReason\\sample_T5',
-    'tracie_sample_T5': 'd:\\workspace\\timeaware\\data-converted\\tracie\\sample_T5',
-    'TimeDial_sample_T5': 'd:\\workspace\\timeaware\\data-converted\\TimeDial\\sample_T5',
+    'tracie_sample_T3': 'd:\\workspace\\timeaware\\data-converted\\tracie\\sample_T3',
+    'TimeDial_sample_T1': 'd:\\workspace\\timeaware\\data-converted\\TimeDial\\sample_T1',
     'TRIP_sample_T5': 'd:\\workspace\\timeaware\\data-converted\\TRIP\\sample_T5',
 }
 

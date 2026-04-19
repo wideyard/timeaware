@@ -18,6 +18,8 @@ STYLE_TO_SUFFIX = {
 }
 STYLES = ['single', 'multi_v1', 'multi_v2', 'multi_v3']
 
+TASK_TAG_RE = re.compile(r'^T[1-4]$')
+
 
 def read_jsonl(path: Path):
     with path.open('r', encoding='utf-8', errors='ignore') as f:
@@ -126,6 +128,47 @@ def normalize_text(s: str) -> str:
     return s.strip()
 
 
+def map_gold_keys(answer_key, options):
+    """Map answer_key values to option letter keys.
+
+    Handles both letter-based answer_keys (e.g. ['A', 'B']) and
+    text-based answer_keys (e.g. ['January 31, 1948'], ['yes']).
+    For text-based values, finds the matching option by its text content
+    and returns the corresponding letter key.
+    """
+    key_to_text = {str(o.get('key', '')).upper(): normalize_text(str(o.get('text', ''))) for o in options}
+    text_to_key = {v: k for k, v in key_to_text.items() if v}
+    out = []
+
+    for a in answer_key or []:
+        s = str(a).strip()
+        if not s:
+            continue
+
+        s_up = s.upper()
+        if s_up in key_to_text:
+            if s_up not in out:
+                out.append(s_up)
+            continue
+
+        ns = normalize_text(s)
+        if ns in text_to_key:
+            k = text_to_key[ns]
+            if k not in out:
+                out.append(k)
+            continue
+
+        # Fallback for slight formatting differences in textual gold labels.
+        for k, t in key_to_text.items():
+            if not t:
+                continue
+            if ns == t or ns in t or t in ns:
+                if k not in out:
+                    out.append(k)
+
+    return out
+
+
 def extract_predicted_keys(raw_text, options):
     text = (raw_text or '').strip()
     if not text:
@@ -187,6 +230,40 @@ def safe_model_name(model):
     return re.sub(r'[^a-zA-Z0-9._-]+', '_', model)
 
 
+def resolve_dataset_folder(dataset: str, folder: str, preferred_task: str | None = None) -> Path:
+    ds_dir = DATA_CONVERTED / dataset
+    if not ds_dir.exists():
+        raise RuntimeError(f'Dataset directory not found: {ds_dir.as_posix()}')
+
+    exact = ds_dir / folder
+    if exact.exists():
+        return exact
+
+    if preferred_task and TASK_TAG_RE.match(str(preferred_task)):
+        tagged = ds_dir / f'{folder}_{preferred_task}'
+        if tagged.exists():
+            return tagged
+
+    cand = []
+    for p in ds_dir.iterdir():
+        if p.is_dir() and re.fullmatch(rf'{re.escape(folder)}_T[1-5]', p.name):
+            cand.append(p)
+
+    if preferred_task and TASK_TAG_RE.match(str(preferred_task)):
+        want = f'{folder}_{preferred_task}'
+        for p in cand:
+            if p.name == want:
+                return p
+
+    if len(cand) == 1:
+        return cand[0]
+
+    raise RuntimeError(
+        f'Cannot resolve folder for dataset={dataset}, folder={folder}, preferred_task={preferred_task}. '
+        f'Candidates={[p.name for p in sorted(cand)]}'
+    )
+
+
 def load_tier_style_map(path: Path):
     rows = []
     with path.open('r', encoding='utf-8') as f:
@@ -199,8 +276,9 @@ def load_tier_style_map(path: Path):
     return rows
 
 
-def pick_samples(dataset, style, k):
-    fp = DATA_CONVERTED / dataset / 'full' / f'{dataset}{STYLE_TO_SUFFIX[style]}'
+def pick_samples(dataset, style, k, preferred_task=None):
+    full_dir = resolve_dataset_folder(dataset, 'full', preferred_task=preferred_task)
+    fp = full_dir / f'{dataset}{STYLE_TO_SUFFIX[style]}'
     picked = []
     seen = set()
     for obj in read_jsonl(fp):
@@ -274,7 +352,7 @@ def main():
         tier = cell['tier']
         style = cell['style']
         dataset = cell['dataset']
-        samples = pick_samples(dataset, style, args.samples_per_cell)
+        samples = pick_samples(dataset, style, args.samples_per_cell, preferred_task=tier)
         for s in samples:
             sid = str(s.get('source_id', ''))
             for m in models:
@@ -308,7 +386,7 @@ def main():
         m = t['model_cfg']
         raw, err = call_with_retry(m, t['sample'].get('messages', []), retries=args.retries, timeout=args.timeout)
         pred_keys = extract_predicted_keys(raw or '', t['sample'].get('options', [])) if raw else []
-        gold_keys = [str(x).upper() for x in t['sample'].get('answer_key', [])]
+        gold_keys = map_gold_keys(t['sample'].get('answer_key', []), t['sample'].get('options', []))
         pred_set = set(pred_keys)
         gold_set = set(gold_keys)
         exact = int(pred_set == gold_set)
@@ -357,7 +435,7 @@ def main():
         for style in STYLES:
             add_summary([r for r in mr if r['style'] == style], summary, 'model_style', f'{m}|{style}')
 
-    for tier in ['T1', 'T2', 'T3', 'T4', 'T5']:
+    for tier in ['T1', 'T2', 'T3', 'T4']:
         tr = [r for r in results if r['tier'] == tier]
         add_summary(tr, summary, 'tier', tier)
         for style in STYLES:
@@ -382,7 +460,7 @@ def main():
     report_lines.append(f'- run_dir: {run_dir.as_posix()}')
     report_lines.append(f'- expected_calls: {expected_calls}')
     report_lines.append(f'- actual_calls: {len(results)}')
-    report_lines.append(f'- tiers: T1, T2, T3, T4, T5')
+    report_lines.append(f'- tiers: T1, T2, T3, T4')
     report_lines.append(f'- styles: {", ".join(STYLES)}')
     report_lines.append(f'- models: {", ".join(m["model"] for m in models)}')
     report_lines.append('')

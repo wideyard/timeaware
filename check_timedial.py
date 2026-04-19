@@ -1,7 +1,7 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import json
 
-with open('data-converted/TimeDial/sample_T5/TIMEDIAL_single.jsonl') as f:
+with open('data-converted/TimeDial/sample_T1/TIMEDIAL_single.jsonl') as f:
     d = json.loads(f.readline())
     
 print('=== TIMEDIAL MESSAGE STRUCTURE (First 5 messages) ===\n')
